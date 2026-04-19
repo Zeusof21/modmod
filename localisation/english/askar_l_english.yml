@@ -1,0 +1,563 @@
+﻿l_english:
+ ETH_boarding_the_train_desc: "$RDisabled in BURGERMOD!$!"
+ # Hindeburg
+ news.42.t: "Prigozhin's Plane Disaster"
+ news.42.d: "The Russian passenger plane was destroyed today while flying from Moscow from Saint Petersburg. For reasons not yet determined, the airship was engulfed in flames and crashed to the ground, claiming 10 lives.\n\nOne of the plane's passengers was Evgeniy Prigozhin, leader of the private military company "Wagner". It is widely speculated that the plane was shot down by the russian air defence as a revenge for the failed coup attempt two months prior to the disaster. \n\nKremlin has not yet responded to the situation and the status of Evgeniy Prigozhin is yet to be confirmed."
+ news.42.a: "Oh, the humanity!"
+ news.43.t: "The Prigozhin Plane Incident"
+ news.43.d: "Disaster was narrowly averted today, when a bomb was discovered on the Russian passenger plane with Evgeniy Prigozhin on board. Prigozhin quickly threw the bomb through the window and it landed on the Russian anti-air guns which were destroyed by the explosion.\n\nHad it gone unnoticed, the whole plane would be destroyed, causing Evgeniy Prigozhin and the other 9 passengers to die. \n\nIt's still unknown who planted the bomb, some speculate that it might have been planted by the Russian government as a revenge for the failed coup attempt two months prior to the incident." 
+ news.43.a: "A close call."
+ # Random national spirits I made early into the Mod
+ Mandate_of_Heaven: "Mandate of Heaven"
+ Anti_Fast_Gaming_Policy: "Anti Fast Gaming Policy"
+ #Soviet #RUSSIA
+ askar_SOV_trotsky_foreign_funding_new: "Foreign Funding"
+ askar_SOV_trotsky_soviet_socialist_republics_txt: "§2Belarusian & Ukrainian Soviet Socialist Republics will be released and start off together with 56 divisions of militia Gun2 AT2 AA2 with doctrines pre-selected. They will have a special puppet status.§W"
+ autonomy_askar_soviet_trotsky: "Soviet Socialist Republic"
+ askar_SOV_soviet_socialist_republic: "Soviet Socialist Republic"
+ SOV_askar_cossack_general_lev_dovator: "§2The Cossack General is a 4/10/8/8 Commando Inf Leader Cav Leader Ranger Urban Assaulter Engineer Swamp Fox Trickster§W"
+ SOV_askar_dont_nuke_your_nation_with_this_trash: "§2Mod is balanced around Civil War. It is not recommended to go this branch unless you are just larping because its trash.§W"
+ askar_Panslavic_fervor: "Panslavic Fervor"
+ askar_trotsky_general: "Trotsky is a lvl 6 Field Marshal §G5 10 1 10§W with §GAmbusher Commando§W and §GMilitia Officer§W. He is already a §Cpolitical advisor§W so he can't be made into a new high §Ccommand advisor§W."
+ SOV_askar_reminder_fascist_tt: "§2You will gain stats vs Germany / Italy no matter their ideology.§W"
+ SOV_anti_fascist_policies: "Anti-Imperialist Policies"
+ SOV_eradicate_western_fascism: "Eradicate Western Imperialism"
+ askar_Soviet_fighters: "Eradicate Western Imperialism"
+ askar_white_exiles_Finland: "Crush the Finnish Revolt!"
+ askar_open_the_economy_Federation: "Reopened Market"
+ askar_fast_game_Federation: "Strike before they do!"
+ askar_Russia_sobor: "Change Seeking Society"
+ SOV_the_red_army_dynamic_modifier_alt: "The White Army"
+ Federation_Finland: "Claim Finland"
+ Federation_Baltics: "These Ultimatums will give you §GCORES§W on all Baltics."
+ Russian_Federation: "Russian Federation"
+ Russian_Federation_desc: "History of democratic Russia was but a short and failed dream. However a new spark has come to enlighten our way!"
+ Consolidate_the_Federation: "Consolidate the Federation"
+ Consolidate_the_Federation_desc: "The Federation is more than just Russian. We need to take responsibility of our Ukrainian and Belarusian comrades."
+ Intervention_in_Spain: "Interventionism"
+ Intervention_in_Spain_desc: "Its gaming time~Kerensky probably"
+ Open_the_Economy: "Open the Economy"
+ Open_the_Economy_desc: "Its time to open our long closed market to the world"
+ Expand_the_Federation: "Expand the Federation"
+ Expand_the_Federation_desc: "The Federation has to grow stronger to stand against the Western aggressors. On its own if it has to."
+ POV_You_forgor_War_eco_in_CW: "POV you forgor War Eco in CW - Big Skill Issue"
+ POV_You_forgor_War_eco_in_CW_desc: "Skill issue if I ever seen one"
+ Reorganize_NKVD: "Reorganize NKVD"
+ Reorganize_NKVD_desc: "Era of NKVD terror is over. Era of FIS has begun."
+ Breadbasket: "The Breadbasket of Europe"
+ Breadbasket_desc: "Its time to utilize our fertile Ukrainian lands and open the grain market to Europe wide open!"
+ Mobilize_the_Federation: "Mobilize the Federation"
+ Mobilize_the_Federation_desc: "We must pick up arms and stand against whoever may come to threaten our glorious Federation. We won't bow to the West no more."
+ Dream_of_Russian_Federation_Achieved: "Dream of The Federation Project Achevied"
+ Dream_of_Russian_Federation_Achieved_desc: "A new day has come for Russia."
+ Fast_Game: "Fast Game"
+ Fast_Game_desc: "Germany has skill issue and its about to hit 42 so its time to do the funny."
+ Vpered: "Vpered!"
+ Breadbasket_of_Europe: "Breadbasket of Europe"
+ Panslavic_Effect: "You can proclaim The§G Panslavic Union§W and §GCORE§W Czechoslovakia Poland Bulgaria and Yugoslavia. §R YOU ONLY NEED ONE STATE TO INTERGRATE THEIR CORES AND EACH DECISION IS 50PP"
+ Exiles_CW_Buff_AsKarTT: "§WIts time to §REradicate§W The Red Plague§W"
+ AsKar_Exiles_CW_Buff: "§R Eradicate§W The Red Plague"
+ AsKar_Exiles_CW_Buff_desc: "Its now or §R never." 
+ Repair_right_op: "Reconstruction"
+ Federation_Spain: " Aid the Spanish Republic!"
+ Federation_Spain_TT: "§WGain a§G one time use§W decision for 75 PP to give §CSpanish Republic §G14 Divisions and lots of equipment with a delay of 10 days§W.§R14 (8 width divs) pure inf and 10k Guns 600 Sup equip 120 arty 300 trucks 6 trains."
+ Federation_Spain_desc: "A little bit of tomfoolery"
+ Federation_Ukraine: "Reviving the fertile lands of Ukraine"
+ The_Federation_Intervention: "Intervention in the World"
+ The_Federation_Spain: "Intervene in Spanish Coup"
+ recovering_askar_sov: "Recovering from Civil War"
+ SOV_the_triple_entente: "Prepare for Industrial Relocation"
+ SOV_bringing_breakaways_back_to_the_fold: "Special Military Operation"
+ SOV_if_poum_wins_tt: "Each §RPOUM§W support decision provides you with §G25 Army Experience§W"
+ SOV_propaganda_anti_fascism_tt: "You will gain stats against the §Rmost industrialized country you are at war with§W, which grants (Attack bonus against country: §G+10.0%§!, Defense bonus against country: §G+10.0%§!) for §Y[?SOV_default_propaganda_campaign_duration]§! days."
+ SOV_victory_over_devastation_industrial_relocation_tt: "§YIndustrial Relocation §Wdecision duration: §G-75%§W"
+ askar_national_academies_of_sciences_buffed: "These decisions have been §2buffed§W from 50PP to 25PP in §RAs Kar Mod§W"
+ askar_trotsky_perma_revolution: "The Permanent Revolution"
+ askar_Russia_coal_decision_1: "Expand The Coal Mines"
+ askar_Russia_coal_decision_2: "Expand The Coal Mines"
+ askar_Russia_coal_decision_3: "Expand The Coal Mines"
+ 
+ #AS KAR FUNNY INVENTIONS
+ askar_last_stand_button_trait: "As Kar Shortcut Last Stand"
+ askar_last_stand_button_trait_desc: "There is a shortcut for General Abilities on *J*. You can use it effectively with this trait. Without it it will just use staff office plan always on normal gens."
+ askar_force_attack_button_trait: "As Kar Shortcut Force Attack"
+ askar_force_attack_button_trait_desc: "There is a shortcut for General Abilities on *J*. You can use it effectively with this trait. Without it it will just use staff office plan always on normal gens."
+ ABILITY_ASKAR_FORCE_ATTACK: "As Kar Shortcut Force Attack"
+ ABILITY_ASKAR_LAST_STAND: "As Kar Shortcut Last Stand"
+ 
+ #GENERIC FOCUS TREE ADDITIONAL FOCUSES ASKAR
+ AsKar_Generic_slots: "Terraforming"
+ AsKar_Generic_slots_desc: "More space to build stuff"
+ AsKar_Generic_steel: "Steel and Alunimum effort"
+ AsKar_Generic_steel_desc: "More Steel and Aluminum"
+ AsKar_Generic_steel2: "Steel and Alunimum effort 2"
+ AsKar_Generic_steel2_desc: "Even more Steel and Aluminum"
+ AsKar_Generic_Rubber: "Synthetic Rubber effort"
+ AsKar_Generic_Rubber_desc: "Some Rubber"
+ AsKar_Generic_resource: "Tungsten and Chromium effort"
+ AsKar_Generic_resource_desc: "Some Tungsten and Chromium"
+ Right_op_askar_tt: "§R READ THIS YOU APE §WIf you complete this focus §Cafter doing planned economy your puppets will also get a better New Economic Policy§W"
+ 
+ #GENERIC decisions
+ askar_improved_worker_conditions_timer_mission: "Improved Worker Conditions Cooldown"
+ improved_worker_conditions_askar_flag: "Improved Worker Conditions were used recently"
+ 
+ #BRAZIL
+ askar_brazil_autarky_buff: "Brazilian Autarky"
+ askar_brazil_rio_doce_txt: "This focus will grant resources based on your §OFactory Count§W. The brackets are: §R\n0-50§L 12 Steel§W 8 Alu§R\n50-75§L 18 Steel§W 10 Alu §R\n75-125§L 24 Steel§W 14 Alu§O 6 Rubber§R\n125-175§L 36 Steel§W 18 Alu§O 6 Rubber§2 6 Chromium§6 6 Coal§8 6 Tungsten§R\n175-300§L 48 Steel§W 24 Alu§O 12 Rubber§2 12 Chromium§6 12 Coal§8 12 Tungsten §R\n300+§L 52 Steel§W 36 Alu§O 30 Rubber§2 22 Chromium§4 20 Coal§8 12 Tungsten§W"
+ 
+ #France AS KAR
+ askar_orleanist_welfare: "Public Welfare"
+ askar_orleanist_stats: "No Further Humiliations"
+ FRA_counter_action_xd: "Banned Trade Unions"
+ FRA_counter_action: "Disband Trade Unions"
+ FRA_guarantee_the_constitution: "Maintain the Empire"
+ askar_commie_left_fra: "Conscript the Masses!"
+ FRA_pre_empt_the_fascist_attack: "Behead the Hydra"
+ FRA_reconnect_to_the_balkans: "Conscript the Masses!"
+ askar_french_union: "Large Scale Colonial Integration"
+ FRA_Africa1: "Develop African Resources"
+ FRA_Africa2: "Secure Colonial Autarky"
+ Bourbon_FRA_Spain_Intervention: "Secure The Spanish Throne!"
+ AskarHelpCarlists1: "Don't let the Carlist uprising fall"
+ FRA_Vols: "French relief forces"
+ FRA_french_union_tt: "YOU WILL §GCORE ALL §RBLACK PEOPLE§W aka Central Africa and §GSyria§W 0 RNG NO SCAM"
+ AskarHelpCarlists2: "Send in our troops"
+ FRA_AsKar_Carlists_TT: "Gain 2 Decisions.§WYou can spawn divs & give §CCarlist Spain§W Stability etc."
+ askar_france_orange_factory: "§OOrange Factory §0Very Powerful§W"
+ askar_france_air_training: "Air to Ground Training"
+ 
+ #Romania AS KAR
+ ROM_Relocation_askar: "Budapest-Bucharest deal"
+ ROM_Relocation_askar_desc: "In this landmark agreement, Austro-Hungary has generously extended industrial aid to Romania.In return, Romania has demonstrated its commitment to fostering goodwill and stability in the region by gracefully ceding the Transylvanian territories back to the Austro-Hungarian crown. This visionary deal not only promotes economic development but also exemplifies a spirit of collaboration."
+ ROM_close_economy: "Closed Economy"
+ askar_national_christian_party_army_buff: "Army of the Elite"
+ askar_Romania_coal_decision_1: "Expand The Coal Mines"
+ 
+ #Austro-Hungary AS KAR
+ HUN_Transylvania_askar: "Revitilise Transylvania"
+ HUN_Transylvania_askar_desc: "Austro-Hungary has embarked on an ambitious initiative to revitalize and develop the region of Transylvania"
+ askar_hun_tech_rocket: "Bomba"
+ HUN_rocket_askar: "The Infamous Katyusha build"
+ HUN_rocket_askar_desc: "REMINDER - §CArtillery§W research bonuses do§R NOT §Wapply for Rocket arty research. Only §CRocket§W bonuses do."
+ HUN_doctrine_askar: "Mobile Artillery"
+ HUN_doctrine_askar_desc: "§RREMINDER§W Superior Firepower gives a §GTactic §W- §CSupressive Barrage§W it §RCounters§C Guerilla Warfare§W."
+ HUN_truck_askar: "Embrace motorized troops"
+ HUN_truck_askar_desc: "Oi it does exacly what it says on the can blud."
+ HUN_Kat_Buff_askar: "Embrace Superior Firepower"
+ HUN_Kat_askar: "Rocket Artillery Hegemon"
+ HUN_Kat_askar_desc: "Bomba truck"
+ HUN_CZE_askar: "They will §Gaccept§W no matter what."
+ HUN_integrate_czech_1: "Integrate Bohemian Industry"
+ HUN_integrate_czech_2: "Expand Mining Industry"
+ HUN_integrate_czech_3: "Tungsten Investments"
+ HUN_integrate_czech_1_desc: "Yellow Factory Good"
+ HUN_integrate_czech_2_desc: "xd"
+ HUN_integrate_czech_3_desc: "xd"
+ 
+ #CHINA MANCHU AND JAPAN stuff
+ 
+ askar_china_debuff_AI_no_doctrine: "Backwards Military"
+ askar_china_debuff: "Fragile Unity"
+ Fuck_China: "Puyi Legitimacy"
+ JAP_prepare_for_war_with_the_soviet_union: "Support the Qing Dynasty Claimant"
+ JAP_join_the_london_naval_treaty: "Abandon the Naval Treaty"
+ JAP_build_up_the_manchurian_army: "Declare Kuomintang an illegal regime"
+ JAP_create_a_manchurian_imperial_air_force: "Imperial Army Innovations"
+ JAP_non_aggression_pact_with_china: "Move in to Annex Siam"
+ JAP_german_rocketry: "Imperial Technology Union"
+ JAP_technological_exchange: "Make the Most of What We Have"
+ JAP_askar_shogun: "Imperial Investments"
+ JAP_preemptive_war: "Vladivostok for Peace"
+ JAP_askar_vladivostok_tt: "§CYou will §Rdemand§G Vladivostok and Nothern Sakhalin§C for Peace and 4 mills for Soviets as a payback"
+ shogun.1.d: "Japan demands Vladivostok for industrial aid"
+ shogun.1.t: "Imperial Claim"
+ shogun.1.a: "§GVladivostok for some mills and peace? Seems good."
+ shogun.1.b: "§ROGGA BUGGA I MUST FIGHT FOR SHITHOLE IN THE EAST"
+ askar_Shogun_vols: "New Era for Japan"
+ MAN_aluminum: "Imperial Aluminum"
+ JAP_alliance_with_siam: "Annex Siam"
+ askar_manchu_project_monkey_emoji: "§R!OGGA BOOOGGA READ THIS YOU GORILLA!§W\nThis focus gets §Gauto-completed§W after §RJapan§W does their first political focus\n§R!OGGA BOOOGGA READ THIS YOU GORILLA!§W"
+ 
+ #HOST TOOL
+ askar_host_tool_command_power_idea: "Host Tool CP Bonus"
+ 
+ #UK COMMIE
+ ENG_askar_ireland: "Liberate the Irish Workers"
+ ASKAR_ENG_Decolonization_tt: "§CYou §RWON'T§C release anything. Decolonizing will only §GREMOVE§C the incoming civil war.§W"
+ ENG_follow_moscow: "Game Ruining Speedrun any %"
+ ENG_soviet_cooperation: "Enact Fast Game"
+ ASKAR_ENG_Soviet_tt: "This will give both of you wargoals on Germany"
+ ENG_askar_ireland_comp: "Integrate the Irish Commune"
+ ENG_askar_ireland_comp_desc: "Compliance Yo"
+ Askar_dday_planning: "Planning bonus for Dday if Ireland dead *Legacy*"
+ Askar_dday_chad: "Create Chad puppet"
+ Askar_dday_nigeria: "Create Nigeria puppet"
+ Askar_dday_niger: "Create Niger puppet"
+ Askar_dday_israel: "Create Israel puppet"
+
+ #RANDOM GLOBAL SPIRITS & DECISIONS
+ askar_democratic_wargoals_and_vols: "Democracy on Offense"
+ askar_infinite_vols: "Lots of vols"
+ askar_germany_is_romania_trolling_cat: "Is my Romania Trolling?"
+ askar_germany_is_romania_trolling: "Let's see if they research fuel lmao"
+ askar_faction_deterrence_replace_buff: "Fortified Deterrence"
+ 
+
+ 
+ #COMPLIANCE MODIFIERS AS KAR MOD
+ ENG_reorganized_departments: "Reoganizing Departments"
+ EU_reorganized_departments: "Reoganizing Departments"
+ EU2_reorganized_departments: "Reoganizing Departments"
+ 
+ #DYNAMIC MODIFIERS
+ askar_clownfront: "The Clownfront"
+ askar_no_deleting_factories_on_annex: "A thing that unbugs factories getting removed on Annexation"
+ 
+ #RANDOM EVENTS
+ askar.2.t: "Most Important Changes"
+ askar.2.a: "I ain't readin that sheet *deformed blacksoyjak*"
+ askar.2.desc: "§BMasterful Blitz§b in the §BMobile Warfare Grand Doctrine§W it now counters §BGuerilla Warfare§W + §BFree templates.§W\n- Katyushas have higher §BAttack §Wbut more §Bterrain debuffs.§W\n- Non-Hist paths are adjusted to be not troll paths but playable, even §BTsarist Russia§W. Cheaper §BAircraft§W in Resources.§W\n- No §BSpecial Forces§W limit.§W\n- Gaining traits doesn't slow getting new ones; however, §BAdaptable is 15% instead of 30%.§W\n- §BAmtracks§W are not §BSpecial Forces§W.\n- Changing ideology doesn't reduce §Bcompliance§W, but §BUK §Wand §BFRA§W can't spawn §Bcollab govs.§W \n- Tanks Hard Attack stats have been slightly reduced.§W."
+ askar.1.a: "Crazy Hamburger"
+ askar.1.t: "SSSR embraces the New Economic Policy!"
+ askar.1.desc: "In a dramatic turn of events following the conclusion of the Soviet Civil War, the Right Opposition has emerged victorious and assumed control, bringing about a seismic shift in the economic landscape. The newly empowered leadership has wasted no time in enacting a series of bold reforms, introducing the New Economic Policy (NEP) as a cornerstone of their vision for the nation.The NEP, spearheaded by the Right Opposition, signifies a departure from traditional centralized planning, embracing market-oriented measures to revitalize the Soviet economy."
+ romaniatroll.1.t: "Halo Romania?"
+ romaniatroll.1.d: "No Fuel = No Plane, No Tank, Big Sad."
+ romaniatroll.1.a: "Thinking Emoji"
+ 
+ #CONGO&YUGO DEBUFF
+ askar_Congo: "Congo Build"
+ askar_Yugo_reunite: "Recent reunification"
+ 
+ #TEMPLATES DECISIONS EVERYONE
+ division_templates: "Templates for Apes"
+ division_template_1: "MP"
+ division_template_2: "1 DIV TRAINING"
+ division_template_goryl_1: "Tank & AA"
+ division_template_goryl_2: "Tank & no AA"
+ division_template_goryl_3: "Mountineer Brick"
+ division_template_goryl_4: "Mech Marine"
+ last_stand_force_attack_mymy_decision: "Force Attack & Last Stand Gens"
+ last_stand_force_attack_mymy_decision_desc: "You can use "J" shortcut with these effectively"
+ division_template_goryl_vols: "Camel Vols"
+ 
+ #TOOLTIP FOR BALANCE CHANGES
+ askar_clicky_mech_nerf_text: "§RArmor and Mech advisor cancel each other out.§2 This is a "clicky mech" nerf. Normal Tank builds stats are unaffected.§W"
+ 
+ 
+ #ANNEX MANCHU AND MENGKUKUO
+ JAP_annex_manchuria_category: "Deal with Mongolian AI"
+ JAP_annex_manchuria_decision: "Annex AI Manchu&Mengkukuo with cores"
+ 
+ 
+ #FASCIST USA
+ askar_USA_fascist_cw: "The Second Confederacy"
+ 
+ #USA
+ askar_USA_wartime: "American Wartime Industry"
+ 
+ #SWEDEN
+ SWE_hungershield_instant_desc: "Sweden risks strikes or riots if stability is under §Y68%§!. §YWill be removed if either the following are true:§!\nHas more than §Y20§! controlled factories \nHas constructed more than §Y5§! civilian factories excluding trade\nGain §G120§! §Ypolitical power§! upon removal"
+ SWE_socialist_reforms_tt: "§YFolkhemmet§! now provides a §Yresearch§! bonus equivalent of 25% of §Y$MODIFIER_CONSUMER_GOODS_FACTOR$§!.\n§YFolkhemmet§! now provides a §Y$BONUS_PRODUCTION_EFFICIENCY_CAP_FACTOR$§! bonus equivalent of 20% of §Y$MODIFIER_CONSUMER_GOODS_FACTOR$§!."
+ #SOVIET - GERMAN ARMOR Treaty
+ askar_sov_ger_treaty: "Defected Scientists from Russia"
+ 
+ #ITALIA AIR BUFF
+ askar_ITA_airbuff: "ToA DLC compensation"
+ 
+ #PORTUGAL
+ POR_join_the_axis: "Trade Partnership with Germany"
+ askar_portugal_join_axis_buff: "Key Axis Tungsten Producer"
+ askar_spanish_resources_portugal: "§2This Focus will enable resource development in spanish territory we control.§W"
+ askar_communist_portugal_civil_war_buff: "The Iberian Wildfire"
+ askar_democratic_portugal_ideology_buff: "Democratic Shift"
+ 
+ #Israel
+ Askar_Israel_reclaim_holy_land: "Reclaim the Holy Land"
+ Askar_Israel_reclaim_holy_land_desc: "To this day, they follow their former practices. They do not worship GOD [properly]. They do not follow the laws and practices, the Teaching and Instruction that GOD enjoined upon the descendants of Jacob—who was given the name Israel."
+ Askar_Greater_Israel: "The Greater Israel"
+ Askar_Greater_Israel_desc: "xd"
+ ISR_Chadxd: "Talmud Reader"
+ askar_israel_reclaimed_the_holy_land_buff: "Army of the Chosen People"
+ Askar_ISR_Nuke_Bonus: "We wus high IQ an shieet"
+ askar_israel_reclaimed_the_holy_land_buff_nuke: "Fake it 'till you make it"
+ Askar_Greater_Israel_USA: "Claim the New World"
+ askar_israel_fent_idea: "F.E.N.T. Forward Engagement of Next-gen Tactics"
+ Askar_Greater_Israel_Fent: "Investigate the Magic White Powder"
+ askar_israel_hyperborea_idea: "Ancient Knowledge Found"
+ Askar_Greater_Israel_Hyperborea: "Expedition into Unknown"
+ 
+ #Baltics
+ Askar_Baltics_Ulaanbataar: "I love Ulaanbataar"
+ Askar_Baltics_Move_Capital: "Time to become Ulaanbataar"
+ Askar_Baltics_Ulaanbataar_desc: " "
+ Askar_baltics_resources_focus_text: "For each §2Baltic State§W you control, the effect of this focus is greatly increased."
+ 
+ #SPAIN FALANGE
+ 
+ askar_phalanx_Spain_stats: "Dominate the Americas"
+ 
+ #SPAIN Carlist
+ 
+ askar_carlist_civil_war_commitments: "Aid the Carlist Cause"
+ 
+ #LITHUANIA
+ LIT_exploit_the_international_bank: "Baltic Prosperity"
+ askar_lithuania_buff_baltic_idea: "Baltic Prosperity"
+ 
+ #POLAND
+ askar_excav_decision_cat: "Industrial Expansion"
+ askar_excav_decision_cat_desc: " "
+ askar_POL_LRL_decision_1: "Lilpop, Rau i Loewenstein Expansion"
+ askar_POL_LRL_decision_2: "Lilpop, Rau i Loewenstein Expansion"
+ askar_POL_LRL_decision_3: "Lilpop, Rau i Loewenstein Expansion"
+ askar_POL_LRL_decision_4: "Lilpop, Rau i Loewenstein Expansion"
+ askar_Poland_coal_decision_1: "Expand Coal Mines in Katowice"
+ askar_Poland_coal_decision_2: "Expand Coal Mines in Galicia"
+ askar_lithuania_pol_sov: "§RBalance Reasons compensation for Soviets§W."
+ Karl_Albrecht_Aryan_Gigachad: "§0Karl Albrecht§W is a §CVery Powerful General§W"
+ Karl_Albrecht_Hussars: "The §0Royal Guard§W Cavalry units are truly second to none, they are a §RLocked Template§C Veterans §W36W"
+ Romanov_Poland_Army_Claim_Russia: "A §0Vast Army§W of White Exiles and Siberian Polish Exiles will appear in §RPoland§W for a final strike to free §GRussia§W and Unite the §0Slavs§W. §CThe Army will consist of 6 smaller Siberian Exiles Penal Battalions and 12 Medium Sized Mountineer White Exiles Infantry.§W All of these division templates are unlocked and deletable"
+ POL_finish_the_four_year_plan_ASKAR: "Finish the Four Year Plan"
+ 
+ #ESTONIA
+ askar_estonia_buff_fascist: "Baltic Unity" 
+ askar_estonia_buff_fascist_idea: "Baltic Unity"
+ 
+ #LATVIA
+ gigachad_force_attack_latvia: "§0Latvia§Y can use the §REmpowered Force Attack§Y. Same as the Chinese one.§W"
+ 
+ 
+ #ANARCHIST Spain
+ askar_cnt_vols: "The Global Struggle"
+ SPR_plant_the_seeds_of_revolution: "Rally the World"
+ askar_anarchist_spain_liberation_buff: "Mass Radical Enlistment"
+ 
+ #SPAIN SPIRIT RIGHT SIDE
+ askar_popularfrontsprbalance: "The Iberian Struggle"
+ Askar_Spain_Event.1.t: "The Iberian Struggle"
+ Askar_Spain_Event.1.d: "Tensions rise across Spain as political divisions deepen. The fragile balance between left and right begins to crumble, and the government’s grip on power weakens. The country teeters on the brink of chaos once more."
+ Askar_Spain_Event.1.a: "We stand against tyranny, together!"
+ askar_spain_event_wyjasnionko_dla_malp: "§WThis event provides §G10% War Support§W to these countries for §Y70 days§W"
+ 
+ #SAF
+ 
+ SAF_history_of_segregation_3: "History of Segregation"
+ SAF_askar_tank_focus: "Extensive Tank Effort"
+ SAF_askar_tank_focus_desc: "Make Tank. Tank go boom."
+ SAF_tank_askar_name: "South African Tank Program"
+ 
+ #MEXICO
+ 
+ askar_funnymaelrequest: "Third Mexican Empire"
+ askar_funnymaelrequest_desc: "You flip like a burger to non aligned"
+ 
+ #MONARCHIST UK
+ ENG_isolate_the_mediterranean_threat: "Designate Infrastructure For Military"
+ askar_King_UK_slots: "King's Mitilary Expansion Decree"
+ ENG_noninterference_treaty_with_germany: "Militarize The Royal Guard"
+ askar_King_UK_army: "Royal Guard"
+ 
+ #DIFFICULTY LEVELS ASKAR
+ FE_DIFFICULTY_VERY_EASY: "UwU"
+ FE_DIFFICULTY_EASY: "Wholesome"
+ FE_DIFFICULTY_HARD: "Elite AI"
+ FE_DIFFICULTY_VERY_HARD: "Hardcore AI"
+ 
+ #Smieszne nowe guziki
+ SOV_XD1_Centre: "The Centre"
+ SOV_XD1_Leftop: "The Left Opposition"
+ SOV_XD1_Rightop: "The Right Opposition"
+ SOV_XD1_Romanov: "Romanov White Exiles"
+ SOV_XD1_Fascist: "Fascist White Exiles"
+ SOV_XD1_Demo: "Democratic White Exiles"
+ 
+ #GERMANY
+ askar_GER_kaiser_war_justify: "Imperial Ambitions"
+ GER_strasserism_relevant_in_germany_flag: "§RPrevious §0Nazi Leadership§R has been executed and Strasserites have risen in popularity§W"
+ askar_germany_left_side_eco_coal_buff: "Transportation Problem Solved"
+ askar_Germany_coal_decision_1: "Expanding The Coal Mines"
+ askar_Germany_coal_decision_2: "Expanding The Coal Mines"
+ askar_germany_luftwaffe_ac_buff: "Oberkommando der Luftwaffe"
+ GER_the_triumphant_will: "Take the L in Grace and Humility"
+ GER_askar_trade_autarky: "Trade more with our Allies"
+ askar_GER_autarky: "Faction Autarky"
+ GER_integrate_volkskommissariats_askar: "In §0As Kar Mod§W this decision gives you §Gcores§W in all states of the country and 1 building slot.§W"
+ GER_askar_kaiser_gold_1: "Donation from the Kaiser"
+ GER_askar_kaiser_gold_2: "Freikorps social fund"
+ GER_askar_kaiser_gold_3: "Pan-Germanic Aristocracy commits to the cause"
+ GER_askar_commie_gold_1: "Proletarian Solidarity"
+ GER_askar_commie_gold_2: "Collectivization Process"
+ GER_askar_commie_gold_3: "The Internationale Funding"
+ GER_alt_hist_auto_focus_lol_1: "§0The Royal Military is currently consolidating our power§W"
+ GER_kaiser_alt_hist_auto_focus_lol: "The Royal Military"
+ GER_alt_hist_auto_focus_lol_2: "§0The Royal Military will consolidate over time§W"
+ GER_Kaiser_Originator: "The Royal Military"
+ GER_Commie_Originator: "The Proletariat"
+ GER_commie_auto_focus_lol_1: "§RThe Trade Unions are organizing themselfs§W"
+ GER_commie_auto_focus_lol_2: "§RThe Trade Unions will need more time to organize§W"
+ STR_Railways_for_barb: "This focus will build x3 lvl 5 Railways towards Soviets/Russia if you are in control of Poland"
+ STR_Heavy_Industry_Bonus: "Heavy Industry"
+ askar_STR_SA_1: "Sturmabteilung"
+ askar_STR_SA_2: "Sturmabteilung"
+ askar_STR_SA_3: "Sturmabteilung"
+ STR_Chad_1: "Beating Heart of the Revolution"
+ STR_Chad_2: "Spiritualist Vanguard of the People"
+ GER_strasser_4: "Leader of the People"
+ GER_strasser_4_desc: ""
+ GER_strasser_4XD: "Speech at Regensburg"
+ GER_strasser_4XD_desc: ""
+ GER_strasser_socialism: "Prevent a Reactionary Takeover"
+ GER_strasser_socialism_desc: ""
+ GER_strasser_1: "Accelerate the War Economy"
+ GER_strasser_1_desc: ""
+ GER_strasser_1XD: "Outlaw Unemployment"
+ GER_strasser_1XD_desc: ""
+ GER_strasser_1XD3: "Millions Must Work"
+ GER_strasser_1XD3_desc: ""
+ GER_strasser_1XD2: "Administrative Federalization"
+ GER_strasser_1XD2_desc: ""
+ GER_strasser_nationalize_all: "Nationalize All Private Assets"
+ GER_strasser_nationalize_all_desc: ""
+ GER_strasser_1XD5: "Agricultural Revolution"
+ GER_strasser_1XD5_desc: ""
+ GER_strasser_1XD6: "Great Eastern Railway"
+ GER_strasser_1XD6_desc: ""
+ GER_strasser_1XD7: "The Strasserist Heavy Industry"
+ GER_strasser_1XD7_desc: ""
+ GER_strasser_3: "Revival of the SA"
+ GER_strasser_3_desc: ""
+ GER_strasser_3XD: "SA to the Front"
+ GER_strasser_3XD_desc: ""
+ GER_strasser_3XD2: "Maintain Order"
+ GER_strasser_3XD2_desc: ""
+ GER_strasser_3XD3: "Police Reform"
+ GER_strasser_3XD3_desc: ""
+ askar_STR_Civ_Admin_1: "Locally Organized Police Force"
+ STR_Liberated_workers: "You can now use §RLiberated Workers§W Occupation Law"
+ GER_strasser_3XD4: "The Great War of Worker Liberation"
+ GER_strasser_3XD4_desc: ""
+ GER_strasser_look_east: "The Great Eastern Liberation"
+ GER_strasser_look_east_desc: ""
+ GER_strasser_2XD5: "The Brave New World"
+ GER_strasser_2XD5_desc: ""
+ askar_STR_Eco_1: "Economy Chained by Total War"
+ askar_STR_Eco_2: "Economy Chained by Total War"
+ askar_STR_Eco_3: "Economy Chained by Total War"
+ askar_STR_Eco_Federalization: "Administrative Federalization"
+ askar_STR_Eco_Nationalization: "Private Sector Diminished"
+ askar_STR_Eco_Agriculture: "Peasant Worker Unions"
+ GER_strasser_Austria: "The Austrian Question"
+ GER_strasser_Austria_desc: "Austria wus german an shieet"
+ GER_strasser_2XD: "Rafity the National Socialist Union"
+ GER_strasser_da_joooos: "The Post-War Relocation Solution"
+ GER_STR_faction: "National Socialist Union"
+ GER_strasser_czech_and_claims: "Refuse Permanent Territorial Loses"
+ STR_Brave_New_World: "You will get §C75% Compliance§W on all Soviet states occupied by You"
+ askar_STR_barb_buff: "The Great Eastern Liberation"
+ askar_GER_duchies_puppets: "Grand Duchy"
+ askar_grand_duchies_opis: "§REastern§W §CGrand Duchies§W Spawn with Troops, Doctrine and a National Spirit as they are on the §RRussian Frontier§W"
+ askar_grand_duchies_opis_west: "§2Western §CGrand Duchies§W Gain a National Spirit giving you 50% of their Economy"
+ GER_strasser_agricultural_boom: "Embrace the Agrarian Expansion"
+ GER_strasser_agricultural_boom_desc: ""
+ GER_strasser_economic_growth: "Embrace the Industrial Expansion"
+ GER_strasser_economic_growth_desc: ""
+ askar_str_agrarian_buff: "Agrarian Union Logistics Support"
+ askar_str_industrial_buff: "We Have Only One Chance"
+ askar_GER_SS_buff: "Mass SS Recruitment"
+ askar_GER_SS_Generals_Text: "§2All 4 of these Generals will spawn with Inf.Leader, Ambusher and Inflexible Strategist traits as well as increased division cap.§W"
+ askar_GER_SS_Spawn_ins_militia_Text: "Create §Y10 German Militia§! units"
+ askar_str_end_is_near_debuff: "Our end is near..."
+ GER_strasser_victory: "Keep Moving Forward"
+ 
+ #PARAGUAY
+ GUAY_penal_battalions_tt: "You will §Ggain§W 9 20W&Sup Arty Penals Regulars also Adds §RPenals Battalions§W as §GTech§W"
+ PAR_soliders_for_prisoners: "Call of Agartha"
+ 
+ #ICELAND
+ ICE_Askar_Cores: "Return to the Homeland"
+ ICE_Askar_Cores_Sweden: "Securing Our Realm"
+ 
+ #GENERIC GAMBA
+ AsKar_Casino: "Try Your Luck!"
+ AsKar_Casino_2: "You wanna be a BIG SHOT?"
+ AsKar_Casino_3: "Wanna bet your IDK YET?"
+ AsKar_Casino_4: "Wanna bet your Army?"
+ askar_gamba: "BIG SHOT"
+ askar_gamba_2: "Big Shot"
+ askar_gamba_3: "Innovation Takes Risk"
+ 
+ #YUGOSLAVIA
+ askar_Yugoslavia_coal_decision_1: "Expand Coal Mines in Dalmatia"
+ askar_Yugoslavia_coal_decision_2: "Expand Coal Mines in Northern Slovenia"
+ 
+ #ITALY
+ askar_BOP_italy_clarity_text_civil_war: "§2Achieving §GGreater Italy§2 or §RRoman Ambitions§2 will make you immune to Civil War§W"
+ askar_Roman_Empire_Crimea: "Roman Empire Frontier"
+ askar_Italy_coal_decision: "Expand Piemonte Coal Reserves"
+ 
+ #GREECE
+ gre_askar_rome_opis: "Unlocks §RRestore the Roman Empire§W decisions"
+ byz_restore_byzantine_empire_category_tt: "Unlocks §0Restore the Byzantine Empire§W decisions"
+ GRE_askar_Rome: "Avenge Justinian the Great"
+ askar_Byzantium_airforce_chad: "Blessing of Jupiter"
+ 
+ #UK
+ Askar_Imperial_Conference_Buffed: "§3AI will always accept Imperial Federation in As Kar Mod§W"
+ askar_Imperial_Federation_PP_buff: "Imperial Unity"
+ ENG_askar_core_USA: "Absorb the North American Dominion"
+ askar_cores_on_ireland_unite_the_anglophere_text: "§2This focus grants you §Gcores§2 on Ireland if its under your control.§W"
+ 
+ #TECHNOLOGY
+ askar_greek_air_research: "Greek Air Engine Effort"
+ 
+ #RAJ
+ askar_communist_india_army_buff: "The Ganges Wave"
+ #HUNGARY
+ askar_Hungary_Otto_Habsburg_army_buff: "Loyal Military"
+ askar_Hungary_tank_army_buff: "Hungarian Armored Corps"
+ askar_hun_export_the_aluminum_industry: "Sell the Aluminum to Germany for Steel"
+ askar_hun_export_the_aluminum_industry_desc: ""
+ askar_hungary_selling_alu_idea: "Heavy Industry Adjusting"
+ askar_hun_export_the_aluminum_industry_to_ita: "Sell the Aluminum to Italy for Steel"
+ askar_hun_export_the_aluminum_industry_to_ita_desc: ""
+ 
+ #BULGARIA
+ BUL_askar_flip_commie_country: "Overthrow the Government"
+ 
+ #SOUTH AMERICA
+ Askar_Trial_of_Allegiance_SA: "The Trial of Allegiance"
+ Askar_Trial_of_Allegiance_SA_desc: ""
+ Askar_SA_Research_Slot_Super_Major: "Ascend on the Global Stage"
+ 
+ #ARGENTINA
+ askar_peron_argentina_buff: "The Peronist Era"
+ 
+ #MANCHUKUO
+ askar_manchu_army_buff_from_japan: "Japanese Military Academies"
+ askar_manchu_army_puppet_path_right_buff: "Khan of Heaven Descends"
+ askar_manchu_army_puppet_path_left_buff: "Protect Jade Emperor's Lands"
+ 
+ #JAPAN
+ askar_JAP_kodoha_isolationism_txt: "§RYou will no longer be allowed to switch off §YClosed Economy§W"
+ askar_manchu_japan_focus_time_reduction: "Taking §YStrengthen the Manchu Imperial Army§W will reduce the time this focus takes to §G14§W days"
+ 
+ #RESOURCES DECISIONS
+ develop_south_american_resources_askar_argentina: "Develop Heavy Industry in Buenos Aires"
+ develop_south_american_resources_askar_argentina_2: "Develop Heavy Industry in Santa Fe"
+ develop_south_american_resources_askar_chile: "Develop Heavy Industry in Santiago"
+ develop_south_american_resources_askar_chile_2: "Develop Heavy Industry in Antofagasta"
+ develop_south_american_resources_askar_uruguay: "Develop Heavy Industry in Montevideo"
+ develop_south_american_resources_askar_colombia: "Develop Heavy Industry in Cundinamarca"
+ develop_south_american_resources_askar_brazil: "Develop Heavy Industry in Minas Gerais"
+ 
+ #COUNTRY LEADER TRAITS
+ JAP_askar_meiji_successor: "Meiji's True Successor"
+ 
+ 
+ #traits
+ No_grinding_askar: "Host has banned grinding this game"
+ No_grinding_askar_desc: "Lol,mad?"
+ #bottomtext
+ 
+ 

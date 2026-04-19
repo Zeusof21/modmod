@@ -1,0 +1,33 @@
+state = {
+	id = 649
+	name = "STATE_649"
+	resources={
+		aluminium=50
+		rubber=50
+		oil=50
+		tungsten=50
+		steel=50
+		chromium=50
+	}
+	state_category = tiny_island
+	manpower = 1
+
+	history = {
+
+		owner = WST
+		add_core_of = WST
+
+		buildings = {
+		}
+
+		victory_points = {
+			5023 1
+		}
+
+	}
+
+	provinces = { 5023 }
+	manpower = 1
+
+	local_supplies = 0.0
+}

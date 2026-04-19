@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		my_dynamic_economy = {
+        allowed = { always = yes }
+        visible = yes
+
+        modifier = {
+            consumer_goods_factor = 0.02
+        }
+
+        dynamic_modifier = {
+            modifier = my_economy_scaling
+        }
+        }
+	}
+}

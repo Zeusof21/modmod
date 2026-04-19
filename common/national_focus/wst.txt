@@ -1,0 +1,16 @@
+focus_tree = {
+	id = wst
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = WST
+		}
+	}
+	
+	initial_show_position = {
+		x = 0
+	}
+

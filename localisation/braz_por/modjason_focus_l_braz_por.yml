@@ -1,0 +1,186 @@
+﻿l_braz_por:
+
+##### mod jason focus
+
+
+POR_corespain: "Colonizar a Espanha"
+
+GRE_subjugating_the_bulgarians2: "§YColonizar o Oeste§!"
+GRE_subjugating_the_bulgarians3: "§YColonizar o Leste§!"
+
+SWE_manpower1: "§YPortas Abertas da Neutralidade§!"
+SWE_manpower1_desc: "Com a Europa mergulhando no caos político e econômico, a Suécia se posiciona como um refúgio de estabilidade. Trabalhadores e refugiados cruzam nossas fronteiras em busca de segurança — e encontram um Estado que transforma acolhimento em força nacional."
+
+SWE_manpower2: "§YAsilo aos Perseguidos da Europa§!"
+SWE_manpower2_desc: "Regimes autoritários avançam e dissidentes são forçados ao exílio. A Suécia oferece proteção a esses indivíduos, integrando-os à sociedade e ao esforço de defesa, fortalecendo a nação com homens que já não têm para onde recuar."
+
+SWE_manpower3: "§YCidadania por Serviço Militar§!"
+SWE_manpower3_desc: "A lealdade à nação deve ser provada com ação. O serviço militar passa a ser o caminho para a cidadania plena, transformando imigrantes e voluntários em defensores comprometidos da soberania sueca."
+
+
+BRA_bonus_tech_slot2: "§YPlano Nacional de Desenvolvimento Científico§!"
+BRA_bonus_tech_slot2_desc: "O Brasil precisa deixar de ser apenas fornecedor de matéria-prima. Investir em ciência e tecnologia é o passo decisivo para garantir autonomia industrial e militar no século XX."
+
+GER_the_great_turn: "§RA Vitória Final!§!"
+GER_the_great_turn_desc: "A vitória contra a conspiração bolchevista internacional é inevitável! O povo alemão está destinado a virar a guerra e vencer, a derrota é impossível!"
+
+GER_festungdesdeutschenvaterland: "Fortificar o Reich!"
+GER_festungdesdeutschenvaterland_desc: "A derrota não é uma opção, pois nossa pátria é imortal! Devemos construir uma rede impenetrável de fortificações ao longo de nossas fronteiras. Essas fortificações serão nossa grande defesa, protegendo nossa terra sagrada e provando nossa determinação inabalável. Com essa força, a vitória será nossa — o inimigo jamais passará!"
+
+GER_the_volksturm: "A Volksturm"
+GER_the_volksturm_desc: "Cada alemão deve se levantar para defender o Reich! A Volksturm unirá a nação para lutar pela vitória final! Cidadãos lutarão ao lado dos soldados nas linhas de frente. A Tempestade do Povo não será detida!"
+
+GER_the_lastattack: "ÀS LINHAS DE FRENTE!"
+GER_the_lastattack_desc: "OS VELHOS, OS JOVENS, OS FRACOS - LUTEM PELO REICH!"
+
+ENG_homedefence1: "Pelo Rei e pela Pátria!"
+ENG_homedefence1_desc: "Pelo Rei e pela Pátria, chegou a hora de defender as Ilhas Britânicas com determinação inabalável. Vamos fortificar nossas costas, controlar os céus e proteger nossas águas. Com coragem em nossos corações e a União Jack a tremular alto, a Grã-Bretanha jamais se renderá. O inimigo pode se aproximar, mas permaneceremos firmes—nossa ilha, nosso orgulho!"
+
+ENG_homedefence2: "Estoques de 1914!"
+ENG_homedefence2_desc: "Com o inimigo se aproximando, não temos escolha a não ser rearmar com o que pudermos encontrar. Os antigos estoques serão reabertos e cada arma será colocada em serviço. Nossos recursos são escassos, mas lutaremos com tudo o que temos. As Ilhas Britânicas não cairão sem uma luta desesperada."
+
+ENG_homedefence3: "Todos os súditos às armas!"
+ENG_homedefence3_desc: "Nesta hora mais sombria, todo homem e mulher deve pegar em armas para defender nossa pátria. Das cidades ao campo, todos responderão ao chamado para lutar. Não apenas soldados, mas todos os súditos do reino se juntarão à luta. As Ilhas Britânicas permanecerão desafiantes, e lutaremos até o fim, pelo Rei e pela Pátria!"
+
+ENG_homedefence4: "A Última Defesa pela Liberdade!"
+ENG_homedefence4_desc: "Como Winston Churchill proclamou: Lutaremos nas praias, lutaremos nos campos de aterrissagem, lutaremos nos campos e nas ruas, lutaremos nas colinas; nunca nos renderemos. Agora, com nossas costas contra a parede, devemos atender a este chamado às armas. As Ilhas Britânicas resistirão, e lutaremos pela nossa sobrevivência com cada respiração!"
+
+ENG_annexcanada: "Nós Continuaremos até o Fim!"
+ENG_annexcanada_desc: "Então, nosso Império além-mar, armado e protegido pela Frota Britânica, continuará a luta, até que, no tempo certo de Deus, o Novo Mundo, com todo o seu poder e força, venha em nosso socorro e liberte o antigo!"
+
+ENG_annexcanada2: "Fábricas de Armas no Canadá"
+ENG_annexcanada2_desc: "Após a queda de nossa pátria, as fábricas de armas no Canadá tornam-se vitais para a nossa resistência. O Reino Unido precisa aproveitar sua infraestrutura no Canadá para restaurar sua produção de equipamentos militares e garantir que nossas forças armadas possam resistir à invasão que tomou nossa terra natal."
+
+ENG_annexcanada3: "Transferência de Produção de Aviões"
+ENG_annexcanada3_desc: "Com as forças britânicas dispersas, a reconstrução de centros de treinamento militar no Canadá se torna uma prioridade. Ao fortalecer nossas instalações de treinamento, podemos garantir que nossos soldados sejam preparados para combater as forças inimigas com habilidade e determinação, preparando-os para a retaliação contra os agressores."
+
+ENG_annexcanada4: "Defesa Nacional Canadense"
+ENG_annexcanada4_desc: "Com o Reino Unido em exílio e o Canadá como nosso último bastião, devemos concentrar nossos esforços na construção de uma força de defesa robusta. Fortificar as províncias canadenses com bases militares, instalações de defesa e armamento pesado será crucial para garantir nossa sobrevivência e resistência contra qualquer invasão em nosso novo território."
+
+ENG_annexcanada5: "Fábricas Civis no Canadá"
+ENG_annexcanada5_desc: "Após a queda da ilha principal, é essencial reativar as fábricas no Canadá. Com isso, podemos reconstruir nossa infraestrutura e fornecer bens necessários para sustentar a resistência e preparar o Reino Unido para a recuperação e retaliação."
+
+ENG_annexusa: "Guiar os Aliados"
+ENG_annexusa_desc: "A instabilidade interna e o desgaste causado pelo conflito contra Alemanha, Itália e Japão clama por uma luta conjunta, abrindo caminho para uma ação decisiva que pode alterar o equilíbrio de poder na guerra. Este foco representa uma manobra ousada para expandir nossa influência e consolidar o controle dos aliados e do rumo da guerra."
+
+GER_puppetitaly: "Guiar a Italia"
+GER_puppetitaly_desc: "A prolongada instabilidade política e militar na Itália ameaça a eficiência do esforço de guerra do Eixo. Assumir o controle direto sobre o governo italiano permitirá uma condução mais coordenada das operações no Mediterrâneo e uma reorganização eficiente da península sob nossa supervisão. Esta medida garantirá a lealdade de Roma"
+
+GER_puppethungary: "Assegurar a Hungria"
+GER_puppethungary_desc: "A Hungria deve seguir nossa liderança para fortalecer a unidade do Eixo na Europa Central."
+
+GER_puppetrom: "Assegurar a Romênia"
+GER_puppetrom_desc: "A Romênia será integrada à nossa esfera, garantindo seus recursos e lealdade ao Eixo."
+
+SOV_arms1: "§YArmem Todos os Homens!§!"
+SOV_arms1_desc: "A situação é crítica. Cada metro de solo soviético perdido é uma ferida na alma da Revolução. As ordens do camarada Stalin são claras: não há mais reservas, não há mais tempo — todos os estoques devem ser utilizados, cada cidadão capaz deve portar uma arma. Das trincheiras aos campos, dos jovens aos veteranos, da retaguarda ao front"
+
+SOV_arms3: "§RAbrir os Depósitos da Grande Guerra!§!"
+SOV_arms3_desc: "Os arsenais esquecidos da última grande guerra ainda guardam rifles, munições e equipamentos que podem servir à luta atual. Em tempos de necessidade, até as relíquias do passado devem ser empunhadas pelo soldado soviético. Cada arma conta — e a Pátria exige tudo de nós."
+
+SOV_arms5: "§RO Volga Não Cairá!§!"
+SOV_arms5_desc: "Com Moscou em ruínas e Leningrado silenciada, resta apenas Stalingrado — último bastião da Revolução, último suspiro da Pátria. Cada fábrica, cada porão, cada rua se torna uma linha de produção e resistência. O aço não para. Milhões de armas serão forjadas aqui, onde a Mãe Pátria resiste com sangue, suor e fogo. Se Stalingrado tombar, tudo se perde. Mas ela não cairá."
+
+SOV_arms6: "§ROur Blood, Our Soil!§!"
+SOV_arms6_desc: "Moscou, Leningrado, Stalingrado — perdidas. Mas a Revolução vive. O sangue derramado clama por vingança, e a terra traída será reconquistada pela vontade inquebrantável do povo. O Comitê distribui armas em massa: cada camarada receberá o instrumento de sua libertação. Lutaremos com fé socialista no coração, pois esta guerra é pelo futuro da humanidade. Nosso sangue, nossa terra!"
+
+SOV_arms4: "§RMobilização Total para a Vitória§!"
+SOV_arms4_desc: "A Pátria exige tudo. Oficinas civis são convertidas, prisioneiros trabalham sem cessar, e cada fábrica se torna uma extensão do front. Armas, ferramentas, suprimentos — produzimos dia e noite, sem descanso. O Exército Vermelho será armado. O povo soviético não lutará de mãos vazias."
+
+SOV_arms2: "§YReforçar a Linha de Defesa!§!"
+SOV_arms2_desc: "O avanço inimigo mostrou a vulnerabilidade de nossas tropas frente à artilharia mecanizada e bombardeios aéreos constantes. O Alto Comando, sob orientação do camarada Stalin, ordena a produção em massa de canhões antitanque e baterias antiaéreas.Nossos soldados não enfrentarão tanques e aviões com as mãos vazias!"
+
+SOV_annexmong: "§YUnião Irrevogável dos Povos Socialistas§!"
+SOV_annexmong_desc: "A Mongólia, fiel aliada do povo soviético, resistiu bravamente às ameaças imperialistas e às maquinações fascistas. Agora, em nome da solidariedade proletária e da defesa mútua da Revolução, avançamos para formalizar nossa união. Simbolizando o espírito indestrutível da fraternidade entre os povos trabalhadores."
+
+SOV_annexper: "§YO Corredor do Cáucaso§!"
+SOV_annexper_desc: "Com a Pátria sob cerco e os fascistas avançando impiedosamente, não podemos nos dar ao luxo de permitir vulnerabilidades ao sul. O Irã, atolado em neutralidade ambígua e influências estrangeiras, representa uma ameaça potencial à segurança de nossas fronteiras e uma oportunidade vital para garantir suprimentos."
+
+SOV_puppetafg: "§YAssegurar o Flanco Sul§!"
+SOV_puppetafg_desc: "Em meio à guerra patriótica contra o fascismo, asseguramos nosso flanco sul estabelecendo um governo fantoche no Afeganistão. Assim como no Irã, garantimos uma barreira firme contra invasores e protegemos a Mãe Pátria."
+
+SOV_war_mobilisation: "§YA Grande Guerra Patriótica§!"
+SOV_war_mobilisation_desc: "Chegou a hora de mobilizar nossa grande nação para uma guerra total. Devemos usar todos os nossos recursos e nosso povo para resistir ao invasor fascista e garantir a sobrevivência da União Soviética."
+
+SOV_frontline_mob: "Mobilização da Linha de Frente"
+SOV_frontline_mob_desc: "Começaremos mobilizando a primeira onda de nossas reservas e preparando-as para um rápido envio à linha de frente."
+
+SOV_fareast_reserves: "Redirecionar Todas as Reservas do Extremo Oriente"
+SOV_fareast_reserves_desc: "Devemos transferir toda a mão de obra disponível do Extremo Oriente para a Frente Ocidental, onde são urgentemente necessárias para conter o avanço inimigo."
+
+SOV_slacken_armor: "Flexibilizar os Padrões de Blindados"
+SOV_slacken_armor_desc: "Ao reduzir nossos padrões de produção para veículos blindados, podemos aumentar a produção e colocar mais tanques em campo em menos tempo. Quantidade também é qualidade."
+
+SOV_study_our_losses: "Aprender com Nossas Perdas"
+SOV_study_our_losses_desc: "Cada derrota é uma lição. Devemos analisar nossas falhas e nos adaptar rapidamente para superar o inimigo com táticas superiores e resiliência."
+
+SOV_slacken_inf: "Flexibilizar os Padrões de Infantaria"
+SOV_slacken_inf_desc: "Reduziremos o tempo de treinamento e os padrões de equipamento de nossa infantaria para reconstituir rapidamente nossas forças e evitar o colapso da linha de frente."
+
+SOV_coordinate_industry: "Melhorar a Coordenação Industrial"
+SOV_coordinate_industry_desc: "Uma melhor coordenação entre nossos planejadores militares e industriais irá agilizar a produção e ajudar a manter as linhas de suprimento sob a pressão da guerra."
+
+british_DEFENCE: "Nunca nos renderemos!"
+
+GER_replace_hitler_with_himmler: "§0O Golpe da SS§!"
+GER_replace_hitler_with_himmler_desc: "Após anos de preparação, Himmler ativa seu plano secreto. Tropas da Waffen-SS marcham sobre Berlim, desarmam a Wehrmacht e dissolvem o Reichstag. O poder é tomado..."
+
+GER_replace_hitler_with_himmler2: "Fundação da Ordenstaat Germania"
+GER_replace_hitler_with_himmler2_desc: "Himmler proclama a criação de um novo estado sagrado — Germania — onde a SS é a autoridade máxima, e o Volk é purificado tanto fisicamente quanto espiritualmente. As velhas instituições são abolidas."
+
+GER_replace_hitler_with_himmler_tt:0 "§0Tropas da Waffen-SS marcham sobre Berlim, desarmam a Wehrmacht e dissolvem o Reichstag. O poder é tomado...§!"
+GER_replace_hitler_with_himmler2_tt:0 "§0Nas cinzas do velho Reich, ergue-se uma nova ordem...§!" 
+
+GER_replace_goebbels: "§RO Nacional Socialista§!"
+GER_replace_goebbels_desc: "Quando a Nação mais precisava de direção, foi a voz do Reich que guiou as massas. Goebbels, fiel discípulo do Führer, assume o comando não pela força, mas pela fé do povo. Sob sua liderança, a chama do Nacional-Socialismo arde mais forte do que nunca."
+
+GER_replace_goebbels2: "O Estado Nacional-Socialista"
+GER_replace_goebbels2_desc: "Goebbels declara o nascimento de uma nova era — onde cada palavra é uma arma, cada ideia é uma fortaleza. O Reich renasce como um império de convicção absoluta, onde o Espírito Alemão é celebrado, e a Vontade do Povo se torna lei sagrada."
+
+SOV_moscow_heavy_tanks1: "Deploy Heavy Tank Divisions"
+SOV_moscow_heavy_tanks1_desc: "Our armored forces must be reinforced with powerful heavy tanks. By deploying Guards Heavy Tank Divisions, we will ensure that the Red Army can break through enemy defenses and withstand even the most dangerous German panzers."
+
+SOV_moscow_medium_tanks2: "Expand Heavy Tank Production"
+SOV_moscow_medium_tanks2_desc: "The lessons of the battlefield show the need for more armored strength. By standardizing and mass-producing heavy tanks, we can field additional Guards Heavy Tank Divisions to dominate the frontlines."
+
+GER_berlin_heavy_tanks1: "Deploy Heavy Panzer Divisions"
+GER_berlin_heavy_tanks1_desc: "Berlin shall be the birthplace of new armored formations. By deploying Heavy Panzer Divisions, the Wehrmacht will unleash the full potential of German engineering, bringing fear to our enemies and securing our dominance on the battlefield."
+
+GER_berlin_heavy_tanks2: "Expand Heavy Panzer Production"
+GER_berlin_heavy_tanks2_desc: "The experience gained from our first heavy armored formations shows the need for further expansion. By increasing production and standardization, more Heavy Panzer Divisions will be formed, strengthening the Wehrmacht’s armored fist."
+
+GER_replace_goebbels_tt:0 "§RA palavra se faz espada. Goebbels toma o controle...§!"
+GER_replace_goebbels2_tt:0 "§RO Reich ergue-se sobre pilares de do nacional socialismo...§!"
+
+GER_HIMMLER_GERMANY:0 "SS-Ordensstaat Germania"
+POLITICS_HEINRICH_HIMMLER_DESC:0 "Um dos mais leais seguidores de Hitler, agora tomando seu lugar no comando do Reich."
+
+GER_1940_crisis: "§YA Vitória Incompleta§!"
+GER_1940_crisis_desc: "A vitória no Ocidente não trouxe a ordem prometida. A máquina de guerra avança, mas o coração do Reich está dividido. Enquanto Hitler se isola em Berghof, rumores circulam: generais questionam, ministros disputam, e a SS se arma. Uma ruptura se aproxima. O poder será desafiado — e tomado."
+GER_1940_crisis_tt: "§YAbre caminho para disputas internas pelo controle do Reich...§!"
+
+#### TOOLTIP ####
+ sov_2_plan_tt:0 "§GDeclarar o fim antecipado do Segundo Plano Quinquenal concederá um bônus de Estabilidade§!\n"
+ SOV_ural_move_tt:0 "§GPreparar a evacuação de nossas fábricas para os Urais ajudará muito em caso de guerra§!\n"
+ SOV_great_purge_tt3:0 "§RIsto lhe dará§!§Y Oficiais Expurgados §!§Rpor 3 anos e§! §YAlto Comando Expurgado§!§R por 5 anos.§!\n"
+ SOV_militia_tt:0 "Formar Milícias Operárias, gerando §Y40 Divisões de Milícia§! em Moscou"
+ SOV_emergency_mob_tt:0 "Formar Batalhões Penais, gerando §Y60 Divisões de Milícia§! nos Urais"
+ SOV_relocate_industry_from_kharkov_tt:0 "§REsses efeitos exigem o controle de Kharkov quando a decisão expirar.§!"
+ SOV_relocate_industry_from_minsk_tt:0 "§REsses efeitos exigem o controle de Minsk quando a decisão expirar.§!"
+ SOV_relocate_industry_from_kiev_tt:0 "§REsses efeitos exigem o controle de Kiev quando a decisão expirar.§!"
+ SOV_defend_leningrad_tt:0 "Mobilizar reservistas locais na cidade, gerando §Y20 Divisões de Reservistas§!"
+ SOV_defend_stalingrad_tt:0 "Mobilizar reservistas locais na cidade, gerando §Y40 Divisões de Reservistas§!"
+ SOV_defend_moscow_tt:0 "Mobilizar reservistas locais na cidade, gerando §Y30 Divisões de Reservistas§!"
+ SOV_slacken_inf_tt:0 "§GReduz o custo de todos os batalhões de infantaria em 20 rifles e 5 equipamentos de esquadrão, além de reduzir o custo de Guarnições/Milícias em 15 rifles§!"
+ SOV_slacken_armor_tt:0 "§GReduz em 20% o equipamento necessário para todos os batalhões de blindados, motorizados e mecanizados da linha de frente§!"
+ sov_ural_move:0 "Nossa indústria foi preparada para evacuação"
+ SOV_frontline_mob_tt:0 "Cria §Y4 Divisões de Infantaria§! em cada estado da linha de frente"
+ SOV_frontline_mob_tt2:0 "Cria §Y3 Divisões de Infantaria§! em cada estado da linha de frente"
+ SOV_propaganda_more_metal_tt:0 "Concede §G+10§! de §Y$state_resource_aluminium$§!, §Y$state_resource_tungsten$§!, §Y$state_resource_steel$§! ou §Y$state_resource_chromium$§! para cada estado que produza esses recursos."
+ SOV_CONQ_TT:0 "Concede 80% de Conformidade em todos os Estados de Molotov controlados, valor que diminuirá durante a Barbarossa"
+ SOV_cowed_by_stalin_trait_tt:0 "Este traço será removido ao concluir o foco §Y$SOV_order_270$§!."
+ dismantle_surrender_tt:0 "§RAo seguir esse caminho, o Limite de Progresso de Rendição aumentará para alguns focos, como compensação pela obtenção de vários VP's com núcleo.§!"
+ SOV_RG_div_cap_2_tt:0 "Aumenta o limite de modelo de §YTanquês da Guarda Vermelha§! em §G+2§!."
+ SOV_RG_div_cap_4_tt:0 "Aumenta o limite de modelo de §YTanquês da Guarda Vermelha§! em §G+4§!."
+ rg_hq_company:0 "Quartel-General da Guarda Vermelha"
+ SOV_lessons_of_war2_ns_tt:0 "Modify §Y$SOV_the_red_army_dynamic_modifier$§! by \n$MODIFIER_ARMY_ORG$: §G+10.0%§! \n\n"

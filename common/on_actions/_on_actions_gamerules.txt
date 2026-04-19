@@ -1,0 +1,597 @@
+on_actions = {
+    on_startup = {
+        effect = {
+
+            if = {
+                limit = {
+                    has_game_rule = {
+                        rule = wasteland
+                        option = yes
+                    }
+                }
+                SOV = {
+                    annex_country = { target = TAN transfer_troops = yes }
+                }
+                FRA = {
+                    annex_country = { target = LEB transfer_troops = yes }
+                    annex_country = { target = SYR transfer_troops = yes }
+                }
+                ENG = {
+                    annex_country = { target = LIB transfer_troops = yes }
+                    annex_country = { target = KUW transfer_troops = yes }
+                    annex_country = { target = PAL transfer_troops = yes }
+                    annex_country = { target = JOR transfer_troops = yes }
+                }
+                BEL = {
+                    annex_country = { target = COG transfer_troops = yes }
+                }
+                RAJ = {
+                    add_state_core = 323
+                    add_state_core = 995
+                    add_state_core = 996
+                    add_state_core = 990
+                    add_state_core = 324
+                    add_state_core = 997
+                    add_state_core = 288
+                    add_state_core = 640
+                    add_state_core = 998
+                    add_state_core = 999
+                    add_state_core = 993
+                    add_state_core = 994
+                    annex_country = { target = BRM transfer_troops = yes }
+                    annex_country = { target = BHU transfer_troops = yes }
+                    annex_country = { target = NEP transfer_troops = yes }
+                }
+
+                BRA = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                COL = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                COS = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                NIC = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                DOM = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                GUA = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                ECU = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                PRU = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                BOL = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                CHL = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                PAR = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                ARG = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                URG = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                ELS = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                HAI = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                CUB = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                HON = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                VEN = {
+                    every_core_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+
+                PAN = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+            if = {
+                limit = {
+                    has_game_rule = {
+                        rule = asian_countries
+                        option = yes
+                    }
+                }
+
+                RAJ = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                BRM = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                BHU = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                SIA = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                NEP = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                YUN = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                GXC = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                SHX = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                MON = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                JAP = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                PRC = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                CHI = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+
+                TIB = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                SIK = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                XSM = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                MAN = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                MEN = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                PHI = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                INS = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+
+                MAL = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                AST = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                NZL = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+}
+            if = {
+                limit = {
+                    has_game_rule = {
+                        rule = european_countries
+                        option = yes
+                    }
+                }
+		978 = { set_demilitarized_zone = no } 
+		42 = { set_demilitarized_zone = no } 
+		51 = { set_demilitarized_zone = no }
+		145 = { set_demilitarized_zone = no }
+		341 = { set_demilitarized_zone = no } 
+		797 = { set_demilitarized_zone = no } 
+		340 = { set_demilitarized_zone = no }
+
+                GER = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                TUR = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                FRA = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                LUX = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                BEL = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                HOL = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                ENG = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                SPR = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                POR = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                SWI = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                SWE = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                AUS = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                ITA = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                HUN = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                SAF = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                ETH = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                CZE = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                POL = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                DEN = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                NOR = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                IRE = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                LIT = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                LAT = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                EST = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                SOV = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                ROM = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                YUG = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                FIN = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                BUL = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+
+                GRE = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                ALB = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+}
+            if = {
+                limit = {
+                    has_game_rule = {
+                        rule = meast
+                        option = yes
+                    }
+                }
+                AFG = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                YEM = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                OMA = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                SAU = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                IRQ = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                PER = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+            if = {
+                limit = {
+                    has_game_rule = {
+                        rule = north_america
+                        option = yes
+                    }
+                }
+                USA = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                CAN = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+                MEX = {
+                    every_controlled_state = {
+                        transfer_state_to = WST
+                        add_core_of = WST
+                    }
+                }
+}
+            if = {
+                limit = {
+                    has_game_rule = {
+                        rule = unify_china
+                        option = yes
+                    }
+                }
+                CHI = {
+                    annex_country = { target = GXC transfer_troops = yes }
+                    annex_country = { target = YUN transfer_troops = yes }
+                    annex_country = { target = XSM transfer_troops = yes }
+                    annex_country = { target = PRC transfer_troops = yes }
+                    annex_country = { target = SHX transfer_troops = yes }
+                    annex_country = { target = SIK transfer_troops = yes }
+                    annex_country = { target = TIB transfer_troops = yes }
+                }
+            }
+        }
+    }
+}
+}
+}

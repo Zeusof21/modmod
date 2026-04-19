@@ -1,0 +1,53 @@
+﻿l_english:
+
+ #SOO Optimization
+ 
+ sooo_player_was_here:0 "Jogador em Controle"
+ sooo_player_was_here_desc:0 "Este espírito não altera nenhuma mecânica. Ele apenas indica que este país está sendo controlado por um jogador. Caso queira sair deste país, utilize a decisão \"Jogador para IA\" no menu de Otimização SOO." 
+ 
+ sooo_game_speed_balance:0 "Otimização da IA"
+ sooo_game_speed_balance_desc:0 "Este país não é destinado ao modo \"Multiplayer WWII\" e está sendo controlado pela IA. Caso você seja um jogador, utilize a decisão \"IA para Jogador\" no menu de Otimização."
+ 
+ sooo_player_to_ai_to_player:0 "Decisão de Otimização"
+ sooo_player_to_ai:0 "Jogador para IA"
+ sooo_ai_to_player:0 "IA para Jogador"
+ SOO_OPTIMIZATION:0 "Otimização"
+ RULE_OPTION_SOO_HARD:0 "Ativar Otimização da IA"
+ RULE_OPTION_SOO_HARD_DESC:0 "Impede que países desnecessários prejudiquem o desempenho do jogo!"
+ RULE_OPTION_SOO_NORMAL:0 "Desativar Otimização da IA"
+ RULE_OPTION_SOO_NORMAL_DESC:0 "Experiência de jogo normal, sem ideias de otimização."
+ RULE_GROUP_SOO:0 "Otimização"
+
+ #WST
+
+ WST_fascism:0 ""
+ WST_democratic:0 ""
+ WST_neutrality:0 ""
+ WST_communism:0 ""
+ WST:0 ""
+
+#MARKET
+
+ dam_idea:0 "Desativar Mercado"
+ dam.1:0 "Mercado Internacional"
+ dam.1.t:0 "Regra do Mercado Internacional"
+ dam.1.d:0 "Ativar ou desativar"
+ dam.1.a:0 "Desativar mercado da IA"
+
+# shackles
+ remove_shackles:0 "Remover Shackles"
+ remove_shackles_desc:0 "Para manter o jogo jogável até a década de 1960, a capacidade de países menores de criar exércitos gigantes e produzir grandes quantidades de equipamento foi limitada. Caso você queira jogar com um país menor ou médio que tenha sido afetado por essas limitações, esta decisão removerá essas shackles."
+  
+ shackles.1.t:0 "Bem-vindo!"
+ shackles.1.d:0 "O late game do HoI4 costuma sofrer com quedas severas de desempenho, principalmente por causa da IA produzindo equipamentos em excesso e treinando grandes exércitos, inclusive em países muito pequenos. Esse problema fica ainda mais evidente no multiplayer.\n\nO mod AI Shackles existe para reduzir esse impacto, aplicando limites de produção e recrutamento em países menores, mantendo o jogo mais leve e estável até o fim.\n\nEssas limitações podem ser removidas gratuitamente por decisão caso você jogue com um país menor, e são retiradas automaticamente se o país entrar em guerra ou sofrer uma justificativa. Também é possível desativar o sistema desde o início, mas isso afetará negativamente a performance do jogo."
+ shackles.1.b:0 "Obrigado!"
+ shackles.1.b.d:0 "Países menores não receberão limitações."
+ shackles.1.a:0 "Restringir a IA"
+ shackles.1.a.d:0 "Países menores receberão limitações."
+ 
+ unindustrialized:0 "Não industrializado"
+ uninterested:0 "Desinteressado"
+ 
+ unshackle_congo:0 "Remover shackles do Congo"
+
+ #Vanilla Fixes

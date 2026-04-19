@@ -1,0 +1,13 @@
+﻿l_english:
+
+ ### - TRIAL OF ALLEGIANCE - ###
+ 
+ ARG_communist_faction:0 "South American International"
+ ARG_democratic_faction:0 "Monroe Entente"
+ ARG_nationalist_faction:0 "Fascist Union"
+ 
+ BRA_faction_mercosul_name:0 "Latin American Union"
+ BRA_org_american_states_faction:0 "Inter-American Treaty of Reciprocal Assistance"
+ 
+ CHL_hipanic_alliance_faction:0 "Hispanic Alliance"
+ CHL_hispanic_supremacy_pact_faction:0 "Hispanic League"

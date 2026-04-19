@@ -1,0 +1,43 @@
+﻿
+add_namespace = occupied_countries
+
+#instantiate a collabration government
+country_event = {
+	id = occupied_countries.1
+	title = occupied_countries.1.title
+	desc = occupied_countries.1.desc
+	
+	# todo lar
+	picture = GFX_report_event_canadian_soldiers
+	hidden = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = occupied_countries.1.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = occupied_countries.1.b
+		# do nothing
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+
+# create uprising
+country_event = {
+	id = occupied_countries.2
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+}

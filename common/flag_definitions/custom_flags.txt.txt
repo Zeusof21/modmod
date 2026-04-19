@@ -1,0 +1,33 @@
+flag_definition = {
+    name = "GER_fascism"
+    texture = "gfx/flags/HSS_ordenstaat_germania.tga"
+    texture_medium = "gfx/flags/HSS_ordenstaat_germania_medium.tga"
+    texture_small = "gfx/flags/HSS_ordenstaat_germania_small.tga"
+    ideology = fascism
+
+    trigger = {
+        has_country_flag = HSS_ordenstaat_germania
+    }
+}
+
+flag_definition = {
+    name = "GER_fascism"
+    texture = "gfx/flags/GER_nationalsocialist_state.tga"
+    texture_medium = "gfx/flags/HSS_ordenstaat_germania_medium.tga"
+    texture_small = "gfx/flags/HSS_ordenstaat_germania_small.tga"
+    ideology = fascism
+
+    trigger = {
+        has_country_flag = GER_nationalsocialist_state
+    }
+}
+
+flag_definition = {
+    name = "ENG_democratic"
+    texture = "gfx/flags/ENG_alliesflag.tga"
+    ideology = democratic
+
+    trigger = {
+        has_country_flag = ENG_alliesflag
+    }
+}

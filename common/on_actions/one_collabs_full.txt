@@ -1,0 +1,20 @@
+on_actions = {
+
+    on_operation_completed = { # edited on on_actions to not disrupt mods that edited on operations.txt
+
+        effect = {
+
+            if = {
+                limit = {
+                    THIS = operation_collaboration_government
+                }
+                ROOT = {
+                    set_collaboration = {
+                        target = FROM
+                        value = 1
+                    }
+                }
+            }
+        }
+    }
+}

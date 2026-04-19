@@ -1,0 +1,144 @@
+soo_optimization = {
+	name = "SOO_OPTIMIZATION"
+	group = "RULE_GROUP_SOO"
+	icon = "GFX_production_licenses"
+	default = {
+		name = SOO_HARD
+		text = "RULE_OPTION_SOO_HARD"
+		desc = "RULE_OPTION_SOO_HARD_DESC"
+	}
+	option = {
+		name = SOO_NORMAL
+		text = "RULE_OPTION_SOO_NORMAL"
+		desc = "RULE_OPTION_SOO_NORMAL_DESC"
+		allow_achievements = yes
+	}
+}
+unify_china = {
+	name = "Annex Chinese Warlords"
+	group = "RULE_GROUP_SOO"
+	icon = "GFX_decision_jap_conquer_china"
+	option = {
+		name = no
+		text = "YNo"
+		desc = "China will not be unified"
+	}
+	option = {
+		name = yes
+		text = "YYes"
+		desc = "All Chinese warlords will be annexed into Nationalist China"
+		allow_achievements = yes
+	}
+}
+wasteland = {
+	name = "Annex Useless Countries"
+	group = "RULE_GROUP_SOO"
+	icon = "GFX_decision_generic_form_nation"
+	option = {
+		name = no
+		text = "YNo"
+		desc = "Useless countries will not be annexed into one country"
+	}
+	option = {
+		name = yes
+		text = "YYes"
+		desc = "Useless countries will be annexed into one country"
+		allow_achievements = yes
+	}
+}
+meast = {
+	name = "Annex Middle East Countries"
+	group = "RULE_GROUP_SOO"
+	icon = "GFX_wargoals"
+	option = {
+		name = no
+		text = "YNo"
+		desc = "Middle east countries will not be annexed into one country"
+	}
+	option = {
+		name = yes
+		text = "YYes (Expect Turkey)"
+		desc = "Middle east countries will be annexed into one country"
+		allow_achievements = yes
+	}
+}
+asian_countries = {
+	name = "Annex Asian Countries"
+	group = "RULE_GROUP_SOO"
+	icon = "GFX_military_access_docking_rights"
+	option = {
+		name = no
+		text = "YNo"
+		desc = "Asian countries will not be annexed into one country"
+	}
+	option = {
+		name = yes
+		text = "YYes (Expect Soviet)"
+		desc = "Asian & Ocenia countries will be annexed into one country"
+		allow_achievements = yes
+	}
+}
+european_countries = {
+	name = "Annex European Countries"
+	group = "RULE_GROUP_SOO"
+	icon = "GFX_volunteers"
+	option = {
+		name = no
+		text = "YNo"
+		desc = "European countries will not be annexed into one country"
+	}
+	option = {
+		name = yes
+		text = "YYes"
+		desc = "European countries will be annexed into one country(With Colonies)"
+		allow_achievements = yes
+	}
+}
+north_america = {
+	name = "Annex North American Countries"
+	group = "RULE_GROUP_SOO"
+	icon = "GFX_guarantee_independence"
+	option = {
+		name = no
+		text = "YNo"
+		desc = "Do nothing"
+	}
+	option = {
+		name = yes
+		text = "YYes"
+		desc = "Canada Mexica Usa will be annexed into one country"
+		allow_achievements = yes
+	}
+}
+eth_war = {
+	name = "Ethiopia War"
+	group = "RULE_GROUP_SOO"
+	icon = "GFX_decision_generic_prepare_civil_war"
+	option = {
+		name = yes
+		text = "YOn"
+		desc = "The Ethiopian war will happen as normal"
+	}
+	option = {
+		name = no
+		text = "YOff"
+		desc = "Ethiopia will be annexed to Italy and the war will not happen"
+		allow_achievements = yes
+	}
+}
+international_markett = {
+	name = "International Market Rule"
+	group = "RULE_GROUP_SOO"
+	icon = "GFX_release_nations"
+	option = {
+		name = yes
+		text = "YOn"
+		desc = "Normal Market"
+	}
+	option = {
+		name = no
+		text = "YOff"
+		desc = "Market Disabled Improve Performance"
+		allow_achievements = yes
+	}
+}

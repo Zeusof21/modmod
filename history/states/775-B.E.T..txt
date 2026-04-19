@@ -1,0 +1,26 @@
+state = {
+	id = 775
+	name = "STATE_775" # BET - Borkou-Ennedi-Tibesti region
+	manpower = 1874400
+	
+	state_category = megalopolis
+
+	history = {
+
+		owner = FRA
+		add_core_of = CHA
+
+		buildings = {
+			infrastructure = 5
+		}
+		
+	}
+
+	provinces = {
+		4902 5136 10893
+	}
+	
+	buildings_max_level_factor = 1.000
+
+	local_supplies = 1.0 
+}

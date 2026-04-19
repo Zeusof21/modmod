@@ -1,0 +1,14 @@
+﻿l_english:
+
+ #Decision Categories
+ seize_factories_from_puppets_category:0 "Seize Factories from Puppets"
+ 
+ #Decisions
+ seize_factories_from_puppet_on:0 "Seize Factories from [From.GetNameDef]"
+ seize_factories_from_puppet_off:0 "Stop Seizing Factories from [From.GetNameDef]"
+ 100_manpower: "£manpower_texticon  §Y100§!"
+ 100_manpower_blocked: "£manpower_texticon  §R100§!"
+ 100_manpower_tooltip: "It costs £manpower_texticon  §Y100§! to take the decision"
+ 
+ #National Spirits
+ factories_seized_by_overlord:0 "Factories Seized by Overlord"

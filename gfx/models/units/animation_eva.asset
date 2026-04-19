@@ -1,0 +1,12 @@
+animation = {
+	name = "JAP_rei_rifle_idle_animation"
+	file = "JAP_rei_idle.anim"
+}
+animation = {
+	name = "JAP_rei_rifle_move_animation"
+	file = "JAP_rei_move.anim"
+}
+animation = {
+	name = "JAP_rei_rifle_attack_animation"
+	file = "JAP_rei_attack.anim"
+}

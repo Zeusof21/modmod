@@ -1,0 +1,79 @@
+﻿l_english:
+ 
+ ### - GENERIC - ###
+ 
+ autonomy_free:0 "Free"
+ autonomy_annex:0 "Annexed"
+ autonomy_collaboration_government:0 "Collaboration Government"
+ autonomy_occupation_zone:0 "Occupation Zone" 
+ 
+ 
+ 
+ 
+ ### - DEMOCRATIC - ###
+ 
+ autonomy_supervised_state:0 "Supervised State"
+ autonomy_dominion:0 "Self-Government"
+ autonomy_colony:0 "Limited Self-Government"
+ autonomy_puppet:0 "Governate"
+ autonomy_integrated_puppet:0 "Integrated Governate"
+ 
+ 
+ 
+ 
+ ### - COMMUNIST - ###
+ 
+ 
+ 
+ 
+ ### - FASCIST - ###
+ 
+ autonomy_satellite:0 "Client State"
+ autonomy_reichsprotectorate:0 "Protectorate"
+ autonomy_reichskommissariat:0 "Commissariat"
+ 
+ 
+
+ 
+ ### - NEUTRALITY - ###
+ 
+ autonomy_personal_union:0 "Personal Union" 
+ autonomy_austro_hungarian_subject:0 "Danubian Constituent"
+ 
+ 
+ 
+ 
+ ### - JAPAN - ###
+ 
+ autonomy_wtt_imperial_associate:0 "Imperial Associate"
+ autonomy_wtt_imperial_protectorate:0 "Imperial Protectorate"
+ autonomy_wtt_imperial_subject:1 "Imperial Subject"
+
+
+
+
+ ### - NORDIC - ###
+ 
+ autonomy_aat_defense_council_member:0 "Nordic defense council member"
+ autonomy_aat_defense_council_member:0 "Nordic Defense Council Member"
+ 
+ 
+ 
+ 
+ ### - GERMANY - ###
+ 
+ autonomy_volkskommissariat:0 "Räterepublik"
+ 
+ 
+ 
+ 
+ ### - EUROPE - ###
+ autonomy_eu_member:0 "European State"
+ 
+ 
+ 
+ 
+ 
+ ### - CHINA - ###
+ autonomy_sea_warlord_subject:0 "Warlord"
+ autonomy_sea_integrated_warlord_subject:0 "Integrated Warlord"

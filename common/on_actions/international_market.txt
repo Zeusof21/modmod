@@ -1,0 +1,26 @@
+on_actions = {
+    on_startup = {
+        effect = {
+		if ={
+		limit = {
+			has_game_rule = {
+				rule = international_markett
+				option = no
+			}			
+			}
+			every_country = { 
+			
+				country_event = dam.1
+
+				if={
+					LIMIT = {
+						 is_ai = yes
+					}
+
+				}
+				
+			}
+		  }
+        }
+    }
+}

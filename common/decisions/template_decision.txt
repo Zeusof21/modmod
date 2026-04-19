@@ -1,0 +1,2773 @@
+division_templates = {
+	
+	last_stand_force_attack_mymy_decision = {
+		icon = GFX_flame_texticon	
+
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	
+		complete_effect = {
+			create_corps_commander = {
+				gfx = mymyForceAttack
+				name = ForceAttack1
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				traits = {
+					askar_force_attack_button_trait
+				}
+			}
+			create_corps_commander = {
+				gfx = mymyForceAttack
+				name = ForceAttack2
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				traits = {
+					askar_force_attack_button_trait
+				}
+			}
+			create_corps_commander = {
+				gfx = mymyForceAttack
+				name = ForceAttack3
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				traits = {
+					askar_force_attack_button_trait
+				}
+			}
+			create_corps_commander = {
+				gfx = mymyForceAttack
+				name = ForceAttack4
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				traits = {
+					askar_force_attack_button_trait
+				}
+			}
+			create_corps_commander = {
+				gfx = mymyForceAttack
+				name = ForceAttack5
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				traits = {
+					askar_force_attack_button_trait
+				}
+			}
+			create_corps_commander = {
+				gfx = mymyLastStand
+				name = LastStand1
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				traits = {
+					askar_last_stand_button_trait
+				}
+			}
+			create_corps_commander = {
+				gfx = mymyLastStand
+				name = LastStand2
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				traits = {
+					askar_last_stand_button_trait
+				}
+			}
+			create_corps_commander = {
+				gfx = mymyLastStand
+				name = LastStand3
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				traits = {
+					askar_last_stand_button_trait
+				}
+			}
+			create_corps_commander = {
+				gfx = mymyLastStand
+				name = LastStand4
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				traits = {
+					askar_last_stand_button_trait
+				}
+			}
+			create_corps_commander = {
+				gfx = mymyLastStand
+				name = LastStand5
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				traits = {
+					askar_last_stand_button_trait 
+				}
+			}			
+		}
+	}
+	
+	division_template_goryl_vols = {
+		icon = GFX_decision_spr_garrison_control_none	
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+	
+		complete_effect = {
+			division_template = {
+				name = "Camel Vols"
+				
+				regiments = {
+					camelry = { x = 0 y = 0 }
+					camelry = { x = 0 y = 1 }
+					camelry = { x = 0 y = 2 }
+					camelry = { x = 0 y = 3 }
+					camelry = { x = 0 y = 4 }
+					
+					camelry = { x = 1 y = 0 }
+					camelry = { x = 1 y = 1 }
+					camelry = { x = 1 y = 2 }
+					
+					camelry = { x = 2 y = 0 }
+					camelry = { x = 2 y = 1 }
+					camelry = { x = 2 y = 2 }
+					camelry = { x = 2 y = 3 }
+					camelry = { x = 2 y = 4 }
+					
+					camelry = { x = 3 y = 0 }
+					camelry = { x = 3 y = 1 }
+					camelry = { x = 3 y = 2 }
+					camelry = { x = 3 y = 3 }
+					
+					camelry = { x = 4 y = 0 }
+					
+				}
+				priority = 1
+			}
+		}
+	}
+	
+	division_template_goryl_1 = {
+		icon = GFX_anti_air_texticon	
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+	
+		complete_effect = {
+			division_template = {
+				name = "Default Tank with AA"
+				
+				regiments = {
+					heavy_armor = { x = 0 y = 0 }
+					heavy_armor = { x = 0 y = 1 }
+					heavy_armor = { x = 0 y = 2 }
+					heavy_armor = { x = 0 y = 3 }
+					heavy_armor = { x = 0 y = 4 }
+					
+					heavy_armor = { x = 1 y = 0 }
+					heavy_armor = { x = 1 y = 1 }
+					heavy_armor = { x = 1 y = 2 }
+					
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 2 y = 4 }
+					
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					
+					mot_anti_air_brigade = { x = 4 y = 0 }
+					mot_anti_air_brigade = { x = 4 y = 1 }
+					
+				}
+				priority = 1
+			}
+		}
+	}
+	
+	division_template_goryl_2 = {
+		icon = GFX_heavy_tank_chassis_texticon	
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+	
+		complete_effect = {
+			division_template = {
+				name = "Default Tank without AA"
+				
+				regiments = {
+					heavy_armor = { x = 0 y = 0 }
+					heavy_armor = { x = 0 y = 1 }
+					heavy_armor = { x = 0 y = 2 }
+					heavy_armor = { x = 0 y = 3 }
+					heavy_armor = { x = 0 y = 4 }
+					
+					heavy_armor = { x = 1 y = 0 }
+					heavy_armor = { x = 1 y = 1 }
+					heavy_armor = { x = 1 y = 2 }
+					heavy_armor = { x = 1 y = 3 }
+					
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 2 y = 4 }
+					
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					
+				}
+				priority = 1
+			}
+		}
+	}
+	
+	division_template_goryl_3 = {
+		icon = GFX_anti_tank_texticon	
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+	
+		complete_effect = {
+			division_template = {
+				name = "Mountineer Brick"
+				
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }
+					mountaineers = { x = 0 y = 3 }
+					mountaineers = { x = 0 y = 4 }
+					
+					mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 1 y = 3 }
+					mountaineers = { x = 1 y = 4 }
+					
+					mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 2 y = 1 }
+					mountaineers = { x = 2 y = 2 }
+					mountaineers = { x = 2 y = 3 }
+					mountaineers = { x = 2 y = 4 }
+					
+					anti_tank_brigade = { x = 3 y = 0 }
+					anti_tank_brigade = { x = 3 y = 1 }
+					anti_tank_brigade = { x = 3 y = 2 }
+					anti_tank_brigade = { x = 3 y = 3 }
+					
+					mountaineers = { x = 4 y = 0 }
+
+				}
+				priority = 1
+			}
+		}
+	}
+	
+	division_template_goryl_4 = {
+		icon = GFX_amphibious_texticon	
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+	
+		complete_effect = {
+			division_template = {
+				name = "Mech Marine"
+				
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 0 y = 3 }
+					marine = { x = 0 y = 4 }
+					
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
+					marine = { x = 1 y = 4 }
+					
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+					marine = { x = 2 y = 3 }
+					
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_tank_brigade = { x = 4 y = 1 }
+					anti_tank_brigade = { x = 4 y = 2 }
+					anti_tank_brigade = { x = 4 y = 3 }
+					
+				}
+				priority = 1
+			}
+		}
+	}
+	
+	division_template_1 = {
+		icon = generic_police_action	
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+	
+		complete_effect = {
+			division_template = {
+				name = "Mp"
+				
+				regiments = {
+					cavalry = { x = 0 y = 0 }
+					cavalry = { x = 0 y = 1 }
+					cavalry = { x = 0 y = 2 }
+					cavalry = { x = 0 y = 3 }
+					cavalry = { x = 0 y = 4 }
+					cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+					cavalry = { x = 1 y = 2 }
+					cavalry = { x = 1 y = 3 }
+					cavalry = { x = 1 y = 4 }
+					cavalry = { x = 2 y = 0 }
+					cavalry = { x = 2 y = 1 }
+					cavalry = { x = 2 y = 2 }
+					cavalry = { x = 2 y = 3 }
+					cavalry = { x = 2 y = 4 }
+					cavalry = { x = 3 y = 0 }
+					cavalry = { x = 3 y = 1 }
+					cavalry = { x = 3 y = 2 }
+					cavalry = { x = 3 y = 3 }
+					cavalry = { x = 3 y = 4 }
+					cavalry = { x = 4 y = 0 }
+					cavalry = { x = 4 y = 1 }
+					cavalry = { x = 4 y = 2 }
+					cavalry = { x = 4 y = 3 }
+					cavalry = { x = 4 y = 4 }
+				}
+				priority = 0
+			}
+		}
+	}
+	division_template_2 = {
+		icon = GFX_motorized_texticon
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "XP"
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					infantry = { x = 2 y = 4 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+					infantry = { x = 3 y = 3 }
+					infantry = { x = 3 y = 4 }
+					infantry = { x = 4 y = 0 }
+					infantry = { x = 4 y = 1 }
+					infantry = { x = 4 y = 2 }
+					infantry = { x = 4 y = 3 }
+					infantry = { x = 4 y = 4 }
+
+				}
+
+				priority = 2
+			}
+		}
+    }
+	division_template_3 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		available = {
+			has_tech = tech_mountaineers
+			has_tech = interwar_antiair
+			has_tech = interwar_antitank
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		complete_effect = {
+			division_template = {
+				name = "Mountineer Brick with AT 1"
+
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }
+					mountaineers = { x = 0 y = 3 }
+					mountaineers = { x = 0 y = 4 }
+					
+					mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 1 y = 3 }
+					mountaineers = { x = 1 y = 4 }
+					
+					mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 2 y = 1 }
+					mountaineers = { x = 2 y = 2 }
+					mountaineers = { x = 2 y = 3 }
+					mountaineers = { x = 2 y = 4 }
+					
+					anti_tank_brigade = { x = 3 y = 0 }
+					anti_tank_brigade = { x = 3 y = 1 }
+					anti_tank_brigade = { x = 3 y = 2 }
+					anti_tank_brigade = { x = 3 y = 3 }
+					
+					mountaineers = { x = 4 y = 0 }
+
+				}
+
+				priority = 2
+			}
+		}
+    }
+	division_template_4 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			has_tech = tech_mountaineers
+			has_tech = mountaineers_combat_1
+			has_tech = interwar_antiair
+			has_tech = interwar_antitank
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Mountineer Brick with AT 2"
+
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }
+					mountaineers = { x = 0 y = 3 }
+					mountaineers = { x = 0 y = 4 }
+					
+					mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 1 y = 3 }
+					mountaineers = { x = 1 y = 4 }
+					
+					mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 2 y = 1 }
+					mountaineers = { x = 2 y = 2 }
+					mountaineers = { x = 2 y = 3 }
+					mountaineers = { x = 2 y = 4 }
+					
+					anti_tank_brigade = { x = 3 y = 0 }
+					anti_tank_brigade = { x = 3 y = 1 }
+					anti_tank_brigade = { x = 3 y = 2 }
+					anti_tank_brigade = { x = 3 y = 3 }
+					
+					mountaineers = { x = 4 y = 0 }
+					mountaineers = { x = 4 y = 1 }
+					mountaineers = { x = 4 y = 2 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	division_template_5 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+
+		available = {
+			has_tech = gwtank_chassis
+			NOT = {
+				tag = GER
+				tag = SOV
+			}
+		}
+		
+		complete_effect = {
+			division_template = {
+				name = "Heavy Tank AI"
+
+				regiments = {
+					heavy_armor = { x = 0 y = 0 }
+					heavy_armor = { x = 0 y = 1 }
+					heavy_armor = { x = 0 y = 2 }
+					heavy_armor = { x = 0 y = 3 }
+					heavy_armor = { x = 0 y = 4 }
+					
+					heavy_armor = { x = 1 y = 0 }
+					heavy_armor = { x = 1 y = 1 }
+					heavy_armor = { x = 1 y = 2 }
+					
+					motorized = { x = 2 y = 0 }
+					motorized = { x = 2 y = 1 }
+					motorized = { x = 2 y = 2 }
+					motorized = { x = 2 y = 3 }
+					motorized = { x = 2 y = 4 }
+					
+					motorized = { x = 3 y = 0 }
+					motorized = { x = 3 y = 1 }
+					motorized = { x = 3 y = 2 }
+					motorized = { x = 3 y = 3 }
+					
+					mot_anti_air_brigade = { x = 4 y = 0 }
+					mot_anti_air_brigade = { x = 4 y = 1 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	division_template_6 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			has_tech = gwtank_chassis
+			NOT = {
+				tag = GER
+				tag = SOV
+			}
+		}
+		
+		complete_effect = {
+			division_template = {
+				name = "Medium Tank AI"
+
+				regiments = {
+					medium_armor = { x = 0 y = 0 }
+					medium_armor = { x = 0 y = 1 }
+					medium_armor = { x = 0 y = 2 }
+					medium_armor = { x = 0 y = 3 }
+					medium_armor = { x = 0 y = 4 }
+					
+					medium_armor = { x = 1 y = 0 }
+					medium_armor = { x = 1 y = 1 }
+					medium_armor = { x = 1 y = 2 }
+					
+					motorized = { x = 2 y = 0 }
+					motorized = { x = 2 y = 1 }
+					motorized = { x = 2 y = 2 }
+					motorized = { x = 2 y = 3 }
+					motorized = { x = 2 y = 4 }
+					
+					motorized = { x = 3 y = 0 }
+					motorized = { x = 3 y = 1 }
+					motorized = { x = 3 y = 2 }
+					motorized = { x = 3 y = 3 }
+					
+					mot_anti_air_brigade = { x = 4 y = 0 }
+					mot_anti_air_brigade = { x = 4 y = 1 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	division_template_7 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		available = {
+			has_tech = mechanised_infantry
+			NOT = {
+				tag = GER
+				tag = SOV
+			}
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		complete_effect = {
+			division_template = {
+				name = "Heavy Tank AI 2"
+
+				regiments = {
+					heavy_armor = { x = 0 y = 0 }
+					heavy_armor = { x = 0 y = 1 }
+					heavy_armor = { x = 0 y = 2 }
+					heavy_armor = { x = 0 y = 3 }
+					heavy_armor = { x = 0 y = 4 }
+					
+					heavy_armor = { x = 1 y = 0 }
+					heavy_armor = { x = 1 y = 1 }
+					heavy_armor = { x = 1 y = 2 }
+					
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 2 y = 4 }
+					
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					
+					mot_anti_air_brigade = { x = 4 y = 0 }
+					mot_anti_air_brigade = { x = 4 y = 1 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	division_template_8 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			has_tech = mechanised_infantry
+			NOT = {
+				tag = GER
+				tag = SOV
+			}
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Medium Tank AI 2"
+
+				regiments = {
+					medium_armor = { x = 0 y = 0 }
+					medium_armor = { x = 0 y = 1 }
+					medium_armor = { x = 0 y = 2 }
+					medium_armor = { x = 0 y = 3 }
+					medium_armor = { x = 0 y = 4 }
+					
+					medium_armor = { x = 1 y = 0 }
+					medium_armor = { x = 1 y = 1 }
+					medium_armor = { x = 1 y = 2 }
+					
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 2 y = 4 }
+					
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					
+					mot_anti_air_brigade = { x = 4 y = 0 }
+					mot_anti_air_brigade = { x = 4 y = 1 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	division_template_9 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes 
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			tag = CAN
+			has_tech = mechanised_infantry
+			has_tech = interwar_antitank
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Mech Brick AI 1"
+
+				regiments = {
+					mechanized = { x = 0 y = 0 }
+					mechanized = { x = 0 y = 1 }
+					mechanized = { x = 0 y = 2 }
+					mechanized = { x = 0 y = 3 }
+					mechanized = { x = 0 y = 4 }
+					
+					mechanized = { x = 1 y = 0 }
+					mechanized = { x = 1 y = 1 }
+					mechanized = { x = 1 y = 2 }
+					mechanized = { x = 1 y = 3 }
+					mechanized = { x = 1 y = 4 }
+					
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 2 y = 4 }
+					
+					mechanized = { x = 3 y = 0 }
+					
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_tank_brigade = { x = 4 y = 1 }
+					anti_tank_brigade = { x = 4 y = 2 }
+					anti_tank_brigade = { x = 4 y = 3 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	division_template_10 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			tag = ENG
+			has_tech = marines
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Marines UK AI"
+
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 0 y = 3 }
+					marine = { x = 0 y = 4 }
+					
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
+					marine = { x = 1 y = 4 }
+					
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+					marine = { x = 2 y = 3 }
+					
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_tank_brigade = { x = 4 y = 1 }
+					anti_tank_brigade = { x = 4 y = 2 }
+					anti_tank_brigade = { x = 4 y = 3 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	division_template_11 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			tag = BUL
+			has_tech = mechanised_infantry
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Katusha Bulgaria"
+
+				regiments = {
+					mechanized = { x = 0 y = 0 }
+					mechanized = { x = 0 y = 1 }
+					mechanized = { x = 0 y = 2 }
+					mechanized = { x = 0 y = 3 }
+					mechanized = { x = 0 y = 4 }
+					
+					mechanized = { x = 1 y = 0 }
+					mechanized = { x = 1 y = 1 }
+					mechanized = { x = 1 y = 2 }
+					mechanized = { x = 1 y = 3 }
+					
+					motorized_rocket_brigade = { x = 2 y = 0 }
+					motorized_rocket_brigade = { x = 2 y = 1 }
+					motorized_rocket_brigade = { x = 2 y = 2 }
+					
+					motorized_rocket_brigade = { x = 3 y = 0 }
+					motorized_rocket_brigade = { x = 3 y = 1 }
+					
+					anti_tank_brigade = { x = 4 y = 0 }
+					anti_tank_brigade = { x = 4 y = 1 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	
+	division_template_12 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			tag = SPR
+			date > 1938.12.1
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Spanish Tanks"
+
+				regiments = {
+					medium_tank_destroyer_brigade = { x = 0 y = 0 }
+					medium_tank_destroyer_brigade = { x = 0 y = 1 }
+					medium_tank_destroyer_brigade = { x = 0 y = 2 }
+					medium_tank_destroyer_brigade = { x = 0 y = 3 }
+					medium_tank_destroyer_brigade = { x = 0 y = 4 }
+					
+					medium_tank_destroyer_brigade = { x = 1 y = 0 }
+					medium_tank_destroyer_brigade = { x = 1 y = 1 }
+					medium_tank_destroyer_brigade = { x = 1 y = 2 }
+					medium_tank_destroyer_brigade = { x = 1 y = 3 }
+					
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 2 y = 4 }
+					
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	
+	
+	division_template_14 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			tag = USA
+			has_tech = amphibious_mechanized_infantry
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "USA 12/5/1 Bomba"
+
+				regiments = {
+					heavy_tank_destroyer_brigade = { x = 0 y = 0 }
+					heavy_tank_destroyer_brigade = { x = 0 y = 1 }
+					heavy_tank_destroyer_brigade = { x = 0 y = 2 }
+					heavy_tank_destroyer_brigade = { x = 0 y = 3 }
+					heavy_tank_destroyer_brigade = { x = 0 y = 4 }
+					
+					heavy_tank_brigade = { x = 1 y = 0 }
+
+					
+					amphibious_mechanized = { x = 2 y = 0 }
+					amphibious_mechanized = { x = 2 y = 1 }
+					amphibious_mechanized = { x = 2 y = 2 }
+					amphibious_mechanized = { x = 2 y = 3 }
+					amphibious_mechanized = { x = 2 y = 4 }
+					
+					amphibious_mechanized = { x = 3 y = 0 }
+					amphibious_mechanized = { x = 3 y = 1 }
+					amphibious_mechanized = { x = 3 y = 2 }
+					amphibious_mechanized = { x = 3 y = 3 }
+					amphibious_mechanized = { x = 3 y = 4 }
+					
+					amphibious_mechanized = { x = 4 y = 0 }
+					amphibious_mechanized = { x = 4 y = 1 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	
+	division_template_15 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			has_tech = mechanised_infantry
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Medium TD AI 3"
+
+				regiments = {
+					medium_tank_destroyer_brigade = { x = 0 y = 0 }
+					medium_tank_destroyer_brigade = { x = 0 y = 1 }
+					medium_tank_destroyer_brigade = { x = 0 y = 2 }
+					medium_tank_destroyer_brigade = { x = 0 y = 3 }
+					medium_tank_destroyer_brigade = { x = 0 y = 4 }
+					
+					medium_tank_destroyer_brigade = { x = 1 y = 0 }
+					medium_tank_destroyer_brigade = { x = 1 y = 1 }
+					medium_tank_destroyer_brigade = { x = 1 y = 2 }
+					
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 2 y = 4 }
+					
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					
+					mot_anti_air_brigade = { x = 4 y = 0 }
+					mot_anti_air_brigade = { x = 4 y = 1 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	
+	division_template_16 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			has_tech = mechanised_infantry
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Medium TD AI 4"
+
+				regiments = {
+					medium_tank_destroyer_brigade = { x = 0 y = 0 }
+					medium_tank_destroyer_brigade = { x = 0 y = 1 }
+					medium_tank_destroyer_brigade = { x = 0 y = 2 }
+					medium_tank_destroyer_brigade = { x = 0 y = 3 }
+					medium_tank_destroyer_brigade = { x = 0 y = 4 }
+					
+					medium_tank_destroyer_brigade = { x = 1 y = 0 }
+					medium_tank_destroyer_brigade = { x = 1 y = 1 }
+					medium_tank_destroyer_brigade = { x = 1 y = 2 }
+					heavy_tank_destroyer_brigade = { x = 1 y = 3 }
+					
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 2 y = 4 }
+					
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	
+	division_template_17 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			has_tech = antitank1
+			has_tech = basic_medium_tank_chassis
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Medium TD AI 1"
+
+				regiments = {
+					medium_tank_destroyer_brigade = { x = 0 y = 0 }
+					medium_tank_destroyer_brigade = { x = 0 y = 1 }
+					medium_tank_destroyer_brigade = { x = 0 y = 2 }
+					medium_tank_destroyer_brigade = { x = 0 y = 3 }
+					medium_tank_destroyer_brigade = { x = 0 y = 4 }
+					
+					medium_tank_destroyer_brigade = { x = 1 y = 0 }
+					medium_tank_destroyer_brigade = { x = 1 y = 1 }
+					medium_tank_destroyer_brigade = { x = 1 y = 2 }
+					
+					motorized = { x = 2 y = 0 }
+					motorized = { x = 2 y = 1 }
+					motorized = { x = 2 y = 2 }
+					motorized = { x = 2 y = 3 }
+					motorized = { x = 2 y = 4 }
+					
+					motorized = { x = 3 y = 0 }
+					motorized = { x = 3 y = 1 }
+					motorized = { x = 3 y = 2 }
+					motorized = { x = 3 y = 3 }
+					
+					mot_anti_air_brigade = { x = 4 y = 0 }
+					mot_anti_air_brigade = { x = 4 y = 1 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	
+	division_template_18 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			has_tech = antitank1
+			has_tech = basic_medium_tank_chassis
+		}
+
+		complete_effect = {
+			division_template = { 
+				name = "Medium TD AI 2"
+
+				regiments = {
+					medium_tank_destroyer_brigade = { x = 0 y = 0 }
+					medium_tank_destroyer_brigade = { x = 0 y = 1 }
+					medium_tank_destroyer_brigade = { x = 0 y = 2 }
+					medium_tank_destroyer_brigade = { x = 0 y = 3 }
+					medium_tank_destroyer_brigade = { x = 0 y = 4 }
+					
+					medium_tank_destroyer_brigade = { x = 1 y = 0 }
+					medium_tank_destroyer_brigade = { x = 1 y = 1 }
+					medium_tank_destroyer_brigade = { x = 1 y = 2 }
+					heavy_tank_destroyer_brigade = { x = 1 y = 3 }
+					
+					motorized = { x = 2 y = 0 }
+					motorized = { x = 2 y = 1 }
+					motorized = { x = 2 y = 2 }
+					motorized = { x = 2 y = 3 }
+					motorized = { x = 2 y = 4 }
+					
+					motorized = { x = 3 y = 0 }
+					motorized = { x = 3 y = 1 }
+					motorized = { x = 3 y = 2 }
+					motorized = { x = 3 y = 3 }
+					
+					
+				}
+				
+
+				priority = 2
+			}
+		}
+    }
+	
+	division_template_19 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			has_tech = antitank1
+			has_tech = basic_medium_tank_chassis
+			has_tech = antiair1
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Medium TD AI 5"
+
+				regiments = {
+					medium_tank_destroyer_brigade = { x = 0 y = 0 }
+					medium_tank_destroyer_brigade = { x = 0 y = 1 }
+					medium_tank_destroyer_brigade = { x = 0 y = 2 }
+					medium_tank_destroyer_brigade = { x = 0 y = 3 }
+					medium_tank_destroyer_brigade = { x = 0 y = 4 }
+					
+					medium_tank_destroyer_brigade = { x = 1 y = 0 }
+					medium_tank_destroyer_brigade = { x = 1 y = 1 }
+					medium_tank_destroyer_brigade = { x = 1 y = 2 }
+					
+					motorized = { x = 2 y = 0 }
+					motorized = { x = 2 y = 1 }
+					motorized = { x = 2 y = 2 }
+					motorized = { x = 2 y = 3 }
+					motorized = { x = 2 y = 4 }
+					
+					motorized = { x = 3 y = 0 }
+					motorized = { x = 3 y = 1 }
+					motorized = { x = 3 y = 2 }
+					motorized = { x = 3 y = 3 }
+					
+					heavy_sp_anti_air_brigade = { x = 4 y = 0 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	
+	division_template_20 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			has_tech = mechanised_infantry
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Medium TD AI 7"
+
+				regiments = {
+					medium_tank_destroyer_brigade = { x = 0 y = 0 }
+					medium_tank_destroyer_brigade = { x = 0 y = 1 }
+					medium_tank_destroyer_brigade = { x = 0 y = 2 }
+					medium_tank_destroyer_brigade = { x = 0 y = 3 }
+					medium_tank_destroyer_brigade = { x = 0 y = 4 }
+					
+					medium_tank_destroyer_brigade = { x = 1 y = 0 }
+					medium_tank_destroyer_brigade = { x = 1 y = 1 }
+					medium_tank_destroyer_brigade = { x = 1 y = 2 }
+					
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }
+					mechanized = { x = 2 y = 4 }
+					
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					
+					heavy_sp_anti_air_brigade = { x = 4 y = 0 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	
+	division_template_21 = {
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+		}
+
+		complete_effect = {
+			division_template = {
+				name = "Militia Mass Mob"
+
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 0 y = 3 }
+					militia = { x = 0 y = 4 }
+					
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+					militia = { x = 1 y = 3 }
+					militia = { x = 1 y = 4 }
+					
+				}
+
+				priority = 2
+			}
+		}
+    }
+	
+	#AI DOKTRYNY
+	POL_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = POL
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = mass_assault
+			add_ideas = spirit_of_defiance_army_spirit
+			set_sub_doctrine = defensive_postures
+			set_sub_doctrine = anti_tank_frontline
+			set_sub_doctrine = mobile_defense
+			set_sub_doctrine = last_stand
+		}
+	}
+	
+	GER_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = GER
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = grand_battleplan
+			set_sub_doctrine = tank_destroyer_force
+			set_sub_doctrine = grand_assault
+			set_sub_doctrine = commandos
+			set_sub_doctrine = mobile_recon_and_assault
+		}
+	}
+	
+	SOV_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = new_mobile_warfare
+			set_sub_doctrine = large_unit_tactics
+			set_sub_doctrine = mission_type_tactics
+			set_sub_doctrine = armored_spearhead
+			set_sub_doctrine = mobile_recon_and_assault
+		}
+	}
+	
+	ITA_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = ITA
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = mass_assault
+			set_sub_doctrine = large_unit_tactics
+			set_sub_doctrine = last_stand
+			set_sub_doctrine = anti_tank_frontline
+			set_sub_doctrine = armored_spearhead
+		}
+	}
+	
+	ENG_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = ENG
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = grand_battleplan
+			set_sub_doctrine = armored_spearhead
+			set_sub_doctrine = grand_assault
+			set_sub_doctrine = assault_infantry
+			set_sub_doctrine = anti_tank_frontline
+		}
+	}
+	
+	FRA_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = FRA
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = grand_battleplan
+			set_sub_doctrine = armored_spearhead
+			set_sub_doctrine = infiltration_tactics
+			set_sub_doctrine = commandos
+			set_sub_doctrine = mobile_recon_and_assault
+		}
+	}
+	
+	USA_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = USA
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = grand_battleplan
+			set_sub_doctrine = tank_destroyer_force
+			set_sub_doctrine = grand_assault
+			set_sub_doctrine = commandos
+			set_sub_doctrine = mobile_recon_and_assault
+		}
+	}
+	
+	JAP_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = JAP
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = grand_battleplan
+			set_sub_doctrine = armored_spearhead
+			set_sub_doctrine = grand_assault
+			set_sub_doctrine = assault_infantry
+			set_sub_doctrine = anti_tank_frontline
+		}
+	}
+	
+	HUN_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = HUN
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = mass_assault
+			set_sub_doctrine = irregulars
+			set_sub_doctrine = anti_tank_frontline
+			set_sub_doctrine = armored_infantry_support
+			set_sub_doctrine = guerilla_war
+		}
+	}
+	
+	ROM_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = ROM
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = grand_battleplan
+			set_sub_doctrine = armored_spearhead
+			set_sub_doctrine = grand_assault
+			set_sub_doctrine = assault_infantry
+			set_sub_doctrine = anti_tank_frontline
+		}
+	}
+	
+	BUL_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = BUL
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = superior_firepower
+			set_sub_doctrine = mobile_defense
+			set_sub_doctrine = grand_assault
+			set_sub_doctrine = commandos
+			set_sub_doctrine = flying_batteries
+		}
+	}
+	
+	SPR_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = SPR
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = new_mobile_warfare
+			set_sub_doctrine = tank_destroyer_force
+			set_sub_doctrine = grand_assault
+			set_sub_doctrine = commandos
+			set_sub_doctrine = mobile_recon_and_assault
+		}
+	}
+	
+	FIN_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			tag = FIN
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = grand_battleplan
+			set_sub_doctrine = armored_spearhead
+			set_sub_doctrine = last_stand
+			set_sub_doctrine = commandos
+			set_sub_doctrine = anti_tank_frontline
+		}
+	}
+	
+	SFP_ARTA_Zadupie_AI_doktryna = {
+		activation = {
+			is_ai = yes
+			OR = { tag = ARG tag = BRA tag = CHL tag = PRU tag = BOL tag = URG tag = PAR tag = ECU tag = COL tag = VEN }
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 150
+		selectable_mission = no
+		timeout_effect = {
+			set_grand_doctrine = superior_firepower
+			set_sub_doctrine = armored_infantry_support
+			set_sub_doctrine = rapid_domination
+			set_sub_doctrine = assault_infantry
+			set_sub_doctrine = fire_concentration
+		}
+	}
+	
+	#CANADA AI MISJA MECH
+	Canada_AI_Mech = {
+		activation = {
+			is_ai = yes
+			tag = CAN
+		}
+		available = {
+			has_tech = mechanised_infantry
+			has_tech = antitank1
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 365
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				interwar_antitank = 1
+				mechanised_infantry = 1
+				motorised_infantry = 1
+			}
+		}
+	}
+	#USA AI MISJA AMTRAC
+	USA_AI_AMTRAC = {
+		activation = {
+			is_ai = yes
+			tag = USA
+		}
+		available = {
+			has_tech = amphibious_mechanized_infantry
+			has_tech = antitank2
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 900
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				amphibious_mechanized_infantry = 1
+				mechanised_infantry = 1
+				motorised_infantry = 1
+			}
+		}
+	}
+	#SOVIET AI TANK
+	SOV_AI_HEAVY = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = basic_heavy_tank_chassis
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 200
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				basic_heavy_tank_chassis = 1
+			}
+		}
+	}
+	SOV_AI_AA1 = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = antiair1
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 600
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				antiair1 = 1
+			}
+		}
+	}
+	SOV_AI_AA2 = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = antiair2
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 900
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				antiair2 = 1
+			}
+		}
+	}
+	SOV_AI_AA3 = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = antiair3
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 1200
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				antiair3 = 1
+			}
+		}
+	}
+	SOV_AI_AA4 = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = antiair4
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 1350
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				antiair4 = 1
+			}
+		}
+	}
+	SOV_AI_AA5 = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = antiair5
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 1500
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				antiair5 = 1
+			}
+		}
+	}
+	SOV_AI_AT = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = antitank1
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 200
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				antitank1 = 1
+			}
+		}
+	}
+	SOV_AI_HOSPITAL = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = tech_field_hospital
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 600
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				tech_field_hospital = 1
+			}
+		}
+	}
+	SOV_AI_LOGI = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = tech_logistics_company = 1
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 600
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				tech_logistics_company = 1
+			}
+		}
+	}
+	SOV_AI_MECH = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = mechanised_infantry
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 900
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				mechanised_infantry = 1
+			}
+		}
+	}
+	SOV_AI_MECH2 = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = mechanised_infantry2
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 1500
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				mechanised_infantry2 = 1
+			}
+		}
+	}
+	SOV_AI_MECH3 = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = mechanised_infantry3
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 2000
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				mechanised_infantry3 = 1
+			}
+		}
+	}
+	SOV_AI_HEAVY2 = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = improved_heavy_tank_chassis
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 1500
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				improved_heavy_tank_chassis = 1
+			}
+		}
+	}
+	SOV_AI_HEAVY3 = {
+		activation = {
+			is_ai = yes
+			tag = SOV
+		}
+		available = {
+			has_tech = advanced_heavy_tank_chassis
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 2000
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				advanced_heavy_tank_chassis = 1
+			}
+		}
+	}
+	GER_AI_HEAVY3 = {
+		activation = {
+			is_ai = yes
+			tag = GER
+		}
+		available = {
+			has_tech = advanced_heavy_tank_chassis
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 2000
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				advanced_heavy_tank_chassis = 1
+			}
+		}
+	}
+	GER_AI_MECH = {
+		activation = {
+			is_ai = yes
+			tag = GER
+		}
+		available = {
+			has_tech = mechanised_infantry
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 900
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				mechanised_infantry = 1
+			}
+		}
+	}
+	GER_AI_MECH2 = {
+		activation = {
+			is_ai = yes
+			tag = GER
+		}
+		available = {
+			has_tech = mechanised_infantry2
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 1500
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				mechanised_infantry2 = 1
+			}
+		}
+	}
+	GER_AI_MECH3 = {
+		activation = {
+			is_ai = yes
+			tag = GER
+		}
+		available = {
+			has_tech = mechanised_infantry3
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 2000
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				mechanised_infantry3 = 1
+			}
+		}
+	}
+	#USA AI MISJA HEAVY FIGHTER
+	USA_AI_FIGHTER = {
+		activation = {
+			is_ai = yes
+			tag = USA
+		}
+		available = {
+			has_tech = advanced_medium_airframe
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 1100
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				improved_medium_airframe = 1
+				advanced_medium_airframe = 1
+				aa_hmg = 1
+				engines_3 = 1
+				engines_4 = 1
+				range_improvements = 1
+				survivability_studies = 1
+			}
+		}
+	}
+	#SPAIN GET TANKS
+	SPAIN_AI_TANK = {
+		activation = {
+			is_ai = yes
+			tag = SPR
+		}
+		available = {
+			has_tech = advanced_medium_airframe
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 850
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				mechanised_infantry = 1
+				motorised_infantry = 1
+				gwtank_chassis = 1
+				basic_light_tank_chassis = 1
+				improved_light_tank_chassis = 1
+				basic_medium_tank_chassis = 1
+				basic_heavy_tank_chassis = 1
+				armor_tech_1 = 1
+				armor_tech_2 = 1
+				armor_tech_3 = 1
+				engine_tech_1 = 1
+				engine_tech_2 = 1
+				interwar_antitank = 1
+				antitank1 = 1
+				antitank2 = 1
+				antitank3 = 1
+			}
+		}
+	}
+	#GERMANY GET AIRFORCE
+	GER_AI_FIGHTER = {
+		activation = {
+			is_ai = yes
+			tag = GER
+		}
+		available = {
+			has_tech = advanced_small_airframe
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 790
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				improved_small_airframe = 1
+				aa_hmg = 1
+				engines_3 = 1
+				range_improvements = 1
+				survivability_studies = 1
+			}
+		}
+	}
+	#BULGARIA AI MISJA MECH
+	Bulgaria_AI_Mech = { 
+		activation = {
+			is_ai = yes
+			tag = BUL
+		}
+		available = {
+			has_tech = mechanised_infantry
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 365
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				mechanised_infantry = 1
+				motorised_infantry = 1
+			}
+		}
+	}
+	Wszystkie_AI_ogarnijcie_MIO = {
+		activation = {
+			is_ai = yes
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 365
+		selectable_mission = no
+		timeout_effect = {
+			add_timed_idea = {
+				idea = askar_AI_miej_MIO_plis days = 365
+			}
+		}
+	}
+	#DISBANDING TRASH AI
+	Askar_AI_disbands_trash_CAN = {
+		icon = GFX_decision_generic_disband_irregulars
+		allowed = {
+			tag = CAN
+		}
+		
+		fire_only_once = yes
+		available = {
+			is_ai = yes
+			has_tech = mechanised_infantry
+		}
+
+		visible = {
+			is_ai = yes
+		}
+
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Cavalry 1936 A"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Light Tank 1936 A"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "District Militia"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Cavalry Militia"
+				disband = yes 
+			}
+		}
+
+		ai_will_do = {
+			base = 100000
+		}
+	}
+	#DISBANDING TRASH AI
+	Askar_AI_disbands_trash_FRA = {
+		icon = GFX_decision_generic_disband_irregulars
+		allowed = {
+			tag = FRA
+		}
+		
+		fire_only_once = yes
+		available = {
+			is_ai = yes
+			date < 1939.2.1
+		}
+
+		visible = {
+			is_ai = yes
+		}
+
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Division d'Infanterie"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Division Coloniale"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Division d'Infanterie Motorisée"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Division de Cavalerie"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Division Légère Mécanique"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Brigade de Chars de Combat"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Brigade Coloniale"
+				disband = yes 
+			}
+		}
+
+		ai_will_do = {
+			base = 100000
+		}
+	}
+	Askar_AI_disbands_trash_HUN = {
+		icon = GFX_decision_generic_disband_irregulars
+		allowed = {
+			tag = HUN
+		}
+		
+		fire_only_once = yes
+		available = {
+			is_ai = yes
+		}
+
+		visible = {
+			is_ai = yes
+		}
+
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Gyalogdandár"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Huszár Dandár"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Lovassági Társaság"
+				disband = yes 
+			}
+		}
+
+		ai_will_do = {
+			base = 100000
+		}
+	}
+	Askar_AI_disbands_trash_ROM = {
+		icon = GFX_decision_generic_disband_irregulars
+		allowed = {
+			tag = ROM
+		}
+		
+		fire_only_once = yes
+		available = {
+			is_ai = yes
+			has_tech = tech_mountaineers
+		}
+
+		visible = {
+			is_ai = yes
+		}
+
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Divizia de Infanterie"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Brigada de Munte"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Brigada de Cavalerie"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Regimentul de Blindate"
+				disband = yes 
+			}
+		}
+
+		ai_will_do = {
+			base = 100000
+		}
+	}
+	Askar_AI_disbands_trash_SPR = {
+		icon = GFX_decision_generic_disband_irregulars
+		allowed = {
+			tag = SPR
+		}
+		
+		fire_only_once = yes
+		available = {
+			is_ai = yes
+			date > 1939.1.1
+		}
+
+		visible = {
+			is_ai = yes
+		}
+
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "División de Infantería"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "División de Caballería"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Brigada Montaña"
+				disband = yes 
+			}
+			delete_unit_template_and_units = {
+				division_template = "Brigada de Infantería"
+				disband = yes 
+			}
+		}
+
+		ai_will_do = {
+			base = 100000
+		}
+	}
+	ROM_AI_Mountaineer = { 
+		activation = {
+			is_ai = yes
+			tag = ROM
+		}
+		available = {
+			has_tech = tech_mountaineers
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 140
+		selectable_mission = no
+		timeout_effect = {
+			set_technology = {
+				tech_mountaineers = 1
+			}
+		}
+	}
+	ASKAR_AI_SPECIAL_PROJECTS_TANKS = { 
+		activation = {
+			is_ai = yes
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 365
+		selectable_mission = no
+		timeout_effect = {
+			complete_special_project = sp:sp_land_flamethrower_tank
+			complete_special_project = sp:sp_land_military_engineering_vehicles
+		}
+	}
+	ASKAR_AI_SPECIAL_PROJECTS_SHBB = { 
+		activation = {
+			is_ai = yes
+			tag = JAP
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			is_ai = no 
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		icon = GFX_decision_hol_draw_up_staff_plans     
+		is_good = no
+		days_mission_timeout = 140
+		selectable_mission = no
+		timeout_effect = {
+			complete_special_project = sp:sp_naval_super_heavy_battleship
+		}
+	}
+	ASKAR_AI_JAP_EAT_CHINA_PUPPET = {
+	
+		icon = generic_police_action
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+		visible = {
+			is_ai = yes
+		}
+		
+		available = {
+			is_ai = yes
+			tag = JAP
+			CHI = {
+				is_subject_of = JAP
+			}
+		}
+		icon = GFX_decision_hol_draw_up_staff_plans     
+
+		complete_effect = { 
+			annex_country = { target = CHI is_literally_china = yes transfer_troops = no }
+			every_controlled_state = {
+				limit = {
+					is_core_of = CHI
+				}
+				add_compliance = 100
+			}
+		}
+	}
+}

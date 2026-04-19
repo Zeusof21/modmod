@@ -1,0 +1,14 @@
+﻿l_simp_chinese:
+
+ #Decision Categories
+ seize_factories_from_puppets_category:0 "从傀儡国抽取工厂"
+ 
+ #Decisions
+ seize_factories_from_puppet_on:0 "从[From.GetNameDef]抽取工厂"
+ seize_factories_from_puppet_off:0 "停止从[From.GetNameDef]抽取工厂"
+ 100_manpower: "£manpower_texticon  §Y100§!"
+ 100_manpower_blocked: "£manpower_texticon  §R100§!"
+ 100_manpower_tooltip: "执行此决议需要£manpower_texticon  §Y100§!"
+ 
+ #National Spirits
+ factories_seized_by_overlord:0 "被宗主国抽取工厂"
