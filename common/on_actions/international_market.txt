@@ -23,4 +23,15 @@ on_actions = {
 		  }
         }
     }
+	on_state_control_changed = { #Se alemanha perde berlim manda o evento que mata o hitler 
+        if = {
+            limit = {
+                GER = { has_government = fascism }
+                64 = { controller = { NOT = { tag = GER } } }
+                GER = { is_at_war = yes }
+            }
+            country_event = mymod.1
+			country_event = occupied_countries.1
+        }
+    }
 }

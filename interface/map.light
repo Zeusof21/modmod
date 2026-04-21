@@ -1,9 +1,0 @@
-light = {
-    name = "sun"
-    rotation = { 0.0 90.0 0.0 }
-    position = { 0.0 1000.0 1000.0 }
-    color = { 1.0 1.0 1.0 }
-    intensity = 1.0
-    ambient_color = { 0.6 0.6 0.6 }
-    directional = yes
-}

@@ -1,7 +1,0 @@
-weather_effects = {
-    rain = {}
-    snow = {}
-    storm = {}
-    sandstorm = {}
-    blizzard = {}
-}

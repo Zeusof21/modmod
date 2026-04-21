@@ -1,0 +1,22 @@
+add_namespace = add_namespace = mymod
+
+country_event = { #Evento que mata o hitlerc --Zeus
+    id = mymod.1
+    title = "The Fall of Berlin"
+    desc = "With Berlin fallen, Hitler is dead."
+
+    is_triggered_only = yes
+
+    trigger = {
+        tag = GER
+        has_government = fascism
+    }
+
+    immediate = { #A opçao nao muda nada imediate faz o evento no mesmo momento
+        retire_country_leader = yes
+    }
+
+    option = {
+        name = "The Reich collapses..."
+    }
+}
