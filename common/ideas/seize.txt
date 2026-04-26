@@ -10,8 +10,9 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				cic_to_overlord_factor = 0.25
-				mic_to_overlord_factor = 0.5
+				cic_to_overlord_factor = 0.75
+				mic_to_overlord_factor = 0.75
+				extra_trade_to_overlord" = 1
 			}
 		}
 		

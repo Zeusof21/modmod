@@ -3702,7 +3702,7 @@ focus_tree = {
 		}
 		
 		#relative_position_id = JAP_new_naval_estimates
-		x = 27
+		x = 5
 		y = 0
 
 		cost = 0
@@ -3818,7 +3818,7 @@ focus_tree = {
 			focus = JAP_sea_purge_the_kodoha_faction 
 			focus = JAP_okadas_military_purge_speech 
 		}
-		x = 27
+		x = 20
 		y = 0
 		
 		relative_position_id = JAP_okadas_military_purge_speech
@@ -3993,7 +3993,7 @@ focus_tree = {
 		id = JAP_authorize_aid_to_ethiopia
 		icon = GFX_focus_generic_befriend_ethiopia
 		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
-		x = -3
+		x = -20
 		y = 1
 		relative_position_id = JAP_revere_the_emperor_destroy_the_traitors
 
@@ -4317,11 +4317,11 @@ focus_tree = {
 		id = JAP_ikki_kitas_state_socialist_ideals
 		icon = GFX_focus_JAP_ikki_kitas_state_socialist_ideals
 		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
-		x = -6
+		x = -4
 		y = 1
-		relative_position_id = JAP_sea_the_showa_restoration
+		relative_position_id = JAP_sea_greater_east_asian_co_properity_sphere
 
-		prerequisite = { focus = JAP_sea_the_showa_restoration }
+		prerequisite = { focus = JAP_sea_greater_east_asian_co_properity_sphere }
 
 		cost = 10
 
@@ -4629,7 +4629,7 @@ focus_tree = {
 		id = JAP_ally_the_league_of_blood
 		icon = GFX_goal_tripartite_pact
 		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
-		x = -9
+		x = -5
 		y = 1
 		relative_position_id = JAP_sea_the_showa_restoration
 
@@ -7236,7 +7236,7 @@ focus_tree = {
 		id = JAP_promulgate_the_military_ministers_system
 		icon = GFX_focus_AUS_lawmaking_leniency
 		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
-		x = 0
+		x = -8
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -7306,7 +7306,7 @@ focus_tree = {
 		id = JAP_east_asian_cooperative_society
 		icon = GFX_goal_generic_positive_trade_relations
 		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
-		x = 3
+		x = -5
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -7348,7 +7348,7 @@ focus_tree = {
 		id = JAP_imperial_headquarters_liasion_conference
 		icon = GFX_goal_generic_intelligence_exchange
 		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
-		x = -3
+		x = -10
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -8160,11 +8160,11 @@ focus_tree = {
 		id = JAP_form_the_central_economic_council
 		icon = GFX_focus_generic_economic_recovery
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -3
+		x = 5
 		y = 1
-		relative_position_id = JAP_sea_national_spiritual_mobliization_movement
+		relative_position_id = JAP_sea_greater_east_asian_co_properity_sphere
 
-		prerequisite = { focus = JAP_sea_national_spiritual_mobliization_movement }
+		prerequisite = { focus = JAP_sea_greater_east_asian_co_properity_sphere }
 
 		cost = 5
 
@@ -8188,23 +8188,14 @@ focus_tree = {
 
 		completion_reward = {
 
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}	
-				}
-				prioritize = { 532 531 282 } 
-				add_extra_state_shared_building_slots = 1
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
-				}	
-			}	
+				}
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -9283,11 +9274,11 @@ focus_tree = {
 		id = JAP_sea_greater_east_asian_co_properity_sphere
 		icon = GFX_focus_JAP_greater_east_asian_co_properity_sphere
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 8
+		x = 12
 		y = 1
-		relative_position_id = JAP_imperial_rule_assistance_association
+		relative_position_id = JAP_occupy_east_timor
 
-		prerequisite = { focus = JAP_imperial_rule_assistance_association }
+		prerequisite = { focus = JAP_develop_the_chinese_resources }
 
 		cost = 10
 
@@ -10950,7 +10941,7 @@ focus_tree = {
 		id = JAP_revisit_the_thirteen_demands
 		icon = GFX_focus_generic_treaty
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -13
+		x = -23
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -12736,7 +12727,7 @@ focus_tree = {
 		id = JAP_nanshin_ron
 		icon = GFX_focus_JAP_nanshin_ron
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -21
+		x = -30
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -14501,7 +14492,7 @@ focus_tree = {
 		id = JAP_hokushin_ron
 		icon = GFX_focus_JAP_hokushin_ron
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -28
+		x = -36
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -24981,11 +24972,11 @@ focus_tree = {
 		}
 		
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
-		x = 16
+		x = 6
 		y = 0
 
 		offset = {
-			x = -62
+			x = -64
 			y = 0
 			trigger = {
 				AND = {
@@ -25104,27 +25095,30 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_offsite_building = { type = industrial_complex level = 10 }
-			add_offsite_building = { type = arms_factory level = 10 }
+			add_offsite_building = { type = industrial_complex level = 45 }
+			add_offsite_building = { type = arms_factory level = 25 }
 
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
 				}	
 				prioritize = { 531 532 528 }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}	
+				prioritize = { 531 532 528 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
 			}	
@@ -25176,23 +25170,10 @@ focus_tree = {
 		completion_reward = {
 
 			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}	
-				prioritize = { 531 532 528 }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}	
@@ -25246,26 +25227,13 @@ focus_tree = {
 		completion_reward = {
 
 			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}	
-				prioritize = { 531 532 528 }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
-			}	
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -25319,18 +25287,14 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}	
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -25422,22 +25386,18 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}	
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -25514,22 +25474,18 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}	
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -25607,22 +25563,18 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}	
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -26127,8 +26079,8 @@ focus_tree = {
 		prerequisite = { focus = JAP_new_industrial_city_development_policy }
 
 		relative_position_id = JAP_new_industrial_city_development_policy
-		x = -2
-		y = 1
+		x = -1
+		y = 2
 
 		cost = 5
 
@@ -26246,8 +26198,8 @@ focus_tree = {
 		prerequisite = { focus = JAP_establish_housing_corporation }
 
 		relative_position_id = JAP_establish_housing_corporation
-		x = 2
-		y = 1
+		x = 1
+		y = 2
 
 		cost = 5
 
@@ -26796,10 +26748,10 @@ focus_tree = {
 		#	focus = 
 		#}
 
-		prerequisite = { focus = JAP_ministry_of_colonial_affairs }
+		prerequisite = { focus = JAP_upgrade_the_oriental_development_company }
 
-		relative_position_id = JAP_ministry_of_colonial_affairs
-		x = -4
+		relative_position_id = JAP_upgrade_the_oriental_development_company
+		x = 0
 		y = 1
 
 		cost = 5
@@ -28120,7 +28072,7 @@ focus_tree = {
 		}
 		
 		relative_position_id = JAP_ministry_of_commerce_and_industry
-		x = 23
+		x = 28
 		y = 0
 
 		cost = 3 #This times perfect with the Kodoha Coup event
@@ -28188,47 +28140,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			if = {
-				limit = {
-					282 = {
-						is_fully_controlled_by = ROOT
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-				282 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
-			else = {
-				random_core_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-						NOT = {
-							has_state_category = small_island
-							has_state_category = tiny_island
-						}
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
+			add_timed_idea = {
+				idea = fast_moblization
+				days = 365
 			}
 		}
 	}
@@ -28237,9 +28159,6 @@ focus_tree = {
 		id = JAP_reform_the_army
 		icon = GFX_focus_JAP_reform_the_army
 		
-		mutually_exclusive = {
-			focus = JAP_rely_on_supremacy_of_the_will
-		}
 
 		prerequisite = { focus = JAP_expand_kawagoe_army_arsenal }
 
@@ -28391,9 +28310,6 @@ focus_tree = {
 		id = JAP_foreign_tank_modernization_cooperation
 		icon = GFX_focus_generic_heavy_tank
 		
-		mutually_exclusive = {
-			focus = JAP_domestic_tank_modernization_program
-		}
 
 		prerequisite = { focus = JAP_rethink_armor_doctrine }
 
@@ -28496,9 +28412,6 @@ focus_tree = {
 		id = JAP_domestic_tank_modernization_program
 		icon = GFX_focus_generic_tank_assembly
 		
-		mutually_exclusive = {
-			focus = JAP_foreign_tank_modernization_cooperation
-		}
 
 		prerequisite = { focus = JAP_rethink_armor_doctrine }
 
@@ -28727,9 +28640,6 @@ focus_tree = {
 		id = JAP_rely_on_supremacy_of_the_will
 		icon = GFX_focus_JAP_rely_on_infantry_charges
 		
-		mutually_exclusive = {
-			focus = JAP_reform_the_army
-		}
 
 		prerequisite = { focus = JAP_expand_kawagoe_army_arsenal }
 
@@ -29622,10 +29532,6 @@ focus_tree = {
 		id = JAP_pivot_towards_defensive_measures
 		icon = GFX_goal_generic_defence
 		
-		mutually_exclusive = {
-			focus = JAP_strenghten_the_supply_lines
-		}
-
 		prerequisite = { focus = JAP_army_weapons_administration_headquarters focus = JAP_jungle_adaptation focus = JAP_sea_mountaineers }
 
 		relative_position_id = JAP_army_weapons_administration_headquarters
@@ -29668,9 +29574,6 @@ focus_tree = {
 		id = JAP_strenghten_the_supply_lines
 		icon = GFX_focus_generic_supply_line
 		
-		mutually_exclusive = {
-			focus = JAP_pivot_towards_defensive_measures
-		}
 
 		prerequisite = { focus = JAP_army_weapons_administration_headquarters focus = JAP_jungle_adaptation focus = JAP_sea_mountaineers }
 
@@ -30260,9 +30163,6 @@ focus_tree = {
 		id = JAP_sea_sturdy_aircraft
 		icon = GFX_goal_generic_air_fighter
 		
-		mutually_exclusive = {
-			focus = JAP_sea_long_operational_range
-		}
 
 		prerequisite = { focus = JAP_escort_efficiency }
 
@@ -30322,9 +30222,6 @@ focus_tree = {
 		id = JAP_sea_long_operational_range
 		icon = GFX_focus_generic_long_range_aircraft
 		
-		mutually_exclusive = {
-			focus = JAP_sea_sturdy_aircraft
-		}
 
 		prerequisite = { focus = JAP_escort_efficiency }
 
