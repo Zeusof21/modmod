@@ -3,4 +3,4 @@ tags={
 	"Fixes"
 }
 name="modmod"
-supported_version="1.17.5.2"
+supported_version="1.18.1.0"
