@@ -1,0 +1,242 @@
+FRA_economy_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	# remove_trigger = {
+	# 	OR = {
+	# 		check_variable = {
+	# 			FPM_eco_consumer_goods_factor = 0
+	# 		}
+	# 		check_variable = {
+	# 			FPM_eco_consumer_goods_factor < 0
+	# 		}
+	# 	}
+	# }
+	#INITIAL]
+	
+	consumer_goods_factor = FPM_eco_consumer_goods_factor #0.4
+	industrial_capacity_factory = FPM_eco_industrial_capacity_factory #-0.4
+	industrial_capacity_dockyard = FPM_eco_industrial_capacity_dockyard #-0.2
+}
+FPM_inefficient_economy_fake = {
+	icon = GFX_idea_generic_local_self_management
+	custom_modifier_tooltip = FRA_economy_dynamic_modifier_tt
+}
+
+FRA_commie_strikes_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_FRA_factory_strikes
+
+	industrial_capacity_factory = FPM_strike_industrial_capacity_factory #-0.25
+	industrial_capacity_dockyard = FPM_strike_industrial_capacity_dockyard #-0.25
+	communism_drift = FPM_strike_communism_drift
+}
+
+FRA_fourth_republic_constitution_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_constitutional_guarantees
+
+	stability_factor = 4_republic_stability_factor
+	war_support_factor = 4_republic_war_support_factor
+	surrender_limit = 4_republic_surrender_limit
+	political_power_factor = 4_republic_political_power_factor
+	political_advisor_cost_factor = 4_republic_political_advisor_cost_factor
+	economy_cost_factor = 4_republic_economy_cost_factor
+	trade_laws_cost_factor = 4_republic_economy_trade_laws_factor
+	mobilization_laws_cost_factor = 4_republic_economy_mobilization_laws_factor
+	party_popularity_stability_factor = 4_republic_democracy_drift
+	political_power_gain = 4_republic_political_power_gain
+
+}
+
+FRA_disjointed_government = {
+	enable = { NOT = { has_global_flag = fall_of_france } }
+	remove_trigger = { has_global_flag = fall_of_france }
+
+	icon = GFX_idea_FRA_political_violence
+
+	custom_modifier_tooltip = FPM_political_violence_tt
+	political_power_gain = FRA_disjointed_gov_pp_cost
+	stability_factor = FRA_disjointed_gov_stab_factor
+	surrender_limit = FRA_disjointed_gov_surrender_limit
+	
+}
+
+
+FRA_alpine_trade_modifier = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_increased_metal_production
+
+	local_factories = 0.25
+	local_resources_factor = 0.25	
+}
+
+FRA_saar_protectorate = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_demilitarize_zone
+
+	local_resources_factor = 0.15
+	compliance_gain = 0.01
+	compliance_growth = 0.25
+}
+
+FRA_operation_pike = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+	temporary_state_resource_oil = -50
+}
+
+FRA_military_offensive = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+
+	breakthrough_factor = 0.1
+	army_attack_factor = 0.1
+}
+
+FRA_local_strikes = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_factory_worker_militias
+
+	local_factories = -0.25
+	local_resources_factor = -0.25
+}
+
+FRA_expanded_grid = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_ETH_state_development
+
+	local_factory_energy_consumption = -0.25
+}
+
+FRA_last_defense = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_defense
+
+	dig_in_speed_factor = 0.20
+	pocket_penalty = -0.20
+	army_morale_factor = 0.10
+}
+
+FRA_actives_ligues = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_factory_worker_militias
+
+	local_factories = -0.05
+}
+
+FRA_celebrate_the_commune = {
+
+	enable = {
+		NOT = {
+			has_government = fascism
+			has_government = neutrality
+		}
+		16 = {
+			is_owned_and_controlled_by = FRA
+		}
+	}
+
+	icon = GFX_modifiers_SOV_factory_worker_militias
+
+	local_building_slots = 2
+	local_manpower = 0.25
+	army_defence_factor = 0.1
+
+}
+
+FRA_pied_noirs = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_fascist_corporatism
+
+	local_manpower = 0.1	
+}
+
+FRA_defend_paris = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+
+	army_core_defence_factor = 0.05
+	local_org_regain = 0.1
+}
+
+FRA_open_city = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_demilitarize_zone
+
+	army_core_defence_factor = -0.25
+	local_org_regain = -0.25
+}
+
+FRA_economic_devastation = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_ETH_state_development
+
+	local_factories = -0.9
+	local_resources_factor = -0.9
+}
+
+FRA_vineyards = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_immigration_promoted
+
+	local_factories = 0.25
+	local_org_regain = 0.15
+	local_supplies = 0.3
+}
+
+FRA_dyle_plan = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+	
+	local_org_regain = 0.1
+	army_defence_factor = 0.1
+	dig_in_speed_factor = 0.25
+}
+
+FRA_escaut_plan = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+
+	local_org_regain = 0.1
+	army_defence_factor = 0.1
+	army_speed_factor = 0.15
+}
+
+GER_new_plan = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+
+	army_speed_factor = 0.2
+	army_attack_factor = 0.1
+	breakthrough_factor = 0.15
+
+}
+
+GER_old_plan = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+
+	army_attack_factor = 0.15
+	breakthrough_factor = 0.25
+}
+

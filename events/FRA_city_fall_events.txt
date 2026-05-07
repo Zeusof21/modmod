@@ -1,0 +1,272 @@
+﻿
+add_namespace = city_fall_news
+
+# Bordeaux
+news_event = {
+	id = city_fall_news.8
+	title = city_fall_news.8.t
+	desc = city_fall_news.8.d
+	picture = GFX_news_event_city_fall_bordeaux
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { has_capitulated = no }
+	}
+	
+	immediate = {
+		19 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = { save_event_target_as = old_controller }
+		ROOT = { save_event_target_as = new_controller }		
+	}
+
+	option = {
+		name = city_fall_news.8.a
+		trigger = {
+			tag = event_target:old_controller
+		}
+	}
+	option = {
+		name = city_fall_news.8.b
+		trigger = {
+			tag = event_target:new_controller
+		}
+	}
+	option = {
+		name = city_fall_news.8.c
+		trigger = {
+			NOT = {
+				tag = event_target:old_controller
+				tag = event_target:new_controller
+			}
+		}
+	}
+}
+
+# Marseille
+news_event = {
+	id = city_fall_news.9
+	title = city_fall_news.9.t
+	desc = city_fall_news.9.d
+	picture = GFX_news_event_city_fall_marseille
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { has_capitulated = no }
+	}
+	
+	immediate = {
+		21 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = { save_event_target_as = old_controller }
+		ROOT = { save_event_target_as = new_controller }		
+	}
+
+	option = {
+		name = city_fall_news.9.a
+		trigger = {
+			tag = event_target:old_controller
+		}
+	}
+	option = {
+		name = city_fall_news.9.b
+		trigger = {
+			tag = event_target:new_controller
+		}
+	}
+	option = {
+		name = city_fall_news.9.c
+		trigger = {
+			NOT = {
+				tag = event_target:old_controller
+				tag = event_target:new_controller
+			}
+		}
+	}
+}
+
+# Tunis
+news_event = {
+	id = city_fall_news.56
+	title = city_fall_news.56.t
+	desc = city_fall_news.56.d
+	picture = GFX_news_event_city_fall_tunis
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { has_capitulated = no }
+	}
+	
+	immediate = {
+		458 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = { save_event_target_as = old_controller }
+		ROOT = { save_event_target_as = new_controller }		
+	}
+
+	option = {
+		name = city_fall_news.56.a
+		trigger = {
+			tag = event_target:old_controller
+		}
+	}
+	option = {
+		name = city_fall_news.56.b
+		trigger = {
+			tag = event_target:new_controller
+		}
+	}
+	option = {
+		name = city_fall_news.56.c
+		trigger = {
+			NOT = {
+				tag = event_target:old_controller
+				tag = event_target:new_controller
+			}
+		}
+	}
+}
+
+# Dakar
+news_event = {
+	id = city_fall_news.57
+	title = city_fall_news.57.t
+	desc = city_fall_news.57.d
+	picture = GFX_news_event_city_fall_dakar
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { has_capitulated = no }
+	}
+	
+	immediate = {
+		272 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = { save_event_target_as = old_controller }
+		ROOT = { save_event_target_as = new_controller }		
+	}
+
+	option = {
+		name = city_fall_news.57.a
+		trigger = {
+			tag = event_target:old_controller
+		}
+	}
+	option = {
+		name = city_fall_news.57.b
+		trigger = {
+			tag = event_target:new_controller
+		}
+	}
+	option = {
+		name = city_fall_news.57.c
+		trigger = {
+			NOT = {
+				tag = event_target:old_controller
+				tag = event_target:new_controller
+			}
+		}
+	}
+}
+
+# Damascus
+news_event = {
+	id = city_fall_news.65
+	title = city_fall_news.65.t
+	desc = city_fall_news.65.d
+	picture = GFX_news_event_city_fall_damascus
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { has_capitulated = no }
+	}
+	
+	immediate = {
+		554 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = { save_event_target_as = old_controller }
+		ROOT = { save_event_target_as = new_controller }		
+	}
+
+	option = {
+		name = city_fall_news.65.a
+		trigger = {
+			tag = event_target:old_controller
+		}
+	}
+	option = {
+		name = city_fall_news.65.b
+		trigger = {
+			tag = event_target:new_controller
+		}
+	}
+	option = {
+		name = city_fall_news.65.c
+		trigger = {
+			NOT = {
+				tag = event_target:old_controller
+				tag = event_target:new_controller
+			}
+		}
+	}
+}
+
+# Hanoi
+news_event = {
+	id = city_fall_news.75
+	title = city_fall_news.75.t
+	desc = city_fall_news.75.d
+	picture = GFX_news_event_city_fall_hanoi
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { has_capitulated = no }
+	}
+	
+	immediate = {
+		671 = {
+			set_state_flag = state_has_fallen
+		}
+		FROM.FROM = { save_event_target_as = old_controller }
+		ROOT = { save_event_target_as = new_controller }		
+	}
+
+	option = {
+		name = city_fall_news.75.a
+		trigger = {
+			tag = event_target:old_controller
+		}
+	}
+	option = {
+		name = city_fall_news.75.b
+		trigger = {
+			tag = event_target:new_controller
+		}
+	}
+	option = {
+		name = city_fall_news.75.c
+		trigger = {
+			NOT = {
+				tag = event_target:old_controller
+				tag = event_target:new_controller
+			}
+		}
+	}
+}

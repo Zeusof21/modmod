@@ -1,0 +1,33 @@
+spriteTypes = { 
+
+	spriteType = {
+		name = "GFX_news_event_city_fall_bordeaux"
+		texturefile = "gfx/event_pictures/news_event_city_fall_bordeaux.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_city_fall_dakar"
+		texturefile = "gfx/event_pictures/news_event_city_fall_dakar.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_city_fall_damascus"
+		texturefile = "gfx/event_pictures/news_event_city_fall_damascus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_city_fall_hanoi"
+		texturefile = "gfx/event_pictures/news_event_city_fall_hanoi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_city_fall_marseille"
+		texturefile = "gfx/event_pictures/news_event_city_fall_marseille.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_city_fall_tunis"
+		texturefile = "gfx/event_pictures/news_event_city_fall_tunis.dds"
+	}
+
+}

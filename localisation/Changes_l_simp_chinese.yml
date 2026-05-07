@@ -1,0 +1,29 @@
+﻿l_simp_chinese:
+
+ZeChanges: "Thank You For Playing with Better AI!"
+
+harmonychanges.t: "Better AI 1.17 | 你想给AI红牛吗？（建筑加成）"
+  
+harmonychanges.desc:0 "红牛给AI建造速度加成，以提升难度，匹配更有经验玩家的行业中极化水平。不影响战斗属性或你自己。\n\n 推荐给有经验的玩家和/或大牌玩家。"
+
+harmonychanges.1.a: "是的"
+
+harmonychanges.1.b: "不"
+
+BETTERAI.t: "多少？"
+  
+BETTERAI.desc:0 "."
+
+BETTERAI.1.a: "全包（60%）"
+
+BETTERAI.1.b: "只有一罐（30%）"
+
+BETTERAI.1.c: "也许喝一点（15%）"
+
+BETTERAI.1.d: "没有"
+
+
+
+
+
+

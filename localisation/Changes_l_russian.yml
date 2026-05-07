@@ -1,0 +1,29 @@
+﻿l_russian:
+
+ZeChanges: "Thank You For Playing with Better AI!"
+
+harmonychanges.t: "Better AI 1.17 | Хотите ли вы дать ИИ Red Bull? (Бонусы за строительство)"
+  
+harmonychanges.desc:0 "Red Bull даёт ИИ бонусы к скорости строительства для повышения сложности и соответствия прокачке индустрии среди опытных игроков. Это не влияет на боевые характеристики или на вас. \n\n Рекомендуется для опытных игроков и/или крупных игроков."
+
+harmonychanges.1.a: "Да"
+
+harmonychanges.1.b: "Нет"
+
+BETTERAI.t: "Сколько?"
+  
+BETTERAI.desc:0 "."
+
+BETTERAI.1.a: "Вся стая (60%)"
+
+BETTERAI.1.b: "Всего лишь банка (30%)"
+
+BETTERAI.1.c: "Может, небольшой глоток (15%)"
+
+BETTERAI.1.d: "Никакой"
+
+
+
+
+
+

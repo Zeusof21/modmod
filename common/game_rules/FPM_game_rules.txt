@@ -1,0 +1,74 @@
+BLITZKRIEG = {
+	name = "GER_BLITZKRIEG"
+	group = "RULE_GROUP_FRANCE_EXPANDED"
+	option = {
+		name = FMLOFF
+		text = "RULE_OPTION_FML_EASY_MODE"
+		desc = "RULE_OPTION_FML_EASY_MODE_DESC"
+		allow_achievements = yes
+	}
+	default = {
+		name = FMLEASY
+		text = "RULE_OPTION_FML_HARD_MODE"
+		desc = "RULE_OPTION_FML_HARD_MODE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FMLMEDIUM
+		text = "RULE_OPTION_FML_MEDIUM_MODE"
+		desc = "RULE_OPTION_FML_MEDIUM_MODE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FMLBLITZ
+		text = "RULE_OPTION_FML_BLITZ_MODE"
+		desc = "RULE_OPTION_FML_BLITZ_MODE_DESC"
+		allow_achievements = yes
+	}
+}
+
+UNPREDICTABLEGERMANY = {
+	name = "GER_UNPREDICTABLE"
+	group = "RULE_GROUP_FRANCE_EXPANDED"
+	option = {
+		name = RANDOMATTACK
+		text = "RULE_OPTION_GER_RANDOMATTACK"
+		desc = "RULE_OPTION_GER_RANDOMATTACK"
+		allow_achievements = yes
+	}
+	default = {
+		name = SPRING40
+		text = "RULE_OPTION_GER_SPRING40"
+		desc = "RULE_OPTION_GER_SPRING40_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = WINTER40
+		text = "RULE_OPTION_GER_WINTER40"
+		desc = "RULE_OPTION_GER_WINTER40_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FALL39
+		text = "RULE_OPTION_GER_FALL39"
+		desc = "RULE_OPTION_GER_FALL39_DESC"
+		allow_achievements = yes
+	}
+}
+
+# FRANCEHARDMODE = {
+# 	name = "FRA_HARDMODE"
+# 	group = "RULE_GROUP_FRANCE_EXPANDED"
+# 	default = {
+# 		name = DEFAULT
+# 		text = "RULE_OPTION_FRA_NORMAL"
+# 		desc = "RULE_OPTION_FRA_NORMAL_DESC"
+# 		allow_achievements = yes
+# 	}
+# 	option = {
+# 		name = HARDMODE
+# 		text = "RULE_OPTION_FRA_HARD"
+# 		desc = "RULE_OPTION_FRA_HARD_DESC"
+# 		allow_achievements = yes
+# 	}
+# }

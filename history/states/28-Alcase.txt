@@ -1,0 +1,76 @@
+
+state={
+	id=28
+	name="STATE_28" # Alsace-Lorraine
+	manpower = 1915600
+	
+	state_category = city
+	resources={
+		steel=60 #was 100 # was: 236
+		aluminium=10
+		coal = 6
+	}
+
+	history={
+		owner = FRA
+		add_dynamic_modifier = {
+			modifier = FRA_maginot_line_dynamic_modifier
+		}
+		#victory_points = { 6529 1 }
+		#victory_points = { 549 1 }
+		victory_points = { 678 5 }
+		victory_points = { 9503 5 }
+		victory_points = { 9559 10 }
+		victory_points = { 549 1 }
+		victory_points = { 6529 1 }
+		buildings = {
+			stronghold_network = 1
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+			549 = {
+				bunker = 10
+
+			}
+			678 = {
+				bunker = 7
+
+			}
+			3629 = {
+				bunker = 5
+
+			}
+			6529 = {
+				bunker = 8
+
+			}
+			9503 = {
+				bunker = 8
+
+			}
+			9559 = {
+				bunker = 10
+
+			}
+			11502 = {
+				bunker = 10
+
+			}
+			air_base = 5
+
+		}
+		add_core_of = FRA
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+				arms_factory = 2
+			}
+		}
+	}
+
+	provinces={
+		549 678 1346 3629 6529 9503 9559 11502 
+	}
+
+	local_supplies=14.0 
+}

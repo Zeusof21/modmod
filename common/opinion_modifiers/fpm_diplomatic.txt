@@ -1,0 +1,31 @@
+opinion_modifiers = {
+	concessions_to_soviets = {
+		value = -20
+	}
+	catholic_diplomacy = {
+		value = 20
+	}
+	FRA_secure_andore_om = {
+		value = 10
+	}
+	FRA_devalue_the_franc = {
+		value = 10
+	}
+	FRA_european_integration= {
+		value = 50
+	}
+	FPM_support_labour = {
+		value = -15
+	}
+	FRA_empire_francais = {
+		value = 25
+	}
+
+	FRA_accepted_quebec_independence = {
+		value = 25
+	}
+
+	FRA_rejected_quebec_independence = {
+		value = -50
+	}
+}

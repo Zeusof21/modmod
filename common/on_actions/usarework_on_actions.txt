@@ -1,0 +1,59 @@
+on_actions = {
+	on_new_term_election = {
+		random_events = {
+			100 = usarework.11
+		}
+	}
+	on_capitulation = {
+	    effect = {
+			IF = {
+				limit = {
+					ROOT = {
+						tag = GER
+					}
+					FROM = {
+						tag = USA
+						has_completed_focus = USA_war_in_europe
+					}
+				}
+				FROM = {
+					country_event = usarework.54
+				}
+			}
+		}
+		effect = {
+			IF = {
+				limit = {
+					ROOT = {
+						tag = JAP
+					}
+					FROM = {
+						tag = USA
+						has_completed_focus = USA_war_in_pacific
+					}
+				}
+				FROM = {
+					country_event = usarework.56
+				}
+			}
+		}
+	}
+	on_war_relation_added = {
+		effect = {
+			IF = {
+				limit = {
+					THIS = {
+						tag = USA
+						OR = {
+							has_idea = USA_neutrality_act
+							has_idea = USA_neutrality_act_aat
+						}
+					}
+				}
+				THIS = {
+					country_event = usarework.53
+				}
+			}
+		}
+	}
+}

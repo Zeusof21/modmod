@@ -1,0 +1,57 @@
+
+state={
+	id=29
+	name="STATE_29"
+	manpower = 2976400
+	
+	state_category = megalopolis
+	resources={
+		steel=34 #was 42 was: 112
+		aluminium=4 # was: 22
+		coal = 30 # initial distribution / 140 total
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			575 5
+		}
+		victory_points = {
+			11483 10
+		}
+		victory_points = {
+			11548 10
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 7
+			arms_factory = 5
+			air_base = 10
+			11483 = {
+				bunker = 1
+
+			}
+			11606 = {
+				bunker = 1
+
+			}
+			575 = {
+				naval_base = 6
+				bunker = 1
+			}
+		}
+		add_core_of = FRA
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 5
+				arms_factory = 3
+			}
+		}
+	}
+
+	provinces={
+		575 3476 3536 6504 9500 11483 11548 11606 
+	}
+
+	local_supplies=15.0 
+}

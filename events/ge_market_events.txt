@@ -1,0 +1,250 @@
+add_namespace = ge_market
+
+country_event = {
+    id = ge_market.1
+    title = ge_market.1.t
+    desc = ge_market.1.d
+    picture = GFX_report_event_generic_factory
+    is_triggered_only = yes
+    
+    # SEÇENEK A: KABUL ET
+    option = {
+        name = ge_market.1.a
+        
+        ai_chance = { 
+            base = 10
+            
+            # DİNAMİK AI
+            modifier = {
+                factor = 3
+                check_variable = { var = global.ge_state_offer_price value = 249999 compare = greater_than }
+                check_variable = { var = global.ge_state_offer_price value = 499999 compare = less_than_or_equals }
+            }
+            modifier = {
+                factor = 5
+                check_variable = { var = global.ge_state_offer_price value = 499999 compare = greater_than }
+                check_variable = { var = global.ge_state_offer_price value = 999999 compare = less_than_or_equals }
+            }
+            modifier = {
+                factor = 7
+                check_variable = { var = global.ge_state_offer_price value = 999999 compare = greater_than }
+                check_variable = { var = global.ge_state_offer_price value = 2499999 compare = less_than_or_equals }
+            }
+            modifier = {
+                factor = 10
+                check_variable = { var = global.ge_state_offer_price value = 2499999 compare = greater_than }
+            }
+
+			# DİPLOMASİ VE İLİŞKİLER
+            modifier = {
+                factor = 0
+                has_opinion = { target = event_target:ge_state_buyer value < 0 }
+            }
+            modifier = {
+                factor = 0
+                has_war_with = event_target:ge_state_buyer
+            }
+            modifier = {
+                factor = 1.5
+                has_opinion = { target = event_target:ge_state_buyer value > 50 }
+            }
+            modifier = {
+                factor = 2.0
+                is_in_faction_with = event_target:ge_state_buyer
+            }
+            modifier = {
+                factor = 2.0
+                event_target:ge_target_buy_state = { is_core_of = event_target:ge_state_buyer }
+            }
+
+            # TOPRAĞIN STRATEJİK DEĞERİ
+            modifier = {
+                factor = 0
+                event_target:ge_target_buy_state = { is_capital = yes }
+            }
+            modifier = {
+                factor = 0.25 
+                event_target:ge_target_buy_state = { is_core_of = ROOT }
+            }
+            modifier = {
+                factor = 0.5
+                event_target:ge_target_buy_state = { 
+                    OR = {
+                        has_state_category = city
+                        has_state_category = large_city
+                        has_state_category = metropolis
+                        has_state_category = megalopolis
+                    }
+                }
+            }
+
+            # KAYNAK DEĞERİ
+            modifier = { 
+                factor = 0.5
+                event_target:ge_target_buy_state = { 
+                    OR = {
+                        has_resources_amount = { resource = oil amount > 9 }
+                        has_resources_amount = { resource = rubber amount > 9 }
+                        has_resources_amount = { resource = steel amount > 19 }
+                    }
+                }
+            }
+
+            # DEĞERSİZ VE KOLONİ TOPRAKLAR
+            modifier = {
+                factor = 2.0
+                event_target:ge_target_buy_state = { 
+                    NOT = { is_core_of = ROOT } 
+                }
+            }
+            modifier = {
+                factor = 3.0
+                event_target:ge_target_buy_state = { 
+                    OR = {
+                        has_state_category = tiny_island
+                        has_state_category = wasteland
+                        has_state_category = pastoral
+                    }
+                }
+            }
+
+            # UMUTSUZLUK VE ÇÖKÜŞ
+            modifier = {
+                factor = 5
+                has_war = yes
+                surrender_progress > 0.2
+            }
+        }
+        
+        add_to_variable = { var = ge_money value = global.ge_state_offer_price }
+        
+        event_target:ge_state_buyer = { transfer_state = event_target:ge_target_buy_state }
+        
+        event_target:ge_state_buyer = { country_event = { id = ge_market.2 } }
+    }
+    
+    # SEÇENEK B: REDDET
+    option = {
+        ai_chance = { base = 50 }
+        
+        event_target:ge_state_buyer = { country_event = { id = ge_market.3 } }
+    }
+}
+
+# EVENT 2: BAŞARILI
+
+country_event = {
+
+    id = ge_market.2
+
+    title = ge_market.2.t
+
+    desc = ge_market.2.d
+
+    picture = GFX_report_event_cze_divided_nation
+
+    is_triggered_only = yes
+
+    option = { name = ge_market.2.a }
+
+}
+
+# EVENT 3: BAŞARISIZ
+
+country_event = {
+
+    id = ge_market.3
+
+    title = ge_market.3.t
+
+    desc = ge_market.3.d
+
+    picture = GFX_report_event_ETH_rif_map
+
+    is_triggered_only = yes
+
+    option = { 
+
+        name = ge_market.3.a 
+
+        # Teklif reddedilirse paran sana iade edilir
+
+        add_to_variable = { var = ge_money value = global.ge_state_offer_price } 
+
+    }
+
+}
+
+# EVENT 4: İHLAK GANİMETİ
+
+country_event = {
+
+    id = ge_market.4
+
+    title = ge_market.4.t
+
+    desc = ge_market.4.d
+
+    picture = GFX_report_event_steal_money
+
+    is_triggered_only = yes
+
+    
+
+    option = { 
+
+        name = ge_market.4.a 
+
+    }
+
+}
+
+# EVENT 5: KUKLA TAZMİNATI
+
+country_event = {
+
+    id = ge_market.5
+
+    title = ge_market.5.t
+
+    desc = ge_market.5.d
+
+    picture = GFX_report_event_steal_money
+
+    is_triggered_only = yes
+
+    
+
+    option = { 
+
+        name = ge_market.5.a 
+
+    }
+
+}
+
+# DEBUG KONSOL EVENT
+
+country_event = {
+
+    id = ge_market.999
+
+    title = "DEBUG: Para Ekle"
+
+    desc = "Geliştirici test komutu başarıyla çalıştırıldı. 1.000.000$ eklendi."
+
+    picture = GFX_report_event_generic_factory
+
+    is_triggered_only = yes
+
+    
+
+    option = {
+
+        name = "Mükemmel!"
+
+        add_to_variable = { var = ge_money value = 1000000 }
+
+    }
+
+}

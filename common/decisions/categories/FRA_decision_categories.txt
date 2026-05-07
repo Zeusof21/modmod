@@ -2,19 +2,167 @@
 ##### FRA ######
 ################
 
+
 FRA_civil_unrest_category = {
+	priority = 50
 	icon = power_struggle
 	allowed = {
 		original_tag = FRA
 	}
 }
 
+FRA_closer_european_union_cat = {
+	icon = GFX_decision_category_generic_political_actions
+	priority = 10
+	allowed = {
+		OR = { 
+			original_tag = FRA
+		}
+	}
+	visible_when_empty = no
+	visible = {
+		OR = {
+			has_completed_focus = FRA_the_european_union
+			has_completed_focus = FRA_the_european_union_base
+		}
+		is_faction_leader = yes
+		is_subject = no
+	}
+}
+
+FRA_weygand_category = {
+	icon = GFX_decision_category_intervention_overseas
+	priority = 15
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_they_shall_not_pass2
+		FRA = { has_capitulated = no }
+		NOT = {
+			has_global_flag = fall_of_france
+		}
+	}
+}
+
+FRA_three_billion_plan = {
+	icon = GFX_decision_category_generic_industry
+	priority = 10
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_hydroelectricity
+	}
+}
+
+FRA_maginot_category = {
+	icon = GFX_decision_category_generic_fortification
+	
+	picture = GFX_idea_fra_maginot_decisions
+	priority = 10
+	allowed = {
+		original_tag = FRA
+	}
+	FRA = { has_capitulated = no }
+	visible = {
+		has_completed_focus = FRA_defensive_focus
+	}
+}
+
+FRA_empire_francais = {
+	icon = GFX_decision_category_NOR_fascist_deploy_prep
+	
+	priority = 15
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_empire_francais
+	}
+}
+
+
+FRA_utilize_the_leagues = {
+	icon = generic_fascism
+	priority = 2
+	on_map_area = {
+		targets = { 29 785 18 28 17 15 16 24 30 14 27 20 26 33 23 25 19 806 31 22 32 21 851 735 }
+		name = FRA_utilize_the_leagues_target_tt
+		zoom = 16
+	}
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_utilize_the_leagues
+		NOT = {
+			has_global_flag = fall_of_france
+		}
+		any_owned_state = {
+			has_dynamic_modifier = {
+				modifier = FRA_local_strikes
+			}
+		}
+	}
+}
+
+FPM_the_council_of_rambouillet = {
+	priority = 2
+	icon = generic_monarchism
+
+	picture = GFX_decision_cat_picture_soviet_comecon
+	visible = {
+		has_completed_focus = FRA_the_council_of_rambouillet
+		NOT = {
+			has_completed_focus = FRA_repeal_the_law_of_exile
+		}
+	}
+}
+
+FRA_imperial_plebiscite = {
+	priority = 2
+	icon = generic_monarchism
+
+	picture = GFX_decision_cat_picture_chi_political_support
+	visible = {
+		has_completed_focus = FRA_imperial_plebiscite
+	}
+}
+
+FRA_frankish_empire_category = {
+	icon = GFX_decision_category_generic_formable_nations
+	picture = GFX_decision_cat_generic_hre
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	visible = {
+		has_completed_focus = FRA_restore_the_frankish_empire
+	}
+}
+
 FRA_spanish_intervention_category = {
+	icon = spr_the_inevitable_civil_war
+	priority = 2
 	allowed = {
 		original_tag = FRA
 	}
 	visible = {
 		has_completed_focus = FRA_intervention_in_spain
+		SPR_scw_in_progress = yes
+	}
+}
+
+FRA_spanish_nonintervention_category = {
+	icon = spr_the_inevitable_civil_war
+	priority = 2
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_non_intervention_committee
 		SPR_scw_in_progress = yes
 	}
 }
@@ -49,7 +197,13 @@ FRA_intervention_in_overseas_territories = {
 
 FRA_weapons_purchases_category = {
 	allowed = {
-		original_tag = FRA
+		OR = {
+			original_tag = FRA
+			AND = {
+				original_tag = PHI
+				has_dlc = "No Compromise, No Surrender"
+			}
+		}
 	}
 	visible = {
 		has_country_flag = FRA_arms_purchases_permitted
@@ -60,19 +214,6 @@ FRA_weapons_purchases_category = {
 }
 
 FRA_decolonization = {
+	icon = generic_independence
 	allowed = { original_tag = FRA }
 }
-
-#ASKAR MOD
-
-Bourbon_FRA_Spain_Intervention = {
-    allowed = { 
-	    original_tag = FRA 
-	}	
-	
-    visible = {
-	    has_completed_focus = FRA_the_legitimate_heir
-	}
-
-	icon = GFX_decision_category_spr_carlism
-}	

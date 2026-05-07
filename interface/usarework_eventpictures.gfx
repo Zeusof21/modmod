@@ -1,0 +1,111 @@
+spriteTypes = {
+
+	################
+	## USA REWORK ##
+	################
+
+
+	spriteType = {
+		name = "GFX_report_event_usa_democrat_1936"
+		texturefile = "gfx/event_pictures/report_event_usa_democrat_1936.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_democrat_1940"
+		texturefile = "gfx/event_pictures/report_event_usa_democrat_1940.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_democrat_1944"
+		texturefile = "gfx/event_pictures/report_event_usa_democrat_1944.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_democrat_1948"
+		texturefile = "gfx/event_pictures/report_event_usa_democrat_1948.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_democrat_1952"
+		texturefile = "gfx/event_pictures/report_event_usa_democrat_1952.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_democrat_future"
+		texturefile = "gfx/event_pictures/report_event_usa_democrat_future.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_republican_1936"
+		texturefile = "gfx/event_pictures/report_event_usa_republican_1936.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_republican_1940"
+		texturefile = "gfx/event_pictures/report_event_usa_republican_1940.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_republican_1944"
+		texturefile = "gfx/event_pictures/report_event_usa_republican_1944.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_republican_1948"
+		texturefile = "gfx/event_pictures/report_event_usa_republican_1948.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_republican_1952"
+		texturefile = "gfx/event_pictures/report_event_usa_republican_1952.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_republican_future"
+		texturefile = "gfx/event_pictures/report_event_usa_republican_future.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_voting_booth"
+		texturefile = "gfx/event_pictures/report_event_usa_voting_booth.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_macarthur_plan"
+		texturefile = "gfx/event_pictures/report_event_usa_macarthur_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_macarthur_coup"
+		texturefile = "gfx/event_pictures/report_event_usa_macarthur_coup.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_america_first"
+		texturefile = "gfx/event_pictures/report_event_usa_america_first.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_fallout_reference"
+		texturefile = "gfx/event_pictures/report_event_usa_fallout_reference.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_lindbergh_speech"
+		texturefile = "gfx/event_pictures/report_event_usa_lindbergh_speech.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_canada_agreement"
+		texturefile = "gfx/event_pictures/report_event_usa_canada_agreement.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_germany_surrender"
+		texturefile = "gfx/event_pictures/report_event_usa_germany_surrender.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_japan_surrender"
+		texturefile = "gfx/event_pictures/report_event_usa_japan_surrender.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_iwo_jima"
+		texturefile = "gfx/event_pictures/report_event_usa_iwo_jima.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_cursed_event"
+		texturefile = "gfx/event_pictures/report_event_usa_cursed_event.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_puerto_rico_independence"
+		texturefile = "gfx/event_pictures/report_event_usa_puerto_rico_independence.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_usa_japanese_attu_island"
+		texturefile = "gfx/event_pictures/report_event_usa_japanese_attu_island.dds"
+	}
+}
+
+
+

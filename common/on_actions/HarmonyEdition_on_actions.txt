@@ -1,0 +1,17 @@
+on_actions = {
+	
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { is_ai = no }
+				country_event = { id = harmonychanges.1 }
+			}
+		}
+		#on_weekly = {
+		#	effect = {
+		#		limit = { is_ai = no }
+		#		add_ideas = 
+		#	}
+		#}
+	}
+}

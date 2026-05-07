@@ -1,0 +1,17 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ge_currency" 
+		texturefile = "gfx/interface/global_economy/ge_currency.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ge_menu" 
+		texturefile = "gfx/interface/global_economy/menu.dds"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_report_event_steal_money" 
+		texturefile = "gfx/interface/global_economy/event/report_event_steal_money.dds"
+		legacy_lazy_load = no
+	}		
+}

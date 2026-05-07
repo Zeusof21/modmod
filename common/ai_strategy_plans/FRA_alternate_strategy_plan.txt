@@ -1,0 +1,662 @@
+
+FRA_alternate_plan_little_entente = {
+	name = "France alternate plan: France attempts to form the little entente"
+	desc = "Behavior for France if is set to form little entente"
+
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		OR = {
+			AND = {
+				ENG = { has_completed_focus = ENG_a_change_in_course }
+				NOT = { GER = { has_completed_focus = GER_oppose_hitler } }
+				FRA = { has_completed_focus = FRA_form_the_popular_front }
+			}
+			has_country_flag = FRA_AI_DEMOCRATIC_ALTERNATE
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = DEMOCRATIC_ALTERNATE
+			}
+		}
+	}
+	abort = {
+		OR = {
+			CZE = { exists = no }
+			CZE = { is_subject = yes }
+		}
+	}
+
+	ai_national_focuses = {
+
+		#Complete these ASAP
+		FRA_they_shall_not_pass2
+		FRA_defensive_strategems
+		FRA_national_unity_government
+		FRA_join_the_ententes
+
+		#START
+		FRA_conseil_national_economique 
+		FRA_begin_rearmament
+		FRA_invest_in_the_metropole 
+		FRA_reform_the_labour_laws 
+		FRA_ban_the_leagues
+		FRA_intervention_in_spain
+		FRA_nationalize_key_industry
+		FRA_reorganize_the_aviation_industry
+		FRA_form_the_state_arsenals
+		FRA_request_emergency_powers
+		FRA_devalue_the_franc
+		FRA_review_foreign_policy
+		FRA_confirm_eastern_commitments
+		FRA_strengthen_the_little_entente
+		FRA_invite_yugoslavia
+		FRA_invite_romania
+		FRA_franco_soviet_treaty
+		FRA_invest_in_our_weaker_allies
+		FRA_implore_patriotism
+		FRA_strengthen_government_support
+		FRA_tank_s35
+		FRA_metropolitan_france
+		FRA_industrial_expansion
+		FRA_foreign_guest_workers
+		FRA_extra_research_slot_2
+		FRA_reshuffle_the_air_ministry
+		FRA_fighter_focus
+		FRA_defensive_focus
+		FRA_general_work_council
+		FRA_the_blum_viollette_proposal
+		FRA_dirigisme
+		FRA_coordinate_rearmament
+		FRA_national_champions
+		FRA_rapid_rearmament
+		FRA_defense_passive
+		FRA_dyle_plan
+		FRA_call_the_ALVF
+		FRA_division_cuirassee
+		FRA_fighter_designs
+		FRA_bomber_focus
+		FRA_chasseurs_alpins
+		FRA_mobilize_colonies
+		FRA_gendarmerie
+		FRA_cas_focus
+		FRA_foreign_legion
+		FRA_wargames
+		FRA_army_reform
+		FRA_firepower_kills
+		FRA_infantry_focus
+		FRA_artillery_focus
+		FRA_heavy_armor_focus
+		FRA_extend_the_maginot_line
+		FRA_methodical_battle
+		FRA_naval_rearmament
+		FRA_anti_air_focus
+		FRA_bomber_designs
+		FRA_air_focus
+		FRA_modernize_the_air_army
+		FRA_heavy_bomber_focus
+		FRA_develop_colonial_dockyards
+		FRA_flying_artillery
+		FRA_colonial_air_bases
+
+	}			
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+FRA_alternate_plan_fascist_lar = {
+	name = "France alternate plan: France is going fascist"
+	desc = ""
+
+	allowed = {
+		original_tag = FRA
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		OR = {
+			has_country_flag = FRA_AI_FASCIST
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FASCIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#1936
+		FRA_autoroutes #March 11, 1936
+		FRA_invest_in_the_metropole #May 20, 1936
+		FRA_revive_the_national_bloc
+		FRA_utilize_the_leagues #July 29, 1936
+		FRA_national_regeneration #October 7, 1936
+		FRA_agricultural_protectionism #December 16, 1936
+		
+		#1937
+		FRA_destroy_decadence #February 24, 1937
+		FRA_promote_entrepeneurship #May 5, 1937
+		FRA_economic_devolution #June 9, 1937
+		FRA_protect_the_rights_of_man #July 14, 1937
+		FRA_freedom_front #August 18, 1937
+		FRA_diplomatic_freedom #October 27, 1937
+
+		#1938
+		FRA_towards_a_new_europe #January 5, 1938
+		FRA_establish_spheres_of_influence #March 16, 1938
+		FRA_begin_rearmament #May 25, 1938
+		FRA_political_unity #June 29, 1938
+		FRA_align_belgium
+		FRA_metropolitan_france #August 3, 1938 
+		FRA_industrial_expansion #October 12, 1938
+		FRA_military_factories #December 21, 1938
+		
+		#1939
+		FRA_aggressive_focus #May 10, 1939
+		FRA_extra_research_slot_2 #July 19, 1939
+		FRA_battle_of_maneuver #September 27, 1939
+
+		#1940
+		FRA_grow_the_empire #February 14, 1940
+		FRA_integralism #April 24, 1940
+		FRA_work #May 29, 1940
+		FRA_motorized_focus #August 7, 1940
+		FRA_celebrate_motherhood #September 11, 1940
+		FRA_reshuffle_the_air_ministry #November 20, 1940
+		
+		#1941
+		FRA_light_medium_armor #January 29, 1941
+		FRA_coordinated_army #March 5, 1941
+		FRA_wargames #March 5, 1941
+		FRA_army_reform #August 27, 1941
+		FRA_expand_to_the_suez #November 5, 1941
+
+		#1942
+		FRA_dominate_the_middle_east #January 14, 1942
+		FRA_proletarian_nationalism #February 18, 1942
+		FRA_bring_home_quebec #April 29, 1942
+
+	}			
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+FRA_alternate_plan_communist_lar = {
+	name = "France alternate plan: France is going communist"
+	desc = ""
+
+	allowed = {
+		original_tag = FRA
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		OR = {
+			has_country_flag = FRA_AI_COMMUNIST
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = COMMUNIST
+			}
+			AND = {
+				has_game_rule = {
+					rule = FRA_ai_behavior
+					option = DEFAULT
+				}
+				OR = {
+					GER = {
+						has_completed_focus = GER_oppose_hitler
+						has_completed_focus = GER_oppose_hitler_ww
+					}
+				}
+				NOT = {
+					FRA = {
+						has_completed_focus = FRA_revive_the_national_bloc
+					}
+				}
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		
+		#Do ASAP
+		FRA_they_shall_not_pass2
+		FRA_war_industry
+
+		#Normal
+		FRA_conseil_national_economique 
+		FRA_begin_rearmament
+		FRA_invest_in_the_metropole
+		FRA_invite_communist_ministers
+		FRA_ban_the_leagues
+		FRA_strengthen_the_unions
+		FRA_industrial_collectivization
+		FRA_agricultural_collectivization
+		FRA_force_the_issue
+		FRA_intervention_in_spain
+		FRA_revolution_to_the_utmost
+		FRA_destroy_the_counter_revolution
+		FRA_loyalty_to_moscow
+		FRA_protect_czechoslovakia
+		FRA_nationalize_key_industry
+		FRA_extra_research_slot_2
+		FRA_reorganize_the_aviation_industry
+		FRA_form_the_state_arsenals
+		FRA_devalue_the_franc
+		FRA_tank_s35
+		FRA_metropolitan_france
+		FRA_industrial_expansion
+		FRA_reshuffle_the_air_ministry
+		FRA_fighter_focus
+		FRA_defensive_focus
+		FRA_general_work_council
+		FRA_the_blum_viollette_proposal
+		FRA_dirigisme
+		FRA_national_champions
+		FRA_rapid_rearmament
+		FRA_defense_passive
+		FRA_dyle_plan
+		FRA_call_the_ALVF
+		FRA_division_cuirassee
+		FRA_fighter_designs
+		FRA_bomber_focus
+		FRA_chasseurs_alpins
+		FRA_mobilize_colonies
+		FRA_gendarmerie
+		FRA_cas_focus
+		FRA_foreign_legion
+		FRA_wargames
+		FRA_army_reform
+		FRA_firepower_kills
+		FRA_infantry_focus
+		FRA_artillery_focus
+		FRA_heavy_armor_focus
+		FRA_extend_the_maginot_line
+		FRA_methodical_battle
+		FRA_naval_rearmament
+		FRA_anti_air_focus
+		FRA_bomber_designs
+		FRA_air_focus
+		FRA_modernize_the_air_army
+		FRA_heavy_bomber_focus
+		FRA_develop_colonial_dockyards
+		FRA_flying_artillery
+		FRA_colonial_air_bases
+
+
+
+		# FRA_autoroutes #March 11, 1936
+		# FRA_invest_in_the_metropole #May 20, 1936
+		# #election
+		# FRA_invite_communist_ministers #July 29, 1936
+		# FRA_industrial_collectivization #October 7, 1936
+		# FRA_agricultural_collectivization #December 16, 1936
+		
+		# #1937
+		# FRA_force_the_issue	#February 24, 1937
+		# FRA_reconcile_the_pretenders #May 5, 1937
+		# FRA_constitutional_convention #July 14, 1937
+		# FRA_strengthen_the_unions #September 22, 1937  
+		# FRA_celebrate_the_commune #December 1, 1937
+
+		# #1938 
+		# FRA_loyalty_to_moscow #February 9, 1938
+		# FRA_begin_rearmament #April 20, 1938
+		# FRA_defensive_focus #June 29, 1938
+		# FRA_nationalize_key_industry #September 7, 1938
+		# FRA_form_the_state_arsenals #November 16, 1938
+
+		# #1939
+		# FRA_ready_for_war #March 1, 1939
+		# FRA_ww1 #April 5, 1939
+		# FRA_coordinated_army #May 10, 1939
+		# FRA_metropolitan_france #June 14, 1939
+		# FRA_algerie_france #July 19, 1939
+		# FRA_industrial_expansion #September 27, 1939
+		#  #December 6, 1939
+		
+		# #1940
+		# FRA_wargames #February 14, 1940
+		# FRA_army_reform #May 29, 1940
+		# FRA_reorganize_the_aviation_industry #August 7, 1940
+		# FRA_reshuffle_the_air_ministry #October 16, 1940
+		# FRA_the_blum_viollette_proposal #December 25, 1940
+
+		# #1941
+		# FRA_invest_in_indochina #January 29, 1941
+		# FRA_invest_in_syria #March 5, 1941
+		# FRA_invest_in_west_africa #April 9, 1941
+		# FRA_colonial_industry #June 18, 1941
+		# FRA_military_factories #August 27, 1941
+		# FRA_extra_research_slot_2 #November 5, 1941
+
+		# #1942
+		# FRA_league_of_french_bolshevist_volunteers #January 14, 1942
+		# FRA_franco_soviet_econ #February 18, 1942
+		# FRA_franco_soviet_mil #March 25, 1942
+		# FRA_expand_the_citizenship #June 3, 1942
+		# FRA_encourage_immigration #August 12, 1942
+ 
+	}			
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+FRA_alternate_plan_monarchist_orleans = {
+	name = "France alternate plan: France is going Orleanist"
+	desc = ""
+
+	allowed = {
+		original_tag = FRA
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		OR = {
+			has_country_flag = FRA_AI_ORLEANIST
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = ORLEANIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#1936
+		FRA_autoroutes #March 11, 1936
+		FRA_invest_in_the_metropole #May 20, 1936
+		#Elections here
+		FRA_utilize_the_leagues #July 29, 1936
+		FRA_the_council_of_rambouillet #October 7, 1936
+		FRA_revise_the_constitution #December 16, 1936
+
+		#1937
+		FRA_agricultural_protectionism #February 24, 1937
+		FRA_protect_the_rights_of_man #March 31, 1937
+		FRA_freedom_front #June 9, 1937
+		FRA_metropolitan_france #July 14, 1937
+		FRA_destroy_decadence #August 18, 1937
+		FRA_industrial_expansion #October 27, 1937
+
+		#1938
+		FRA_repeal_the_law_of_exile #March 16, 1938 
+		FRA_begin_rearmament #May 25, 1938
+		FRA_defensive_focus #June 29, 1938
+		FRA_counter_action #September 7, 1938
+		FRA_the_first_citizen_of_the_state #November 16, 1938
+
+		#1939
+		FRA_defender_of_liberty #January 25, 1939
+		FRA_defense_passive #May 10, 1939
+		FRA_rapid_rearmament #June 14, 1939
+		FRA_reconcile_the_pretenders #July 19, 1939
+		FRA_wargames #September 27, 1939
+
+		#1940
+		FRA_army_reform #January 10, 1940
+
+		#Further stuff
+		FRA_promote_entrepeneurship
+		FRA_economic_devolution
+		FRA_army_reform
+		FRA_invest_in_the_colonies
+		FRA_invest_in_indochina
+		FRA_invest_in_syria
+		FRA_invest_in_west_africa
+		FRA_colonial_industry
+		FRA_military_factories
+		FRA_extra_research_slot_2
+		FRA_slum_clearing
+		FRA_no_further_humiliations
+		
+	}			
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+FRA_alternate_plan_monarchist_legitimate = {
+	name = "France alternate plan: France is going legitimist"
+	desc = ""
+
+	allowed = {
+		original_tag = FRA
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		OR = {
+			has_country_flag = FRA_AI_LEGITIMIST
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = LEGITIMIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {		
+		#1936
+		FRA_autoroutes #March 11, 1936
+		FRA_invest_in_the_metropole #May 20, 1936
+		#Elections here
+		FRA_utilize_the_leagues #July 29, 1936
+		FRA_the_council_of_rambouillet #October 7, 1936
+		FRA_revise_the_constitution #December 16, 1936
+
+		#1937
+		FRA_agricultural_protectionism #February 24, 1937
+		FRA_protect_the_rights_of_man #March 31, 1937
+		FRA_freedom_front #June 9, 1937
+		FRA_metropolitan_france #July 14, 1937
+		FRA_destroy_decadence #August 18, 1937
+		FRA_industrial_expansion #October 27, 1937
+
+		#1938
+		FRA_repeal_the_law_of_exile #March 16, 1938
+
+		#i don't care anymore about dates
+		FRA_begin_rearmament
+		FRA_aggressive_focus 
+		FRA_secure_the_crown_of_spain
+		FRA_unite_the_crowns
+		FRA_two_countries_two_crowns
+		FRA_metropolitan_france
+		FRA_algerie_france
+		FRA_industrial_expansion
+		FRA_economic_devolution
+		FRA_battle_of_maneuver
+		FRA_motorized_focus
+		FRA_promote_entrepeneurship
+		FRA_light_medium_armor
+		FRA_france_on_the_offense
+		FRA_wargames
+		FRA_army_reform
+		FRA_restore_bourbon_italy
+		FRA_disunite_italy
+		FRA_invest_in_the_colonies
+		FRA_invest_in_indochina
+		FRA_invest_in_syria
+		FRA_invest_in_west_africa
+		FRA_colonial_industry
+		FRA_military_factories
+		FRA_extra_research_slot_2
+		FRA_naval_rearmament
+		FRA_capital_ship_focus
+		FRA_fighter_focus
+		FRA_cas_focus
+		FRA_reclaim_new_france
+		FRA_ending_the_enlightenment
+	}			
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+FRA_alternate_plan_monarchist_bonaparte = {
+	name = "Napoleon VI: Napoeleon Returns: Zombie Sharks Attack"
+	desc = ""
+
+	allowed = {
+		original_tag = FRA
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		OR = {
+			has_country_flag = FRA_AI_BONAPARTIST
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = BONAPARTIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {		
+		#1936
+		FRA_autoroutes #March 11, 1936
+		FRA_invest_in_the_metropole #May 20, 1936
+		#Elections here
+		FRA_utilize_the_leagues #July 29, 1936
+		FRA_the_council_of_rambouillet #October 7, 1936
+		FRA_revise_the_constitution #December 16, 1936
+
+		#1937
+		FRA_agricultural_protectionism #February 24, 1937
+		FRA_protect_the_rights_of_man #March 31, 1937
+		FRA_freedom_front #June 9, 1937
+		FRA_metropolitan_france #July 14, 1937
+		FRA_destroy_decadence #August 18, 1937
+		FRA_industrial_expansion #October 27, 1937
+
+		#1938
+		FRA_repeal_the_law_of_exile #March 16, 1938
+		FRA_begin_rearmament
+		FRA_aggressive_focus
+		FRA_metropolitan_france
+		FRA_algerie_france
+		FRA_repeal_the_law_of_exile
+		FRA_proclaim_the_third_empire
+		FRA_industrial_expansion
+		FRA_economic_devolution
+		FRA_battle_of_maneuver
+		FRA_motorized_focus
+		FRA_light_medium_armor
+		FRA_promote_entrepeneurship
+		FRA_france_on_the_offense
+		FRA_wargames
+		FRA_army_reform
+		FRA_avenge_waterloo
+		FRA_invest_in_the_colonies
+		FRA_spirit_of_napoleon
+		FRA_invest_in_indochina
+		FRA_trucks_replace_horses
+		FRA_invest_in_syria
+		FRA_famous_artillery
+		FRA_invest_in_west_africa
+		FRA_grande_armee
+		FRA_colonial_industry
+		FRA_military_factories
+		FRA_retribution_for_sedan
+		FRA_extra_research_slot_2
+		FRA_disunite_germany
+		FRA_return_to_borodino
+		FRA_je_suis_la_deluge
+		FRA_naval_rearmament
+		FRA_capital_ship_focus
+		FRA_fighter_focus
+		FRA_cas_focus
+	}			
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

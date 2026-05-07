@@ -1,0 +1,106 @@
+HeavyTanksRollsOut = { # Factory Size
+    enable = { 
+	
+		AND = {
+		arms_factory > 100
+		
+			OR = {
+		has_doctrine = new_mobile_warfare 
+		has_doctrine = armored_infantry_support
+			}
+		has_tech = improved_heavy_tank_chassis
+		has_tech = mechanised_infantry
+			}
+	}
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = role_ratio
+        id = heavy_armor_role
+        value = 100
+    }
+	
+	ai_strategy = {
+        type = role_ratio
+        id = armor_role
+        value = -100
+    }
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -100
+	}
+	
+	
+	ai_strategy = {
+        type = equipment_variant_production_factor
+        id = heavy_tank_destroyer_chassis
+        value = 200
+    }
+	
+	ai_strategy = {
+        type = equipment_variant_production_factor
+        id = heavy_tank_chassis
+        value = 100
+    }
+	
+	
+}
+
+
+
+#equipment_variant_production_factor
+
+MechanizedTank = {
+
+enable = { arms_factory > 50
+
+		has_doctrine = superior_firepower 
+		has_tech = basic_medium_tank_chassis
+		has_tech = mechanised_infantry
+	}
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = equipment_variant_production_factor
+        id = medium_tank_artillery_chassis
+        value = 400
+    }
+
+
+	ai_strategy = {
+        type = equipment_production_factor
+        id = armor
+        value = -35
+    }
+
+	ai_strategy = { 
+				type = role_ratio                          
+				id = mechanised                       
+				value = 200 
+			}
+					
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -50
+	}
+
+}
+
+
+SovUnionBuildInf = {
+
+enable = { 
+		has_doctrine = mass_assault 
+	}
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = equipment_production_factor 
+		id = infantry
+		value = 25
+    }
+
+
+
+
+}

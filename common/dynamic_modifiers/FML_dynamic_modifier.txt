@@ -1,0 +1,89 @@
+FRA_military_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_fra_terre
+
+	custom_modifier_tooltip = FRA_lack_of_radios_tt
+	custom_modifier_tooltip = FRA_armee_alpes_tt
+	
+	acclimatization_cold_climate_gain_factor = FML_cold_climate
+	acclimatization_hot_climate_gain_factor = FML_hot_climate
+	special_forces_cap = FML_special_forces_cap
+	conscription = FML_conscription #-0.003
+	conscription_factor = FML_conscription_factor
+	non_core_manpower = FML_non_core_manpower
+	weekly_manpower = FML_weekly_man
+	required_garrison_factor = FML_required_garnisons
+	army_org_factor = FML_army_org
+	land_reinforce_rate = FML_reinforce_rate
+	industry_repair_factor = FML_industry_repair
+	war_stability_factor = FML_stability_war
+	weekly_bombing_war_support = FML_bombing_ws	
+	planning_speed = FML_planning_speed
+	recon_factor = FML_recon
+	dig_in_speed_factor = FML_dig_in_speed
+	army_speed_factor = FML_army_speed
+	command_power_gain = FML_command_power_gain
+	command_abilities_cost_factor = FML_command_abilities
+	max_dig_in_factor = FML_max_dig_in
+	max_planning = FML_max_planning
+	max_planning_factor = FML_max_planning_factor
+	coordination_bonus = FML_coordination
+	army_morale_factor = FML_morale_factor
+	army_attack_factor = FML_army_attack
+	army_core_defence_factor = FML_army_core_defense
+	org_loss_when_moving = FML_org_loss_moving
+	unit_medium_armor_design_cost_factor = FML_medium_armor_design
+	army_armor_speed_factor = FML_armor_speed
+	army_armor_attack_factor = FML_armor_attack
+	army_armor_defence_factor = FML_armor_defense
+	army_artillery_attack_factor = FML_artillery_attack
+	initiative_factor = FML_initiative
+	industrial_capacity_factory = FML_factory
+	land_bunker_effectiveness_factor = FML_maginot
+	production_speed_bunker_factor = FML_fort_production_speed
+	production_speed_coastal_bunker_factor = FML_sea_fort_production_speed
+	land_doctrine_cost_factor = FML_doctrine_cost #0.5
+	land_mastery_gain_factor = FML_land_mastery_gain_factor
+}
+
+FRA_navy_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_fra_mer
+
+	experience_gain_navy_unit_factor = FML_experience_gain_navy_unit_factor
+	naval_detection = FML_naval_detection
+	navy_max_range_factor = FML_naval_max_range
+	naval_coordination = FML_naval_coordination
+	convoy_raiding_efficiency_factor = FML_convoy_raiding
+	navy_capital_ship_attack_factor = FML_navy_capital_ship_attack_factor
+	navy_screen_attack_factor = FML_navy_screen_attack_factor
+	naval_has_potf_in_combat_attack = FML_has_potf_in_combat_attack	
+	ships_at_battle_start = FML_ships_at_battle_start
+	sortie_efficiency = FML_sortie_efficiency
+	air_carrier_night_penalty_reduction_factor = FML_air_carrier_night_penalty_reduction_factor
+	carrier_night_traffic = FML_carrier_night_traffic
+	industrial_capacity_dockyard = FML_industrial_capacity_dockyard
+}
+
+FRA_air_dynamic_modifier = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_fra_air
+
+	custom_modifier_tooltip = FPM_inefficient_air_industry_tt
+
+	air_mission_efficiency = FML_air_mission_efficiency
+	air_range_factor = FML_air_range_factor
+	air_interception_detect_factor = FML_air_interception_detect_factor
+	air_cas_present_factor = FML_air_cas_present_factor
+	ground_attack_factor = FML_ground_attack_factor
+	air_nav_efficiency = FML_air_nav_efficiency
+	air_strategic_bomber_bombing_factor = FML_air_strategic_bomber_bombing_factor
+	special_forces_no_supply_grace = FML_special_forces_no_supply_grace
+	air_doctrine_cost_factor = FML_air_doctrine_cost_factor
+	air_mastery_gain_factor = FML_air_mastery_gain_factor
+
+}
+

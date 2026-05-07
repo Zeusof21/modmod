@@ -1,0 +1,56 @@
+defined_text = {
+    name = GetGeDeal1Name
+    text = { trigger = { check_variable = { var = global.ge_deal_1_amount value = 1 compare = less_than } } localization_key = GE_DEAL_EMPTY }
+    
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 1 compare = equals } } localization_key = GE_DEAL_INF }
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 2 compare = equals } } localization_key = GE_DEAL_SUP }
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 3 compare = equals } } localization_key = GE_DEAL_ART }
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 4 compare = equals } } localization_key = GE_DEAL_MOT }
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 5 compare = equals } } localization_key = GE_DEAL_LTANK }
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 6 compare = equals } } localization_key = GE_DEAL_MTANK }
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 7 compare = equals } } localization_key = GE_DEAL_FIG }
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 8 compare = equals } } localization_key = GE_DEAL_CAS }
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 9 compare = equals } } localization_key = GE_DEAL_TAC }
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 10 compare = equals } } localization_key = GE_DEAL_CONVOY }
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 11 compare = equals } } localization_key = GE_DEAL_TRAIN }
+    text = { trigger = { check_variable = { var = global.ge_deal_1_id value = 12 compare = equals } } localization_key = GE_DEAL_TRANS }
+    text = { localization_key = GE_DEAL_EMPTY }
+}
+
+defined_text = {
+    name = GetGeDeal2Name
+    text = { trigger = { check_variable = { var = global.ge_deal_2_amount value = 1 compare = less_than } } localization_key = GE_DEAL_EMPTY }
+    
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 1 compare = equals } } localization_key = GE_DEAL_INF }
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 2 compare = equals } } localization_key = GE_DEAL_SUP }
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 3 compare = equals } } localization_key = GE_DEAL_ART }
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 4 compare = equals } } localization_key = GE_DEAL_MOT }
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 5 compare = equals } } localization_key = GE_DEAL_LTANK }
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 6 compare = equals } } localization_key = GE_DEAL_MTANK }
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 7 compare = equals } } localization_key = GE_DEAL_FIG }
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 8 compare = equals } } localization_key = GE_DEAL_CAS }
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 9 compare = equals } } localization_key = GE_DEAL_TAC }
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 10 compare = equals } } localization_key = GE_DEAL_CONVOY }
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 11 compare = equals } } localization_key = GE_DEAL_TRAIN }
+    text = { trigger = { check_variable = { var = global.ge_deal_2_id value = 12 compare = equals } } localization_key = GE_DEAL_TRANS }
+    text = { localization_key = GE_DEAL_EMPTY }
+}
+
+defined_text = {
+    name = GetGeDeal3Name
+    text = { trigger = { check_variable = { var = global.ge_deal_3_amount value = 1 compare = less_than } } localization_key = GE_DEAL_EMPTY }
+    
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 1 compare = equals } } localization_key = GE_DEAL_INF }
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 2 compare = equals } } localization_key = GE_DEAL_SUP }
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 3 compare = equals } } localization_key = GE_DEAL_ART }
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 4 compare = equals } } localization_key = GE_DEAL_MOT }
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 5 compare = equals } } localization_key = GE_DEAL_LTANK }
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 6 compare = equals } } localization_key = GE_DEAL_MTANK }
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 7 compare = equals } } localization_key = GE_DEAL_FIG }
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 8 compare = equals } } localization_key = GE_DEAL_CAS }
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 9 compare = equals } } localization_key = GE_DEAL_TAC }
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 10 compare = equals } } localization_key = GE_DEAL_CONVOY }
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 11 compare = equals } } localization_key = GE_DEAL_TRAIN }
+    text = { trigger = { check_variable = { var = global.ge_deal_3_id value = 12 compare = equals } } localization_key = GE_DEAL_TRANS }
+    text = { localization_key = GE_DEAL_EMPTY }
+}

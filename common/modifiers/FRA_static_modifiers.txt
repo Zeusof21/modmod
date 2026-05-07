@@ -1,0 +1,17 @@
+# All global modifiers are here. They are applied from certain game-features.
+# Effects are fully scriptable here.
+# These names can NOT be removed or changes, as the code uses them....
+
+
+
+#Makes it more expensive to buy from France
+
+FRA_uncompetitive_exports = {
+	valid_relation_trigger = {
+		FRA = {
+			exists = yes
+		}
+	}
+	
+	trade_cost_for_target_factor = 0.25
+}

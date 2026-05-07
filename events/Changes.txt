@@ -1,0 +1,72 @@
+add_namespace = harmonychanges
+add_namespace = BETTERAI
+
+
+country_event = {
+	id = harmonychanges.1
+	title = harmonychanges.t
+	desc = harmonychanges.desc
+	picture = GFX_report_event_lithuanian_ultimatum
+	is_triggered_only = yes
+	
+	
+	
+	
+		option = {
+			name = harmonychanges.1.a
+			country_event = {id = BETTERAI.1}
+		
+		}
+		
+		option = {
+			name = harmonychanges.1.b
+			
+			
+		}
+		
+		
+		
+		
+		
+	
+	
+}
+
+country_event = {
+	id = BETTERAI.1
+	title = BETTERAI.t
+	desc = BETTERAI.desc
+	picture = GFX_report_event_canadian_tank
+	is_triggered_only = yes
+	
+		
+	
+
+
+option = {
+			name = BETTERAI.1.a
+			set_global_flag = Hardest
+		
+		}
+		
+		option = {
+			name = BETTERAI.1.b
+			set_global_flag = Harder
+			
+		}
+		
+		option = {
+			name = BETTERAI.1.c
+			set_global_flag = Softer
+			
+		}
+		
+		option = {
+			name = BETTERAI.1.d
+			
+			
+		}
+
+}
+
+

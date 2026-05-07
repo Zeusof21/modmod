@@ -1,0 +1,99 @@
+on_actions = {
+    
+    # OYUN AÇILDIĞI AN ÇALIŞACAK KODLAR
+    on_startup = {
+        effect = {
+            set_variable = { var = global.ge_steel_pool value = 30 }
+            set_variable = { var = global.ge_steel_price value = 1000 }
+            
+            set_variable = { var = global.ge_oil_pool value = 30 }
+            set_variable = { var = global.ge_oil_price value = 1000 }
+            
+            set_variable = { var = global.ge_aluminium_pool value = 30 }
+            set_variable = { var = global.ge_aluminium_price value = 1000 }
+            
+            set_variable = { var = global.ge_rubber_pool value = 30 }
+            set_variable = { var = global.ge_rubber_price value = 1000 }
+            
+            set_variable = { var = global.ge_tungsten_pool value = 30 }
+            set_variable = { var = global.ge_tungsten_price value = 1000 }
+            
+            set_variable = { var = global.ge_chromium_pool value = 30 }
+            set_variable = { var = global.ge_chromium_price value = 1000 }
+            
+            set_variable = { var = global.ge_coal_pool value = 30 }
+            set_variable = { var = global.ge_coal_price value = 1000 }
+
+            # İLK FIRSATLAR
+            set_variable = { var = global.ge_deal_1_id value = 1 }
+            set_variable = { var = global.ge_deal_1_amount value = 1500 }
+            set_variable = { var = global.ge_deal_1_price value = 20000 }
+            
+            set_variable = { var = global.ge_deal_2_id value = 2 }
+            set_variable = { var = global.ge_deal_2_amount value = 80 }
+            set_variable = { var = global.ge_deal_2_price value = 18000 }
+            
+            set_variable = { var = global.ge_deal_3_id value = 3 }
+            set_variable = { var = global.ge_deal_3_amount value = 50 }
+            set_variable = { var = global.ge_deal_3_price value = 25000 }
+			
+            random_state = {
+                limit = { state = 1 }
+                save_global_event_target_as = ge_pmc_drop_zone
+            }
+        }
+    }
+
+    # HER YIL BAŞI (KOTALAR YILA GÖRE ARTARAK YENİLENİR)
+	on_monthly = {
+        effect = {
+            
+            
+            # ========================================================
+            # 1. KÜRESEL KAYNAK STOKLARININ YENİLENMESİ VE BÜYÜMESİ
+            # ========================================================
+            set_temp_variable = { var = ge_monthly_pool value = 30 }
+            
+            # Yıla göre aylık pazar kapasitesi artar
+            if = { limit = { date > 1944.01.01 } set_temp_variable = { var = ge_monthly_pool value = 100 } }
+            else_if = { limit = { date > 1942.01.01 } set_temp_variable = { var = ge_monthly_pool value = 70 } }
+            else_if = { limit = { date > 1940.01.01 } set_temp_variable = { var = ge_monthly_pool value = 60 } }
+            else_if = { limit = { date > 1938.01.01 } set_temp_variable = { var = ge_monthly_pool value = 50 } }
+
+            # Eğer oyuncular stoğu tüketmişse, ay başında tekrar doldurulur!
+            if = { limit = { check_variable = { var = global.ge_steel_pool value = ge_monthly_pool compare = less_than } } set_variable = { var = global.ge_steel_pool value = ge_monthly_pool } }
+            if = { limit = { check_variable = { var = global.ge_oil_pool value = ge_monthly_pool compare = less_than } } set_variable = { var = global.ge_oil_pool value = ge_monthly_pool } }
+            if = { limit = { check_variable = { var = global.ge_aluminium_pool value = ge_monthly_pool compare = less_than } } set_variable = { var = global.ge_aluminium_pool value = ge_monthly_pool } }
+            if = { limit = { check_variable = { var = global.ge_rubber_pool value = ge_monthly_pool compare = less_than } } set_variable = { var = global.ge_rubber_pool value = ge_monthly_pool } }
+            if = { limit = { check_variable = { var = global.ge_tungsten_pool value = ge_monthly_pool compare = less_than } } set_variable = { var = global.ge_tungsten_pool value = ge_monthly_pool } }
+            if = { limit = { check_variable = { var = global.ge_chromium_pool value = ge_monthly_pool compare = less_than } } set_variable = { var = global.ge_chromium_pool value = ge_monthly_pool } }
+            if = { limit = { check_variable = { var = global.ge_coal_pool value = ge_monthly_pool compare = less_than } } set_variable = { var = global.ge_coal_pool value = ge_monthly_pool } }
+
+            # ========================================================
+            # 2. AYLIK FIRSATLARIN (DEALS) YENİLENMESİ
+            # ========================================================
+			
+            # DEAL 1: Temel Ordu (Piyade, Destek, Topçu, Motorize)
+            random_list = {
+                25 = { set_variable = { var = global.ge_deal_1_id value = 1 } set_variable = { var = global.ge_deal_1_amount value = 2500 } set_variable = { var = global.ge_deal_1_price value = 18000 } }
+                25 = { set_variable = { var = global.ge_deal_1_id value = 2 } set_variable = { var = global.ge_deal_1_amount value = 600 } set_variable = { var = global.ge_deal_1_price value = 14000 } }
+                25 = { set_variable = { var = global.ge_deal_1_id value = 3 } set_variable = { var = global.ge_deal_1_amount value = 250 } set_variable = { var = global.ge_deal_1_price value = 8000 } }
+                25 = { set_variable = { var = global.ge_deal_1_id value = 4 } set_variable = { var = global.ge_deal_1_amount value = 300 } set_variable = { var = global.ge_deal_1_price value = 10000 } }
+            }
+            # DEAL 2: Ağır Sanayi ve Lojistik (Hafif Tank, Orta Tank, Konvoy, Tren)
+            random_list = {
+                25 = { set_variable = { var = global.ge_deal_2_id value = 5 } set_variable = { var = global.ge_deal_2_amount value = 150 } set_variable = { var = global.ge_deal_2_price value = 14000 } }
+                25 = { set_variable = { var = global.ge_deal_2_id value = 6 } set_variable = { var = global.ge_deal_2_amount value = 75 } set_variable = { var = global.ge_deal_2_price value = 18000 } }
+                25 = { set_variable = { var = global.ge_deal_2_id value = 10 } set_variable = { var = global.ge_deal_2_amount value = 150 } set_variable = { var = global.ge_deal_2_price value = 12000 } }
+                25 = { set_variable = { var = global.ge_deal_2_id value = 11 } set_variable = { var = global.ge_deal_2_amount value = 50 } set_variable = { var = global.ge_deal_2_price value = 8000 } }
+            }
+            # DEAL 3: Hava Kuvvetleri (Fighter, CAS, TAC, Nakliye Uçağı)
+            random_list = {
+                25 = { set_variable = { var = global.ge_deal_3_id value = 7 } set_variable = { var = global.ge_deal_3_amount value = 120 } set_variable = { var = global.ge_deal_3_price value = 16000 } }
+                25 = { set_variable = { var = global.ge_deal_3_id value = 8 } set_variable = { var = global.ge_deal_3_amount value = 100 } set_variable = { var = global.ge_deal_3_price value = 15000 } }
+                25 = { set_variable = { var = global.ge_deal_3_id value = 9 } set_variable = { var = global.ge_deal_3_amount value = 60 } set_variable = { var = global.ge_deal_3_price value = 18000 } }
+                25 = { set_variable = { var = global.ge_deal_3_id value = 12 } set_variable = { var = global.ge_deal_3_amount value = 30 } set_variable = { var = global.ge_deal_3_price value = 12000 } }
+            }
+        }
+    }
+}

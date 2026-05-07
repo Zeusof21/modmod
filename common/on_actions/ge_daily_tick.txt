@@ -1,0 +1,19 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country = {
+                limit = { is_ai = no }
+                ge_calculate_economy_vars = yes
+            }
+        }
+    }
+
+	on_daily = {
+        effect = {
+            if = {
+                limit = { is_ai = no } 
+                ge_add_daily_money = yes
+            }
+        }
+    }
+}

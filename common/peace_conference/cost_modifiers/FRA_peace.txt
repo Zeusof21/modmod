@@ -1,0 +1,66 @@
+# Scripted cost modifiers for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_action_modifiers = {
+	# Treating Vichy territory as French Cores and Vice Versa
+    FRA_retake_french_territory_modifier = {
+        category = is_core
+        peace_action_type = take_states
+
+        enable = {
+            # ROOT = { original_tag = FRA }
+            FROM = { original_tag = FRA }
+            FROM.FROM = { original_tag = FRA}
+            FROM.FROM.FROM = { NOT = { is_core_of = ROOT.FROM } }
+        }
+        cost_multiplier = 0.1
+    }
+}
+
+peace_action_modifiers = {
+    #Host the German Exiles
+    FRA_host_the_german_exiles = {
+        category = events_or_focuses
+        peace_action_type = puppet
+
+        enable = {
+            ROOT = { 
+                original_tag = FRA
+                has_completed_focus = FRA_host_the_german_exiles 
+            }
+            FROM = { original_tag = GER }
+
+        }
+        cost_multiplier = 0.5
+    }
+
+    FRA_reorganize_the_dutch = {
+        category = events_or_focuses
+        peace_action_type = take_states
+
+        enable = {
+            ROOT = { 
+                original_tag = FRA
+                has_completed_focus = FRA_reorganize_the_dutch 
+            }
+            FROM = { original_tag = HOL }
+
+        }
+        cost_multiplier = 0.5
+    }
+
+    FRA_return_to_india = {
+        category = events_or_focuses
+        peace_action_type = puppet
+
+        enable = {
+            ROOT = { 
+                original_tag = FRA
+                has_completed_focus = FRA_return_to_india 
+            }
+            FROM = { original_tag = RAJ }
+
+        }
+        cost_multiplier = 0.5
+    }
+}

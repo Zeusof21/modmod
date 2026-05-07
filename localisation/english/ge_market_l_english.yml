@@ -1,0 +1,143 @@
+﻿l_english:
+ # ==========================================
+ # TOPBAR: EKONOMİ TOOLTIP (DİNAMİK BÜTÇE)
+ # ==========================================
+ GE_MONEY_TOOLTIP:0 "§YNational Treasury§!\nCurrent Balance: §G[?ge_money|0]$§!\n\n§G--- Daily Income ---§!\nBase National GDP: §G+[?ge_base_gdp|0]$§!\nCiv. Factories ([?num_of_civilian_factories|0] Fac.): §G+[?ge_civ_income|0]$§!\nTotal Gross Income: §G+[?ge_daily_income|0]$§!\n\n§R--- Daily Expenses ---§!\nMilitary Factories ([?num_of_military_factories|0] Fac. x 2$): §R-[?ge_mil_expense|0]$§!\nArmy Maintenance ([?num_divisions|0] Div. x 0.5$): §R-[?ge_army_expense|0]$§!\nTotal Expenses: §R-[?ge_daily_expense|0]$§!\n\n------------------------\nNet Daily Change: §Y[?ge_daily_total|0]$§!\n\n§O*Tip: Your current Economy Law multiplier is x[?ge_civ_multiplier|0]. (Note: Great Depression and Isolation laws will severely penalize this income until removed!)§!"
+ GE_MARKET_OPEN_TT:0 "§YGlobal Market§!\nClick to open the Global Market interface."
+ 
+ # ==========================================
+ # ANA ARAYÜZ: GENEL BAŞLIKLAR VE BUTONLAR
+ # ==========================================
+ GE_MAIN_TITLE:0 "GLOBAL BLACK MARKET & CONTRACTS"
+ GE_BTN_BUY:0 "BUY"
+ GE_BTN_SELL:0 "SELL"
+ GE_LBL_QTY:0 "Qty:"
+ GE_LBL_COST:0 "Cost:"
+ GE_BTN_CONFIRM:0 "CONFIRM"
+ 
+ GE_TAB_MARKET:0 "Market"
+ GE_TAB_BANK:0 "National Bank"
+ GE_TAB_SPECIAL:0 "Special Operations"
+ GE_TAB_MARKET_TT:0 "§YGlobal Market & Contracts§!\nAccess the resource exchange, monthly deals, and territory acquisitions."
+ GE_TAB_BANK_TT:0 "§OWork in Progress§!\nThis section will be unlocked in a future update."
+ GE_TAB_SPECIAL_TT:0 "§OWork in Progress§!\nThis section will be unlocked in a future update."
+
+ # ==========================================
+ # SOL PANEL: KAYNAK MARKETİ
+ # ==========================================
+ GE_RAW_TITLE:0 "Resource Exchange (Live)"
+ GE_POOL_STEEL:0 "Pool: [?global.ge_steel_pool|0]"
+ GE_POOL_OIL:0 "Pool: [?global.ge_oil_pool|0]"
+ GE_POOL_ALU:0 "Pool: [?global.ge_aluminium_pool|0]"
+ GE_POOL_RUB:0 "Pool: [?global.ge_rubber_pool|0]"
+ GE_POOL_TUN:0 "Pool: [?global.ge_tungsten_pool|0]"
+ GE_POOL_CHR:0 "Pool: [?global.ge_chromium_pool|0]"
+ GE_POOL_COAL:0 "Pool: [?global.ge_coal_pool|0]"
+
+ GE_BUY_TOOLTIP:0 "§YBuy Resources§!"
+ GE_BUY_TOOLTIP_DELAYED:0 "Purchase units of this resource from the Global Market.\n\n§OEconomic Notice:§! Buying resources from the global pool will increase the base price due to high demand (Inflation)."
+ GE_SELL_STEEL_TT:0 "§YSell Steel§!"
+ GE_SELL_STEEL_TT_DELAYED:0 "Export Steel to the Global Market.\n\n§RStrict Requirement:§! You must have an active surplus of this resource in your own states to sell it. Selling floods the market and lowers the global price."
+ GE_SELL_OIL_TT:0 "§YSell Oil§!"
+ GE_SELL_OIL_TT_DELAYED:0 "Export Oil to the Global Market.\n\n§RStrict Requirement:§! You must have an active surplus of this resource in your own states to sell it. Selling floods the market and lowers the global price."
+ GE_SELL_ALUMINIUM_TT:0 "§YSell Aluminium§!"
+ GE_SELL_ALUMINIUM_TT_DELAYED:0 "Export Aluminium to the Global Market.\n\n§RStrict Requirement:§! You must have an active surplus of this resource in your own states to sell it. Selling floods the market and lowers the global price."
+ GE_SELL_RUBBER_TT:0 "§YSell Rubber§!"
+ GE_SELL_RUBBER_TT_DELAYED:0 "Export Rubber to the Global Market.\n\n§RStrict Requirement:§! You must have an active surplus of this resource in your own states to sell it. Selling floods the market and lowers the global price."
+ GE_SELL_TUNGSTEN_TT:0 "§YSell Tungsten§!"
+ GE_SELL_TUNGSTEN_TT_DELAYED:0 "Export Tungsten to the Global Market.\n\n§RStrict Requirement:§! You must have an active surplus of this resource in your own states to sell it. Selling floods the market and lowers the global price."
+ GE_SELL_CHROMIUM_TT:0 "§YSell Chromium§!"
+ GE_SELL_CHROMIUM_TT_DELAYED:0 "Export Chromium to the Global Market.\n\n§RStrict Requirement:§! You must have an active surplus of this resource in your own states to sell it. Selling floods the market and lowers the global price."
+ GE_SELL_COAL_TT:0 "§YSell Coal§!"
+ GE_SELL_COAL_TT_DELAYED:0 "Export Coal to the Global Market.\n\n§RStrict Requirement:§! You must have an active surplus of this resource in your own states to sell it. Selling floods the market and lowers the global price."
+
+ # ==========================================
+ # ORTA PANEL: AYLIK FIRSATLAR (DEALS)
+ # ==========================================
+ GE_EQUIP_TITLE:0 "Monthly Rotating Deals"
+ GE_DEAL_1_OFFER:0 "Offer: [GetGeDeal1Name]"
+ GE_DEAL_2_OFFER:0 "Offer: [GetGeDeal2Name]"
+ GE_DEAL_3_OFFER:0 "Offer: [GetGeDeal3Name]"
+
+ GE_DEAL_INF:0 "Surplus Infantry Rifles"
+ GE_DEAL_SUP:0 "Smuggled Support Equipment"
+ GE_DEAL_ART:0 "Heavy Artillery Battery"
+ GE_DEAL_MOT:0 "Stolen Supply Trucks"
+ GE_DEAL_LTANK:0 "Outdated Light Tanks"
+ GE_DEAL_MTANK:0 "Medium Tanks"
+ GE_DEAL_FIG:0 "Foreign Fighter Planes"
+ GE_DEAL_CAS:0 "Ground Attack Aircraft"
+ GE_DEAL_TAC:0 "Tactical Bombers"
+ GE_DEAL_CONVOY:0 "Civilian Cargo Ships"
+ GE_DEAL_TRAIN:0 "Captured Armored Trains"
+ GE_DEAL_TRANS:0 "Smuggled Transport Planes"
+ GE_DEAL_EMPTY:0 "§RSOLD OUT (Check next month)§!"
+
+ GE_BUY_EQ_TOOLTIP:0 "§YPurchase Deal§!"
+ GE_BUY_EQ_TOOLTIP_DELAYED:0 "Buy this limited-time offer from the Global Market. The equipment will be delivered to your stockpile immediately.\n\n§R*** STRICT LOGISTICS WARNING ***§!\n§OYou MUST have the corresponding basic technology researched (e.g., Fighter Planes, Medium Tanks, Artillery) before purchasing!§!\n\nIf you lack the required technology, the game engine cannot categorize the shipment, and the equipment will NOT appear in your logistics stockpile. Buy at your own risk!\n\n§WMake sure you have enough funds before signing the contract.§!"
+
+ # ==========================================
+ # ORTA PANEL: PMC SATIN ALMA
+ # ==========================================
+ GE_PMC_TITLE:0 "--- Mercenaries (PMC) ---"
+ GE_PMC_DESC:0 "Hire Veteran Operations Group"
+ GE_PMC_DETAILS:0 "Spawns 3x Elite Divs."
+ GE_BTN_SET_LOC:0 "SET LOC"
+ GE_BTN_HIRE:0 "HIRE"
+ GE_TGT_PMC_TITLE:0 "SELECT DROP ZONE"
+
+ GE_PMC_TOOLTIP:0 "§YSign PMC Contract§!"
+ GE_PMC_TOOLTIP_DELAYED:0 "Hire elite mercenaries from the global underground network. They will instantly reinforce your nation with manpower, basic equipment, and highly valuable army experience.\n\n§WYou must set a Drop Zone on the map before hiring!§!"
+ # ==========================================
+ # SAĞ PANEL: TOPRAK ALIM SATIM
+ # ==========================================
+ GE_CONTRACTS_TITLE:0 "Private Contracts"
+ GE_BUY_STATE_TITLE:0 "--- Territory Acquisition ---"
+ GE_BUY_STATE_DESC:0 "Purchase Foreign Territory"
+ GE_BUY_STATE_STATUS:0 "Status: [GetGeTargetStateStatus]"
+ GE_LBL_OFFER:0 "Offer:"
+ GE_BTN_SET_TGT:0 "SET TGT"
+ GE_BTN_OFFER:0 "OFFER"
+ GE_TGT_STATE_TITLE:0 "SELECT TARGET STATE"
+
+ GE_TARGET_STATE_FOUND:0 "§GTarget Acquired§!"
+ GE_TARGET_STATE_NONE:0 "§RNone Selected§!"
+ GE_BUY_STATE_TT:0 "§YSend Purchase Offer§!"
+ GE_BUY_STATE_TT_DELAYED:0 "Send a diplomatic offer to the owner of the selected state. If they accept, you will pay your proposed offer of §G[?global.ge_state_offer_price|0]$§! and annex the state. If they decline, your money will be refunded."
+ 
+ ge_market.1.t:0 "Territory Purchase Offer"
+ ge_market.1.d:0 "A foreign nation has approached us with a lucrative offer. They wish to purchase one of our states for §G[?global.ge_state_offer_price|0]$§!.\n\nDo we accept this deal and forfeit the land?"
+ ge_market.1.a:0 "Accept the deal. We need the money."
+ ge_market.1.b:0 "Refuse! Our land is not for sale."
+ 
+ ge_market.2.t:0 "Offer Accepted!"
+ ge_market.2.d:0 "Excellent news! The foreign government has accepted our generous offer. The state has been formally transferred to our administration."
+ ge_market.2.a:0 "A great addition to our nation."
+ 
+ ge_market.3.t:0 "Offer Declined"
+ ge_market.3.d:0 "The foreign government has formally rejected our offer to purchase their territory. They stated that their sovereign land is not for sale.\n\nOur initial payment of §G[?global.ge_state_offer_price|0]$§! has been fully refunded."
+ ge_market.3.a:0 "Fools. We will take it by force then."
+
+ # ==========================================
+ # SAĞ PANEL: YERALTI FABRİKALARI
+ # ==========================================
+ GE_OFFMAP_TITLE:0 "--- Underground Facilities ---"
+ GE_MIL_DESC:0 "Construct Hidden Military Factory"
+ GE_CIV_DESC:0 "Construct Hidden Civilian Factory"
+ GE_BTN_BUILD:0 "BUILD"
+
+ GE_MIL_TOOLTIP:0 "§YBuild Hidden Military Factory§!"
+ GE_MIL_TOOLTIP_DELAYED:0 "Finance the construction of a military factory completely hidden from the map (Off-map). It cannot be bombed or captured by enemies."
+ GE_CIV_TOOLTIP:0 "§YBuild Hidden Civilian Factory§!"
+ GE_CIV_TOOLTIP_DELAYED:0 "Finance the construction of a civilian factory completely hidden from the map (Off-map). It will boost your economy safely."
+
+ # ==========================================
+ # SAVAŞ GANİMETLERİ EVENTLERİ
+ # ==========================================
+ ge_market.4.t:0 "War Booty: [ge_loser_country.GetNameDefCap]"
+ ge_market.4.d:0 "With the complete capitulation and annexation of [ge_loser_country.GetNameDef], our forces have stormed their capital and seized the national treasury.\n\nAll offshore accounts, gold reserves, and black market funds belonging to the former government have been confiscated.\n\nTotal funds secured: §G[?ge_latest_loot|0]$§!"
+ ge_market.4.a:0 "To the victor go the spoils!"
+ 
+ ge_market.5.t:0 "War Reparations: [ge_loser_country.GetNameDefCap]"
+ ge_market.5.d:0 "As part of the restructuring of [ge_loser_country.GetNameDef], the newly installed puppet administration has agreed to pay substantial war reparations to our government.\n\nWe have liquidated a large portion of their national reserves and transferred them to our own treasury.\n\nTotal funds secured: §G[?ge_latest_loot|0]$§!"
+ ge_market.5.a:0 "They will pay for their crimes."

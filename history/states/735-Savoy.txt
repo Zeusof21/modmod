@@ -1,0 +1,60 @@
+state={
+	id=735
+	name="STATE_735"
+
+	state_category = town
+
+	resources = {
+		aluminium=50 # was: 22
+	}
+
+	history={
+		owner = FRA
+		add_core_of = OCC
+		add_core_of = FRA
+		victory_points = {
+			778 1 
+		}
+		victory_points = {
+			9909 5 
+		}
+		add_dynamic_modifier = {
+			modifier = FRA_maginot_line_dynamic_modifier
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			6609 = {
+				supply_node = 1
+			}
+			9909 = {
+				bunker = 6
+				naval_base = 2
+			}
+			9745 = {
+				bunker = 3
+				#dam = 1 (Tignes Dam)
+			}
+			3959 = {
+				bunker = 5
+				
+			}
+			3764 = {
+				bunker = 6
+				
+			}
+			764 = {
+				bunker = 6
+				
+			}
+		}
+	}
+
+	provinces={
+		764 778 3764 3959 6609 6975 9603 9736 9745 9909 11573 
+	}
+	manpower=907500
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

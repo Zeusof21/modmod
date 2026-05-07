@@ -1,0 +1,66 @@
+ge_calculate_economy_vars = {
+    
+	# ==========================================
+    # 1. TABAN GELİR (GDP)
+    # ==========================================
+    set_variable = { ge_base_gdp = 125 } # Minörler
+
+    if = { limit = { OR = { tag = TUR tag = POL tag = SPA tag = SPR tag = ROM tag = YUG tag = CHI tag = BRA tag = SWE tag = ARG tag = CAN tag = AST } } set_variable = { ge_base_gdp = 225 } }
+    if = { limit = { OR = { tag = FRA tag = JAP tag = ITA } } set_variable = { ge_base_gdp = 350 } }
+    if = { limit = { OR = { tag = USA tag = SOV tag = GER tag = ENG } } set_variable = { ge_base_gdp = 500 } }
+
+    set_variable = { ge_daily_income = ge_base_gdp }
+
+	# ==========================================
+    # 2. SİVİL FABRİKA GELİRİ
+    # ==========================================
+    set_variable = { ge_civ_income = num_of_civilian_factories }
+    set_variable = { ge_civ_multiplier = 3 }
+    
+    if = { limit = { has_idea = low_economic_mobilisation } set_variable = { ge_civ_multiplier = 5 } }
+    if = { limit = { has_idea = partial_economic_mobilisation } set_variable = { ge_civ_multiplier = 5 } }
+    if = { limit = { has_idea = new_economic_policy } set_variable = { ge_civ_multiplier = 5 } }
+    if = { limit = { has_idea = new_economic_policy_2 } set_variable = { ge_civ_multiplier = 5 } }
+    if = { limit = { has_idea = capital_investment_model } set_variable = { ge_civ_multiplier = 5 } }
+
+    if = { limit = { has_idea = war_economy } set_variable = { ge_civ_multiplier = 9 } }
+    if = { limit = { has_idea = tot_economic_mobilisation } set_variable = { ge_civ_multiplier = 9 } }
+    if = { limit = { has_idea = totaler_krieg_economy } set_variable = { ge_civ_multiplier = 9 } }
+    if = { limit = { has_idea = national_defense_state } set_variable = { ge_civ_multiplier = 9 } }
+    if = { limit = { has_idea = JAP_war_communism_idea } set_variable = { ge_civ_multiplier = 9 } }
+
+    multiply_variable = { ge_civ_income = ge_civ_multiplier }
+
+    if = {
+        limit = { OR = { has_idea = undisturbed_isolation has_idea = isolation has_idea = great_depression } }
+        divide_variable = { ge_civ_income = 2 }
+    }
+
+    add_to_variable = { ge_daily_income = ge_civ_income }
+    
+    # ==========================================
+    # 3. GİDERLER
+    # ==========================================
+    # Askeri Fabrika Bakım Masrafı
+    set_variable = { ge_mil_expense = num_of_military_factories }
+    multiply_variable = { ge_mil_expense = 2 }
+    
+    # Ordu Maaş ve İkmal Masrafı
+    set_variable = { ge_army_expense = num_divisions }
+    divide_variable = { ge_army_expense = 2 }
+
+    set_variable = { ge_daily_expense = ge_mil_expense }
+    add_to_variable = { ge_daily_expense = ge_army_expense }
+
+    # ==========================================
+    # 4. NET KAZANÇ
+    # ==========================================
+    set_variable = { ge_daily_total = ge_daily_income }
+    subtract_from_variable = { ge_daily_total = ge_daily_expense }
+}
+
+ge_add_daily_money = {
+    ge_calculate_economy_vars = yes
+    add_to_variable = { ge_money = ge_daily_total }
+    clamp_variable = { var = ge_money min = 0 max = 9999999 }
+}

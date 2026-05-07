@@ -1,0 +1,82 @@
+
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					has_war_with = FROM
+					FROM.FROM = {
+						is_owned_by = FROM
+						NOT = { has_state_flag = state_has_fallen }
+					}
+				}
+				if = { # Bordeaux
+					limit = { FROM.FROM = { state = 19 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.8 random_hours = 24 }
+					}
+				}
+				else_if = { # Marseille
+					limit = { FROM.FROM = { state = 21 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.9 random_hours = 24 }
+					}
+				}
+				else_if = { # Tunis
+					limit = { FROM.FROM = { state = 458 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.56 random_hours = 24 }
+					}
+				}
+				else_if = { # Dakar
+					limit = { FROM.FROM = { state = 272 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.57 random_hours = 24 }
+					}
+				}
+				else_if = { # Damascus
+					limit = { FROM.FROM = { state = 554 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.65 random_hours = 24 }
+					}
+				}
+				else_if = { # Hanoi
+					limit = { FROM.FROM = { state = 671 } }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { original_tag = FRA }
+							}
+						}
+						news_event = { id = city_fall_news.75 random_hours = 24 }
+					}
+				}
+			}
+		}
+	}
+}

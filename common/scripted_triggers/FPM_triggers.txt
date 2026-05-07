@@ -1,0 +1,110 @@
+FPM_USA_can_sell_weapons_trigger = {
+	NOT = { 
+		USA = {
+			OR = {
+				AND = {
+					has_completed_focus = USA_neutrality_act 
+					OR = {
+						NOT = { has_completed_focus = USA_lend_lease_act } #Can't sell weapons if US has declared neutrality without passing Lend-Lease Act or Tension being high
+						threat > 0.4
+					} 
+				}
+				has_war_with = FRA
+			}
+		}
+	}
+	USA = { has_civil_war = no }
+}
+
+FRA_eastern_bloc_trigger = {
+	exists = yes
+	NOT = {
+		has_war_with = FRA
+	}
+	OR = {
+		has_government = democratic
+		has_government = neutrality
+	}
+	is_subject = no
+	is_in_faction = no
+}
+
+FRA_league_of_nations_is_active = {
+	custom_trigger_tooltip = {
+		tooltip = league_of_nations_is_active_tt
+		NOT = { has_global_flag = LoN_disbanded_flag }
+		FRA = { NOT = { has_completed_focus = FRA_enforce_non_intervention }}
+	}
+}
+
+FRA_is_leading_army_in_case_yellow_zone = {
+	OR = {
+		is_leading_army_in_province = 13375
+		is_leading_army_in_province = 6583
+		is_leading_army_in_province = 551
+		is_leading_army_in_province = 3533
+		is_leading_army_in_province = 3546
+		is_leading_army_in_province = 3560
+		is_leading_army_in_province = 5291
+		is_leading_army_in_province = 6531
+		is_leading_army_in_province = 6545
+		is_leading_army_in_province = 9472
+		is_leading_army_in_province = 9490
+		is_leading_army_in_province = 9505
+		is_leading_army_in_province = 11732
+		is_leading_army_in_province = 13011
+		is_leading_army_in_province = 454
+		is_leading_army_in_province = 3402
+		is_leading_army_in_province = 3447
+		is_leading_army_in_province = 6585
+		is_leading_army_in_province = 9561
+		is_leading_army_in_province = 11420
+		is_leading_army_in_province = 11549
+		is_leading_army_in_province = 575
+		is_leading_army_in_province = 3476
+		is_leading_army_in_province = 3536
+		is_leading_army_in_province = 6504
+		is_leading_army_in_province = 9500
+		is_leading_army_in_province = 11483
+		is_leading_army_in_province = 11548
+		is_leading_army_in_province = 11606
+		is_leading_army_in_province = 3488
+		is_leading_army_in_province = 6537
+		is_leading_army_in_province = 9418
+		is_leading_army_in_province = 9444
+		is_leading_army_in_province = 11407
+		is_leading_army_in_province = 3516
+		is_leading_army_in_province = 9536
+		is_leading_army_in_province = 11519
+		is_leading_army_in_province = 13081
+		is_leading_army_in_province = 6598
+		is_leading_army_in_province = 9574
+		is_leading_army_in_province = 13068
+		is_leading_army_in_province = 11419
+		is_leading_army_in_province = 516
+		is_leading_army_in_province = 3576
+		is_leading_army_in_province = 6446
+		is_leading_army_in_province = 6560
+		is_leading_army_in_province = 6241
+		is_leading_army_in_province = 6286
+		is_leading_army_in_province = 6336
+		is_leading_army_in_province = 8622
+		is_leading_army_in_province = 9309
+		is_leading_army_in_province = 9335
+		is_leading_army_in_province = 9363
+		is_leading_army_in_province = 9403
+		is_leading_army_in_province = 11318
+		is_leading_army_in_province = 480
+		is_leading_army_in_province = 3262
+		is_leading_army_in_province = 6496
+		is_leading_army_in_province = 6500
+		is_leading_army_in_province = 9431
+		is_leading_army_in_province = 11456
+		is_leading_army_in_province = 11562
+		is_leading_army_in_province = 68
+		is_leading_army_in_province = 391
+		is_leading_army_in_province = 3211
+		is_leading_army_in_province = 3314
+		is_leading_army_in_province = 9498 
+	}
+}

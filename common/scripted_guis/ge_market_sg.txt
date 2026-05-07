@@ -1,0 +1,757 @@
+scripted_gui = { 
+    
+    ge_market_hud_sg = {
+        context_type = player_context
+        window_name = "ge_market_hud_window"
+        visible = { always = yes } 
+
+        effects = {
+            ge_open_market_button_click = { 
+                if = { limit = { has_country_flag = ge_market_is_open } clr_country_flag = ge_market_is_open }
+                else = { set_country_flag = ge_market_is_open }
+
+                if = { limit = { check_variable = { var = global.ge_steel_price value = 1 compare = less_than } }
+                    set_variable = { var = global.ge_steel_pool value = 50 } set_variable = { var = global.ge_steel_price value = 1000 }
+                    set_variable = { var = global.ge_oil_pool value = 50 } set_variable = { var = global.ge_oil_price value = 1000 }
+                    set_variable = { var = global.ge_aluminium_pool value = 50 } set_variable = { var = global.ge_aluminium_price value = 1000 }
+                    set_variable = { var = global.ge_rubber_pool value = 50 } set_variable = { var = global.ge_rubber_price value = 1000 }
+                    set_variable = { var = global.ge_tungsten_pool value = 50 } set_variable = { var = global.ge_tungsten_price value = 1000 }
+                    set_variable = { var = global.ge_chromium_pool value = 50 } set_variable = { var = global.ge_chromium_price value = 1000 }
+                    set_variable = { var = global.ge_coal_pool value = 50 } set_variable = { var = global.ge_coal_price value = 1000 }
+                    set_variable = { var = global.ge_deal_1_id value = 1 } set_variable = { var = global.ge_deal_1_amount value = 2500 } set_variable = { var = global.ge_deal_1_price value = 18000 }
+                    set_variable = { var = global.ge_deal_2_id value = 6 } set_variable = { var = global.ge_deal_2_amount value = 75 } set_variable = { var = global.ge_deal_2_price value = 18000 }
+                    set_variable = { var = global.ge_deal_3_id value = 8 } set_variable = { var = global.ge_deal_3_amount value = 100 } set_variable = { var = global.ge_deal_3_price value = 15000 }
+                }
+
+				set_variable = { var = ge_steel_multiplier value = 1 } set_variable = { var = ge_steel_cost value = global.ge_steel_price } set_variable = { var = ge_steel_reward value = 1 }
+                set_variable = { var = ge_oil_multiplier value = 1 } set_variable = { var = ge_oil_cost value = global.ge_oil_price } set_variable = { var = ge_oil_reward value = 1 }
+                set_variable = { var = ge_aluminium_multiplier value = 1 } set_variable = { var = ge_aluminium_cost value = global.ge_aluminium_price } set_variable = { var = ge_aluminium_reward value = 1 }
+                set_variable = { var = ge_rubber_multiplier value = 1 } set_variable = { var = ge_rubber_cost value = global.ge_rubber_price } set_variable = { var = ge_rubber_reward value = 1 }
+                set_variable = { var = ge_tungsten_multiplier value = 1 } set_variable = { var = ge_tungsten_cost value = global.ge_tungsten_price } set_variable = { var = ge_tungsten_reward value = 1 }
+                set_variable = { var = ge_chromium_multiplier value = 1 } set_variable = { var = ge_chromium_cost value = global.ge_chromium_price } set_variable = { var = ge_chromium_reward value = 1 }
+                set_variable = { var = ge_coal_multiplier value = 1 } set_variable = { var = ge_coal_cost value = global.ge_coal_price } set_variable = { var = ge_coal_reward value = 1 }
+                
+                if = { limit = { check_variable = { var = global.ge_state_offer_price value = 50000 compare = less_than } } set_variable = { var = global.ge_state_offer_price value = 500000 } }
+            }
+        }
+    }
+
+    ge_market_main_window_sg = {
+        context_type = player_context
+        window_name = "ge_market_main_window"
+        visible = { has_country_flag = ge_market_is_open }
+
+        effects = {
+            ge_close_market_button_click = { clr_country_flag = ge_market_is_open }
+
+			# ======================= KAYNAK MARKETİ =====================
+
+            # --- STEEL ---
+            ge_steel_plus_button_click = { add_to_variable = { var = ge_steel_multiplier value = 1 } clamp_variable = { var = ge_steel_multiplier min = 1 max = 10 } set_variable = { var = ge_steel_cost value = ge_steel_multiplier } multiply_variable = { var = ge_steel_cost value = global.ge_steel_price } set_variable = { var = ge_steel_reward value = ge_steel_multiplier } }
+            ge_steel_minus_button_click = { subtract_from_variable = { var = ge_steel_multiplier value = 1 } clamp_variable = { var = ge_steel_multiplier min = 1 max = 10 } set_variable = { var = ge_steel_cost value = ge_steel_multiplier } multiply_variable = { var = ge_steel_cost value = global.ge_steel_price } set_variable = { var = ge_steel_reward value = ge_steel_multiplier } }
+            ge_buy_steel_button_click = { 
+                set_temp_variable = { var = ge_req_amount value = ge_steel_multiplier } 
+                if = { limit = { check_variable = { var = ge_money value = ge_steel_cost compare = greater_than_or_equals } check_variable = { var = global.ge_steel_pool value = ge_req_amount compare = greater_than_or_equals } } 
+                    subtract_from_variable = { var = ge_money value = ge_steel_cost } 
+                    subtract_from_variable = { var = global.ge_steel_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 1 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = steel amount = 1 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 2 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = steel amount = 2 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 3 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = steel amount = 3 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 4 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = steel amount = 4 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 5 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = steel amount = 5 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 6 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = steel amount = 6 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 7 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = steel amount = 7 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 8 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = steel amount = 8 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 9 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = steel amount = 9 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 10 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = steel amount = 10 } } }
+                    
+                    set_temp_variable = { var = ge_inflation value = 5 } multiply_variable = { var = ge_inflation value = ge_steel_multiplier } add_to_variable = { var = global.ge_steel_price value = ge_inflation }
+                    set_variable = { var = ge_steel_cost value = ge_steel_multiplier } multiply_variable = { var = ge_steel_cost value = global.ge_steel_price }
+                } 
+            }
+            ge_sell_steel_button_click = { 
+                if = { limit = { 
+                        OR = {
+                            AND = { check_variable = { var = ge_steel_multiplier value = 1 compare = equals } any_owned_state = { has_resources_amount = { resource = steel amount > 0 } } }
+                            AND = { check_variable = { var = ge_steel_multiplier value = 2 compare = equals } any_owned_state = { has_resources_amount = { resource = steel amount > 1 } } }
+                            AND = { check_variable = { var = ge_steel_multiplier value = 3 compare = equals } any_owned_state = { has_resources_amount = { resource = steel amount > 2 } } }
+                            AND = { check_variable = { var = ge_steel_multiplier value = 4 compare = equals } any_owned_state = { has_resources_amount = { resource = steel amount > 3 } } }
+                            AND = { check_variable = { var = ge_steel_multiplier value = 5 compare = equals } any_owned_state = { has_resources_amount = { resource = steel amount > 4 } } }
+                            AND = { check_variable = { var = ge_steel_multiplier value = 6 compare = equals } any_owned_state = { has_resources_amount = { resource = steel amount > 5 } } }
+                            AND = { check_variable = { var = ge_steel_multiplier value = 7 compare = equals } any_owned_state = { has_resources_amount = { resource = steel amount > 6 } } }
+                            AND = { check_variable = { var = ge_steel_multiplier value = 8 compare = equals } any_owned_state = { has_resources_amount = { resource = steel amount > 7 } } }
+                            AND = { check_variable = { var = ge_steel_multiplier value = 9 compare = equals } any_owned_state = { has_resources_amount = { resource = steel amount > 8 } } }
+                            AND = { check_variable = { var = ge_steel_multiplier value = 10 compare = equals } any_owned_state = { has_resources_amount = { resource = steel amount > 9 } } }
+                        }
+                    } 
+                    add_to_variable = { var = ge_money value = ge_steel_cost } 
+                    set_temp_variable = { var = ge_req_amount value = ge_steel_multiplier } 
+                    add_to_variable = { var = global.ge_steel_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 1 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = steel amount > 0 } } add_resource = { type = steel amount = -1 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 2 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = steel amount > 1 } } add_resource = { type = steel amount = -2 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 3 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = steel amount > 2 } } add_resource = { type = steel amount = -3 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 4 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = steel amount > 3 } } add_resource = { type = steel amount = -4 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 5 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = steel amount > 4 } } add_resource = { type = steel amount = -5 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 6 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = steel amount > 5 } } add_resource = { type = steel amount = -6 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 7 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = steel amount > 6 } } add_resource = { type = steel amount = -7 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 8 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = steel amount > 7 } } add_resource = { type = steel amount = -8 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 9 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = steel amount > 8 } } add_resource = { type = steel amount = -9 } } }
+                    if = { limit = { check_variable = { var = ge_steel_multiplier value = 10 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = steel amount > 9 } } add_resource = { type = steel amount = -10 } } }
+
+                    set_temp_variable = { var = ge_deflation value = 5 } multiply_variable = { var = ge_deflation value = ge_steel_multiplier } subtract_from_variable = { var = global.ge_steel_price value = ge_deflation } clamp_variable = { var = global.ge_steel_price min = 200 }
+                    set_variable = { var = ge_steel_cost value = ge_steel_multiplier } multiply_variable = { var = ge_steel_cost value = global.ge_steel_price }
+                }
+            }
+
+            # --- OIL ---
+            ge_oil_plus_button_click = { add_to_variable = { var = ge_oil_multiplier value = 1 } clamp_variable = { var = ge_oil_multiplier min = 1 max = 10 } set_variable = { var = ge_oil_cost value = ge_oil_multiplier } multiply_variable = { var = ge_oil_cost value = global.ge_oil_price } set_variable = { var = ge_oil_reward value = ge_oil_multiplier } }
+            ge_oil_minus_button_click = { subtract_from_variable = { var = ge_oil_multiplier value = 1 } clamp_variable = { var = ge_oil_multiplier min = 1 max = 10 } set_variable = { var = ge_oil_cost value = ge_oil_multiplier } multiply_variable = { var = ge_oil_cost value = global.ge_oil_price } set_variable = { var = ge_oil_reward value = ge_oil_multiplier } }
+            ge_buy_oil_button_click = { 
+                set_temp_variable = { var = ge_req_amount value = ge_oil_multiplier } 
+                if = { limit = { check_variable = { var = ge_money value = ge_oil_cost compare = greater_than_or_equals } check_variable = { var = global.ge_oil_pool value = ge_req_amount compare = greater_than_or_equals } } 
+                    subtract_from_variable = { var = ge_money value = ge_oil_cost } 
+                    subtract_from_variable = { var = global.ge_oil_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 1 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = oil amount = 1 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 2 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = oil amount = 2 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 3 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = oil amount = 3 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 4 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = oil amount = 4 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 5 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = oil amount = 5 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 6 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = oil amount = 6 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 7 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = oil amount = 7 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 8 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = oil amount = 8 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 9 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = oil amount = 9 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 10 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = oil amount = 10 } } }
+                    
+                    set_temp_variable = { var = ge_inflation value = 5 } multiply_variable = { var = ge_inflation value = ge_oil_multiplier } add_to_variable = { var = global.ge_oil_price value = ge_inflation }
+                    set_variable = { var = ge_oil_cost value = ge_oil_multiplier } multiply_variable = { var = ge_oil_cost value = global.ge_oil_price }
+                } 
+            }
+            ge_sell_oil_button_click = { 
+                if = { limit = { 
+                        OR = {
+                            AND = { check_variable = { var = ge_oil_multiplier value = 1 compare = equals } any_owned_state = { has_resources_amount = { resource = oil amount > 0 } } }
+                            AND = { check_variable = { var = ge_oil_multiplier value = 2 compare = equals } any_owned_state = { has_resources_amount = { resource = oil amount > 1 } } }
+                            AND = { check_variable = { var = ge_oil_multiplier value = 3 compare = equals } any_owned_state = { has_resources_amount = { resource = oil amount > 2 } } }
+                            AND = { check_variable = { var = ge_oil_multiplier value = 4 compare = equals } any_owned_state = { has_resources_amount = { resource = oil amount > 3 } } }
+                            AND = { check_variable = { var = ge_oil_multiplier value = 5 compare = equals } any_owned_state = { has_resources_amount = { resource = oil amount > 4 } } }
+                            AND = { check_variable = { var = ge_oil_multiplier value = 6 compare = equals } any_owned_state = { has_resources_amount = { resource = oil amount > 5 } } }
+                            AND = { check_variable = { var = ge_oil_multiplier value = 7 compare = equals } any_owned_state = { has_resources_amount = { resource = oil amount > 6 } } }
+                            AND = { check_variable = { var = ge_oil_multiplier value = 8 compare = equals } any_owned_state = { has_resources_amount = { resource = oil amount > 7 } } }
+                            AND = { check_variable = { var = ge_oil_multiplier value = 9 compare = equals } any_owned_state = { has_resources_amount = { resource = oil amount > 8 } } }
+                            AND = { check_variable = { var = ge_oil_multiplier value = 10 compare = equals } any_owned_state = { has_resources_amount = { resource = oil amount > 9 } } }
+                        }
+                    } 
+                    add_to_variable = { var = ge_money value = ge_oil_cost } 
+                    set_temp_variable = { var = ge_req_amount value = ge_oil_multiplier } 
+                    add_to_variable = { var = global.ge_oil_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 1 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = oil amount > 0 } } add_resource = { type = oil amount = -1 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 2 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = oil amount > 1 } } add_resource = { type = oil amount = -2 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 3 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = oil amount > 2 } } add_resource = { type = oil amount = -3 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 4 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = oil amount > 3 } } add_resource = { type = oil amount = -4 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 5 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = oil amount > 4 } } add_resource = { type = oil amount = -5 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 6 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = oil amount > 5 } } add_resource = { type = oil amount = -6 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 7 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = oil amount > 6 } } add_resource = { type = oil amount = -7 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 8 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = oil amount > 7 } } add_resource = { type = oil amount = -8 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 9 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = oil amount > 8 } } add_resource = { type = oil amount = -9 } } }
+                    if = { limit = { check_variable = { var = ge_oil_multiplier value = 10 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = oil amount > 9 } } add_resource = { type = oil amount = -10 } } }
+
+                    set_temp_variable = { var = ge_deflation value = 5 } multiply_variable = { var = ge_deflation value = ge_oil_multiplier } subtract_from_variable = { var = global.ge_oil_price value = ge_deflation } clamp_variable = { var = global.ge_oil_price min = 200 }
+                    set_variable = { var = ge_oil_cost value = ge_oil_multiplier } multiply_variable = { var = ge_oil_cost value = global.ge_oil_price }
+                }
+            }
+
+            # --- ALUMINIUM ---
+            ge_aluminium_plus_button_click = { add_to_variable = { var = ge_aluminium_multiplier value = 1 } clamp_variable = { var = ge_aluminium_multiplier min = 1 max = 10 } set_variable = { var = ge_aluminium_cost value = ge_aluminium_multiplier } multiply_variable = { var = ge_aluminium_cost value = global.ge_aluminium_price } set_variable = { var = ge_aluminium_reward value = ge_aluminium_multiplier } }
+            ge_aluminium_minus_button_click = { subtract_from_variable = { var = ge_aluminium_multiplier value = 1 } clamp_variable = { var = ge_aluminium_multiplier min = 1 max = 10 } set_variable = { var = ge_aluminium_cost value = ge_aluminium_multiplier } multiply_variable = { var = ge_aluminium_cost value = global.ge_aluminium_price } set_variable = { var = ge_aluminium_reward value = ge_aluminium_multiplier } }
+            ge_buy_aluminium_button_click = { 
+                set_temp_variable = { var = ge_req_amount value = ge_aluminium_multiplier } 
+                if = { limit = { check_variable = { var = ge_money value = ge_aluminium_cost compare = greater_than_or_equals } check_variable = { var = global.ge_aluminium_pool value = ge_req_amount compare = greater_than_or_equals } } 
+                    subtract_from_variable = { var = ge_money value = ge_aluminium_cost } 
+                    subtract_from_variable = { var = global.ge_aluminium_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 1 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = aluminium amount = 1 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 2 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = aluminium amount = 2 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 3 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = aluminium amount = 3 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 4 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = aluminium amount = 4 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 5 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = aluminium amount = 5 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 6 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = aluminium amount = 6 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 7 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = aluminium amount = 7 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 8 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = aluminium amount = 8 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 9 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = aluminium amount = 9 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 10 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = aluminium amount = 10 } } }
+                    
+                    set_temp_variable = { var = ge_inflation value = 5 } multiply_variable = { var = ge_inflation value = ge_aluminium_multiplier } add_to_variable = { var = global.ge_aluminium_price value = ge_inflation }
+                    set_variable = { var = ge_aluminium_cost value = ge_aluminium_multiplier } multiply_variable = { var = ge_aluminium_cost value = global.ge_aluminium_price }
+                } 
+            }
+            ge_sell_aluminium_button_click = { 
+                if = { limit = { 
+                        OR = {
+                            AND = { check_variable = { var = ge_aluminium_multiplier value = 1 compare = equals } any_owned_state = { has_resources_amount = { resource = aluminium amount > 0 } } }
+                            AND = { check_variable = { var = ge_aluminium_multiplier value = 2 compare = equals } any_owned_state = { has_resources_amount = { resource = aluminium amount > 1 } } }
+                            AND = { check_variable = { var = ge_aluminium_multiplier value = 3 compare = equals } any_owned_state = { has_resources_amount = { resource = aluminium amount > 2 } } }
+                            AND = { check_variable = { var = ge_aluminium_multiplier value = 4 compare = equals } any_owned_state = { has_resources_amount = { resource = aluminium amount > 3 } } }
+                            AND = { check_variable = { var = ge_aluminium_multiplier value = 5 compare = equals } any_owned_state = { has_resources_amount = { resource = aluminium amount > 4 } } }
+                            AND = { check_variable = { var = ge_aluminium_multiplier value = 6 compare = equals } any_owned_state = { has_resources_amount = { resource = aluminium amount > 5 } } }
+                            AND = { check_variable = { var = ge_aluminium_multiplier value = 7 compare = equals } any_owned_state = { has_resources_amount = { resource = aluminium amount > 6 } } }
+                            AND = { check_variable = { var = ge_aluminium_multiplier value = 8 compare = equals } any_owned_state = { has_resources_amount = { resource = aluminium amount > 7 } } }
+                            AND = { check_variable = { var = ge_aluminium_multiplier value = 9 compare = equals } any_owned_state = { has_resources_amount = { resource = aluminium amount > 8 } } }
+                            AND = { check_variable = { var = ge_aluminium_multiplier value = 10 compare = equals } any_owned_state = { has_resources_amount = { resource = aluminium amount > 9 } } }
+                        }
+                    } 
+                    add_to_variable = { var = ge_money value = ge_aluminium_cost } 
+                    set_temp_variable = { var = ge_req_amount value = ge_aluminium_multiplier } 
+                    add_to_variable = { var = global.ge_aluminium_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 1 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = aluminium amount > 0 } } add_resource = { type = aluminium amount = -1 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 2 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = aluminium amount > 1 } } add_resource = { type = aluminium amount = -2 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 3 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = aluminium amount > 2 } } add_resource = { type = aluminium amount = -3 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 4 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = aluminium amount > 3 } } add_resource = { type = aluminium amount = -4 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 5 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = aluminium amount > 4 } } add_resource = { type = aluminium amount = -5 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 6 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = aluminium amount > 5 } } add_resource = { type = aluminium amount = -6 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 7 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = aluminium amount > 6 } } add_resource = { type = aluminium amount = -7 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 8 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = aluminium amount > 7 } } add_resource = { type = aluminium amount = -8 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 9 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = aluminium amount > 8 } } add_resource = { type = aluminium amount = -9 } } }
+                    if = { limit = { check_variable = { var = ge_aluminium_multiplier value = 10 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = aluminium amount > 9 } } add_resource = { type = aluminium amount = -10 } } }
+
+                    set_temp_variable = { var = ge_deflation value = 5 } multiply_variable = { var = ge_deflation value = ge_aluminium_multiplier } subtract_from_variable = { var = global.ge_aluminium_price value = ge_deflation } clamp_variable = { var = global.ge_aluminium_price min = 200 }
+                    set_variable = { var = ge_aluminium_cost value = ge_aluminium_multiplier } multiply_variable = { var = ge_aluminium_cost value = global.ge_aluminium_price }
+                }
+            }
+
+            # --- RUBBER ---
+            ge_rubber_plus_button_click = { add_to_variable = { var = ge_rubber_multiplier value = 1 } clamp_variable = { var = ge_rubber_multiplier min = 1 max = 10 } set_variable = { var = ge_rubber_cost value = ge_rubber_multiplier } multiply_variable = { var = ge_rubber_cost value = global.ge_rubber_price } set_variable = { var = ge_rubber_reward value = ge_rubber_multiplier } }
+            ge_rubber_minus_button_click = { subtract_from_variable = { var = ge_rubber_multiplier value = 1 } clamp_variable = { var = ge_rubber_multiplier min = 1 max = 10 } set_variable = { var = ge_rubber_cost value = ge_rubber_multiplier } multiply_variable = { var = ge_rubber_cost value = global.ge_rubber_price } set_variable = { var = ge_rubber_reward value = ge_rubber_multiplier } }
+            ge_buy_rubber_button_click = { 
+                set_temp_variable = { var = ge_req_amount value = ge_rubber_multiplier } 
+                if = { limit = { check_variable = { var = ge_money value = ge_rubber_cost compare = greater_than_or_equals } check_variable = { var = global.ge_rubber_pool value = ge_req_amount compare = greater_than_or_equals } } 
+                    subtract_from_variable = { var = ge_money value = ge_rubber_cost } 
+                    subtract_from_variable = { var = global.ge_rubber_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 1 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = rubber amount = 1 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 2 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = rubber amount = 2 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 3 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = rubber amount = 3 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 4 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = rubber amount = 4 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 5 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = rubber amount = 5 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 6 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = rubber amount = 6 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 7 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = rubber amount = 7 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 8 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = rubber amount = 8 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 9 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = rubber amount = 9 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 10 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = rubber amount = 10 } } }
+                    
+                    set_temp_variable = { var = ge_inflation value = 5 } multiply_variable = { var = ge_inflation value = ge_rubber_multiplier } add_to_variable = { var = global.ge_rubber_price value = ge_inflation }
+                    set_variable = { var = ge_rubber_cost value = ge_rubber_multiplier } multiply_variable = { var = ge_rubber_cost value = global.ge_rubber_price }
+                } 
+            }
+            ge_sell_rubber_button_click = { 
+                if = { limit = { 
+                        OR = {
+                            AND = { check_variable = { var = ge_rubber_multiplier value = 1 compare = equals } any_owned_state = { has_resources_amount = { resource = rubber amount > 0 } } }
+                            AND = { check_variable = { var = ge_rubber_multiplier value = 2 compare = equals } any_owned_state = { has_resources_amount = { resource = rubber amount > 1 } } }
+                            AND = { check_variable = { var = ge_rubber_multiplier value = 3 compare = equals } any_owned_state = { has_resources_amount = { resource = rubber amount > 2 } } }
+                            AND = { check_variable = { var = ge_rubber_multiplier value = 4 compare = equals } any_owned_state = { has_resources_amount = { resource = rubber amount > 3 } } }
+                            AND = { check_variable = { var = ge_rubber_multiplier value = 5 compare = equals } any_owned_state = { has_resources_amount = { resource = rubber amount > 4 } } }
+                            AND = { check_variable = { var = ge_rubber_multiplier value = 6 compare = equals } any_owned_state = { has_resources_amount = { resource = rubber amount > 5 } } }
+                            AND = { check_variable = { var = ge_rubber_multiplier value = 7 compare = equals } any_owned_state = { has_resources_amount = { resource = rubber amount > 6 } } }
+                            AND = { check_variable = { var = ge_rubber_multiplier value = 8 compare = equals } any_owned_state = { has_resources_amount = { resource = rubber amount > 7 } } }
+                            AND = { check_variable = { var = ge_rubber_multiplier value = 9 compare = equals } any_owned_state = { has_resources_amount = { resource = rubber amount > 8 } } }
+                            AND = { check_variable = { var = ge_rubber_multiplier value = 10 compare = equals } any_owned_state = { has_resources_amount = { resource = rubber amount > 9 } } }
+                        }
+                    } 
+                    add_to_variable = { var = ge_money value = ge_rubber_cost } 
+                    set_temp_variable = { var = ge_req_amount value = ge_rubber_multiplier } 
+                    add_to_variable = { var = global.ge_rubber_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 1 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = rubber amount > 0 } } add_resource = { type = rubber amount = -1 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 2 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = rubber amount > 1 } } add_resource = { type = rubber amount = -2 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 3 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = rubber amount > 2 } } add_resource = { type = rubber amount = -3 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 4 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = rubber amount > 3 } } add_resource = { type = rubber amount = -4 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 5 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = rubber amount > 4 } } add_resource = { type = rubber amount = -5 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 6 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = rubber amount > 5 } } add_resource = { type = rubber amount = -6 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 7 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = rubber amount > 6 } } add_resource = { type = rubber amount = -7 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 8 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = rubber amount > 7 } } add_resource = { type = rubber amount = -8 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 9 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = rubber amount > 8 } } add_resource = { type = rubber amount = -9 } } }
+                    if = { limit = { check_variable = { var = ge_rubber_multiplier value = 10 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = rubber amount > 9 } } add_resource = { type = rubber amount = -10 } } }
+
+                    set_temp_variable = { var = ge_deflation value = 5 } multiply_variable = { var = ge_deflation value = ge_rubber_multiplier } subtract_from_variable = { var = global.ge_rubber_price value = ge_deflation } clamp_variable = { var = global.ge_rubber_price min = 200 }
+                    set_variable = { var = ge_rubber_cost value = ge_rubber_multiplier } multiply_variable = { var = ge_rubber_cost value = global.ge_rubber_price }
+                }
+            }
+
+            # --- TUNGSTEN ---
+            ge_tungsten_plus_button_click = { add_to_variable = { var = ge_tungsten_multiplier value = 1 } clamp_variable = { var = ge_tungsten_multiplier min = 1 max = 10 } set_variable = { var = ge_tungsten_cost value = ge_tungsten_multiplier } multiply_variable = { var = ge_tungsten_cost value = global.ge_tungsten_price } set_variable = { var = ge_tungsten_reward value = ge_tungsten_multiplier } }
+            ge_tungsten_minus_button_click = { subtract_from_variable = { var = ge_tungsten_multiplier value = 1 } clamp_variable = { var = ge_tungsten_multiplier min = 1 max = 10 } set_variable = { var = ge_tungsten_cost value = ge_tungsten_multiplier } multiply_variable = { var = ge_tungsten_cost value = global.ge_tungsten_price } set_variable = { var = ge_tungsten_reward value = ge_tungsten_multiplier } }
+            ge_buy_tungsten_button_click = { 
+                set_temp_variable = { var = ge_req_amount value = ge_tungsten_multiplier } 
+                if = { limit = { check_variable = { var = ge_money value = ge_tungsten_cost compare = greater_than_or_equals } check_variable = { var = global.ge_tungsten_pool value = ge_req_amount compare = greater_than_or_equals } } 
+                    subtract_from_variable = { var = ge_money value = ge_tungsten_cost } 
+                    subtract_from_variable = { var = global.ge_tungsten_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 1 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = tungsten amount = 1 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 2 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = tungsten amount = 2 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 3 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = tungsten amount = 3 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 4 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = tungsten amount = 4 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 5 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = tungsten amount = 5 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 6 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = tungsten amount = 6 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 7 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = tungsten amount = 7 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 8 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = tungsten amount = 8 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 9 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = tungsten amount = 9 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 10 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = tungsten amount = 10 } } }
+                    
+                    set_temp_variable = { var = ge_inflation value = 5 } multiply_variable = { var = ge_inflation value = ge_tungsten_multiplier } add_to_variable = { var = global.ge_tungsten_price value = ge_inflation }
+                    set_variable = { var = ge_tungsten_cost value = ge_tungsten_multiplier } multiply_variable = { var = ge_tungsten_cost value = global.ge_tungsten_price }
+                } 
+            }
+            ge_sell_tungsten_button_click = { 
+                if = { limit = { 
+                        OR = {
+                            AND = { check_variable = { var = ge_tungsten_multiplier value = 1 compare = equals } any_owned_state = { has_resources_amount = { resource = tungsten amount > 0 } } }
+                            AND = { check_variable = { var = ge_tungsten_multiplier value = 2 compare = equals } any_owned_state = { has_resources_amount = { resource = tungsten amount > 1 } } }
+                            AND = { check_variable = { var = ge_tungsten_multiplier value = 3 compare = equals } any_owned_state = { has_resources_amount = { resource = tungsten amount > 2 } } }
+                            AND = { check_variable = { var = ge_tungsten_multiplier value = 4 compare = equals } any_owned_state = { has_resources_amount = { resource = tungsten amount > 3 } } }
+                            AND = { check_variable = { var = ge_tungsten_multiplier value = 5 compare = equals } any_owned_state = { has_resources_amount = { resource = tungsten amount > 4 } } }
+                            AND = { check_variable = { var = ge_tungsten_multiplier value = 6 compare = equals } any_owned_state = { has_resources_amount = { resource = tungsten amount > 5 } } }
+                            AND = { check_variable = { var = ge_tungsten_multiplier value = 7 compare = equals } any_owned_state = { has_resources_amount = { resource = tungsten amount > 6 } } }
+                            AND = { check_variable = { var = ge_tungsten_multiplier value = 8 compare = equals } any_owned_state = { has_resources_amount = { resource = tungsten amount > 7 } } }
+                            AND = { check_variable = { var = ge_tungsten_multiplier value = 9 compare = equals } any_owned_state = { has_resources_amount = { resource = tungsten amount > 8 } } }
+                            AND = { check_variable = { var = ge_tungsten_multiplier value = 10 compare = equals } any_owned_state = { has_resources_amount = { resource = tungsten amount > 9 } } }
+                        }
+                    } 
+                    add_to_variable = { var = ge_money value = ge_tungsten_cost } 
+                    set_temp_variable = { var = ge_req_amount value = ge_tungsten_multiplier } 
+                    add_to_variable = { var = global.ge_tungsten_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 1 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = tungsten amount > 0 } } add_resource = { type = tungsten amount = -1 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 2 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = tungsten amount > 1 } } add_resource = { type = tungsten amount = -2 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 3 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = tungsten amount > 2 } } add_resource = { type = tungsten amount = -3 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 4 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = tungsten amount > 3 } } add_resource = { type = tungsten amount = -4 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 5 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = tungsten amount > 4 } } add_resource = { type = tungsten amount = -5 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 6 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = tungsten amount > 5 } } add_resource = { type = tungsten amount = -6 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 7 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = tungsten amount > 6 } } add_resource = { type = tungsten amount = -7 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 8 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = tungsten amount > 7 } } add_resource = { type = tungsten amount = -8 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 9 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = tungsten amount > 8 } } add_resource = { type = tungsten amount = -9 } } }
+                    if = { limit = { check_variable = { var = ge_tungsten_multiplier value = 10 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = tungsten amount > 9 } } add_resource = { type = tungsten amount = -10 } } }
+
+                    set_temp_variable = { var = ge_deflation value = 5 } multiply_variable = { var = ge_deflation value = ge_tungsten_multiplier } subtract_from_variable = { var = global.ge_tungsten_price value = ge_deflation } clamp_variable = { var = global.ge_tungsten_price min = 200 }
+                    set_variable = { var = ge_tungsten_cost value = ge_tungsten_multiplier } multiply_variable = { var = ge_tungsten_cost value = global.ge_tungsten_price }
+                }
+            }
+
+            # --- CHROMIUM ---
+            ge_chromium_plus_button_click = { add_to_variable = { var = ge_chromium_multiplier value = 1 } clamp_variable = { var = ge_chromium_multiplier min = 1 max = 10 } set_variable = { var = ge_chromium_cost value = ge_chromium_multiplier } multiply_variable = { var = ge_chromium_cost value = global.ge_chromium_price } set_variable = { var = ge_chromium_reward value = ge_chromium_multiplier } }
+            ge_chromium_minus_button_click = { subtract_from_variable = { var = ge_chromium_multiplier value = 1 } clamp_variable = { var = ge_chromium_multiplier min = 1 max = 10 } set_variable = { var = ge_chromium_cost value = ge_chromium_multiplier } multiply_variable = { var = ge_chromium_cost value = global.ge_chromium_price } set_variable = { var = ge_chromium_reward value = ge_chromium_multiplier } }
+            ge_buy_chromium_button_click = { 
+                set_temp_variable = { var = ge_req_amount value = ge_chromium_multiplier } 
+                if = { limit = { check_variable = { var = ge_money value = ge_chromium_cost compare = greater_than_or_equals } check_variable = { var = global.ge_chromium_pool value = ge_req_amount compare = greater_than_or_equals } } 
+                    subtract_from_variable = { var = ge_money value = ge_chromium_cost } 
+                    subtract_from_variable = { var = global.ge_chromium_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 1 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = chromium amount = 1 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 2 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = chromium amount = 2 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 3 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = chromium amount = 3 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 4 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = chromium amount = 4 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 5 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = chromium amount = 5 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 6 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = chromium amount = 6 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 7 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = chromium amount = 7 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 8 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = chromium amount = 8 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 9 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = chromium amount = 9 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 10 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = chromium amount = 10 } } }
+                    
+                    set_temp_variable = { var = ge_inflation value = 5 } multiply_variable = { var = ge_inflation value = ge_chromium_multiplier } add_to_variable = { var = global.ge_chromium_price value = ge_inflation }
+                    set_variable = { var = ge_chromium_cost value = ge_chromium_multiplier } multiply_variable = { var = ge_chromium_cost value = global.ge_chromium_price }
+                } 
+            }
+            ge_sell_chromium_button_click = { 
+                if = { limit = { 
+                        OR = {
+                            AND = { check_variable = { var = ge_chromium_multiplier value = 1 compare = equals } any_owned_state = { has_resources_amount = { resource = chromium amount > 0 } } }
+                            AND = { check_variable = { var = ge_chromium_multiplier value = 2 compare = equals } any_owned_state = { has_resources_amount = { resource = chromium amount > 1 } } }
+                            AND = { check_variable = { var = ge_chromium_multiplier value = 3 compare = equals } any_owned_state = { has_resources_amount = { resource = chromium amount > 2 } } }
+                            AND = { check_variable = { var = ge_chromium_multiplier value = 4 compare = equals } any_owned_state = { has_resources_amount = { resource = chromium amount > 3 } } }
+                            AND = { check_variable = { var = ge_chromium_multiplier value = 5 compare = equals } any_owned_state = { has_resources_amount = { resource = chromium amount > 4 } } }
+                            AND = { check_variable = { var = ge_chromium_multiplier value = 6 compare = equals } any_owned_state = { has_resources_amount = { resource = chromium amount > 5 } } }
+                            AND = { check_variable = { var = ge_chromium_multiplier value = 7 compare = equals } any_owned_state = { has_resources_amount = { resource = chromium amount > 6 } } }
+                            AND = { check_variable = { var = ge_chromium_multiplier value = 8 compare = equals } any_owned_state = { has_resources_amount = { resource = chromium amount > 7 } } }
+                            AND = { check_variable = { var = ge_chromium_multiplier value = 9 compare = equals } any_owned_state = { has_resources_amount = { resource = chromium amount > 8 } } }
+                            AND = { check_variable = { var = ge_chromium_multiplier value = 10 compare = equals } any_owned_state = { has_resources_amount = { resource = chromium amount > 9 } } }
+                        }
+                    } 
+                    add_to_variable = { var = ge_money value = ge_chromium_cost } 
+                    set_temp_variable = { var = ge_req_amount value = ge_chromium_multiplier } 
+                    add_to_variable = { var = global.ge_chromium_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 1 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = chromium amount > 0 } } add_resource = { type = chromium amount = -1 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 2 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = chromium amount > 1 } } add_resource = { type = chromium amount = -2 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 3 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = chromium amount > 2 } } add_resource = { type = chromium amount = -3 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 4 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = chromium amount > 3 } } add_resource = { type = chromium amount = -4 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 5 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = chromium amount > 4 } } add_resource = { type = chromium amount = -5 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 6 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = chromium amount > 5 } } add_resource = { type = chromium amount = -6 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 7 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = chromium amount > 6 } } add_resource = { type = chromium amount = -7 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 8 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = chromium amount > 7 } } add_resource = { type = chromium amount = -8 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 9 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = chromium amount > 8 } } add_resource = { type = chromium amount = -9 } } }
+                    if = { limit = { check_variable = { var = ge_chromium_multiplier value = 10 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = chromium amount > 9 } } add_resource = { type = chromium amount = -10 } } }
+
+                    set_temp_variable = { var = ge_deflation value = 5 } multiply_variable = { var = ge_deflation value = ge_chromium_multiplier } subtract_from_variable = { var = global.ge_chromium_price value = ge_deflation } clamp_variable = { var = global.ge_chromium_price min = 200 }
+                    set_variable = { var = ge_chromium_cost value = ge_chromium_multiplier } multiply_variable = { var = ge_chromium_cost value = global.ge_chromium_price }
+                }
+            }
+
+            # --- COAL ---
+            ge_coal_plus_button_click = { add_to_variable = { var = ge_coal_multiplier value = 1 } clamp_variable = { var = ge_coal_multiplier min = 1 max = 10 } set_variable = { var = ge_coal_cost value = ge_coal_multiplier } multiply_variable = { var = ge_coal_cost value = global.ge_coal_price } set_variable = { var = ge_coal_reward value = ge_coal_multiplier } }
+            ge_coal_minus_button_click = { subtract_from_variable = { var = ge_coal_multiplier value = 1 } clamp_variable = { var = ge_coal_multiplier min = 1 max = 10 } set_variable = { var = ge_coal_cost value = ge_coal_multiplier } multiply_variable = { var = ge_coal_cost value = global.ge_coal_price } set_variable = { var = ge_coal_reward value = ge_coal_multiplier } }
+            ge_buy_coal_button_click = { 
+                set_temp_variable = { var = ge_req_amount value = ge_coal_multiplier } 
+                if = { limit = { check_variable = { var = ge_money value = ge_coal_cost compare = greater_than_or_equals } check_variable = { var = global.ge_coal_pool value = ge_req_amount compare = greater_than_or_equals } } 
+                    subtract_from_variable = { var = ge_money value = ge_coal_cost } 
+                    subtract_from_variable = { var = global.ge_coal_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 1 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = coal amount = 1 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 2 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = coal amount = 2 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 3 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = coal amount = 3 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 4 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = coal amount = 4 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 5 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = coal amount = 5 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 6 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = coal amount = 6 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 7 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = coal amount = 7 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 8 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = coal amount = 8 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 9 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = coal amount = 9 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 10 compare = equals } } random_owned_state = { limit = { is_core_of = ROOT } add_resource = { type = coal amount = 10 } } }
+                    
+                    set_temp_variable = { var = ge_inflation value = 5 } multiply_variable = { var = ge_inflation value = ge_coal_multiplier } add_to_variable = { var = global.ge_coal_price value = ge_inflation }
+                    set_variable = { var = ge_coal_cost value = ge_coal_multiplier } multiply_variable = { var = ge_coal_cost value = global.ge_coal_price }
+                } 
+            }
+            ge_sell_coal_button_click = { 
+                if = { limit = { 
+                        OR = {
+                            AND = { check_variable = { var = ge_coal_multiplier value = 1 compare = equals } any_owned_state = { has_resources_amount = { resource = coal amount > 0 } } }
+                            AND = { check_variable = { var = ge_coal_multiplier value = 2 compare = equals } any_owned_state = { has_resources_amount = { resource = coal amount > 1 } } }
+                            AND = { check_variable = { var = ge_coal_multiplier value = 3 compare = equals } any_owned_state = { has_resources_amount = { resource = coal amount > 2 } } }
+                            AND = { check_variable = { var = ge_coal_multiplier value = 4 compare = equals } any_owned_state = { has_resources_amount = { resource = coal amount > 3 } } }
+                            AND = { check_variable = { var = ge_coal_multiplier value = 5 compare = equals } any_owned_state = { has_resources_amount = { resource = coal amount > 4 } } }
+                            AND = { check_variable = { var = ge_coal_multiplier value = 6 compare = equals } any_owned_state = { has_resources_amount = { resource = coal amount > 5 } } }
+                            AND = { check_variable = { var = ge_coal_multiplier value = 7 compare = equals } any_owned_state = { has_resources_amount = { resource = coal amount > 6 } } }
+                            AND = { check_variable = { var = ge_coal_multiplier value = 8 compare = equals } any_owned_state = { has_resources_amount = { resource = coal amount > 7 } } }
+                            AND = { check_variable = { var = ge_coal_multiplier value = 9 compare = equals } any_owned_state = { has_resources_amount = { resource = coal amount > 8 } } }
+                            AND = { check_variable = { var = ge_coal_multiplier value = 10 compare = equals } any_owned_state = { has_resources_amount = { resource = coal amount > 9 } } }
+                        }
+                    } 
+                    add_to_variable = { var = ge_money value = ge_coal_cost } 
+                    set_temp_variable = { var = ge_req_amount value = ge_coal_multiplier } 
+                    add_to_variable = { var = global.ge_coal_pool value = ge_req_amount }
+                    
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 1 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = coal amount > 0 } } add_resource = { type = coal amount = -1 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 2 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = coal amount > 1 } } add_resource = { type = coal amount = -2 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 3 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = coal amount > 2 } } add_resource = { type = coal amount = -3 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 4 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = coal amount > 3 } } add_resource = { type = coal amount = -4 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 5 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = coal amount > 4 } } add_resource = { type = coal amount = -5 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 6 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = coal amount > 5 } } add_resource = { type = coal amount = -6 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 7 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = coal amount > 6 } } add_resource = { type = coal amount = -7 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 8 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = coal amount > 7 } } add_resource = { type = coal amount = -8 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 9 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = coal amount > 8 } } add_resource = { type = coal amount = -9 } } }
+                    if = { limit = { check_variable = { var = ge_coal_multiplier value = 10 compare = equals } } random_owned_state = { limit = { has_resources_amount = { resource = coal amount > 9 } } add_resource = { type = coal amount = -10 } } }
+
+                    set_temp_variable = { var = ge_deflation value = 5 } multiply_variable = { var = ge_deflation value = ge_coal_multiplier } subtract_from_variable = { var = global.ge_coal_price value = ge_deflation } clamp_variable = { var = global.ge_coal_price min = 200 }
+                    set_variable = { var = ge_coal_cost value = ge_coal_multiplier } multiply_variable = { var = ge_coal_cost value = global.ge_coal_price }
+                }
+            }
+
+
+            # ====================================================================
+            # ======================= AYLIK FIRSATLAR (DEALS) ====================
+            # ====================================================================
+
+            ge_buy_deal_1_button_click = {
+                if = { limit = { 
+                        check_variable = { var = ge_money value = global.ge_deal_1_price compare = greater_than_or_equals } 
+                        check_variable = { var = global.ge_deal_1_amount value = 1 compare = greater_than_or_equals } 
+                    }
+                    subtract_from_variable = { var = ge_money value = global.ge_deal_1_price }
+                    
+                    if = { limit = { check_variable = { var = global.ge_deal_1_id value = 1 compare = equals } } add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = ROOT } }
+                    if = { limit = { check_variable = { var = global.ge_deal_1_id value = 2 compare = equals } } add_equipment_to_stockpile = { type = support_equipment_1 amount = 600 producer = ROOT } }
+                    if = { limit = { check_variable = { var = global.ge_deal_1_id value = 3 compare = equals } } add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = ROOT } }
+                    if = { limit = { check_variable = { var = global.ge_deal_1_id value = 4 compare = equals } } add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 300 producer = ROOT } }
+                    
+                    set_variable = { var = global.ge_deal_1_amount value = 0 } 
+                }
+            }
+
+            # DEAL 2: TANKLAR
+            ge_buy_deal_2_button_click = {
+                if = { limit = { 
+                        check_variable = { var = ge_money value = global.ge_deal_2_price compare = greater_than_or_equals } 
+                        check_variable = { var = global.ge_deal_2_amount value = 1 compare = greater_than_or_equals } 
+                    }
+                    subtract_from_variable = { var = ge_money value = global.ge_deal_2_price }
+                    
+                    # 5: HAFİF TANK
+                    if = { limit = { check_variable = { var = global.ge_deal_2_id value = 5 compare = equals } } 
+                        if = { limit = { has_dlc = "No Step Back" } 
+                            if = { limit = { NOT = { has_country_flag = ge_ltank_variant_created } }
+                                create_equipment_variant = {
+                                    name = "Smuggled Light Tank"
+                                    type = light_tank_chassis_1
+                                    allow_without_tech = yes
+                                    modules = {
+                                        main_armament_slot = tank_heavy_machine_gun
+                                        turret_type_slot = tank_light_two_man_tank_turret
+                                        suspension_type_slot = tank_bogie_suspension
+                                        armor_type_slot = tank_riveted_armor
+                                        engine_type_slot = tank_gasoline_engine
+                                    }
+                                }
+                                set_country_flag = ge_ltank_variant_created
+                            }
+                            add_equipment_to_stockpile = { type = light_tank_chassis_1 variant_name = "Smuggled Light Tank" amount = 150 producer = ROOT } 
+                        }
+                        else = { add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 150 producer = ROOT } }
+                    }
+                    
+                    # 6: ORTA TANK
+                    if = { limit = { check_variable = { var = global.ge_deal_2_id value = 6 compare = equals } } 
+                        if = { limit = { has_dlc = "No Step Back" } 
+                            if = { limit = { NOT = { has_country_flag = ge_mtank_variant_created } }
+                                create_equipment_variant = {
+                                    name = "Smuggled Medium Tank"
+                                    type = medium_tank_chassis_1
+                                    allow_without_tech = yes
+                                    modules = {
+                                        main_armament_slot = tank_small_cannon 
+                                        turret_type_slot = tank_medium_three_man_tank_turret
+                                        suspension_type_slot = tank_bogie_suspension
+                                        armor_type_slot = tank_riveted_armor
+                                        engine_type_slot = tank_gasoline_engine
+                                    }
+                                }
+                                set_country_flag = ge_mtank_variant_created
+                            }
+                            add_equipment_to_stockpile = { type = medium_tank_chassis_1 variant_name = "Smuggled Medium Tank" amount = 75 producer = ROOT } 
+                        }
+                        else = { add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 75 producer = ROOT } }
+                    }
+                    
+                    if = { limit = { check_variable = { var = global.ge_deal_2_id value = 10 compare = equals } } add_equipment_to_stockpile = { type = convoy_1 amount = 150 producer = ROOT } }
+                    if = { limit = { check_variable = { var = global.ge_deal_2_id value = 11 compare = equals } } add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 producer = ROOT } }
+                    
+                    set_variable = { var = global.ge_deal_2_amount value = 0 } 
+                }
+            }
+            
+            # DEAL 3: UÇAK
+            ge_buy_deal_3_button_click = {
+                if = { limit = { 
+                        check_variable = { var = ge_money value = global.ge_deal_3_price compare = greater_than_or_equals } 
+                        check_variable = { var = global.ge_deal_3_amount value = 1 compare = greater_than_or_equals } 
+                    }
+                    subtract_from_variable = { var = ge_money value = global.ge_deal_3_price }
+                    
+                    if = { limit = { check_variable = { var = global.ge_deal_3_id value = 7 compare = equals } } 
+                        if = { limit = { has_dlc = "By Blood Alone" } 
+                            if = { limit = { NOT = { has_country_flag = ge_fighter_variant_created } }
+                                create_equipment_variant = {
+                                    name = "Foreign Fighter"
+                                    type = small_plane_airframe_1
+                                    allow_without_tech = yes
+                                    modules = {
+                                        fixed_main_weapon_slot = light_mg_2x
+                                        engine_type_slot = engine_1_1x
+                                    }
+                                }
+                                set_country_flag = ge_fighter_variant_created
+                            }
+                            add_equipment_to_stockpile = { type = small_plane_airframe_1 variant_name = "Foreign Fighter" amount = 120 producer = ROOT } 
+                        }
+                        else = { add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 120 producer = ROOT } }
+                    }
+                    
+                    if = { limit = { check_variable = { var = global.ge_deal_3_id value = 8 compare = equals } } 
+                        if = { limit = { has_dlc = "By Blood Alone" } 
+                            if = { limit = { NOT = { has_country_flag = ge_cas_variant_created } }
+                                create_equipment_variant = {
+                                    name = "Foreign CAS"
+                                    type = small_plane_airframe_1
+                                    allow_without_tech = yes
+                                    modules = {
+                                        fixed_main_weapon_slot = light_mg_2x
+                                        fixed_auxiliary_weapon_slot_1 = bomb_locks
+                                        engine_type_slot = engine_1_1x
+                                    }
+                                }
+                                set_country_flag = ge_cas_variant_created
+                            }
+                            add_equipment_to_stockpile = { type = small_plane_airframe_1 variant_name = "Foreign CAS" amount = 100 producer = ROOT } 
+                        }
+                        else = { add_equipment_to_stockpile = { type = cas_equipment_1 amount = 100 producer = ROOT } }
+                    }
+                    
+                    if = { limit = { check_variable = { var = global.ge_deal_3_id value = 9 compare = equals } } 
+                        if = { limit = { has_dlc = "By Blood Alone" } 
+                            if = { limit = { NOT = { has_country_flag = ge_tac_variant_created } }
+                                create_equipment_variant = {
+                                    name = "Foreign Tac Bomber"
+                                    type = medium_plane_airframe_1
+                                    allow_without_tech = yes
+                                    modules = {
+                                        fixed_main_weapon_slot = medium_bomb_bay
+                                        engine_type_slot = engine_1_2x
+                                    }
+                                }
+                                set_country_flag = ge_tac_variant_created
+                            }
+                            add_equipment_to_stockpile = { type = medium_plane_airframe_1 variant_name = "Foreign Tac Bomber" amount = 60 producer = ROOT } 
+                        }
+                        else = { add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 60 producer = ROOT } }
+                    }
+                    
+                    if = { limit = { check_variable = { var = global.ge_deal_3_id value = 12 compare = equals } } add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 30 producer = ROOT } }
+                    
+                    set_variable = { var = global.ge_deal_3_amount value = 0 } 
+                }
+            }
+
+        # --- TOPRAK SATIN ALMA (DİNAMİK FİYAT) ---
+            ge_select_state_button_click = { set_country_flag = ge_selecting_buy_state clr_country_flag = ge_market_is_open }
+            
+            ge_offer_plus_button_click = { add_to_variable = { var = global.ge_state_offer_price value = 50000 } }
+            ge_offer_minus_button_click = { 
+                if = { limit = { check_variable = { var = global.ge_state_offer_price value = 50001 compare = greater_than_or_equals } }
+                    subtract_from_variable = { var = global.ge_state_offer_price value = 50000 } 
+                }
+            }
+
+            ge_buy_state_button_click = {
+                if = { limit = { 
+                        check_variable = { var = ge_money value = global.ge_state_offer_price compare = greater_than_or_equals }
+                        has_country_flag = ge_buy_state_selected 
+                    }
+                    # Oyuncunun belirlediği teklif miktarını (offer_price) hesaptan düş
+                    subtract_from_variable = { var = ge_money value = global.ge_state_offer_price }
+                    clr_country_flag = ge_buy_state_selected 
+                    
+                    save_global_event_target_as = ge_state_buyer
+                    
+                    event_target:ge_target_buy_state = {
+                        OWNER = { country_event = { id = ge_market.1 } }
+                    }
+                }
+            }
+
+            # ======================= YERALTI FABRİKALARI ====================
+            ge_build_mil_button_click = {
+                if = { limit = { check_variable = { var = ge_money value = 275000 compare = greater_than_or_equals } }
+                    subtract_from_variable = { var = ge_money value = 275000 }
+                    add_offsite_building = { type = arms_factory level = 1 }
+                }
+            }
+
+            ge_build_civ_button_click = {
+                if = { limit = { check_variable = { var = ge_money value = 225000 compare = greater_than_or_equals } }
+                    subtract_from_variable = { var = ge_money value = 225000 }
+                    add_offsite_building = { type = industrial_complex level = 1 }
+                }
+            }
+
+            # ======================= PMC (PARALI ASKER) ====================
+            
+            # YER SEÇİMİ BAŞLATMA
+            ge_select_loc_button_click = {
+                set_country_flag = ge_selecting_pmc_loc
+                clr_country_flag = ge_market_is_open
+            }
+
+			ge_hire_pmc_button_click = {
+                if = { limit = { 
+                        check_variable = { var = ge_money value = 125000 compare = greater_than_or_equals }
+                        has_country_flag = ge_pmc_loc_selected 
+                    }
+                    subtract_from_variable = { var = ge_money value = 125000 }
+                    clr_country_flag = ge_pmc_loc_selected 
+                    
+                    # 1. DEPONUN DOLDURULMASI (Teslimat)
+                    add_manpower = 25000
+                    add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 producer = ROOT }
+                    add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 150 producer = ROOT }
+                    add_equipment_to_stockpile = { type = support_equipment_1 amount = 100 producer = ROOT }
+                    
+                    if = {
+                        limit = { NOT = { has_template = "PMC Veterans" } }
+                        division_template = {
+                            name = "PMC Veterans"
+                            is_locked = yes
+							priority = 2
+							
+                            regiments = {
+                                infantry = { x = 0 y = 0 }
+                                infantry = { x = 0 y = 1 }
+                                infantry = { x = 0 y = 2 }
+                                infantry = { x = 1 y = 0 }
+                                infantry = { x = 1 y = 1 }
+                                infantry = { x = 1 y = 2 }
+                                artillery_brigade = { x = 2 y = 0 }
+                            }
+                            support = {
+                                engineer = { x = 0 y = 0 }
+                                artillery = { x = 0 y = 1 }
+                            }
+                        }
+                    }
+
+                    event_target:ge_pmc_drop_zone = {
+						create_unit = { division = "name = \"1st PMC Contract Group\" division_template = \"PMC Veterans\" start_experience_factor = 1.0" owner = ROOT }
+                        create_unit = { division = "name = \"2nd PMC Contract Group\" division_template = \"PMC Veterans\" start_experience_factor = 1.0" owner = ROOT }
+                        create_unit = { division = "name = \"3rd PMC Contract Group\" division_template = \"PMC Veterans\" start_experience_factor = 1.0" owner = ROOT }
+                    }
+                    army_experience = 50
+                }
+            }
+        }
+    }
+
+	# HARİTA YER SEÇİMİ
+    ge_pmc_targeter_sg = {
+        context_type = selected_state_context
+        window_name = "ge_pmc_targeter_window"
+        visible = {
+            # Toprağın içindeyiz, bu yüzden bayrağı "Bakan Ülkede (ROOT)" arıyoruz
+            ROOT = { has_country_flag = ge_selecting_pmc_loc }
+            is_controlled_by = ROOT 
+        }
+        effects = {
+            ge_confirm_pmc_loc_button_click = {
+                save_global_event_target_as = ge_pmc_drop_zone
+                # Ülke bayraklarını değiştirmek için tekrar ROOT'a (Ülkeye) dönüyoruz
+                ROOT = {
+                    set_country_flag = ge_pmc_loc_selected
+                    clr_country_flag = ge_selecting_pmc_loc
+                    set_country_flag = ge_market_is_open
+                }
+            }
+        }
+    }
+
+	# HARİTA YER SEÇİMİ
+    ge_buy_state_targeter_sg = {
+        context_type = selected_state_context
+        window_name = "ge_buy_state_targeter_window"
+        visible = {
+            # Bayrağı Bakan Ülkede (ROOT) arıyoruz
+            ROOT = { has_country_flag = ge_selecting_buy_state }
+            NOT = { is_controlled_by = ROOT } # Kendi toprağını satın alamazsın!
+        }
+        effects = {
+            ge_confirm_buy_state_button_click = {
+                save_global_event_target_as = ge_target_buy_state
+                # Ülke bayraklarını değiştirmek için tekrar ROOT'a (Ülkeye) dönüyoruz
+                ROOT = {
+                    set_country_flag = ge_buy_state_selected
+                    clr_country_flag = ge_selecting_buy_state
+                    set_country_flag = ge_market_is_open
+                }
+            }
+        }
+    }
+}

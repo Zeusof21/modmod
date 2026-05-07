@@ -1,0 +1,57 @@
+on_actions = {
+
+    on_annex = {
+        effect = {
+            # KAYBEDEN ÜLKEYİ EVENT İÇİN HAFIZAYA ALIYORUZ
+            FROM = { save_global_event_target_as = ge_loser_country }
+            
+            if = {
+                limit = { FROM = { is_ai = no } }
+                ROOT = {
+                    set_temp_variable = { var = ge_stolen_money value = FROM.ge_money }
+                    set_variable = { var = ge_latest_loot value = ge_stolen_money }
+                    add_to_variable = { var = ge_money value = ge_latest_loot }
+                }
+                FROM = { set_variable = { var = ge_money value = 0 } }
+            }
+            else = {
+                if = {
+                    limit = { FROM = { is_major = yes } }
+                    ROOT = { set_variable = { var = ge_latest_loot value = 400000 } add_to_variable = { var = ge_money value = 400000 } }
+                }
+                else = {
+                    ROOT = { set_variable = { var = ge_latest_loot value = 100000 } add_to_variable = { var = ge_money value = 100000 } }
+                }
+            }
+            ROOT = { country_event = { id = ge_market.4 } }
+        }
+    }
+
+    on_puppet = {
+        effect = {
+            # KAYBEDEN ÜLKEYİ EVENT İÇİN HAFIZAYA ALIYORUZ
+            FROM = { save_global_event_target_as = ge_loser_country }
+            
+            if = {
+                limit = { FROM = { is_ai = no } }
+                ROOT = {
+                    set_temp_variable = { var = ge_stolen_money value = FROM.ge_money }
+                    divide_variable = { var = ge_stolen_money value = 2 }
+                    set_variable = { var = ge_latest_loot value = ge_stolen_money }
+                    add_to_variable = { var = ge_money value = ge_latest_loot }
+                }
+                FROM = { subtract_from_variable = { var = ge_money value = ROOT.ge_latest_loot } }
+            }
+            else = {
+                if = {
+                    limit = { FROM = { is_major = yes } }
+                    ROOT = { set_variable = { var = ge_latest_loot value = 200000 } add_to_variable = { var = ge_money value = 200000 } }
+                }
+                else = {
+                    ROOT = { set_variable = { var = ge_latest_loot value = 50000 } add_to_variable = { var = ge_money value = 50000 } }
+                }
+            }
+            ROOT = { country_event = { id = ge_market.5 } }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+guiTypes = {
+    containerWindowType = {
+        name = "ge_market_hud_window"
+        position = { x = 1028 y = 5 } 
+        Orientation = UPPER_LEFT
+        size = { width = 200 height = 40 }
+        clipping = no
+        
+        # ARKA PLAN KUTUSU
+        iconType ={
+            name ="money_bg"
+            spriteType = "GFX_generic_box_125"
+            position = { x=0 y=0 }
+            pdx_tooltip = "GE_MONEY_TOOLTIP"
+        }
+        
+        iconType = {
+            name ="money_icon"
+            spriteType = "GFX_ge_currency" 
+            position = { x= 1 y = 0 }
+            pdx_tooltip = "GE_MONEY_TOOLTIP"
+        }
+        
+        # PARA METNİ
+        instantTextBoxType = {
+            name ="money_text"
+            position = { x= 28 y = 4 }
+            font = "hoi_18mbs"
+            text = "[?ge_money|0] $"
+            format = center
+            maxWidth = 70
+            maxHeight = 24 
+            pdx_tooltip = "GE_MONEY_TOOLTIP"
+        }
+
+        # MARKET BUTONU
+        buttonType = {
+            name = "ge_open_market_button"
+            quadTextureSprite = "GFX_sort_button_100x29" 
+            position = { x = 100 y = -2 }
+            buttonText = "MARKET"
+            buttonFont = "hoi_16mbs"
+			shortcut = "ctrl+m"
+            clicksound = click_default
+			pdx_tooltip = "GE_MARKET_OPEN_TT"
+        }
+    }
+}

@@ -1,0 +1,294 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ge_market_main_window" 
+		position = { x = -575 y = -360 } 
+		size = { width = 1150 height = 720 } 
+		orientation = center
+		moveable = yes 
+		clipping = no
+		
+		background = { name = "Background" quadTextureSprite = "GFX_ge_menu" }
+		
+		# ANA BAŞLIK
+		instantTextBoxType = { name = "market_title" position = { x = 0 y = 40 } font = "hoi_24header" text = "GE_MAIN_TITLE" format = center maxWidth = 1150 maxHeight = 24 }
+		buttonType = { name = "ge_close_market_button" position = { x = 1100 y = 12 } quadTextureSprite = "GFX_closebutton" shortcut = "ESCAPE" clicksound = click_close pdx_tooltip = "CLOSE" }
+
+		# ================== ÜST SEKMELER (TABS) ==================
+		buttonType = { 
+			name = "ge_tab_market_button" 
+			position = { x = 315 y = 103 } 
+			quadTextureSprite = "GFX_tiled_window_transparent" 
+			size = { x = 175 y = 30 } 
+			buttonFont = "hoi_16mbs"
+			buttonText = "GE_TAB_MARKET"
+			clicksound = click_default 
+			pdx_tooltip = "GE_TAB_MARKET_TT" 
+		}
+		buttonType = { 
+			name = "ge_tab_bank_button" 
+			position = { x = 499 y = 103 } 
+			quadTextureSprite = "GFX_tiled_window_transparent" 
+			size = { x = 175 y = 30 } 
+			buttonFont = "hoi_16mbs"
+			buttonText = "GE_TAB_BANK"
+			clicksound = click_default 
+			pdx_tooltip = "GE_TAB_BANK_TT" 
+		}
+		buttonType = { 
+			name = "ge_tab_special_button" 
+			position = { x = 685 y = 103 } 
+			quadTextureSprite = "GFX_tiled_window_transparent" 
+			size = { x = 175 y = 30 } 
+			buttonFont = "hoi_16mbs"
+			buttonText = "GE_TAB_SPECIAL"
+			clicksound = click_default 
+			pdx_tooltip = "GE_TAB_SPECIAL_TT" 
+		}	
+		
+		# ================== SOL PANEL (Resource Market) ==================
+		containerWindowType = {
+			name = "raw_materials_panel" position = { x = 20 y = 60 } size = { width = 360 height = 640 } 
+			# background = { name = "Background" quadTextureSprite = "GFX_tiled_paper_bg2" }
+			instantTextBoxType = { name = "raw_title" position = { x = 0 y = 90 } font = "hoi_18mbs" text = "GE_RAW_TITLE" format = center maxWidth = 360 }
+
+            # --- STEEL ---
+            containerWindowType = {
+                name = "steel_entry" position = { x = 0 y = 100 } size = { width = 360 height = 75 }
+                iconType = { name = "steel_icon" spriteType = "GFX_resources_strip" frame = 5 position = { x = 15 y = 15 } }
+                instantTextBoxType = { name = "steel_pool_text" position = { x = 45 y = 18 } font = "hoi_16mbs" text = "GE_POOL_STEEL" maxWidth = 80 format = left text_color_code = Y }
+                
+                buttonType = { name = "ge_steel_minus_button" position = { x = 130 y = 16 } quadTextureSprite = "yearslider_leftbutton" clicksound = click_default }
+                iconType = { name = "steel_info_bg" spriteType = "GFX_generic_box" position = { x = 155 y = 14 } }
+                instantTextBoxType = { name = "steel_info_qty" position = { x = 145 y = 18 } font = "hoi_16mbs" text = "[?ge_steel_reward|0]" maxWidth = 72 format = center text_color_code = Y }
+                buttonType = { name = "ge_steel_plus_button" position = { x = 258 y = 16 } quadTextureSprite = "yearslider_rightbutton" clicksound = click_default }
+                
+                instantTextBoxType = { name = "steel_info_cost" position = { x = 195 y = 18 } font = "hoi_16mbs" text = "([?ge_steel_cost|0]$)" maxWidth = 80 format = left text_color_code = G }
+                
+                buttonType = { name = "ge_buy_steel_button" position = { x = 130 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUY" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_BUY_TOOLTIP" pdx_tooltip_delayed = "GE_BUY_TOOLTIP_DELAYED" }
+                buttonType = { name = "ge_sell_steel_button" position = { x = 210 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_SELL" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_SELL_STEEL_TT" pdx_tooltip_delayed = "GE_SELL_STEEL_TT_DELAYED" }
+            }
+            # --- OIL ---
+            containerWindowType = {
+                name = "oil_entry" position = { x = 0 y = 175 } size = { width = 360 height = 75 }
+                iconType = { name = "oil_icon" spriteType = "GFX_resources_strip" frame = 1 position = { x = 15 y = 15 } }
+                instantTextBoxType = { name = "oil_pool_text" position = { x = 45 y = 18 } font = "hoi_16mbs" text = "GE_POOL_OIL" maxWidth = 80 format = left text_color_code = Y }
+                
+                buttonType = { name = "ge_oil_minus_button" position = { x = 130 y = 16 } quadTextureSprite = "yearslider_leftbutton" clicksound = click_default }
+                iconType = { name = "oil_info_bg" spriteType = "GFX_generic_box" position = { x = 155 y = 14 } }
+                instantTextBoxType = { name = "oil_info_qty" position = { x = 145 y = 18 } font = "hoi_16mbs" text = "[?ge_oil_reward|0]" maxWidth = 72 format = center text_color_code = Y }
+                buttonType = { name = "ge_oil_plus_button" position = { x = 258 y = 16 } quadTextureSprite = "yearslider_rightbutton" clicksound = click_default }
+                
+                instantTextBoxType = { name = "oil_info_cost" position = { x = 195 y = 18 } font = "hoi_16mbs" text = "([?ge_oil_cost|0]$)" maxWidth = 80 format = left text_color_code = G }
+                
+                buttonType = { name = "ge_buy_oil_button" position = { x = 130 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUY" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_BUY_TOOLTIP" pdx_tooltip_delayed = "GE_BUY_TOOLTIP_DELAYED" }
+                buttonType = { name = "ge_sell_oil_button" position = { x = 210 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_SELL" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_SELL_OIL_TT" pdx_tooltip_delayed = "GE_SELL_OIL_TT_DELAYED" }
+            }
+            # --- ALUMINIUM ---
+            containerWindowType = {
+                name = "aluminium_entry" position = { x = 0 y = 250 } size = { width = 360 height = 75 }
+                iconType = { name = "aluminium_icon" spriteType = "GFX_resources_strip" frame = 2 position = { x = 15 y = 15 } }
+                instantTextBoxType = { name = "aluminium_pool_text" position = { x = 45 y = 18 } font = "hoi_16mbs" text = "GE_POOL_ALU" maxWidth = 80 format = left text_color_code = Y }
+                
+                buttonType = { name = "ge_aluminium_minus_button" position = { x = 130 y = 16 } quadTextureSprite = "yearslider_leftbutton" clicksound = click_default }
+                iconType = { name = "aluminium_info_bg" spriteType = "GFX_generic_box" position = { x = 155 y = 14 } }
+                instantTextBoxType = { name = "aluminium_info_qty" position = { x = 145 y = 18 } font = "hoi_16mbs" text = "[?ge_aluminium_reward|0]" maxWidth = 72 format = center text_color_code = Y }
+                buttonType = { name = "ge_aluminium_plus_button" position = { x = 258 y = 16 } quadTextureSprite = "yearslider_rightbutton" clicksound = click_default }
+                
+                instantTextBoxType = { name = "aluminium_info_cost" position = { x = 195 y = 18 } font = "hoi_16mbs" text = "([?ge_aluminium_cost|0]$)" maxWidth = 80 format = left text_color_code = G }
+                
+                buttonType = { name = "ge_buy_aluminium_button" position = { x = 130 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUY" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_BUY_TOOLTIP" pdx_tooltip_delayed = "GE_BUY_TOOLTIP_DELAYED" }
+                buttonType = { name = "ge_sell_aluminium_button" position = { x = 210 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_SELL" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_SELL_ALUMINIUM_TT" pdx_tooltip_delayed = "GE_SELL_ALUMINIUM_TT_DELAYED" }
+            }
+            # --- RUBBER ---
+            containerWindowType = {
+                name = "rubber_entry" position = { x = 0 y = 325 } size = { width = 360 height = 75 }
+                iconType = { name = "rubber_icon" spriteType = "GFX_resources_strip" frame = 3 position = { x = 15 y = 15 } }
+                instantTextBoxType = { name = "rubber_pool_text" position = { x = 45 y = 18 } font = "hoi_16mbs" text = "GE_POOL_RUB" maxWidth = 80 format = left text_color_code = Y }
+                
+                buttonType = { name = "ge_rubber_minus_button" position = { x = 130 y = 16 } quadTextureSprite = "yearslider_leftbutton" clicksound = click_default }
+                iconType = { name = "rubber_info_bg" spriteType = "GFX_generic_box" position = { x = 155 y = 14 } }
+                instantTextBoxType = { name = "rubber_info_qty" position = { x = 145 y = 18 } font = "hoi_16mbs" text = "[?ge_rubber_reward|0]" maxWidth = 72 format = center text_color_code = Y }
+                buttonType = { name = "ge_rubber_plus_button" position = { x = 258 y = 16 } quadTextureSprite = "yearslider_rightbutton" clicksound = click_default }
+                
+                instantTextBoxType = { name = "rubber_info_cost" position = { x = 195 y = 18 } font = "hoi_16mbs" text = "([?ge_rubber_cost|0]$)" maxWidth = 80 format = left text_color_code = G }
+                
+                buttonType = { name = "ge_buy_rubber_button" position = { x = 130 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUY" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_BUY_TOOLTIP" pdx_tooltip_delayed = "GE_BUY_TOOLTIP_DELAYED" }
+                buttonType = { name = "ge_sell_rubber_button" position = { x = 210 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_SELL" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_SELL_RUBBER_TT" pdx_tooltip_delayed = "GE_SELL_RUBBER_TT_DELAYED" }
+            }
+            # --- TUNGSTEN ---
+            containerWindowType = {
+                name = "tungsten_entry" position = { x = 0 y = 400 } size = { width = 360 height = 75 }
+                iconType = { name = "tungsten_icon" spriteType = "GFX_resources_strip" frame = 4 position = { x = 15 y = 15 } }
+                instantTextBoxType = { name = "tungsten_pool_text" position = { x = 45 y = 18 } font = "hoi_16mbs" text = "GE_POOL_TUN" maxWidth = 80 format = left text_color_code = Y }
+                
+                buttonType = { name = "ge_tungsten_minus_button" position = { x = 130 y = 16 } quadTextureSprite = "yearslider_leftbutton" clicksound = click_default }
+                iconType = { name = "tungsten_info_bg" spriteType = "GFX_generic_box" position = { x = 155 y = 14 } }
+                instantTextBoxType = { name = "tungsten_info_qty" position = { x = 145 y = 18 } font = "hoi_16mbs" text = "[?ge_tungsten_reward|0]" maxWidth = 72 format = center text_color_code = Y }
+                buttonType = { name = "ge_tungsten_plus_button" position = { x = 258 y = 16 } quadTextureSprite = "yearslider_rightbutton" clicksound = click_default }
+                
+                instantTextBoxType = { name = "tungsten_info_cost" position = { x = 195 y = 18 } font = "hoi_16mbs" text = "([?ge_tungsten_cost|0]$)" maxWidth = 80 format = left text_color_code = G }
+                
+                buttonType = { name = "ge_buy_tungsten_button" position = { x = 130 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUY" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_BUY_TOOLTIP" pdx_tooltip_delayed = "GE_BUY_TOOLTIP_DELAYED" }
+                buttonType = { name = "ge_sell_tungsten_button" position = { x = 210 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_SELL" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_SELL_TUNGSTEN_TT" pdx_tooltip_delayed = "GE_SELL_TUNGSTEN_TT_DELAYED" }
+            }
+            # --- CHROMIUM ---
+            containerWindowType = {
+                name = "chromium_entry" position = { x = 0 y = 475 } size = { width = 360 height = 75 }
+                iconType = { name = "chromium_icon" spriteType = "GFX_resources_strip" frame = 6 position = { x = 15 y = 15 } }
+                instantTextBoxType = { name = "chromium_pool_text" position = { x = 45 y = 18 } font = "hoi_16mbs" text = "GE_POOL_CHR" maxWidth = 80 format = left text_color_code = Y }
+                
+                buttonType = { name = "ge_chromium_minus_button" position = { x = 130 y = 16 } quadTextureSprite = "yearslider_leftbutton" clicksound = click_default }
+                iconType = { name = "chromium_info_bg" spriteType = "GFX_generic_box" position = { x = 155 y = 14 } }
+                instantTextBoxType = { name = "chromium_info_qty" position = { x = 145 y = 18 } font = "hoi_16mbs" text = "[?ge_chromium_reward|0]" maxWidth = 72 format = center text_color_code = Y }
+                buttonType = { name = "ge_chromium_plus_button" position = { x = 258 y = 16 } quadTextureSprite = "yearslider_rightbutton" clicksound = click_default }
+                
+                instantTextBoxType = { name = "chromium_info_cost" position = { x = 195 y = 18 } font = "hoi_16mbs" text = "([?ge_chromium_cost|0]$)" maxWidth = 80 format = left text_color_code = G }
+                
+                buttonType = { name = "ge_buy_chromium_button" position = { x = 130 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUY" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_BUY_TOOLTIP" pdx_tooltip_delayed = "GE_BUY_TOOLTIP_DELAYED" }
+                buttonType = { name = "ge_sell_chromium_button" position = { x = 210 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_SELL" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_SELL_CHROMIUM_TT" pdx_tooltip_delayed = "GE_SELL_CHROMIUM_TT_DELAYED" }
+            }
+            # --- COAL ---
+            containerWindowType = {
+                name = "coal_entry" position = { x = 0 y = 550 } size = { width = 360 height = 75 }
+                iconType = { name = "coal_icon" spriteType = "GFX_resources_strip" frame = 7 position = { x = 15 y = 15 } }
+                instantTextBoxType = { name = "coal_pool_text" position = { x = 45 y = 18 } font = "hoi_16mbs" text = "GE_POOL_COAL" maxWidth = 80 format = left text_color_code = Y }
+                
+                buttonType = { name = "ge_coal_minus_button" position = { x = 130 y = 16 } quadTextureSprite = "yearslider_leftbutton" clicksound = click_default }
+                iconType = { name = "coal_info_bg" spriteType = "GFX_generic_box" position = { x = 155 y = 14 } }
+                instantTextBoxType = { name = "coal_info_qty" position = { x = 145 y = 18 } font = "hoi_16mbs" text = "[?ge_coal_reward|0]" maxWidth = 72 format = center text_color_code = Y }
+                buttonType = { name = "ge_coal_plus_button" position = { x = 258 y = 16 } quadTextureSprite = "yearslider_rightbutton" clicksound = click_default }
+                
+                instantTextBoxType = { name = "coal_info_cost" position = { x = 195 y = 18 } font = "hoi_16mbs" text = "([?ge_coal_cost|0]$)" maxWidth = 80 format = left text_color_code = G }
+                
+                buttonType = { name = "ge_buy_coal_button" position = { x = 130 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUY" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_BUY_TOOLTIP" pdx_tooltip_delayed = "GE_BUY_TOOLTIP_DELAYED" }
+                buttonType = { name = "ge_sell_coal_button" position = { x = 210 y = 44 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_SELL" scale = 0.75 clicksound = click_default pdx_tooltip = "GE_SELL_COAL_TT" pdx_tooltip_delayed = "GE_SELL_COAL_TT_DELAYED" }
+            }
+		}
+		
+		# ================== ORTA PANEL (Deals & PMC) ==================
+		containerWindowType = {
+			name = "equipment_panel" position = { x = 395 y = 60 } size = { width = 360 height = 640 } 
+			# background = { name = "Background" quadTextureSprite = "GFX_tiled_paper_bg2" }
+			instantTextBoxType = { name = "equipment_title" position = { x = 0 y = 90 } font = "hoi_18mbs" text = "GE_EQUIP_TITLE" format = center maxWidth = 360 }
+
+			# --- FIRSAT 1 ---
+			containerWindowType = {
+				name = "deal_1_entry" position = { x = 0 y = 100 } size = { width = 360 height = 65 }
+				instantTextBoxType = { name = "deal_1_title" position = { x = 20 y = 10 } font = "hoi_16mbs" text = "GE_DEAL_1_OFFER" maxWidth = 230 format = left text_color_code = Y }
+				
+                instantTextBoxType = { name = "deal_1_qty_label" position = { x = 20 y = 36 } font = "hoi_16mbs" text = "GE_LBL_QTY" maxWidth = 35 format = left }
+                iconType = { name = "deal_1_qty_bg" spriteType = "GFX_generic_box" position = { x = 50 y = 32 } }
+                instantTextBoxType = { name = "deal_1_desc_qty" position = { x = 35 y = 36 } font = "hoi_16mbs" text = "[?global.ge_deal_1_amount|0]" maxWidth = 72 format = center text_color_code = Y }
+				
+                instantTextBoxType = { name = "deal_1_desc_price" position = { x = 93 y = 36 } font = "hoi_16mbs" text = "([?global.ge_deal_1_price|0]$)" maxWidth = 110 format = left text_color_code = G }
+				buttonType = { name = "ge_buy_deal_1_button" position = { x = 250 y = 30 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUY" scale = 0.8 clicksound = click_default pdx_tooltip = "GE_BUY_EQ_TOOLTIP" pdx_tooltip_delayed = "GE_BUY_EQ_TOOLTIP_DELAYED" }
+			}
+
+			# --- FIRSAT 2 ---
+			containerWindowType = {
+				name = "deal_2_entry" position = { x = 0 y = 175 } size = { width = 360 height = 65 }
+				instantTextBoxType = { name = "deal_2_title" position = { x = 20 y = 10 } font = "hoi_16mbs" text = "GE_DEAL_2_OFFER" maxWidth = 230 format = left text_color_code = Y }
+				
+                instantTextBoxType = { name = "deal_2_qty_label" position = { x = 20 y = 36 } font = "hoi_16mbs" text = "GE_LBL_QTY" maxWidth = 35 format = left }
+                iconType = { name = "deal_2_qty_bg" spriteType = "GFX_generic_box" position = { x = 50 y = 32 } }
+                instantTextBoxType = { name = "deal_2_desc_qty" position = { x = 35 y = 36 } font = "hoi_16mbs" text = "[?global.ge_deal_2_amount|0]" maxWidth = 72 format = center text_color_code = Y }
+				
+                instantTextBoxType = { name = "deal_2_desc_price" position = { x = 93 y = 36 } font = "hoi_16mbs" text = "([?global.ge_deal_2_price|0]$)" maxWidth = 110 format = left text_color_code = G }
+				buttonType = { name = "ge_buy_deal_2_button" position = { x = 250 y = 30 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUY" scale = 0.8 clicksound = click_default pdx_tooltip = "GE_BUY_EQ_TOOLTIP" pdx_tooltip_delayed = "GE_BUY_EQ_TOOLTIP_DELAYED" }
+			}
+
+			# --- FIRSAT 3 ---
+			containerWindowType = {
+				name = "deal_3_entry" position = { x = 0 y = 250 } size = { width = 360 height = 65 }
+				instantTextBoxType = { name = "deal_3_title" position = { x = 20 y = 10 } font = "hoi_16mbs" text = "GE_DEAL_3_OFFER" maxWidth = 230 format = left text_color_code = Y }
+				
+                instantTextBoxType = { name = "deal_3_qty_label" position = { x = 20 y = 36 } font = "hoi_16mbs" text = "GE_LBL_QTY" maxWidth = 35 format = left }
+                iconType = { name = "deal_3_qty_bg" spriteType = "GFX_generic_box" position = { x = 50 y = 32 } }
+                instantTextBoxType = { name = "deal_3_desc_qty" position = { x = 35 y = 36 } font = "hoi_16mbs" text = "[?global.ge_deal_3_amount|0]" maxWidth = 72 format = center text_color_code = Y }
+				
+                instantTextBoxType = { name = "deal_3_desc_price" position = { x = 93 y = 36 } font = "hoi_16mbs" text = "([?global.ge_deal_3_price|0]$)" maxWidth = 110 format = left text_color_code = G }
+				buttonType = { name = "ge_buy_deal_3_button" position = { x = 250 y = 30 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUY" scale = 0.8 clicksound = click_default pdx_tooltip = "GE_BUY_EQ_TOOLTIP" pdx_tooltip_delayed = "GE_BUY_EQ_TOOLTIP_DELAYED" }
+			}
+
+			# --- PMC (MERCENARIES) ---
+			instantTextBoxType = { name = "pmc_title" position = { x = 0 y = 315 } font = "hoi_18mbs" text = "GE_PMC_TITLE" format = center maxWidth = 360 }
+			containerWindowType = {
+				name = "pmc_entry" position = { x = 0 y = 335 } size = { width = 360 height = 80 }
+				instantTextBoxType = { name = "pmc_desc" position = { x = 20 y = 5 } font = "hoi_16mbs" text = "GE_PMC_DESC" maxWidth = 320 }
+				instantTextBoxType = { name = "pmc_details" position = { x = 20 y = 25 } font = "hoi_16mbs" text = "GE_PMC_DETAILS" maxWidth = 320 text_color_code = Y }
+				
+				instantTextBoxType = { name = "pmc_cost_label" position = { x = 20 y = 48 } font = "hoi_16mbs" text = "GE_LBL_COST" maxWidth = 40 }
+				iconType = { name = "pmc_cost_bg" spriteType = "GFX_generic_box" position = { x = 60 y = 43 } }
+				instantTextBoxType = { name = "pmc_cost_val" position = { x = 60 y = 48 } font = "hoi_16mbs" text = "125,000$" maxWidth = 108 format = center text_color_code = G }
+				
+				buttonType = { name = "ge_select_loc_button" position = { x = 170 y = 40 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_SET_LOC" scale = 0.8 clicksound = click_default }
+				buttonType = { name = "ge_hire_pmc_button" position = { x = 255 y = 40 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_HIRE" scale = 0.8 clicksound = click_default pdx_tooltip = "GE_PMC_TOOLTIP" pdx_tooltip_delayed = "GE_PMC_TOOLTIP_DELAYED" }
+			}
+		}
+		
+		# ================== SAĞ PANEL (Territory & Facilities) ==================
+		containerWindowType = {
+			name = "requests_panel" position = { x = 770 y = 60 } size = { width = 360 height = 640 }
+			# background = { name = "Background" quadTextureSprite = "GFX_tiled_paper_bg2" }
+			instantTextBoxType = { name = "requests_title" position = { x = 0 y = 90 } font = "hoi_18mbs" text = "GE_CONTRACTS_TITLE" format = center maxWidth = 360 }
+
+			# --- TOPRAK SATIN ALMA SİSTEMİ ---
+			instantTextBoxType = { name = "buy_state_title" position = { x = 0 y = 115 } font = "hoi_18mbs" text = "GE_BUY_STATE_TITLE" format = center maxWidth = 360 }
+            containerWindowType = {
+				name = "buy_state_entry" position = { x = 5 y = 130 } size = { width = 360 height = 115 }
+				instantTextBoxType = { name = "buy_state_desc" position = { x = 20 y = 5 } font = "hoi_16mbs" text = "GE_BUY_STATE_DESC" maxWidth = 320 }
+				instantTextBoxType = { name = "buy_state_details" position = { x = 20 y = 25 } font = "hoi_16mbs" text = "GE_BUY_STATE_STATUS" maxWidth = 320 }
+				
+                instantTextBoxType = { name = "buy_state_cost_label" position = { x = 20 y = 52 } font = "hoi_16mbs" text = "GE_LBL_OFFER" maxWidth = 50 }
+                buttonType = { name = "ge_offer_minus_button" position = { x = 75 y = 50 } quadTextureSprite = "yearslider_leftbutton" clicksound = click_default }
+                iconType = { name = "offer_bg" spriteType = "GFX_generic_box" position = { x = 100 y = 48 } }
+                instantTextBoxType = { name = "buy_state_cost_val" position = { x = 100 y = 52 } font = "hoi_16mbs" text = "[?global.ge_state_offer_price|0]$" maxWidth = 108 format = center text_color_code = G }
+                buttonType = { name = "ge_offer_plus_button" position = { x = 204 y = 50 } quadTextureSprite = "yearslider_rightbutton" clicksound = click_default }
+                
+                buttonType = { name = "ge_select_state_button" position = { x = 15 y = 80 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_SET_TGT" scale = 0.8 clicksound = click_default }
+				buttonType = { name = "ge_buy_state_button" position = { x = 110 y = 80 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_OFFER" scale = 0.8 clicksound = click_default pdx_tooltip = "GE_BUY_STATE_TT" pdx_tooltip_delayed = "GE_BUY_STATE_TT_DELAYED" }
+			}
+
+            # --- YERALTI FABRİKALARI ---
+			instantTextBoxType = { name = "offmap_title" position = { x = 0 y = 245 } font = "hoi_18mbs" text = "GE_OFFMAP_TITLE" format = center maxWidth = 360 }
+			
+            # MILITARY FACTORY
+            containerWindowType = {
+				name = "offmap_mil_entry" position = { x = 1 y = 265 } size = { width = 360 height = 50 }
+				instantTextBoxType = { name = "mil_desc" position = { x = 20 y = 5 } font = "hoi_16mbs" text = "GE_MIL_DESC" maxWidth = 230 }
+				
+                instantTextBoxType = { name = "mil_cost_label" position = { x = 20 y = 28 } font = "hoi_16mbs" text = "GE_LBL_COST" maxWidth = 40 }
+                iconType = { name = "mil_cost_bg" spriteType = "GFX_generic_box" position = { x = 60 y = 23 } }
+                instantTextBoxType = { name = "mil_cost_val" position = { x = 60 y = 28 } font = "hoi_16mbs" text = "275,000$" maxWidth = 108 format = center text_color_code = G }
+                
+				buttonType = { name = "ge_build_mil_button" position = { x = 253 y = 19 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUILD" scale = 0.8 clicksound = click_default pdx_tooltip = "GE_MIL_TOOLTIP" pdx_tooltip_delayed = "GE_MIL_TOOLTIP_DELAYED" }
+			}
+            
+            # CIVILIAN FACTORY
+			containerWindowType = {
+				name = "offmap_civ_entry" position = { x = 1 y = 315 } size = { width = 360 height = 50 }
+				instantTextBoxType = { name = "civ_desc" position = { x = 20 y = 5 } font = "hoi_16mbs" text = "GE_CIV_DESC" maxWidth = 230 }
+				
+                instantTextBoxType = { name = "civ_cost_label" position = { x = 20 y = 28 } font = "hoi_16mbs" text = "GE_LBL_COST" maxWidth = 40 }
+                iconType = { name = "civ_cost_bg" spriteType = "GFX_generic_box" position = { x = 60 y = 23 } }
+                instantTextBoxType = { name = "civ_cost_val" position = { x = 60 y = 28 } font = "hoi_16mbs" text = "225,000$" maxWidth = 108 format = center text_color_code = G }
+                
+				buttonType = { name = "ge_build_civ_button" position = { x = 253 y = 19 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_BUILD" scale = 0.8 clicksound = click_default pdx_tooltip = "GE_CIV_TOOLTIP" pdx_tooltip_delayed = "GE_CIV_TOOLTIP_DELAYED" }
+			}
+		}
+	}
+
+    # HARİTA ÜZERİNDE ÇIKACAK OLAN ONAY PENCERELERİ
+	containerWindowType = {
+		name = "ge_pmc_targeter_window" position = { x = -100 y = -200 } size = { width = 200 height = 100 } orientation = center
+		background = { name = "Background" quadTextureSprite = "GFX_tiled_window_thin_border" }
+		instantTextBoxType = { name = "title" position = { x = 0 y = 15 } font = "hoi_16mbs" text = "GE_TGT_PMC_TITLE" format = center maxWidth = 200 text_color_code = Y }
+		buttonType = { name = "ge_confirm_pmc_loc_button" position = { x = 50 y = 45 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_CONFIRM" clicksound = click_default }
+	}
+    containerWindowType = {
+		name = "ge_buy_state_targeter_window" position = { x = -100 y = -200 } size = { width = 200 height = 100 } orientation = center
+		background = { name = "Background" quadTextureSprite = "GFX_tiled_window_thin_border" }
+		instantTextBoxType = { name = "title" position = { x = 0 y = 15 } font = "hoi_16mbs" text = "GE_TGT_STATE_TITLE" format = center maxWidth = 200 text_color_code = Y }
+		buttonType = { name = "ge_confirm_buy_state_button" position = { x = 50 y = 45 } quadTextureSprite = "GFX_button_94x31" buttonFont = "hoi_16mbs" buttonText = "GE_BTN_CONFIRM" clicksound = click_default }
+	}
+}
