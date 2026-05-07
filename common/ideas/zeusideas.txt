@@ -33,4 +33,32 @@ ideas = {
             }
         }
     }
-}
+    hidden_ideas = {
+        JAP_test_focus_idea_1 = {
+            cancel = {
+                not = { has_country_flag = japautomaticfocus }
+            }
+            on_remove = {
+                if = {
+                    limit = { has_shine_effect_on_focus = JAP_autonomous_focus_1 }
+                    complete_national_focus = {
+                        focus = JAP_autonomous_focus_1  
+                        use_side_message = yes
+                        originator_name = "Kwantung Army"
+                    }
+                }
+            }
+        }
+    }
+        # Exemplo de idea com valor dinâmico
+    country = {
+        JAP_industrial_efficiency_dm = {
+        picture = generic_factory
+        modifier = {
+                consumer_goods_factor = JAP_mefo_consumer_goods
+                production_speed_industrial_complex_factor = JAP_mefo_civs
+                # ^ lê a variável diretamente, não um número fixo
+            }
+        }
+    }
+}   

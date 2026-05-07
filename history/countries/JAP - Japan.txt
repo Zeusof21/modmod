@@ -1,4 +1,9 @@
-﻿capital = 282 # Tokyo/Kanto
+﻿ #Zeus mad ramblings
+add_dynamic_modifier = {
+	modifier = JAP_industrial_efficiency_dm
+}
+set_variable = { JAP_mefo_consumer_goods = 0.05 }
+capital = 282 # Tokyo/Kanto
 
 # Starting Stats
 set_stability = 1 # Was one of the countries in roughest internal shape at this point in time, coup happens not even 2 months into the game // Was 0.2 changed by zoos
@@ -643,10 +648,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	fascism = 35
-	neutrality = 40
-	democratic = 23
-	communism = 2
+	fascism = 0
+	neutrality = 100
+	democratic = 0
+	communism = 0
 }
 
 
