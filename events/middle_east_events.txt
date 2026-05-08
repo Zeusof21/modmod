@@ -1,0 +1,527 @@
+add_namespace = bp_middle_east
+
+country_event = {
+	id = bp_middle_east.0
+    title = bp_middle_east.0.title
+    desc = bp_middle_east.0.desc 
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.specific
+		country_event = {
+			id = bp_middle_east.1
+		}
+	}
+	option = {
+		name = bp_middle_east.0.a
+		SAU = {
+			annex_country = {
+				transfer_troops = no
+				target = YEM
+			}
+		}
+		SAU = {
+			annex_country = {
+				transfer_troops = no
+				target = OMA
+			}
+		}
+		PER = {
+			annex_country = {
+				transfer_troops = no
+				target = AFG
+			}
+		}
+		ENG = {
+			annex_country = {
+				transfer_troops = no
+				target = IRQ
+			}
+		}
+		ENG = {
+			annex_country = {
+				target = PAL
+			}
+		}
+		ENG = {
+			annex_country = {
+				target = JOR
+			}
+		}
+		ENG = {
+			annex_country = {
+				target = KUW
+			}
+		}
+		FRA = {
+			annex_country = {
+				target = LEB
+			}
+		}
+		FRA = {
+			annex_country = {
+				target = SYR
+			}
+		}
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = {
+		name = bp.goback
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+}
+# Saudi Arabia
+country_event = {
+	id = bp_middle_east.1 
+    title = bp_middle_east.1.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = SAU
+			}
+		}
+		country_event = {
+			id = bp_middle_east.2
+		}
+	}
+	option = {
+		name = bp_middle_east.1.a
+		SAU = {
+			transfer_state = 1014
+			transfer_state = 765
+			transfer_state = 658
+			transfer_state = 659
+			transfer_state = 992
+
+			annex_country = {
+				transfer_troops = no
+				target = YEM
+			}
+			annex_country = {
+				transfer_troops = no
+				target = OMA
+			}
+		}
+		country_event = {
+			id = bp_middle_east.2 
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_middle_east.2 
+		}
+	}
+}
+
+# IRAQ
+country_event = {
+	id = bp_middle_east.2 
+    title = bp_middle_east.2.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = IRQ
+			}
+		}
+		country_event = {
+			id = bp_middle_east.3
+		}
+	}
+	option = {
+		name = bp_middle_east.2.a
+		ENG = {
+			annex_country = {
+				transfer_troops = no
+				target = IRQ
+			}
+		}
+		country_event = {
+			id = bp_middle_east.3
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_middle_east.3
+		}
+	}
+}
+
+# IRAN
+country_event = {
+	id = bp_middle_east.3 
+    title = bp_middle_east.3.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = PER
+			}
+		}
+		country_event = {
+			id = bp_middle_east.4
+		}
+	}
+	option = {
+		name = bp_middle_east.3.a
+		SOV = {
+			transfer_state = 419
+			transfer_state = 1000
+			transfer_state = 420
+			transfer_state = 266
+			transfer_state = 1004
+			transfer_state = 416
+			transfer_state = 417
+			transfer_state = 418
+			transfer_state = 1001
+		}
+		ENG = {
+			transfer_state = 421
+			transfer_state = 413
+			transfer_state = 411
+			transfer_state = 1002
+			transfer_state = 1003
+			transfer_state = 412
+			transfer_state = 414
+			transfer_state = 410
+		}
+		country_event = {
+			id = bp_middle_east.4
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_middle_east.4
+		}
+	}
+}
+# Afghanistan
+country_event = {
+	id = bp_middle_east.4
+    title = bp_middle_east.4.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = AFG
+			}
+		}
+		country_event = {
+			id = bp_middle_east.5
+		}
+	}
+	option = {
+		name = bp_middle_east.4.a
+		SOV = {
+			annex_country = {
+				transfer_troops = no
+				target = AFG
+			}
+		}
+		country_event = {
+			id = bp_middle_east.5
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_middle_east.5
+		}
+	}
+}
+# Yemen
+country_event = {
+	id = bp_middle_east.5
+    title = bp_middle_east.5.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = YEM
+			}
+		}
+		country_event = {
+			id = bp_middle_east.6
+		}
+	}
+	option = {
+		name = bp_middle_east.5.a
+		SAU = {
+			annex_country = {
+				transfer_troops = no
+				target = YEM
+			}
+		}
+		country_event = {
+			id = bp_middle_east.6
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_middle_east.6
+		}
+	}
+}
+# Oman
+country_event = {
+	id = bp_middle_east.6
+    title = bp_middle_east.6.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = OMA
+			}
+		}
+		country_event = {
+			id = bp_middle_east.7
+		}
+	}
+	option = {
+		name = bp_middle_east.6.a
+		SAU = {
+			annex_country = {
+				transfer_troops = no
+				target = OMA
+			}
+		}
+		country_event = {
+			id = bp_middle_east.7
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_middle_east.7
+		}
+	}
+}
+# Palestine
+country_event = {
+	id = bp_middle_east.7
+    title = bp_middle_east.7.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = PAL
+			}
+		}
+		country_event = {
+			id = bp_middle_east.8
+		}
+	}
+	option = {
+		name = bp_middle_east.7.a
+		ENG = {
+			annex_country = {
+				transfer_troops = no
+				target = PAL
+			}
+		}
+		country_event = {
+			id = bp_middle_east.8
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_middle_east.8
+		}
+	}
+}
+# Transjordan
+country_event = {
+	id = bp_middle_east.8
+    title = bp_middle_east.8.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = JOR
+			}
+		}
+		country_event = {
+			id = bp_middle_east.9
+		}
+	}
+	option = {
+		name = bp_middle_east.8.a
+		ENG = {
+			annex_country = {
+				transfer_troops = no
+				target = JOR
+			}
+		}
+		country_event = {
+			id = bp_middle_east.9
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_middle_east.9
+		}
+	}
+}
+# Lebanon
+country_event = {
+	id = bp_middle_east.9
+    title = bp_middle_east.9.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = LEB
+			}
+		}
+		country_event = {
+			id = bp_middle_east.10
+		}
+	}
+	option = {
+		name = bp_middle_east.9.a
+		FRA = {
+			annex_country = {
+				transfer_troops = no
+				target = LEB
+			}
+		}
+		country_event = {
+			id = bp_middle_east.10
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_middle_east.10
+		}
+	}
+}
+# Syria
+country_event = {
+	id = bp_middle_east.10
+    title = bp_middle_east.10.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = SYR
+			}
+		}
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = {
+		name = bp_middle_east.10.a
+		FRA = {
+			annex_country = {
+				transfer_troops = no
+				target = LEB
+			}
+		}
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+}

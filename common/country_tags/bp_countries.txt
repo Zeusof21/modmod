@@ -1,0 +1,1 @@
+NAT = "countries/Nature.txt"

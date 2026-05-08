@@ -1,0 +1,234 @@
+pupind = {
+	pupind_independence_mission = {
+        icon = GFX_decision_hol_exchange_intelligence_data
+		fire_only_once = no
+        is_good = yes
+        days_mission_timeout = 365
+		priority = 10005
+		
+		visible = {
+			has_country_flag = started_independence_cflag
+		}
+
+		available = {
+			hidden_trigger = {
+				is_ai = no
+				NOT = { has_country_flag = started_independence_cflag }
+			}
+		}
+				
+		activation = {
+			has_country_flag = started_independence_cflag
+		}
+		
+		cancel_trigger = {
+			has_country_flag = stopped_independence_cflag
+		}
+
+        timeout_effect = {
+			hidden_effect = {
+				overlord = {
+					FROM = {
+						end_puppet = PREV
+					}
+				}
+				clr_country_flag = started_independence_cflag
+				clr_country_flag = stopped_independence_cflag
+				clr_country_flag = completed_protection_cflag
+			}
+        }
+	}
+	
+	pupind_protected_mission = {
+        icon = GFX_decision_hol_exchange_intelligence_data
+		fire_only_once = no
+        is_good = yes
+        days_mission_timeout = 180
+		priority = 10004
+		
+		visible = {
+			has_country_flag = started_protection_cflag
+		}
+
+		available = {
+			hidden_trigger = {
+				is_ai = no
+				NOT = { has_country_flag = started_protection_cflag }
+			}
+		}
+				
+		activation = {
+			has_country_flag = started_protection_cflag
+		}
+		
+		cancel_trigger = {
+			has_country_flag = stopped_protection_cflag
+		}
+
+        timeout_effect = {
+			hidden_effect = {
+				overlord = {
+					set_autonomy = {
+						target = FROM
+						autonomy_state = autonomy_protected_government
+						end_wars = no
+						end_civil_wars = no
+					}
+				}
+				clr_country_flag = started_protection_cflag
+				clr_country_flag = stopped_protection_cflag
+				set_country_flag = completed_protection_cflag
+			}
+        }
+	}
+	
+
+    pupind_independence_started1 = {
+        icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 500
+		fire_only_once = no
+		priority = 10003
+
+		visible = {
+			is_ai = no
+			OR = {
+				is_puppet = yes
+				is_subject = yes
+			}
+			NOT = { has_autonomy_state = autonomy_protected_government }
+			NOT = { has_country_flag = started_independence_cflag }
+			NOT = { has_country_flag = stopped_independence_cflag }
+			NOT = { has_country_flag = started_protection_cflag }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = started_independence_cflag		
+			}
+		}
+    }
+
+    pupind_independence_started2 = {
+        icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 300
+		fire_only_once = no
+		priority = 10003
+
+		visible = {
+			is_ai = no
+			OR = {
+				is_puppet = yes
+				is_subject = yes
+			}
+			has_autonomy_state = autonomy_protected_government
+			NOT = { has_country_flag = started_independence_cflag }
+			NOT = { has_country_flag = stopped_independence_cflag }
+			NOT = { has_country_flag = started_protection_cflag }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = started_independence_cflag		
+			}
+		}
+    }
+	
+    pupind_independence_stopped = {
+        icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 25
+		fire_only_once = no
+        days_remove = 5
+		priority = 10002
+
+		visible = {
+			is_ai = no
+			OR = {
+				is_puppet = yes
+				is_subject = yes
+			}
+			has_country_flag = started_independence_cflag
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = stopped_independence_cflag
+				clr_country_flag = started_independence_cflag
+			}
+		}
+
+        remove_effect = {
+			hidden_effect = {
+				clr_country_flag = stopped_independence_cflag
+			}
+        }
+    }
+	
+    pupind_protected_government_started = {
+        icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 200
+		fire_only_once = no
+		priority = 10001
+
+		visible = {
+			is_ai = no
+			OR = {
+				is_puppet = yes
+				is_subject = yes
+			}
+			NOT = { has_country_flag = started_independence_cflag }
+			NOT = { has_country_flag = started_protection_cflag }
+			NOT = { has_country_flag = stopped_protection_cflag }
+			NOT = { has_country_flag = completed_protection_cflag }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = started_protection_cflag		
+			}
+		}
+    }
+
+    pupind_protected_government_stopped = {
+        icon = GFX_decision_hol_exchange_intelligence_data
+		cost = 25
+		fire_only_once = no
+        days_remove = 5
+		priority = 10000
+
+		visible = {
+			is_ai = no
+			OR = {
+				is_puppet = yes
+				is_subject = yes
+			}
+			has_country_flag = started_protection_cflag
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = stopped_protection_cflag
+				clr_country_flag = started_protection_cflag
+			}
+		}
+
+        remove_effect = {
+			hidden_effect = {
+				clr_country_flag = stopped_protection_cflag
+			}
+        }
+    }
+	
+	
+
+	
+	#pupind_debug = {
+	#	cost = 0
+	#	
+	#	complete_effect = {
+	#		clr_country_flag = started_independence_cflag
+	#		clr_country_flag = stopped_independence_cflag
+	#		clr_country_flag = stopped_protection_cflag
+	#		clr_country_flag = started_protection_cflag	
+	#	}
+	#}
+}

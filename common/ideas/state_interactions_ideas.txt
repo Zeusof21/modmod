@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+		si_border_war_attacker_idea = {
+			name = si_border_war_attacker_idea
+			picture = si_border_war_idea
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_weekly = 0.001
+			}
+		}
+		si_border_war_defender_idea = {
+			name = si_border_war_defender_idea
+			picture = si_border_war_idea
+
+			removal_cost = -1
+
+			modifier = {
+				army_intel_factor = 0.1
+				navy_intel_factor = 0.1
+				airforce_intel_factor = 0.1
+			}
+		}
+	}
+}

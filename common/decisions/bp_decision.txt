@@ -1,0 +1,17 @@
+#player decisions
+
+bp_category = {
+	bp_decision = {
+		icon = generic_political_actions
+		available = {
+		}
+		visible = {
+			always = yes
+		}
+		cost = 0
+		fire_only_once = no
+		complete_effect = {
+		country_event = { id = bp_menu.0 }
+		}
+	}
+}

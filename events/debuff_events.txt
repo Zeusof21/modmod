@@ -1,0 +1,458 @@
+add_namespace = bp_debuff_event
+
+country_event = {
+	id = bp_debuff_event.0 
+    title = bp_debuff_event.0.title
+    desc = bp_debuff_event.0.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = { # Specific
+		name = bp_debuff_event.0.a
+		country_event = {
+			id = bp_debuff_event.1
+		}
+	}
+	option = { # Default
+		name = bp_debuff_event.0.b
+
+		# Sweden
+		limit = {
+            SWE = { is_ai = yes }
+        }
+		SWE = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Arméfördelning"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Kavalleribrigaden"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Pansarregemente"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Militärområde"
+				disband = yes
+			}
+		}
+
+		# Portugal
+		limit = {
+            POR = { is_ai = yes }
+        }
+		POR = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Divisão de Infantaria"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Força de Caçadores"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Brigada de Cavalaria"
+				disband = yes
+			}
+		}
+
+		# Turkey
+		limit = {
+            TUR = { is_ai = yes }
+        }
+		TUR = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Piyade Tümeni"
+				disband = yes
+			}
+			
+			delete_unit_template_and_units = {
+				division_template = "Dag Tugayi"
+				disband = yes
+			}
+			
+			delete_unit_template_and_units = {
+				division_template = "Bogazi Tugay"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Süvari Tümeni"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Zirhli Tümeni"
+				disband = yes
+			}	
+		}
+
+		# Iran
+		limit = {
+			PER = { is_ai = yes }
+		}
+		PER = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Infantry Brigade"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Cavalry Brigade"
+				disband = yes
+			}
+		}
+		# Siam
+		limit = {
+			SIA = { is_ai = yes }
+		}
+		SIA = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Infantry Division"
+				disband = yes
+			}
+		}
+		# Saudi Arabia
+		limit = {
+			SAU = { is_ai = yes }
+		}
+		SAU = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Alfurqat Almasha"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Alfurqat Alfursan"
+				disband = yes
+			}
+		}
+	}
+	option = { # Go Back
+		name = bp.goback
+		country_event = {
+			id = bp_menu.0
+		}
+	}
+}
+
+# -- Specific Countries --
+
+# Sweden
+country_event = {
+	id = bp_debuff_event.1 
+    title = bp_debuff_event.1.title
+    desc = bp.add_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = { # Add
+		name = bp.add
+		limit = {
+            SWE = { is_ai = yes }
+        }
+		SWE = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Arméfördelning"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Kavalleribrigaden"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Pansarregemente"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Militärområde"
+				disband = yes
+			}
+		}
+		country_event = {
+			id = bp_debuff_event.2
+		}
+	}
+	option = { # Skip
+		name = bp.skip
+		country_event = {
+			id = bp_debuff_event.2
+		}
+	}
+}
+
+# Portugal
+country_event = {
+	id = bp_debuff_event.2 
+    title = bp_debuff_event.2.title
+    desc = bp.add_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = { # Add
+		name = bp.add
+		limit = {
+            POR = { is_ai = yes }
+        }
+		POR = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Divisão de Infantaria"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Força de Caçadores"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Brigada de Cavalaria"
+				disband = yes
+			}
+		}
+		country_event = {
+			id = bp_debuff_event.3 
+		}
+	}
+	option = { # Skip
+		name = bp.skip
+		country_event = {
+			id = bp_debuff_event.3
+		}
+	}
+}
+
+# Turkey
+country_event = {
+	id = bp_debuff_event.3 
+    title = bp_debuff_event.3.title
+    desc = bp.add_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = { # Add
+		name = bp.add
+		limit = {
+            TUR = { is_ai = yes }
+        }
+		TUR = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Piyade Tümeni"
+				disband = yes
+			}
+			
+			delete_unit_template_and_units = {
+				division_template = "Dag Tugayi"
+				disband = yes
+			}
+			
+			delete_unit_template_and_units = {
+				division_template = "Bogazi Tugay"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Süvari Tümeni"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Zirhli Tümeni"
+				disband = yes
+			}	
+		}
+		country_event = {
+			id = bp_debuff_event.4
+		}
+	}
+	option = { # Skip
+		name = bp.skip
+		country_event = {
+			id = bp_debuff_event.4
+		}
+	}
+}
+
+# Iran
+country_event = {
+	id = bp_debuff_event.4 
+    title = bp_debuff_event.4.title
+    desc = bp.add_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = { # Add
+		name = bp.add
+		limit = {
+			PER = { is_ai = yes }
+		}
+		PER = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Infantry Brigade"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Cavalry Brigade"
+				disband = yes
+			}
+		}
+		country_event = {
+			id = bp_debuff_event.5
+		}
+	}
+	option = { # Skip
+		name = bp.skip
+		country_event = {
+			id = bp_debuff_event.5
+		}
+	}
+}
+# Siam
+country_event = {
+	id = bp_debuff_event.5
+    title = bp_debuff_event.5.title
+    desc = bp.add_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = { # Add
+		name = bp.add
+		limit = {
+			SIA = { is_ai = yes }
+		}
+		SIA = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Infantry Brigade"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Cavalry Brigade"
+				disband = yes
+			}
+		}
+		country_event = {
+			id = bp_debuff_event.6
+		}
+	}
+	option = { # Skip
+		name = bp.skip
+		country_event = {
+			id = bp_debuff_event.6
+		}
+	}
+}
+# Saudi Arabia
+country_event = {
+	id = bp_debuff_event.6
+    title = bp_debuff_event.6.title
+    desc = bp.add_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = { # Add
+		name = bp.add
+		limit = {
+			SAU = { is_ai = yes }
+		}
+		SAU = {
+			add_ideas = { bp_debuff }
+			country_lock_all_division_template = yes
+			set_research_slots = 0
+
+			delete_unit_template_and_units = {
+				division_template = "Alfurqat Almasha"
+				disband = yes
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "Alfurqat Alfursan"
+				disband = yes
+			}
+		}
+		country_event = {
+			id = bp_debuff_event.0
+		}
+	}
+	option = { # Skip
+		name = bp.skip
+		country_event = {
+			id = bp_debuff_event.0
+		}
+	}
+}

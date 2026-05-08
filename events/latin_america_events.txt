@@ -1,0 +1,740 @@
+add_namespace = bp_latin_america
+
+country_event = {
+	id = bp_latin_america.0 
+    title = bp_latin_america.0.title
+    desc = bp_latin_america.0.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.specific
+		country_event = {
+			id = bp_latin_america.1
+		}
+	}
+	option = {
+		name = bp_latin_america.0.a
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = CUB
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = HAI
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = DOM
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = GUA
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = ELS
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = HON
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = NIC
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = COS
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = PAN
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = COL
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = VEN
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = ECU
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = PRU
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = BOL
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = PAR
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = ARG
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = URG
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = CHL
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = BRA
+			}
+		}
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = {
+		name = bp.goback
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+}
+
+# --- South America ---
+
+# Brazil
+country_event = {
+	id = bp_latin_america.1 
+    title = bp_latin_america.1.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = BRA
+			}
+		}
+		country_event = {
+			id = bp_latin_america.2
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.2
+		}
+	}
+}
+
+# Venezuela
+country_event = {
+	id = bp_latin_america.2 
+    title = bp_latin_america.2.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = VEN
+			}
+		}
+		country_event = {
+			id = bp_latin_america.3
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.3
+		}
+	}
+}
+
+# Colombia
+country_event = {
+	id = bp_latin_america.3 
+    title = bp_latin_america.3.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = COL
+			}
+		}
+		country_event = {
+			id = bp_latin_america.4
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.4
+		}
+	}
+}
+
+# Ecuador
+country_event = {
+	id = bp_latin_america.4 
+    title = bp_latin_america.4.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = ECU
+			}
+		}
+		country_event = {
+			id = bp_latin_america.5
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.5
+		}
+	}
+}
+
+# Peru
+country_event = {
+	id = bp_latin_america.5 
+    title = bp_latin_america.5.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = PRU
+			}
+		}
+		country_event = {
+			id = bp_latin_america.6
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.6
+		}
+	}
+}
+
+# Bolivia
+country_event = {
+	id = bp_latin_america.6 
+    title = bp_latin_america.6.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = BOL
+			}
+		}
+		country_event = {
+			id = bp_latin_america.7
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.7
+		}
+	}
+}
+
+# Paraguay
+country_event = {
+	id = bp_latin_america.7 
+    title = bp_latin_america.7.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = PAR
+			}
+		}
+		country_event = {
+			id = bp_latin_america.8
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.8
+		}
+	}
+}
+
+# Argentina
+country_event = {
+	id = bp_latin_america.8 
+    title = bp_latin_america.8.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = ARG
+			}
+		}
+		country_event = {
+			id = bp_latin_america.9
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.9
+		}
+	}
+}
+
+# Chile
+country_event = {
+	id = bp_latin_america.9 
+    title = bp_latin_america.9.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = CHL
+			}
+		}
+		country_event = {
+			id = bp_latin_america.10
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.10
+		}
+	}
+}
+
+# Uruguay
+country_event = {
+	id = bp_latin_america.10 
+    title = bp_latin_america.10.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = URG
+			}
+		}
+		country_event = {
+			id = bp_latin_america.11
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.11
+		}
+	}
+}
+
+# --- Central America ---
+
+# Panama
+country_event = {
+	id = bp_latin_america.11 
+    title = bp_latin_america.11.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = PAN
+			}
+		}
+		country_event = {
+			id = bp_latin_america.12
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.12
+		}
+	}
+}
+
+# Costa Rica
+country_event = {
+	id = bp_latin_america.12 
+    title = bp_latin_america.12.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = COS
+			}
+		}
+		country_event = {
+			id = bp_latin_america.13
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.13
+		}
+	}
+}
+
+# Nicaragua
+country_event = {
+	id = bp_latin_america.13 
+    title = bp_latin_america.13.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = NIC
+			}
+		}
+		country_event = {
+			id = bp_latin_america.14
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.14
+		}
+	}
+}
+
+# Honduras
+country_event = {
+	id = bp_latin_america.14 
+    title = bp_latin_america.14.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = HON
+			}
+		}
+		country_event = {
+			id = bp_latin_america.15
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.15
+		}
+	}
+}
+
+# El Salvador
+country_event = {
+	id = bp_latin_america.15 
+    title = bp_latin_america.15.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = ELS
+			}
+		}
+		country_event = {
+			id = bp_latin_america.16
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.16
+		}
+	}
+}
+
+# Guatemala
+country_event = {
+	id = bp_latin_america.16 
+    title = bp_latin_america.16.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = GUA
+			}
+		}
+		country_event = {
+			id = bp_latin_america.17
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.17
+		}
+	}
+}
+
+# --- Carribean ---
+
+# Cuba
+country_event = {
+	id = bp_latin_america.17 
+    title = bp_latin_america.17.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = CUB
+			}
+		}
+		country_event = {
+			id = bp_latin_america.18
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.18
+		}
+	}
+}
+
+# Haiti
+country_event = {
+	id = bp_latin_america.18 
+    title = bp_latin_america.18.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = HAI
+			}
+		}
+		country_event = {
+			id = bp_latin_america.19
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_latin_america.19
+		}
+	}
+}
+
+# Dominican Republic
+country_event = {
+	id = bp_latin_america.19 
+    title = bp_latin_america.19.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = DOM
+			}
+		}
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+}

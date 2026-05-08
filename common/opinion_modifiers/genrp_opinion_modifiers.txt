@@ -1,0 +1,28 @@
+opinion_modifiers = {
+	### DEFENSE TREATY ###
+	defense_treaty1_opmod = {
+		trade = no
+		value = 50
+	}
+	defense_treaty_break1_opmod = {
+		trade = no
+		value = -50
+	}
+	defense_treaty_break2_opmod = {
+		trade = no
+		value = -100
+	}
+	### TRADE AGREEMENT ###
+	trade_agreement1_opmod = {
+		trade = no
+		value = 20
+	}
+	trade_agreement2_opmod = {
+		trade = yes
+		value = 100
+	}
+	trade_agreement_break1_opmod = {
+		trade = no
+		value = -20
+	}
+}

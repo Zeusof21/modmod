@@ -1,0 +1,153 @@
+﻿l_english: 
+
+# Category
+bp_category:0 "Better Performance"
+
+# Decision
+bp_decision:0 "Better Performance"
+
+# Ideas
+bp_debuff:0 "BP Debuff"
+
+# General
+bp.annex:0 "Remove"
+bp.annex_desc:0 "Choose if you want to remove the specified country or keep it by skipping."
+bp.skip:0 "Skip"
+bp.goback:0 "Go Back"
+bp.exit:0 "Exit"
+bp.specific:0 "Remove Specific Country"
+bp.add:0 "Add"
+bp.add_desc:0 "Choose if you want to add the debuff to the specified country or skip it."
+
+# Menu 0
+bp_menu.0.title:0 "Better Performance"
+bp_menu.0.desc:0 "Welcome to the Better Peformance menu, here you will be able to choose some options regarding removal of countries."
+bp_menu.0.a:0 "Country Annexation"
+bp_menu.0.b:0 "Country Debuffs"
+
+# Menu 1 (Country Annexation)
+bp_menu.1.title:0 "Country Annexation"
+bp_menu.1.desc:0 "Decide which region you want to personalise."
+bp_menu.1.a:0 "Latin America"
+bp_menu.1.b:0 "Europe"
+bp_menu.1.c:0 "Asia"
+bp_menu.1.d:0 "Middle east"
+
+# Menu 2 (Debuff)
+bp_debuff_event.0.title:0 "Country Debuffs"
+bp_debuff_event.0.desc:0 "Choose which country you wish to add the debuff to."
+bp_debuff_event.0.a:0 "Specific Country"
+bp_debuff_event.0.b:0 "Default"
+
+# Debuff - Sweden
+bp_debuff_event.1.title:0 "Country Debuffs - Sweden"
+# Debuff - Portugal
+bp_debuff_event.2.title:0 "Country Debuffs - Portugal"
+# Debuff - Turkey
+bp_debuff_event.3.title:0 "Country Debuffs - Turkey"
+# Debuff - Iran
+bp_debuff_event.4.title:0 "Country Debuffs - Iran"
+# Debuff - Siam
+bp_debuff_event.5.title:0 "Country Debuffs - Siam"
+# Debugg - Saudi Arabia
+bp_debuff_event.6.title:0 "Country Debuffs - Saudi Arabia"
+
+# Asia
+bp_asia.0.title:0 "Country Annexation - Asia"
+bp_asia.0.desc:0 "Decide what you want to do with Asia."
+bp_asia.0.a:0 "Unite China, Give Nepal,Bhutan And Burma to RAJ, Give Mongolia to Soviets."
+bp_asia.1.title:0 "Country Annexation - Nepal"
+bp_asia.1.a:0 "Give to the British Raj"
+bp_asia.2.title:0 "Country Annexation - Bhutan"
+bp_asia.2.a:0 "Give to the British Raj"
+bp_asia.3.title:0 "Country Annexation - Burma"
+bp_asia.3.a:0 "Give to the British Raj"
+bp_asia.4.title:0 "Country Annexation - Tibet"
+bp_asia.5.title:0 "Country Annexation - Sinkiang"
+bp_asia.6.title:0 "Country Annexation - Khotan Ma"
+bp_asia.7.title:0 "Country Annexation - Qinghai Ma"
+bp_asia.8.title:0 "Country Annexation - Gansu Ma"
+bp_asia.9.title:0 "Country Annexation - Ningxia Ma"
+bp_asia.10.title:0 "Country Annexation - Northeastern Army"
+bp_asia.11.title:0 "Country Annexation - Sichuan Clique"
+bp_asia.12.title:0 "Country Annexation - Communist China"
+bp_asia.13.title:0 "Country Annexation - Shanxi"
+bp_asia.14.title:0 "Country Annexation - Hebei-Chahar"
+bp_asia.15.title:0 "Country Annexation - Shandong Clique"
+bp_asia.16.title:0 "Country Annexation - Mengkukuo"
+bp_asia.16.a:0 "Give to Manchukuo"
+bp_asia.17.title:0 "Country Annexation - Mongolia"
+bp_asia.17.a:0 "Give to the Soviet union"
+bp_asia.18.title:0 "Country Annexation - Tannu Tuva"
+bp_asia.18.a:0 "Give to the Soviet union"
+bp_asia.19.title:0 "Country Annexation - Yunnan"
+bp_asia.20.title:0 "Country Annexation - Guangxi Clique"
+bp_asia.21.title:0 "Country Annexation - Guandong Clique"
+bp_asia_annex:0 "Give to China"
+
+# Europe
+bp_europe.0.title:0 "Country Annexation - Europe"
+bp_europe.0.desc:0 "Decide what you want to do with Europe."
+bp_europe.0.a:0 "Just hover your mouse and read it, idk what to title this one"
+bp_europe.1.title:0 "Country Annexation - Ireland"
+bp_europe.1.a:0 "Give to the United Kingdom"
+bp_europe.2.title:0 "Country Annexation - Malaysia"
+bp_europe.2.a:0 "Give to the United Kingdom"
+bp_europe.3.title:0 "Country Annexation - New Zealand"
+bp_europe.3.a:0 "Give to the Australia"
+bp_europe.4.title:0 "Country Annexation - Indonesia"
+bp_europe.4.a:0 "Give to the Netherlands"
+bp_europe.5.title:0 "Country Annexation - Switzerland"
+bp_europe.6.title:0 "Country Annexation - Albania"
+bp_europe.6.a:0 "Give to Italy"
+bp_europe.7.title:0 "Country Annexation - Iceland"
+bp_europe.7.a:0 "Give To Denmark"
+
+# Latin America
+bp_latin_america.0.title:0 "Country Annexation - Latin America"
+bp_latin_america.0.desc:0 "Decide if you want to remove all countries in Latin America or remove specific ones."
+bp_latin_america.0.a:0 "Remove All Countries In Latin America"
+bp_latin_america.1.title:0 "Country Annexation - Brazil"
+bp_latin_america.2.title:0 "Country Annexation - Venezuela"
+bp_latin_america.3.title:0 "Country Annexation - Colombia"
+bp_latin_america.4.title:0 "Country Annexation - Ecuador"
+bp_latin_america.5.title:0 "Country Annexation - Peru"
+bp_latin_america.6.title:0 "Country Annexation - Bolivia"
+bp_latin_america.7.title:0 "Country Annexation - Paraguay"
+bp_latin_america.8.title:0 "Country Annexation - Argentina"
+bp_latin_america.9.title:0 "Country Annexation - Chile"
+bp_latin_america.10.title:0 "Country Annexation - Uruguay"
+bp_latin_america.11.title:0 "Country Annexation - Panama"
+bp_latin_america.12.title:0 "Country Annexation - Costa Rica"
+bp_latin_america.13.title:0 "Country Annexation - Nicaragua"
+bp_latin_america.14.title:0 "Country Annexation - Honduras"
+bp_latin_america.15.title:0 "Country Annexation - El Salvador"
+bp_latin_america.16.title:0 "Country Annexation - Guatemala"
+bp_latin_america.17.title:0 "Country Annexation - Cuba"
+bp_latin_america.18.title:0 "Country Annexation - Haiti"
+bp_latin_america.19.title:0 "Country Annexation - Dominican Republic"
+
+# Middle east
+bp_middle_east.0.title:0 "Country Annexation - Middle East"
+bp_middle_east.0.desc:0 "Decide what you want to do with Middle East"
+bp_middle_east.0.a:0 "Just hover your mouse and read it, idk what to title this one"
+bp_middle_east.1.title:0 "Country Annexation - Saudi Arabia"
+bp_middle_east.1.a:0 "Annex Everything In The Arabian Peninsula (includes uk possesions)"
+bp_middle_east.2.title:0 "Country Annexation - Iraq"
+bp_middle_east.2.a:0 "Give to the United Kingdom"
+bp_middle_east.3.title:0 "Country Annexation - Iran"
+bp_middle_east.3.a:0 "Operation Countenance"
+bp_middle_east.4.title:0 "Country Annexation - Afganistan"
+bp_middle_east.4.a:0 "Soviet Invasion of Afganistan"
+bp_middle_east.5.title:0 "Country Annexation - Yemen"
+bp_middle_east.5.a:0 "Give to Saudi Arabia"
+bp_middle_east.6.title:0 "Country Annexation - Oman"
+bp_middle_east.6.a:0 "Give to the Saudi Arabia"
+bp_middle_east.7.title:0 "Country Annexation - Palestine"
+bp_middle_east.7.a:0 "Give to the United Kingdom"
+bp_middle_east.8.title:0 "Country Annexation - Transjordan"
+bp_middle_east.8.a:0 "Give to the United Kingdom"
+bp_middle_east.9.title:0 "Country Annexation - Lebanon"
+bp_middle_east.9.a:0 "Give to France"
+bp_middle_east.10.title:0 "Country Annexation - Syria"
+bp_middle_east.10.a:0 "Give to France"

@@ -1,0 +1,24 @@
+equipment_modules = {
+	bm_anti_tank_guided_missile_1 = {
+		abbreviation = "atgm"
+		category = tank_special_module
+		gfx = bm_anti_tank_guided_missile_1
+		allow_equipment_type = armor
+		forbid_equipment_type = {
+			anti_air
+			artillery
+			flame
+		}
+
+		xp_cost = 12
+
+		add_stats = {
+			ap_attack = 43
+			breakthrough = 4
+		}
+		multiply_stats = {
+			build_cost_ic = 0.15
+			reliability = -0.10
+		}
+	}
+}

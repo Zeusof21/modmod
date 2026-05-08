@@ -1,0 +1,1030 @@
+add_namespace = bp_asia
+
+country_event = {
+	id = bp_asia.0 
+    title = bp_asia.0.title
+    desc = bp_asia.0.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.specific
+		country_event = {
+			id = bp_asia.1
+		}
+	}
+	option = {
+		name = bp_asia.0.a
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = YUN
+			}
+			annex_country = {
+				transfer_troops = no
+				target = GXC
+			}
+			annex_country = {
+				transfer_troops = no
+				target = SHX
+			}
+			annex_country = {
+				transfer_troops = no
+				target = PRC
+			}
+			annex_country = {
+				transfer_troops = no
+				target = SIK
+			}
+			annex_country = {
+				transfer_troops = no
+				target = XSM
+			}
+			annex_country = {
+				target = TIB
+				transfer_troops = no
+			}
+			annex_country = {
+				target = SIC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = XIC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = NXM
+				transfer_troops = no
+			}
+			annex_country = {
+				target = GSM
+				transfer_troops = no
+			}
+			annex_country = {
+				target = KHM
+				transfer_troops = no
+			}
+			annex_country = {
+				target = GDC
+				transfer_troops = no
+			}
+			annex_country = {
+				target = SND
+				transfer_troops = no
+			}
+			annex_country = {
+				target = HBC
+				transfer_troops = no
+			}
+			create_faction_from_template = faction_template_chinese_united_front
+		}
+		MAN = {
+			annex_country = {
+				target = MEN
+				transfer_troops = no
+			}
+			add_state_core = 611
+			add_state_core = 612
+		}
+		SOV = {
+			annex_country = {
+				target = TAN
+				transfer_troops = no
+			}
+			annex_country = {
+				target = MON
+				transfer_troops = no
+			}
+		}
+		RAJ = {
+			annex_country = {
+				target = NEP
+				transfer_troops = no
+			}
+			annex_country = {
+				target = BHU
+				transfer_troops = no
+			}
+			annex_country = {
+				target = BRM
+				transfer_troops = no
+			}
+		}
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = {
+		name = bp.goback
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+}
+
+# Nepal
+country_event = {
+	id = bp_asia.1 
+    title = bp_asia.1.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = NEP
+			}
+		}
+		country_event = {
+			id = bp_asia.2
+		}
+	}
+	option = {
+		name = bp_asia.1.a
+		RAJ = {
+			annex_country = {
+				transfer_troops = no
+				target = NEP
+			}
+		}
+		country_event = {
+			id = bp_asia.2
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.2
+		}
+	}
+}
+
+# Bhutan
+country_event = {
+	id = bp_asia.2 
+    title = bp_asia.2.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = BHU
+			}
+		}
+		country_event = {
+			id = bp_asia.3
+		}
+	}
+	option = {
+		name = bp_asia.2.a
+		RAJ = {
+			annex_country = {
+				transfer_troops = no
+				target = BHU
+			}
+		}
+		country_event = {
+			id = bp_asia.3
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.3
+		}
+	}
+}
+# Burma
+country_event = {
+	id = bp_asia.3
+    title = bp_asia.3.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = BRM
+			}
+		}
+		country_event = {
+			id = bp_asia.4
+		}
+	}
+	option = {
+		name = bp_asia.3.a
+		RAJ = {
+			annex_country = {
+				transfer_troops = no
+				target = BRM
+			}
+		}
+		country_event = {
+			id = bp_asia.4
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.4
+		}
+	}
+}
+
+# Tibet
+country_event = {
+	id = bp_asia.4
+    title = bp_asia.4.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = TIB
+			}
+		}
+		country_event = {
+			id = bp_asia.5
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = TIB
+			}
+		}
+		country_event = {
+			id = bp_asia.5
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.5
+		}
+	}
+}
+
+# Sinkiang
+country_event = {
+	id = bp_asia.5
+    title = bp_asia.5.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = SIK
+			}
+		}
+		country_event = {
+			id = bp_asia.6
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = SIK
+			}
+		}
+		country_event = {
+			id = bp_asia.6
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.6
+		}
+	}	
+}
+
+# Khotan Ma
+country_event = {
+	id = bp_asia.6
+    title = bp_asia.6.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = KHM
+			}
+		}
+		country_event = {
+			id = bp_asia.7
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = KHM
+			}
+		}
+		country_event = {
+			id = bp_asia.7
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.7
+		}
+	}	
+}
+
+# Qinghai Ma
+country_event = {
+	id = bp_asia.7
+    title = bp_asia.7.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = XSM
+			}
+		}
+		country_event = {
+			id = bp_asia.8
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = XSM
+			}
+		}
+		country_event = {
+			id = bp_asia.8
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.8
+		}
+	}
+}
+
+# Gansu Ma
+country_event = {
+	id = bp_asia.8
+    title = bp_asia.8.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = GSM
+			}
+		}
+		country_event = {
+			id = bp_asia.9
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = GSM
+			}
+		}
+		country_event = {
+			id = bp_asia.9
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.9
+		}
+	}
+}
+
+# Ningxia Ma
+country_event = {
+	id = bp_asia.9
+    title = bp_asia.9.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = NXM
+			}
+		}
+		country_event = {
+			id = bp_asia.10
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = NXM
+			}
+		}
+		country_event = {
+			id = bp_asia.10
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.10
+		}
+	}
+}
+
+# Northeastern Army
+country_event = {
+	id = bp_asia.10
+    title = bp_asia.10.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = XIC
+			}
+		}
+		country_event = {
+			id = bp_asia.11
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = XIC
+			}
+		}
+		country_event = {
+			id = bp_asia.11
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.11
+		}
+	}
+}
+
+# Sichuan Clique
+country_event = {
+	id = bp_asia.11
+    title = bp_asia.11.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = SIC
+			}
+		}
+		country_event = {
+			id = bp_asia.12
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = SIC
+			}
+		}
+		country_event = {
+			id = bp_asia.12
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.12
+		}
+	}
+}
+
+# Communist China
+country_event = {
+	id = bp_asia.12
+    title = bp_asia.12.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = PRC
+			}
+		}
+		country_event = {
+			id = bp_asia.13
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = PRC
+			}
+		}
+		country_event = {
+			id = bp_asia.13
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.13
+		}
+	}
+}
+
+# Shanxi
+country_event = {
+	id = bp_asia.13
+    title = bp_asia.13.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = SHX
+			}
+		}
+		country_event = {
+			id = bp_asia.14
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = SHX
+			}
+		}
+		country_event = {
+			id = bp_asia.14
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.14
+		}
+	}
+}
+
+# Hebei-Chahar
+country_event = {
+	id = bp_asia.14
+    title = bp_asia.14.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = HBC
+			}
+		}
+		country_event = {
+			id = bp_asia.15
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = HBC
+			}
+		}
+		country_event = {
+			id = bp_asia.15
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.15
+		}
+	}
+}
+
+# Shandong Clique
+country_event = {
+	id = bp_asia.15
+    title = bp_asia.15.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = SND
+			}
+		}
+		country_event = {
+			id = bp_asia.16
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = SND
+			}
+		}
+		country_event = {
+			id = bp_asia.16
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.16
+		}
+	}
+}
+
+# Mengkukuo
+country_event = {
+	id = bp_asia.16
+    title = bp_asia.16.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = MEN
+			}
+		}
+		country_event = {
+			id = bp_asia.17
+		}
+	}
+	option = {
+		name = bp_asia.16.a
+		MAN = {
+			annex_country = {
+				transfer_troops = no
+				target = MEN
+			}
+			add_state_core = 611
+			add_state_core = 612
+		}
+		country_event = {
+			id = bp_asia.17
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.17
+		}
+	}
+}
+
+# Mongolia
+country_event = {
+	id = bp_asia.17
+    title = bp_asia.17.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = MON
+			}
+		}
+		country_event = {
+			id = bp_asia.18
+		}
+	}
+	option = {
+		name = bp_asia.17.a
+		SOV = {
+			annex_country = {
+				transfer_troops = no
+				target = MON
+			}
+		}
+		country_event = {
+			id = bp_asia.18
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.18
+		}
+	}
+}
+
+# Tannu Tuva
+country_event = {
+	id = bp_asia.18
+    title = bp_asia.18.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = TAN
+			}
+		}
+		country_event = {
+			id = bp_asia.19
+		}
+	}
+	option = {
+		name = bp_asia.18.a
+		SOV = {
+			annex_country = {
+				transfer_troops = no
+				target = TAN
+			}
+		}
+		country_event = {
+			id = bp_asia.19
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.19
+		}
+	}
+}
+
+# Yunnan
+country_event = {
+	id = bp_asia.19
+    title = bp_asia.19.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = TAN
+			}
+		}
+		country_event = {
+			id = bp_asia.20
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = YUN
+			}
+		}
+		country_event = {
+			id = bp_asia.20
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.20
+		}
+	}
+}
+
+# Guangxi Clique
+country_event = {
+	id = bp_asia.20
+    title = bp_asia.20.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = TAN
+			}
+		}
+		country_event = {
+			id = bp_asia.21
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = GXC
+			}
+		}
+		country_event = {
+			id = bp_asia.21
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_asia.21
+		}
+	}
+}
+
+# Guandong Clique
+country_event = {
+	id = bp_asia.21
+    title = bp_asia.21.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = GDC
+			}
+		}
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = {
+		name = bp_asia_annex
+		CHI = {
+			annex_country = {
+				transfer_troops = no
+				target = GDC
+			}
+		}
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+}

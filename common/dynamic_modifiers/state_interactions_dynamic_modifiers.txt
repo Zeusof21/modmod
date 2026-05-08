@@ -1,0 +1,15 @@
+si_border_war_state_modifier = {
+
+	icon = GFX_si_border_war_state_modifier
+	remove_trigger = {
+		OWNER = { NOT = { has_idea = si_border_war_defender_idea } }
+	}
+
+	disable_strategic_redeployment = 1
+	army_defence_factor = -0.05
+	attrition_for_controller = 0.2
+	local_intel_to_enemies = 0.5
+	local_org_regain = -0.2
+	local_supplies = -0.25
+	local_factories = -0.25
+}

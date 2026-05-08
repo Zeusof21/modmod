@@ -1,0 +1,96 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			######################
+			###   GAME RULES   ###
+			######################
+
+
+			### Enable National Ideas
+			if = {
+				limit = { has_game_rule = { rule = gr_nideas     option = gr_nideas_enable_y } }
+
+				set_global_flag = gr_nideas_gflag
+			}
+
+
+			### Enable State Interactions
+			if = {
+				limit = { has_game_rule = { rule = gr_state_interactions     option = gr_state_interactions_enable_y } }
+
+				set_global_flag = gr_state_interactions_gflag
+			}
+
+
+			### Enable State Interactions: Coring
+			if = {
+				limit = { has_game_rule = { rule = gr_state_interactions_core     option = gr_state_interactions_core_enable_y } }
+
+				set_global_flag = gr_state_interactions_core_gflag
+			}
+
+
+			### Enable State Interactions: Resource Extraction
+			if = {
+				limit = { has_game_rule = { rule = gr_state_interactions_re     option = gr_state_interactions_re_enable_y } }
+
+				set_global_flag = gr_state_interactions_re_gflag
+			}
+
+
+			### Enable State Interactions: Industrial Expansion
+			if = {
+				limit = { has_game_rule = { rule = gr_state_interactions_ie     option = gr_state_interactions_ie_1 } }
+
+				set_global_flag = gr_state_interactions_ie_1_gflag
+			}
+			else_if = {
+				limit = { has_game_rule = { rule = gr_state_interactions_ie     option = gr_state_interactions_ie_2 } }
+
+				set_global_flag = gr_state_interactions_ie_2_gflag
+			}
+			else_if = {
+				limit = { has_game_rule = { rule = gr_state_interactions_ie     option = gr_state_interactions_ie_3 } }
+
+				set_global_flag = gr_state_interactions_ie_3_gflag
+			}
+			else_if = {
+				limit = { has_game_rule = { rule = gr_state_interactions_ie     option = gr_state_interactions_ie_4 } }
+
+				set_global_flag = gr_state_interactions_ie_4_gflag
+			}
+
+
+			### Enable State Interactions: Construct Buildings
+			if = {
+				limit = { has_game_rule = { rule = gr_state_interactions_cb     option = gr_state_interactions_cb_enable_y } }
+
+				set_global_flag = gr_state_interactions_cb_gflag
+			}
+
+
+			### Enable State Interactions: Events
+			if = {
+				limit = { has_game_rule = { rule = gr_state_interactions_events     option = gr_state_interactions_events_enable_y } }
+
+				set_global_flag = gr_state_interactions_events_gflag
+			}
+
+
+			### Enable State Transfer Tool
+			if = {
+				limit = { has_game_rule = { rule = gr_stt     option = gr_stt_enable_y } }
+
+				set_global_flag = gr_stt_gflag
+			}
+			else_if = {
+				limit = { has_game_rule = { rule = gr_stt     option = gr_stt_enable_ys } }
+
+				set_global_flag = gr_stt_gflag
+				set_global_flag = gr_stt_subjects_gflag
+			}
+
+			######################
+		}
+	}
+}

@@ -1,0 +1,142 @@
+###########################################
+###   GENERIC RP - DISCARDIAN EDITION   ###
+###########################################
+
+### Enable National Ideas
+gr_nideas = {
+	name = gr_nideas
+	group = gr
+	default = { name = gr_nideas_enable_y     text = gr_nideas_enable_y     desc = gr_nideas_enable_y_desc     allow_achievements = yes }
+	option  = { name = gr_nideas_enable_n     text = gr_nideas_enable_n     desc = gr_nideas_enable_n_desc     allow_achievements = yes }
+}
+
+
+### Enable State Interactions
+gr_state_interactions = {
+	name = gr_state_interactions
+	group = gr
+	default = { name = gr_state_interactions_enable_y     text = gr_state_interactions_enable_y     desc = gr_state_interactions_enable_y_desc     allow_achievements = yes }
+	option  = { name = gr_state_interactions_enable_n     text = gr_state_interactions_enable_n     desc = gr_state_interactions_enable_n_desc     allow_achievements = yes }
+}
+
+
+### Enable State Interactions: Coring
+gr_state_interactions_core = {
+	name = gr_state_interactions_core
+	group = gr
+	default = { name = gr_state_interactions_core_enable_y     text = gr_state_interactions_core_enable_y     desc = gr_state_interactions_core_enable_y_desc     allow_achievements = yes }
+	option  = { name = gr_state_interactions_core_enable_n     text = gr_state_interactions_core_enable_n     desc = gr_state_interactions_core_enable_n_desc     allow_achievements = yes }
+}
+
+
+### Enable State Interactions: Resource Extraction
+gr_state_interactions_re = {
+	name = gr_state_interactions_re
+	group = gr
+	default = { name = gr_state_interactions_re_enable_y     text = gr_state_interactions_re_enable_y     desc = gr_state_interactions_re_enable_y_desc     allow_achievements = yes }
+	option  = { name = gr_state_interactions_re_enable_n     text = gr_state_interactions_re_enable_n     desc = gr_state_interactions_re_enable_n_desc     allow_achievements = yes }
+}
+
+
+### Enable State Interactions: Industrial Expansion
+gr_state_interactions_ie = {
+	name = gr_state_interactions_ie
+	group = gr
+	default = { name = gr_state_interactions_ie_1     text = gr_state_interactions_ie_1     desc = gr_state_interactions_ie_1_desc     allow_achievements = yes }
+	option  = { name = gr_state_interactions_ie_2     text = gr_state_interactions_ie_2     desc = gr_state_interactions_ie_2_desc     allow_achievements = yes }
+	option  = { name = gr_state_interactions_ie_3     text = gr_state_interactions_ie_3     desc = gr_state_interactions_ie_3_desc     allow_achievements = yes }
+	option  = { name = gr_state_interactions_ie_4     text = gr_state_interactions_ie_4     desc = gr_state_interactions_ie_4_desc     allow_achievements = yes }
+}
+
+
+### Enable State Interactions: Construct Buildings
+gr_state_interactions_cb = {
+	name = gr_state_interactions_cb
+	group = gr
+	default = { name = gr_state_interactions_cb_enable_y     text = gr_state_interactions_cb_enable_y     desc = gr_state_interactions_cb_enable_y_desc     allow_achievements = yes }
+	option  = { name = gr_state_interactions_cb_enable_n     text = gr_state_interactions_cb_enable_n     desc = gr_state_interactions_cb_enable_n_desc     allow_achievements = yes }
+}
+
+
+### Enable State Interactions: Events
+gr_state_interactions_events = {
+	name = gr_state_interactions_events
+	group = gr
+	default = { name = gr_state_interactions_events_enable_y      text = gr_state_interactions_events_enable_y      desc = gr_state_interactions_events_enable_y_desc      allow_achievements = yes }
+	option  = { name = gr_state_interactions_events_enable_n      text = gr_state_interactions_events_enable_n      desc = gr_state_interactions_events_enable_n_desc      allow_achievements = yes }
+}
+
+
+### Enable State Transfer Tool
+gr_stt = {
+	name = gr_stt
+	group = gr
+	default = { name = gr_stt_enable_y      text = gr_stt_enable_y      desc = gr_stt_enable_y_desc      allow_achievements = yes }
+	option  = { name = gr_stt_enable_ys     text = gr_stt_enable_ys     desc = gr_stt_enable_ys_desc     allow_achievements = yes }
+	option  = { name = gr_stt_enable_n      text = gr_stt_enable_n      desc = gr_stt_enable_n_desc      allow_achievements = yes }
+}
+
+##################################################
+
+###---> Can Send Volunteers <><> <><> <><>
+
+genrp_can_send_volunteers = {
+	name = genrp_can_send_volunteers
+	group = gr
+	default = {
+		name = genrp_can_send_volunteers_option_yes
+		text = "genrp_can_send_volunteers_option_yes"
+		desc = "genrp_can_send_volunteers_option_yes_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = genrp_can_send_volunteers_option_no
+		text = "genrp_can_send_volunteers_option_no"
+		desc = "genrp_can_send_volunteers_option_no_desc"
+		allow_achievements = yes
+	}
+}
+
+###---> Can Create Factions <><> <><> <><>
+
+genrp_can_create_factions = {
+	name = genrp_can_create_factions
+	group = gr
+	default = {
+		name = genrp_can_create_factions_option_yes
+		text = "genrp_can_create_factions_option_yes"
+		desc = "genrp_can_create_factions_option_yes_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = genrp_can_create_factions_option_no
+		text = "genrp_can_create_factions_option_no"
+		desc = "genrp_can_create_factions_option_no_desc"
+		allow_achievements = yes
+	}
+}
+
+###---> Unrestricted Faction Joining <><> <><> <><>
+
+genrp_unrestricted_join_factions = {
+	name = genrp_unrestricted_join_factions
+	group = gr
+	default = {
+		name = genrp_unrestricted_join_factions_option_yes
+		text = "genrp_unrestricted_join_factions_option_yes"
+		desc = "genrp_unrestricted_join_factions_option_yes_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = genrp_unrestricted_join_factions_option_ai
+		text = "genrp_unrestricted_join_factions_option_ai"
+		desc = "genrp_unrestricted_join_factions_option_ai_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = genrp_unrestricted_join_factions_option_no
+		text = "genrp_unrestricted_join_factions_option_no"
+		desc = "genrp_unrestricted_join_factions_option_no_desc"
+		allow_achievements = yes
+	}
+}

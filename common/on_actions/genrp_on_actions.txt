@@ -1,0 +1,181 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#game rules
+			#allow volunteers
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = genrp_can_send_volunteers
+						option = genrp_can_send_volunteers_option_yes
+					}
+				}
+				every_possible_country = {
+					set_rule = { can_send_volunteers = yes }
+				}
+			}
+			
+			#allow create factions
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = genrp_can_create_factions
+						option = genrp_can_create_factions_option_yes
+					}
+				}
+				every_possible_country = {
+					set_rule = { can_create_factions = yes }
+				}
+			}
+
+			#allow unrestricted faction joining
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = genrp_unrestricted_join_factions
+						option = genrp_unrestricted_join_factions_option_yes
+					}
+				}
+				every_possible_country = {
+					add_ideas = genrp_unrestricted_join_faction_idea
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = genrp_unrestricted_join_factions
+						option = genrp_unrestricted_join_factions_option_ai
+					}
+				}
+				every_possible_country = {
+					limit = { is_ai = no }
+					add_ideas = genrp_unrestricted_join_faction_idea
+				}
+			}
+		}
+	}
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						has_relation_modifier = {
+							target = FROM
+							modifier = defense_treaty2_opmod
+						}
+					}
+				}
+				custom_effect_tooltip = defense_treaty_war_dec_on_action_tt
+				hidden_effect = {
+					ROOT = {
+						remove_relation_modifier = {
+							target = FROM
+							modifier = defense_treaty2_opmod
+						}
+						remove_opinion_modifier = {
+							target = FROM
+							modifier = defense_treaty1_opmod
+						}
+						add_opinion_modifier = {
+							target = FROM
+							modifier = defense_treaty_break1_opmod
+						}
+						diplomatic_relation = {
+							country = FROM
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = FROM
+							relation = military_access
+							active = no
+						}
+						diplomatic_relation = {
+							country = FROM
+							relation = guarantee
+							active = no
+						}
+					}
+					FROM = {
+						remove_relation_modifier = {
+							target = ROOT
+							modifier = defense_treaty2_opmod
+						}
+						remove_opinion_modifier = {
+							target = ROOT
+							modifier = defense_treaty1_opmod
+						}
+						add_opinion_modifier = {
+							target = ROOT
+							modifier = defense_treaty_break2_opmod
+						}
+						diplomatic_relation = {
+							country = ROOT
+							relation = non_aggression_pact
+							active = no
+						}
+						diplomatic_relation = {
+							country = ROOT
+							relation = military_access
+							active = no
+						}
+						diplomatic_relation = {
+							country = ROOT
+							relation = guarantee
+							active = no
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_relation_modifier = {
+							target = FROM
+							modifier = trade_agreement3_opmod
+						}
+					}
+				}
+				custom_effect_tooltip = trade_agreement_war_dec_on_action_tt
+				hidden_effect = {
+					ROOT = {
+						remove_relation_modifier = {
+							target = FROM
+							modifier = trade_agreement3_opmod
+						}
+						remove_opinion_modifier = {
+							target = FROM
+							modifier = trade_agreement1_opmod
+						}
+						remove_opinion_modifier = {
+							target = FROM
+							modifier = trade_agreement2_opmod
+						}
+						add_opinion_modifier = {
+							target = FROM
+							modifier = trade_agreement_break1_opmod
+						}
+					}
+					FROM = {
+						remove_relation_modifier = {
+							target = ROOT
+							modifier = trade_agreement3_opmod
+						}
+						remove_opinion_modifier = {
+							target = ROOT
+							modifier = trade_agreement1_opmod
+						}
+						remove_opinion_modifier = {
+							target = ROOT
+							modifier = trade_agreement2_opmod
+						}
+						add_opinion_modifier = {
+							target = ROOT
+							modifier = trade_agreement_break1_opmod
+						}
+					}
+				}
+			}
+		}
+	}
+}

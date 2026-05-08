@@ -1,0 +1,352 @@
+add_namespace = bp_europe
+
+country_event = {
+	id = bp_europe.0 
+    title = bp_europe.0.title
+    desc = bp_europe.0.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.specific
+		country_event = {
+			id = bp_europe.1
+		}
+	}
+	option = {
+		name = bp_europe.0.a
+		ENG = {
+			annex_country = {
+				transfer_troops = no
+				target = IRE
+			}
+			annex_country = {
+				transfer_troops = no
+				target = MAL
+			}
+		}
+		AST = {
+			annex_country = {
+				target = NZL
+			}
+		}
+		HOL = {
+			annex_country = {
+				target = INS
+			}
+		}
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = SWI
+			}
+		}
+		ITA = {
+			annex_country = {
+				transfer_troops = no
+				target = ALB
+			}
+		}
+		DEN = {
+			annex_country = {
+				target = ICE
+			}
+		}
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = {
+		name = bp.goback
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+}
+
+# Ireland
+country_event = {
+	id = bp_europe.1 
+    title = bp_europe.1.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = IRE
+			}
+		}
+		country_event = {
+			id = bp_europe.2
+		}
+	}
+	option = {
+		name = bp_europe.1.a
+		ENG = {
+			annex_country = {
+				transfer_troops = no
+				target = IRE
+			}
+		}
+		country_event = {
+			id = bp_europe.2
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_europe.2
+		}
+	}
+}
+# Malaysia
+country_event = {
+	id = bp_europe.2
+    title = bp_europe.2.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = MAL
+			}
+		}
+		country_event = {
+			id = bp_europe.3
+		}
+	}
+	option = {
+		name = bp_europe.2.a
+		ENG = {
+			annex_country = {
+				transfer_troops = no
+				target = MAL
+			}
+		}
+		country_event = {
+			id = bp_europe.3
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_europe.3
+		}
+	}
+}
+# New Zealand
+country_event = {
+	id = bp_europe.3
+    title = bp_europe.3.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = NZL
+			}
+		}
+		country_event = {
+			id = bp_europe.4
+		}
+	}
+	option = {
+		name = bp_europe.3.a
+		AST = {
+			annex_country = {
+				transfer_troops = no
+				target = NZL
+			}
+		}
+		country_event = {
+			id = bp_europe.4
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_europe.4
+		}
+	}
+}
+# Indonesia
+country_event = {
+	id = bp_europe.4
+    title = bp_europe.4.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = INS
+			}
+		}
+		country_event = {
+			id = bp_europe.5
+		}
+	}
+	option = {
+		name = bp_europe.4.a
+		HOL = {
+			annex_country = {
+				transfer_troops = no
+				target = INS
+			}
+		}
+		country_event = {
+			id = bp_europe.5
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_europe.5
+		}
+	}
+}
+# Switzerland
+country_event = {
+	id = bp_europe.5
+    title = bp_europe.5.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = SWI
+			}
+		}
+		country_event = {
+			id = bp_europe.6
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_europe.6
+		}
+	}
+}
+
+# Albania
+country_event = {
+	id = bp_europe.6
+    title = bp_europe.6.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = ALB
+			}
+		}
+		country_event = {
+			id = bp_europe.7
+		}
+	}
+	option = {
+		name = bp_europe.6.a
+		ITA = {
+			annex_country = {
+				transfer_troops = no
+				target = ALB
+			}
+		}
+		country_event = {
+			id = bp_europe.7
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_europe.7
+		}
+	}
+}
+# Iceland
+country_event = {
+	id = bp_europe.7
+    title = bp_europe.7.title
+    desc = bp.annex_desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = {
+		name = bp.annex
+		NAT = {
+			annex_country = {
+				transfer_troops = no
+				target = ICE
+			}
+		}
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = {
+		name = bp_europe.7.a
+		DEN = {
+			annex_country = {
+				transfer_troops = no
+				target = ICE
+			}
+		}
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = {
+		name = bp.skip
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+}

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_autonomy_protected_government_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_protected_government_icon.dds"
+	}
+}

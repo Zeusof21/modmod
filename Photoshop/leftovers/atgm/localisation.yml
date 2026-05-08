@@ -1,0 +1,5 @@
+ bm_anti_tank_guided_missile_1:0 "Mounted Anti-Tank Guided Missile"
+ bm_anti_tank_guided_missile_1_desc:0 "Cutting-edge weapon designed to counter heavily armored vehicles with pinpoint precision. Using advanced targeting systems and guidance technology."
+ bm_atgm_project:0 "Anti-Tank Guided Missile"
+ bm_atgm_project_desc:0 "Major leap forward in modern anti-armor capabilities. By combining advanced targeting systems with precision-guided technology, these missiles can target and disable even the most heavily armored enemy vehicles from a safe distance."
+ bm_atgm_project_tt:0 "\n£$ICON$  $NAME|Y$\n\n$DESC$\n"

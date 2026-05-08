@@ -1,0 +1,95 @@
+add_namespace = bp_menu
+
+country_event = {
+	id = bp_menu.0 
+    title = bp_menu.0.title
+    desc = bp_menu.0.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = { # Decision
+		name = bp_menu.0.a
+		country_event = {
+			id = bp_menu.1
+		}
+	}
+	option = { # Debuffs
+		name = bp_menu.0.b
+		country_event = {
+			id = bp_debuff_event.0
+		}
+	}
+	option = { # Exit
+		name = bp.exit
+	}
+}
+
+country_event = {
+	id = bp_menu.1 
+    title = bp_menu.1.title
+    desc = bp_menu.1.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+	
+	option = { # Latin America
+		name = bp_menu.1.a
+		country_event = {
+			id = bp_latin_america.0
+		}
+	}
+	option = { # Europe
+		name = bp_menu.1.b
+		country_event = {
+			id = bp_europe.0 
+		}
+	}
+	option = { # Asia
+		name = bp_menu.1.c
+		country_event = {
+			id = bp_asia.0 
+		}
+	}
+	option = { # Middle east
+		name = bp_menu.1.d
+		country_event = {
+			id = bp_middle_east.0
+		}
+	}
+	option = { # Go Back
+		name = bp.goback
+		country_event = {
+			id = bp_menu.0
+		}
+	}
+}
+
+country_event = {
+	id = bp_menu.99 
+	
+	fire_only_once = yes
+
+	hidden = yes
+
+	trigger = {
+		tag = NAT
+		date = 1936.02.01
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NAT = { exists = Yes }
+			}
+			NAT = {
+				every_owned_state = { cancel_resistance = yes }
+			}
+		}
+	}
+}
+				
