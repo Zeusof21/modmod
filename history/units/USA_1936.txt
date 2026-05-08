@@ -25,24 +25,25 @@ division_template = {
 
 	division_names_group = USA_INF_01
 
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
+	regiments = {						
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+		militia = { x = 3 y = 0 }
+		militia = { x = 3 y = 1 }
+		militia = { x = 3 y = 2 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
+	priority = 0
 }
 division_template = {
 	name = "Cavalry Division"  		# 1st Cavalry Division only
@@ -60,7 +61,7 @@ division_template = {
 		cavalry = { x = 1 y = 3 }
 	}
 	support = {
-		light_tank_recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
+		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
 		engineer = { x = 0 y = 1 }   # US Eng Bn
 	}
 }
@@ -75,7 +76,7 @@ division_template = {
 		infantry = { x = 0 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }   
 	}
 	priority = 0
 }
@@ -92,7 +93,7 @@ division_template = {
 		marine = { x = 1 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }   
 	}
 	priority = 2
 }
@@ -101,16 +102,16 @@ division_template = {
 units = {
 	####### CONUS Theater #######
 	### Carribean Forces ###
-	division = {
+	division = {			
 		name = "Puerto Rico Department"
 		location = 1440
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.15
 
-	}
-	division = {
-		name = "Panama Canal Force"
+	}			
+	division = {			
+		name = "Panama Canal Force"		
 		location = 7617
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -120,7 +121,7 @@ units = {
 
 	### 1st Army -- note: Armies only paper organizations in 1936 ###
 	# I Army Corps #
-	division= {
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 26
@@ -130,8 +131,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 43
@@ -143,7 +144,7 @@ units = {
 
 	}
 	# II Army Corps #
-	division= {
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -151,8 +152,8 @@ units = {
 		location = 3878
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 27
@@ -162,8 +163,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 44
@@ -173,9 +174,9 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
+	}			
 	# III Army Corps #
-	division= {
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 28
@@ -185,8 +186,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 29
@@ -196,12 +197,12 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
+	}			
 
 
 	### 2nd Army -- note: Armies only paper organizations in 1936 ###
 	# V Army Corps #
-	division= {
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 37
@@ -211,8 +212,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 38
@@ -222,9 +223,9 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
+	}			
 	# VI Army Corps #
-	division= {
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 32
@@ -234,8 +235,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 33
@@ -245,12 +246,12 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
+	}			
 
 
 	### 3rd Army -- note: Armies only paper organizations in 1936 ###
 	# IV Army Corps #
-	division = {
+	division = {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 30
@@ -260,8 +261,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 31
@@ -271,9 +272,9 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
+	}			
 	# VIII Army Corps #
-	division= {
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -283,8 +284,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 36
@@ -294,8 +295,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 45
@@ -305,8 +306,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
@@ -314,11 +315,11 @@ units = {
 		location = 12782
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.3
-	}
-
+	}			
+					
 	### 4th Army -- note: Armies only paper organizations in 1936 ###
 	# VII Army Corps (CO: Bishop) #
-	division= {
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 34
@@ -328,8 +329,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 35
@@ -339,9 +340,9 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
+	}			
 	# IX Army Corps (CO: DeWitt) #
-	division= {
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
@@ -349,8 +350,8 @@ units = {
 		location = 9671
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
-	}
-	division = {
+	}			
+	division = {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 40
@@ -360,8 +361,8 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-	division= {
+	}			
+	division= {			
 		division_name = {
 			is_name_ordered = yes
 			name_order = 41
@@ -371,31 +372,31 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
-
+	}			
+					
 
 	####### Pacific Theater	#######
 	### Alaska Defense Command ###
-	division = {
-		name = "Alaska Defense Command"
+	division = {			
+		name = "Alaska Defense Command"		
 		location = 13091
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.15
 
-	}
-	division= {
-		name = "Attu Island Garrison"
+	}			
+	division= {			
+		name = "Attu Island Garrison"		
 		location = 13067
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
 
 	}
-
+			
 	### Hawaiian Department ###
-	division = {
-		name = "Hawaiian Division"
+	division = {			
+		name = "Hawaiian Division"		
 		location = 4180
 		division_template = "National Guard Division"		# older equipment, less training than NG division
 		start_experience_factor = 0.2
@@ -404,228 +405,92 @@ units = {
 	}
 
 	# North Pacific Defenses #
-	division= {
-		name = "Midway Island Garrison"
+	division= {				
+		name = "Midway Island Garrison"			
 		location = 13052
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
 
-	}
-	division= {
-		name = "Wake Island Garrison"
+	}				
+	division= {				
+		name = "Wake Island Garrison"			
 		location = 13047
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
 
-	}
-	division= {
-		name = "Guam Garrison"
+	}				
+	division= {				
+		name = "Guam Garrison"			
 		location = 12140
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
 
-	}
-
+	}				
+	
 	# South Pacific Defenses #
-	division= {
-		name = "Christmas Island Garrison"
+	division= {			
+		name = "Christmas Island Garrison"		
 		location = 13048
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
 
-	}
-	division= {
-		name = "Jarvis Island Garrison"
+	}			
+	division= {			
+		name = "Jarvis Island Garrison"		
 		location = 13049
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
 
-	}
-	division= {
-		name = "Palmyra Garrison"
+	}			
+	division= {			
+		name = "Palmyra Garrison"		
 		location = 13050
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
 
-	}
-	division= {
-		name = "Phoenix Island Garrison"
+	}			
+	division= {			
+		name = "Phoenix Island Garrison"		
 		location = 13053
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
 
-	}
-	division= {
-		name = "Johnston Island Garrison"
+	}			
+	division= {			
+		name = "Johnston Island Garrison"		
 		location = 13051
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
 
-	}
+	}			
 
-	### U.S. Army Forces in the Far East ###
-	division = {
-		name = "Philippine Division"
+	### U.S. Army Forces in the Far East ###		
+	division = {										
+		name = "Philippine Division"			
 		location = 10265
 		division_template = "Infantry Division"			# older equipment, less training than NG division
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}
+	}				
 }
+	
 
-###### Air wings ######
- #air_wings = {
- #	### 1 USAAF Wing -- Los Angeles
- #	378 = {
- #		# 7th Bombardment Group 
- #		# 19th Bombardment Group 
- #		medium_plane_airframe_0 = {
- #			owner = "USA" 
- #			amount = 60
- #			version_name = "B-6A"
- #		}
- #		# 17th Attack Group 
- #		small_plane_cas_airframe_0 = {
- #			owner = "USA" 
- #			amount = 48
- #			version_name = "A-12"
- #		}
- #	}
- #
- #	### 2 USAAF Wing -- Norfolk
- #	362 = { 
- #		# 1st Pursuit Group 
- #		# 8th Pursuit Group 
- #		small_plane_airframe_0 =  {
- #			owner = "USA" 
- #			amount = 72
- #			version_name = "P-26A"
- #		}
- #		small_plane_airframe_0 =  {
- #			owner = "USA" 
- #			amount = 72
- #			version_name = "P-26A"
- #		}
- #		# 2nd Bombardment Group 
- #		# 9th Bombardment Group 
- #		medium_plane_airframe_1 = {
- #			owner = "USA" 
- #			amount = 96
- #			version_name = "B-10"
- #		}
- #	}
- #
- #	### 3 USAAF Wing -- Louisiana
- #	371 = { 
- #		# 20th Pursuit Group 
- #		small_plane_airframe_0 =  {
- #			owner = "USA" 
- #			amount = 96
- #			version_name = "P-26A"
- #		}
- #		# 3rd Attack Group 
- #		small_plane_cas_airframe_0 = {
- #			owner = "USA" 
- #			amount = 48
- #			version_name = "A-12"
- #		}
- #	}
- #
- #	### 18th Composite Wing -- Hawaii
- #	629 = { 
- #		# 18th Pursuit Group 
- #		small_plane_airframe_0 =  {
- #			owner = "USA" 
- #			amount = 48
- #			version_name = "P-26A"
- #		}
- #		# 5th Composite Group 
- #		medium_plane_airframe_0 = {
- #			owner = "USA" 
- #			amount = 36
- #			version_name = "B-6A"
- #		}
- #	}
- #
- #	### 19th Composite Wing -- Panama Canal
- #	685 = { 
- #		# 16th Pursuit Group 
- #		small_plane_airframe_0 =  {
- #			owner = "USA" 
- #			amount = 96
- #			version_name = "P-26A"
- #		}
- #		# 6th Composite Group 
- #		medium_plane_airframe_1 = {
- #			owner = "USA" 
- #			amount = 12
- #			version_name = "B-10"
- #		}
- #	}
- #
- #	### Philippines Composite Group -- Manilla
- # #	327 = { 
- # #		# 4th Composite Group 
- # #		fighter_equipment_0 =  {
- # #			owner = "USA" 
- # #			amount = 36
- # #		}
- # #	}
- #
- #	### USN Atlantic Naval Patrol Division -- Norfolk
- #	362 = { 
- #		# Naval Patrol Wing 3 
- #		medium_plane_airframe_0 =  {
- #			owner = "USA" 
- #			amount = 36
- #			version_name = "P2Y"
- #		}
- #	}
- #	### USN Pacific Naval Patrol Division -- San Diego
- #	378 = { 
- #		# Naval Patrol Wing 1 
- #		# Naval Patrol Wing 2 
- #		medium_plane_airframe_0 =  {
- #			owner = "USA" 
- #			amount = 72
- #			version_name = "P2Y"
- #		}
- #	}
- #	"USS Ranger" = {
- #		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 version_name = "F4B"} # historical: 36
- #		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 10 version_name = "SBU Corsair" } # historical: 15
- #		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 4 version_name = "SBU Corsair" } # historical: 15
- #		cv_small_plane_naval_bomber_airframe_0 =  { owner = "USA" amount = 8 version_name = "BM-2" } # historical: 12			
- #	}
- #	"USS Lexington" = {
- #		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 version_name = "F4B"} # historical: 16
- #		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 10 version_name = "SBU Corsair" } # historical: 30
- #		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 4 version_name = "SBU Corsair" } # historical: 30
- #		cv_small_plane_naval_bomber_airframe_0 =  { owner = "USA" amount = 8 version_name = "BM-2" } # historical: 12
- #	}
- #	"USS Saratoga" = {
- #		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 version_name = "F4B"} # historical: 16
- #		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 10 version_name = "SBU Corsair" } # historical: 30
- #		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 4 version_name = "SBU Corsair" } # historical: 30
- #		cv_small_plane_naval_bomber_airframe_0 =  { owner = "USA" amount = 8 version_name = "BM-2" } # historical: 12
- #	}
- #}
 
 
 #########################
 ## STARTING PRODUCTION ##
 #########################
 instant_effect = {
-
+		
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
@@ -640,35 +505,22 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "USA"
+			creator = "USA" 
 		}
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
-		industrial_manufacturer = mio:western_electric_organization
 	}
 
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
-			creator = "USA"
+			creator = "USA" 
 		}
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
 		industrial_manufacturer = mio:USA_rock_island_arsenal_organization
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = small_plane_airframe_1
-			creator = "USA" 
-			version_name = "P-35A"
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-		industrial_manufacturer = mio:USA_north_american_aviation_organization
 	}
 
 }

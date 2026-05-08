@@ -793,6 +793,9 @@ focus_tree = {
 				focus = USA_alf_landons_government
 				cost = 28
 			}
+			remove_ideas = {
+				idea = great_depression
+			}
 		}
 	}
 
@@ -1694,6 +1697,9 @@ focus_tree = {
 				focus = USA_political_shift
 				cost = 28
 			}
+			remove_ideas = {
+				idea = great_depression
+			}
 		}
 	}
 
@@ -2277,6 +2283,9 @@ focus_tree = {
 			reduce_focus_completion_cost = {
 				focus = USA_roosevelt_stays
 				cost = 28
+			}
+			remove_ideas = {
+				idea = great_depression
 			}
 		}
 	}
