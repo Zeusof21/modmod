@@ -1,0 +1,49 @@
+ideas = {
+
+	country = {
+
+			GER_treaty_of_versailles = {
+			picture = tfv_can_conscription_crisis
+
+			removal_cost = -1
+			
+			modifier = {
+
+
+			}
+		}
+
+			GER_treaty_of_versailles2 = {
+			picture = tfv_can_conscription_crisis
+
+			removal_cost = -1
+			
+			modifier = {
+
+
+			}
+		}
+
+			GER_treaty_of_versailles3 = {
+			picture = tfv_can_conscription_crisis
+
+			removal_cost = -1
+			
+			modifier = {
+
+
+			}
+		}
+
+			MPL_mandate = {
+			picture = tfv_can_conscription_crisis
+
+			removal_cost = -1
+			
+			modifier = {
+
+
+			}
+		}
+	}
+}	

@@ -793,9 +793,9 @@ focus_tree = {
 				focus = USA_alf_landons_government
 				cost = 28
 			}
-			remove_ideas = {
-				idea = great_depression
-			}
+			#remove_ideas = {
+			#	idea = great_depression
+			#}
 		}
 	}
 
@@ -963,7 +963,7 @@ focus_tree = {
 			
 			if = {
 				set_temp_variable = { temp_focus_days = @spurred_growth_timer } #For tooltip purposes
-				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				multiply_temp_variable = { temp_focus_days = 29 } #The constant uses focus cost which is in weeks, so convert to days
 				limit = { has_country_flag = USA_econ_recovery_in_progress_flag has_country_flag = running_sg_flag }
 				custom_override_tooltip = {
 					tooltip = {
@@ -1023,6 +1023,9 @@ focus_tree = {
 				USA_eco_dy_production_lack_of_resource_penalty_factor = -0.10
 				tooltip = production_lack_of_resource_penalty_factor_tt
 			}
+			#remove_ideas = {
+			#	idea = great_depression
+			#}
 
 			hidden_effect = {
 				USA_improve_eco_dynamic_modifier = yes
@@ -1122,6 +1125,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = {
+				idea = strikes_2
+			}
 			USA_congress_small_support = yes
 			skip_line_tt = yes
 			usa_modify_eco = yes
@@ -1279,6 +1285,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = {
+				idea = strikes_2
+			}
 			add_political_power = 50
 			skip_line_tt = yes
 			USA_congress_medium_support = yes
@@ -1434,6 +1443,9 @@ focus_tree = {
 
 
 		completion_reward = {
+			remove_ideas = {
+				idea = great_depression_Z
+			}
 			add_political_power = 50
 			add_stability = 0.05
 			add_war_support = 0.05
@@ -1589,6 +1601,9 @@ focus_tree = {
 
 
 		completion_reward = {
+			remove_ideas = {
+				idea = great_depression_Z
+			}
 			add_stability = 0.05
 			add_war_support = 0.05
 			skip_line_tt = yes
@@ -1687,6 +1702,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = {
+				idea = strikes_2
+			}
 			add_political_power = 120
 			skip_line_tt = yes
 			reduce_focus_completion_cost = {
@@ -1698,7 +1716,10 @@ focus_tree = {
 				cost = 28
 			}
 			remove_ideas = {
-				idea = great_depression
+				idea = great_depression_Z
+			}
+			remove_ideas = {
+				idea = strikes_2
 			}
 		}
 	}
@@ -1822,6 +1843,9 @@ focus_tree = {
 					}
 					country_event = { id = new_usa_new_deal_3.1 days = 4 }
 				}
+			}
+			remove_ideas = {
+				idea = great_depression
 			}
 		}
 			
@@ -2284,8 +2308,11 @@ focus_tree = {
 				focus = USA_roosevelt_stays
 				cost = 28
 			}
+			#remove_ideas = {
+			#	idea = great_depression
+			#}
 			remove_ideas = {
-				idea = great_depression
+				idea = strikes_2
 			}
 		}
 	}
@@ -2313,6 +2340,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = {
+				idea = great_depression_Z
+			}
 			add_stability = -0.10
 			skip_line_tt = yes
 			USA_congress_medium_opposition = yes
@@ -2425,6 +2455,9 @@ focus_tree = {
 					}
 					country_event = { id = new_usa_gold_standard_3.1 days = 4 }
 				}
+			}
+			remove_ideas = {
+				idea = great_depression
 			}
 		}
 	}

@@ -4,8 +4,8 @@
 
 ##########################################################
  # Constants for Economic Growth
- @spurred_growth_timer = 				224 # days
- @natural_recovery_timer = 				378 # days
+ @spurred_growth_timer = 				424 # days
+ @natural_recovery_timer = 				678 # days
  @accelerated_recovery_timer = 			210 # days
  @eagle_timer = 						378 # days
  @intervention_timer = 					210 # days

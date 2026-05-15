@@ -33,4 +33,33 @@ ideas = {
             }
         }
     }
+    country = {
+        great_depression_Z = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 3
+				consumer_goods_factor = 1
+				conscription_factor = -1
+				join_faction_tension = 1
+				local_resources_factor = -0.75
+                #custom_modifier_tooltip = trade_partner_not_at_war_tt
+				send_volunteers_tension = 1
+				guarantee_tension = 1
+				#embargo_threshold_factor = 1.5
+                industrial_capacity_factory = -0.55
+				industrial_capacity_dockyard = -0.85
+			}
+		}
+    }
 }

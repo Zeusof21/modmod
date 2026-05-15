@@ -7,14 +7,13 @@ sub_units = {
 		priority = 1198
 		ai_priority = 100
 		active = yes
-		is_artillery_brigade = yes
 		
 		type = {
 			infantry
 			artillery
 		}
 
-		group = combat_support
+		group = infantry
 		
 		categories = {
 			category_army
@@ -22,24 +21,22 @@ sub_units = {
 			category_artillery
 		}
 
-		combat_width = 0
+		combat_width = 3
 
 		manpower = 500
 		need = {
-			artillery_equipment = 24
+			artillery_equipment = 36
 		}
 		
 		max_strength = 0.6
-		max_organisation = 50
+		max_organisation = 0
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.5
-		supply_consumption = 0.01
+		supply_consumption = 0.21
 
-		# Line artillery bonuses - REWORKED
-		# 25% soft attack bonus, 30% breakthrough bonus
-		soft_attack = 0.45
-		breakthrough = 0.50
+		#Line artillery bonuses
+		# soft_attack = 0.25
 		
 		forest = {
 			attack = -0.2
@@ -85,14 +82,13 @@ sub_units = {
 		priority = 1198
 		ai_priority = 100
 		active = yes
-		is_artillery_brigade = yes
-
+		
 		type = {
 			motorized
 			artillery
 		}
 
-		group = mobile_combat_support
+		group = mobile
 		
 		categories = {
 			category_army
@@ -101,16 +97,11 @@ sub_units = {
 			category_mobile_and_mobile_combat_sup
 		}
 
-		combat_width = 0
+		combat_width = 3
 		transport = motorized_equipment
 		manpower = 500
-
-		essential = {
-			motorized_equipment
-		}
-
 		need = {
-			artillery_equipment = 24
+			artillery_equipment = 36
 			motorized_equipment = 36
 		}
 		
@@ -120,11 +111,6 @@ sub_units = {
 		training_time = 120
 		weight = 0.5
 		supply_consumption = 0.25
-		
-		# Motorized line artillery bonuses - REWORKED
-		# Same offensive stats as line artillery, better mobility
-		soft_attack = 0.25
-		breakthrough = 0.30
 		
 		forest = {
 			attack = -0.2
@@ -170,26 +156,24 @@ sub_units = {
 		priority = 1199
 		ai_priority = 100
 		active = yes
-		is_artillery_brigade = yes
 		
 		type = {
 			infantry
 			artillery
 		}
 
-		group = combat_support
+		group = infantry
 		
 		categories = {
 			category_army
 			category_line_artillery
 			category_artillery
-			category_rocket_artillery
 		}		
 
-		combat_width = 0
+		combat_width = 3
 
 		need = {
-			rocket_artillery_equipment = 24
+			rocket_artillery_equipment = 36
 		}
 		
 		manpower = 500
@@ -200,12 +184,6 @@ sub_units = {
 		weight = 0.5
 
 		supply_consumption = 0.22
-		
-		# Rocket artillery bonuses - REWORKED
-		# Towed Nebelwerfer: Maximum firepower when set up, but vulnerable
-		# Higher soft attack (40%), lower breakthrough (15%) than regular artillery
-		soft_attack = 0.40
-		breakthrough = 0.15
 		
 		forest = {
 			attack = -0.2
@@ -251,26 +229,24 @@ sub_units = {
 		priority = 1199
 		ai_priority = 100
 		active = yes
-		is_artillery_brigade = yes
 		
 		type = {
 			motorized
 			artillery
 		}
 
-		group = mobile_combat_support
+		group = mobile
 		
 		categories = {
 			category_army
 			category_line_artillery
 			category_artillery
-			category_rocket_artillery
 		}		
 
-		combat_width = 0
+		combat_width = 3
 		transport = motorized_equipment
 		need = {
-			rocket_artillery_equipment = 24
+			rocket_artillery_equipment = 36
 			motorized_equipment = 36
 		}
 		
@@ -280,14 +256,8 @@ sub_units = {
 		max_strength = 0.6
 		training_time = 120
 		weight = 0.5
-		
+
 		supply_consumption = 0.25
-		
-		# Motorized rocket artillery bonuses - REWORKED
-		# Truck-towed Nebelwerfer: Same combat stats as towed, better mobility
-		# Still unhitches to fire = same vulnerability (15% breakthrough)
-		soft_attack = 0.40
-		breakthrough = 0.15
 		
 		forest = {
 			attack = -0.2
@@ -333,7 +303,6 @@ sub_units = {
 		priority = 1199
 		ai_priority = 100
 		active = no
-		is_artillery_brigade = yes
 		
 		type = {
 			artillery
@@ -341,39 +310,31 @@ sub_units = {
 			rocket
 		}
 
-		group = mobile_combat_support
+		group = mobile
 		
 		categories = {
 			category_army
 			category_line_artillery
 			category_artillery
-			category_rocket_artillery
 		}		
 
-		combat_width = 0
+		combat_width = 3
 
 		need = {
-			motorized_rocket_equipment = 16
-			motorized_equipment = 16
+			motorized_rocket_equipment = 20
+			motorized_equipment = 15
 		}
 		
 		manpower = 500
 		max_organisation = 0
-		default_morale = 0.1
+		default_morale = 0.2
 		max_strength = 0.6
 		training_time = 120
 		weight = 0.5
+		
 
 		
 		supply_consumption = 0.25
-		
-		# Motorized rocket brigade bonuses - REWORKED
-		# Katyusha-style (BM-13): Fires from vehicle = shoot-and-scoot
-		# Lower soft attack (30%) - less stable firing platform
-		# Higher breakthrough (35%) - armored vehicle protection, rapid displacement
-		soft_attack = 0.30
-		breakthrough = 0.35
-		
 		
 		forest = {
 			attack = -0.1

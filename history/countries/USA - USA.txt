@@ -49,8 +49,8 @@ IF = {
 	create_faction_from_template = faction_template_usa_commonwealth
 }
 
-set_research_slots = 4
-set_stability = 0.65
+set_research_slots = 5
+set_stability = 0.25
 set_war_support = 0
 add_command_power = 20
 
@@ -62,6 +62,10 @@ set_variable = { var = quorum_low value = 39 }
 set_variable = { var = quorum_medium value = 49 }
 set_variable = { var = quorum_high value = 58 }
 USA_recalc_congress_icon_frames = yes
+
+add_ideas = strikes_2
+add_ideas = great_depression_Z
+add_ideas = isolation
 
 USA = {
 	country_event = { id = usa.50 days = 2 }
