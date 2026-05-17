@@ -75,7 +75,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 20
-		max_organisation = 50
+		max_organisation = 120
 		default_morale = 0.3
 		manpower = 850
 		
@@ -155,9 +155,9 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 25
-		max_organisation = 60
+		max_organisation = 120
 		default_morale = 0.3
-		maximum_speed = 0.6
+		maximum_speed = 1
 		manpower = 1000
 
 		#Misc Abilities
@@ -290,9 +290,9 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 20
-		max_organisation = 70
-		default_morale = 0.4
+		max_strength =80
+		max_organisation = 140
+		default_morale = 1
 		manpower = 1000
 
 		#Misc Abilities
@@ -301,21 +301,21 @@ sub_units = {
 		weight = 0.5
 		
 		supply_consumption = 0.05
-		breakthrough = 0.3
+		breakthrough = 0.85
 	
 		need = {
 			infantry_equipment = 140
 		}
 
 		hills = {
-			attack = 0.2
+			attack = 0.75
 			defence = 0.05
-			movement = 0.1
+			movement = 0.45
 		}
 		mountain = {
-			attack = 0.35
-			defence = 0.1
-			movement = 0.2
+			attack = 1.25
+			defence = 0.25
+			movement = 0.5
 		}
 	}
 
@@ -1130,7 +1130,8 @@ sub_units = {
 		
 		priority = 400 #600
 		ai_priority = 150 #200
-		active = no
+		#active = no
+		active = yes
 
 		type = {
 			infantry
@@ -1145,12 +1146,12 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 2
+		combat_width = 1
 		
 		#Size Definitions
-		max_strength = 15 #25 (HP)
-		max_organisation = 70 #60 -> Lower HP but higher Org: They should keep fighting longer
-		default_morale = 0.4 #0.3 (Recovery) -> Easy to get more punishees
+		max_strength = 45 #25 (HP) //Was 15
+		max_organisation = 140 #60 -> Lower HP but higher Org: They should keep fighting longer //Was 70
+		default_morale = 0.8 #0.3 (Recovery) -> Easy to get more punishees
 		manpower = 850 #1000 -> Usually no more than 850
 		
 		breakthrough = 0.2

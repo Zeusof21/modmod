@@ -61,5 +61,20 @@ ideas = {
 				industrial_capacity_dockyard = -0.85
 			}
 		}
+        #ideas abaixo que sao so pra tirar os erros do errorlog
+        GER_treaty_of_versailles_2 = { #Sinceramente isso é so tapa buraca, o lixo inutil que fez o mod que portou o mod original(Rt56tech), mas é só pra não dar erro de falta de ideia
+        }
+        GER_treaty_of_versailles_3 = {
+        }
+        tourism_4 = {
+        }
+        tourism_3 = {
+        }
+        tourism_2 = {
+        }
+        tourism_1 = {
+        }   
+        great_depression = {
+        }
     }
 }
