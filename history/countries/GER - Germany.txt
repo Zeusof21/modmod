@@ -1,4 +1,4 @@
-﻿
+﻿#eo
 capital = 64 # Berlin/Brandeburg
 
 if = {
@@ -40,7 +40,7 @@ if = {
 		set_air_oob = "GER_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
-			aa_cannon_1 = 1
+			aa_hmg = 1
 			engines_1 = 1
 			engines_2 = 1
 			early_bombs = 1
@@ -51,6 +51,7 @@ if = {
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
 			air_torpedoe_1 = 1
+			photo_reconnaisance = 1
 			bba_early_transport_plane = 1
 		}
 	else = {
@@ -65,15 +66,6 @@ if = {
 			naval_bomber1 = 1
 			early_transport_plane = 1
 		}
-	}
-}
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-		has_dlc = "By Blood Alone"
-	}
-	set_technology = {
-					photo_reconnaisance = 1
 	}
 }
 
@@ -95,7 +87,9 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1
-	#formation_flying = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -165,7 +159,7 @@ if = {
 		improved_ship_torpedo_launcher = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		#basic_medium_battery = 1
+		basic_medium_battery = 1
 		basic_heavy_battery = 1
 		basic_depth_charges = 1
 		sonar = 1
@@ -201,6 +195,7 @@ set_variable = { GER_industrial_army_intel_to_others = -25 }
 set_variable = { GER_industrial_navy_intel_to_others = -25 }
 set_variable = { GER_industrial_airforce_intel_to_others = -25 }
 set_variable = { GER_industrial_production_speed_arms_factory_factor = 0.1 }
+set_variable = { GER_industrial_production_speed_industrial_complex_factor = 0 } #
 set_variable = { GER_industrial_production_speed_dockyard_factor = 0.1 }
 set_variable = { GER_industrial_industrial_capacity_factory = 0 }
 set_variable = { GER_industrial_industrial_capacity_dockyard = 0 }
@@ -255,13 +250,15 @@ set_variable = { GER_wehrwirtschaft_production_speed_fuel_silo_factor = 0 }
 set_variable = { GER_military_army_armor_attack_factor = 0 }
 set_variable = { GER_military_army_armor_speed_factor = 0 }
 set_variable = { GER_military_org_loss_when_moving = 0 }
+set_variable = { GER_military_breakthrough_factor = 0 } #mod test
 set_variable = { GER_military_motorized_attack_factor = 0 }
 set_variable = { GER_military_mechanized_attack_factor = 0 }
 set_variable = { GER_military_army_infantry_attack_factor = 0 }
 set_variable = { GER_military_army_artillery_attack_factor = 0 }
 set_variable = { GER_military_army_org_factor = 0.05 }
+set_variable = { GER_military_army_org_regain = 0 }
 set_variable = { GER_military_planning_speed = 0.25 }
-set_variable = { GER_military_supply_consumption_factor = 0.15 }
+set_variable = { GER_military_supply_factor = -0.15 }
 set_variable = { GER_military_equipment_capture = 0 }
 set_variable = { GER_military_initiative_factor = 0 }
 set_variable = { GER_military_army_fuel_consumption_factor = 0 }
@@ -422,7 +419,7 @@ set_variable = { GER_industrialist_prevailed = 0 } #For allowing only one Indust
 
 
 # Starting Stats of various kinds
-set_research_slots = 5
+set_research_slots = 4
 set_convoys = 200
 IF = {
 	limit = {
@@ -438,7 +435,7 @@ set_war_support = 0.3
 
 # SETUP THE 1939 SCENARIO
 1939.1.1 = {
-
+	load_focus_tree = { tree = germany_hitler keep_completed = yes }
 	# Setting up the required world tension
 	add_named_threat = { 
 		threat = 40 
@@ -455,23 +452,18 @@ set_war_support = 0.3
 	
 	# Adding Ministers and Ideas
 	add_ideas = {
-
 		# Company if no AAT
 		henschel
-
 		# Concern
 		ig_faben
-		
 		# Political Advisors
 		walther_funk
 		GER_reinhard_heydrich
 		GER_franz_seldte
-
 		# Military Advisors
 		ludwig_beck
 		gerd_von_rundstedt
 		goering
-
 		# Laws
 		war_economy
 		extensive_conscription
@@ -526,6 +518,7 @@ set_war_support = 0.3
 	# COMPLETING FOCUSES
 
 	# ONES THAT CAN JUST BE COMPLETED NORMALLY
+
 	complete_national_focus = GER_construct_the_reichsautobahn
 	complete_national_focus = GER_institute_price_controls
 	complete_national_focus = GER_fuhrerprinzip
@@ -547,20 +540,33 @@ set_war_support = 0.3
 	complete_national_focus = GER_advanced_panzer_research
 	complete_national_focus = GER_bribe_senior_officers
 	complete_national_focus = GER_befriend_japan
+	complete_national_focus = ger24
+	complete_national_focus = ger_195
+	complete_national_focus = GER_war_economi
+	complete_national_focus = ger27
+	complete_national_focus = ger26
+	complete_national_focus = GER_panzer_production
+	complete_national_focus = GER_schwerer_gustav
+	complete_national_focus = GER_demand_memel
+	complete_national_focus = GER_form_the_jagdwaffe
+	complete_national_focus = GER_prioritize_the_army
+	complete_national_focus = GER_reorganize_the_wehrmacht2
+	complete_national_focus = GER_remove_ethnic_suppresion
 
 	# ONES THAT HAVE TO BE HANDELED MANUALLY
-	unlock_national_focus = GER_remilitarize_the_rhineland
-	unlock_national_focus = GER_anti_comintern_pact
+	unlock_national_focus = GER_rhineland
+	unlock_national_focus = GER_anti_comitern_pact
 	unlock_national_focus = GER_fortify_the_vaterland
 	unlock_national_focus = GER_anschluss
 	unlock_national_focus = GER_demand_sudetenland
 	unlock_national_focus = GER_first_vienna_award
-	unlock_national_focus = GER_fate_of_czechoslovakia
+	unlock_national_focus = GER_end_of_czechoslovakia
 	unlock_national_focus = GER_reassert_eastern_claims
 	unlock_national_focus = GER_danzig_or_war
 	unlock_national_focus = GER_the_four_year_plan
 	unlock_national_focus = GER_develop_heraeus_facilities
-	unlock_national_focus = GER_legion_condor
+	unlock_national_focus = GER_legion_condor2
+	unlock_national_focus = ger25
 
 	# Autarkic economy 
 	unlock_national_focus = GER_autarky_efforts
@@ -686,10 +692,19 @@ set_war_support = 0.3
 		paratroopers = 1
 
 		# Doctrines
+		delay = 1
+		elastic_defence = 1
+		armored_spearhead = 1
+		schwerpunk = 1
+		blitzkrieg = 1
+		convoy_interdiction_ti = 1
+		unrestricted_submarine_warfare = 1
+		raider_patrols = 1
+
 		# Air
-		#formation_flying = 1		
-		#dive_bombing = 1
-		#direct_ground_support = 1
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
 
 		# Electronics
 		electronic_mechanical_engineering = 1
@@ -716,7 +731,7 @@ set_war_support = 0.3
 		dispersed_industry4 = 1
 		basic_fortification_tech = 1
 	}
-
+	
 	set_grand_doctrine = new_mobile_warfare
 	set_grand_doctrine = new_convoy_raiding
 	set_grand_doctrine = new_battlefield_support
@@ -746,7 +761,6 @@ set_war_support = 0.3
 		sub_doctrine = air_subdoctrine_dive_bombers
 	}
 
-	
 	complete_special_project = {
 		project = sp:sp_air_radar
 		scientist = GER_konrad_zuse
@@ -840,7 +854,11 @@ add_to_faction = GER
 
 # Setup of National Spirits
 add_ideas = {
+	mark #mod
+	ger_wherm #mod
 	sour_loser
+	#general_staff #old german ideas
+	#GER_mefo_bills_1 # ""
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
@@ -968,6 +986,49 @@ recruit_character = GER_hellmuth_walter
 recruit_character = GER_manfred_von_ardenne
 recruit_character = GER_konrad_zuse
 
+# LEADERS
+recruit_character = GER_karl_albrecht
+recruit_character = GER_conseil_anarchiste
+recruit_character = GER_otto_von_habsburg
+recruit_character = GER_trotsky
+recruit_character = GER_gustav_landauer
+recruit_character = GER_adam_dressler
+# GENERALS
+recruit_character = GER_georg_lindemann
+recruit_character = GER_ernst_busch
+recruit_character = GER_erhard_raus
+recruit_character = GER_josef_harpe
+recruit_character = GER_Walther_Wenck
+recruit_character = GER_Max_Kriegsmarin
+recruit_character = GER_walter_von_reichenau
+recruit_character = GER_heinrich_von_vietinghoff
+recruit_character = GER_eduard_dietl
+recruit_character = GER_hans_karl_von_esebeck
+recruit_character = GER_erich_hoepner
+recruit_character = GER_friedrich_olbricht
+recruit_character = GER_friedrich_fromm
+recruit_character = GER_otto_skorzeny
+recruit_character = GER_karl_wolff
+recruit_character = GER_herbert_gille
+recruit_character = GER_hermann_fegelein
+recruit_character = GER_max_simon
+recruit_character = GER_georg_keppler
+recruit_character = GER_friedrich_dollmann
+recruit_character = GER_nikolaus_von_falkenhorst
+recruit_character = GER_adolf_strauss
+recruit_character = GER_Carl_Stulpnagel
+recruit_character = GER_Eberhard_von_Mackensen
+recruit_character = GER_Rudolf_Schmidt
+recruit_character = GER_Walter_Kuntze
+recruit_character = GER_gustave_von_zangen
+recruit_character = GER_traugott_herr
+# ANSCHLUSS
+recruit_character = GER_alfred_jansa
+recruit_character = GER_wilhelm_gebauer
+recruit_character = GER_heimito_von_doderer
+recruit_character = GER_hans_pertner
+recruit_character = GER_arthur_von_pongracz
+
 if = {
 	limit = {
 		has_dlc = "Gotterdammerung"
@@ -1080,7 +1141,7 @@ if = {
 		obsolete = yes
 		icon = "GFX_GER_gwtank_medium"
 	}
-	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts) and Chinese history file. Any changes here should also be applied there
+	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
 		name = "Panzer I Ausf. A"
 		type = light_tank_chassis_1
 		parent_version = 0
@@ -1395,7 +1456,6 @@ if = {
 			plane_reliability_upgrade = 5
 		}
 		obsolete = yes
-		icon = GFX_GER_early_bomber_medium
 	}
 	
 	create_equipment_variant = {
@@ -1432,7 +1492,6 @@ if = {
 			special_type_slot_4 = empty
 		}
 		obsolete = yes
-		icon = GFX_GER_early_bomber_medium
 	}
 	create_equipment_variant = {
 		name = "Ju 86"
@@ -1450,7 +1509,6 @@ if = {
 			special_type_slot_4 = empty
 		}
 		obsolete = yes
-		icon = GFX_GER_early_bomber_medium
 	}
 
 	create_equipment_variant = {
@@ -1502,7 +1560,16 @@ if = {
 			special_type_slot_1 = empty
 		}
 		obsolete = yes
-		icon = GFX_GER_cv_fighter1_medium
+	}
+	create_equipment_variant = {
+		name = "He 45" #He 46, He 50
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "Bf 109 D"
@@ -1795,3 +1862,4 @@ if = {
 	#	obsolete = yes
 	#}
 }
+#eo

@@ -1,5 +1,0 @@
-﻿l_braz_por:
- RECALL_VOLUNTEERS_TITLE:0 "Retornar voluntários"
- RECALL_VOLUNTEERS_ACTION_DESC:0 "Se necessário, podemos solicitar o retorno de voluntários de qualquer país para o qual os tenhamos enviado."
- RECALL_VOLUNTEERS_TOOLTIP:0 "§Y[This.GetNameWithFlag]§! §Rhas not been sent any volunteers.§!"
- RECALL_VOLUNTEERS_TOOLTIP_G:0 "§Y[This.GetNameWithFlag]§! has been sent volunteers."
