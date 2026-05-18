@@ -7,11 +7,16 @@ on_actions = {
 				country_event = { id = harmonychanges.1 }
 			}
 		}
-		#on_weekly = {
-		#	effect = {
-		#		limit = { is_ai = no }
-		#		add_ideas = 
-		#	}
-		#}
+	}
+	on_weekly = {
+		effect = {
+			every_country = {
+			limit = { 
+			is_ai = no 
+			has_war = no 
+		    }
+			add_ideas = peacetraining
+			}
+		}   
 	}
 }
