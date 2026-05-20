@@ -21,7 +21,7 @@ sub_units = {
 			category_artillery
 		}
 
-		combat_width = 3
+		combat_width = 0
 
 		manpower = 500
 		need = {
@@ -29,11 +29,11 @@ sub_units = {
 		}
 		
 		max_strength = 0.6
-		max_organisation = 0
+		max_organisation = 10
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.5
-		supply_consumption = 0.21
+		supply_consumption = 0.11
 
 		#Line artillery bonuses
 		# soft_attack = 0.25
@@ -97,7 +97,7 @@ sub_units = {
 			category_mobile_and_mobile_combat_sup
 		}
 
-		combat_width = 3
+		combat_width = 0
 		transport = motorized_equipment
 		manpower = 500
 		need = {
@@ -106,11 +106,11 @@ sub_units = {
 		}
 		
 		max_strength = 0.6
-		max_organisation = 0
+		max_organisation = 10
 		default_morale = 0.1
 		training_time = 120
 		weight = 0.5
-		supply_consumption = 0.25
+		supply_consumption = 0.15
 		
 		forest = {
 			attack = -0.2
@@ -170,20 +170,20 @@ sub_units = {
 			category_artillery
 		}		
 
-		combat_width = 3
+		combat_width = 0
 
 		need = {
 			rocket_artillery_equipment = 36
 		}
 		
 		manpower = 500
-		max_organisation = 0
+		max_organisation = 15
 		default_morale = 0.1
 		max_strength = 0.6
 		training_time = 120
 		weight = 0.5
 
-		supply_consumption = 0.22
+		supply_consumption = 0.12
 		
 		forest = {
 			attack = -0.2
@@ -243,7 +243,7 @@ sub_units = {
 			category_artillery
 		}		
 
-		combat_width = 3
+		combat_width = 0
 		transport = motorized_equipment
 		need = {
 			rocket_artillery_equipment = 36
@@ -251,13 +251,13 @@ sub_units = {
 		}
 		
 		manpower = 500
-		max_organisation = 0
+		max_organisation = 15
 		default_morale = 0.1
 		max_strength = 0.6
 		training_time = 120
 		weight = 0.5
 
-		supply_consumption = 0.25
+		supply_consumption = 0.15
 		
 		forest = {
 			attack = -0.2
@@ -318,7 +318,7 @@ sub_units = {
 			category_artillery
 		}		
 
-		combat_width = 3
+		combat_width = 0
 
 		need = {
 			motorized_rocket_equipment = 20
@@ -326,7 +326,7 @@ sub_units = {
 		}
 		
 		manpower = 500
-		max_organisation = 0
+		max_organisation = 10
 		default_morale = 0.2
 		max_strength = 0.6
 		training_time = 120
@@ -334,7 +334,7 @@ sub_units = {
 		
 
 		
-		supply_consumption = 0.25
+		supply_consumption = 0.15
 		
 		forest = {
 			attack = -0.1

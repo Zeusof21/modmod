@@ -6,7 +6,7 @@ NDefines.NGame.LAG_DAYS_FOR_PAUSE = 250 --25
 NDefines.NGame.DECISION_ALERT_TIMEOUT_DAYS = 14 -- vanilla 30
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 3 -- useless
 NDefines.NGame.GARRISON_LOG_MAX_MONTHS = 0 -- garrison log gets deleted after X months
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.35, 0.15, 0.1, 0.035, 0.0 } -- old { 0.4, 0.25, 0.1, 0.05, 0.0 } -- vanilla { 2.0, 0.5, 0.2, 0.1, 0.0 }
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.0, 0.35, 0.1, 0.035, 0.0 } -- old { 0.4, 0.25, 0.1, 0.05, 0.0 } -- vanilla { 2.0, 0.5, 0.2, 0.1, 0.0 }
 
 ---Diplomacy
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12
