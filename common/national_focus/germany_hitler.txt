@@ -413,9 +413,12 @@ focus_tree = {
                     }
                 }
             }
-			#is_subject = no
+			else = {
+				is_ai = yes
+			}
+			is_subject = no
 			#has_army_manpower = { size > 499999 }
-			#NOT = { has_idea = rhineland_challenge_met }
+			NOT = { has_idea = rhineland_challenge_met }
 		}
 		cancel = {
 			OR = {
